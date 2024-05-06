@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Budget",
+    "description": "",
+    "context": "",
+    "solution": "Major cloud providers support the creation of budgets, which allow users to define alerts about charged and forecasted costs. Having one or more budgets can help monitor and manage the cost of cloud deployments.",
+    "example": "",
+    "occurrences": []
+  },
+  {
+    "name": "Spot instances",
+    "description": "",
+    "context": "",
+    "solution": "Major cloud providers offer excess compute capacity in the form of spot instances. These provide discounts over on-demand compute instances, with the caveat that instances can be preempted or deleted at any time when compute capacity needs to be reclaimed. If a user's workloads can handle interruptions, spot instances can offer an economical alternative to regular instances.",
+    "example": "Use spot instances to run batch jobs: if some of the instances are preempted, the job is slowed down, but it does not completely stop.",
+    "occurrences": []
+  },
+  {
+    "name": "AWS S3 lifecycle rules",
+    "description": "",
+    "context": "By default, objects stored in AWS Simple Storage Service (S3) are retained, and therefore billed, indefinitely. Objects also have a storage class, which can be used to balance access performance and cost depending on the use case.",
+    "solution": "By configuring lifecycle rules, objects can be transitioned to cheaper storage classes or deleted after a certain amount of time.",
+    "example": "",
+    "occurrences": []
+  },
+  {
+    "name": "Expensive instance",
+    "description": "",
+    "context": "",
+    "solution": "",
+    "example": "",
+    "occurrences": []
+  },
+  {
+    "name": "Old generation",
+    "description": "",
+    "context": "",
+    "solution": "",
+    "example": "",
+    "occurrences": []
+  },
+  {
+    "name": "Expensive network resource",
+    "description": "",
+    "context": "",
+    "solution": "",
+    "example": "",
+    "occurrences": []
+  },
+  {
+    "name": "Overprovisioned resources",
+    "description": "",
+    "context": "",
+    "solution": "",
+    "example": "",
+    "occurrences": []
+  },
+  {
+    "name": "Expensive DynamoDB",
+    "description": "",
+    "context": "DynamoDB tables might use provisioned billing mode, have high (>1) read/write capacity, or use global secondary indices. These features carry additional cost and are not always required, especially for infrequently accessed tables.",
+    "solution": "Switching to pay-per-request billing mode, reducing provisioned read/write capacity, and removing global secondary indices are ways to cost-optimize DynamoDB tables.",
+    "example": "",
+    "occurrences": []
+  },
+  {
+    "name": "Expensive Route53 health check",
+    "description": "",
+    "context": "",
+    "solution": "",
+    "example": "",
+    "occurrences": []
+  }
+]
