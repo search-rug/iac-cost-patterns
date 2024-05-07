@@ -2,10 +2,36 @@
   {
     "name": "Budget",
     "patternType": "pattern",
-    "description": "Use budgets to receive alerts about charged and forecasted costs.",
+    "description": "Use budgets to receive alerts about charged and forecasted costs and control spending.",
     "context": "",
-    "solution": "Major cloud providers support the creation of budgets, which allow users to define alerts about charged and forecasted costs. Having one or more budgets can help monitor and manage the cost of cloud deployments.",
+    "solution": "Major cloud providers support the creation of budgets, which allow users to define alerts about charged and forecasted costs and control spending. Having one or more budgets can help monitor and manage the cost of cloud deployments.",
     "example": "",
+    "references": [
+      {
+        "title": "Cloud Cost And Usage Budgets - AWS Budgets - AWS",
+        "url": "https://aws.amazon.com/aws-cost-management/aws-budgets/"
+      },
+      {
+        "title": "Create, edit, or delete budgets and budget alerts | Cloud Billing | Google Cloud",
+        "url": "https://cloud.google.com/billing/docs/how-to/budgets"
+      },
+      {
+        "title": "Tutorial - Create and manage budgets - Microsoft Cost Management | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets?tabs=psbudget"
+      },
+      {
+        "title": "Resource: aws_budgets_budget (Terraform)",
+        "url": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/budgets_budget"
+      },
+      {
+        "title": "Resource: google_billing_budget (Terraform)",
+        "url": "https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/billing_budget"
+      },
+      {
+        "title": "Resource: azurerm_consumption_budget_resource_group (Terraform)",
+        "url": "https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/consumption_budget_resource_group"
+      }
+    ],
     "occurrences": [
       "https://github.com/AJarombek/global-aws-infrastructure/commit/4a89f4b8235961275fa0e6aaf20848f2b8b7e733",
       "https://github.com/MartinFeineis/terraform/commit/359ba426393c78b78695797f9bdd6a08c0455720",
@@ -43,6 +69,7 @@
     "context": "",
     "solution": "Major cloud providers offer excess compute capacity in the form of spot instances. These provide discounts over on-demand compute instances, with the caveat that instances can be preempted or deleted at any time when compute capacity needs to be reclaimed. If a user's workloads can handle interruptions, spot instances can offer an economical alternative to regular instances.",
     "example": "Use spot instances to run batch jobs: if some of the instances are preempted, the job is slowed down, but it does not completely stop.",
+    "references": [],
     "occurrences": [
       "https://github.com/openinfrastructure/terraform-google-gitlab-runner/commit/8429375df72b04cc6fedc1ebb5f2c2e4ba18b9f2",
       "https://github.com/kathputli/terraform-aws/commit/321b1aee88f7d15dafe46aede2b86ced70061025",
@@ -65,6 +92,7 @@
     "context": "By default, objects stored in AWS Simple Storage Service (S3) are retained, and therefore billed, indefinitely. Objects also have a storage class, which can be used to balance access performance and cost depending on the use case.",
     "solution": "By configuring lifecycle rules, objects can be transitioned to cheaper storage classes or deleted after a certain amount of time.",
     "example": "",
+    "references": [],
     "occurrences": [
       "https://github.com/alphagov/govuk-aws/commit/f844cd8e254b161bebef04101f8ce177bcd0840c",
       "https://github.com/alphagov/govuk-terraform-provisioning/commit/ac105ab0a5ae38fbf69167e072f8970a4a61c3e8",
@@ -81,6 +109,7 @@
     "context": "",
     "solution": "",
     "example": "",
+    "references": [],
     "occurrences": [
       "https://github.com/beaulabs/terraform_aws_ec2_instance/commit/d6df68da5ae58fb5c650c6be15d9d8e676a129db",
       "https://github.com/gudlyf/TerraformOpenVPN/commit/4bc861c153b65a2d7c0d5f3fac30ab72b0fc6942",
@@ -141,6 +170,7 @@
     "context": "",
     "solution": "",
     "example": "",
+    "references": [],
     "occurrences": [
       "https://github.com/gudlyf/TerraformOpenVPN/commit/be1245d8634025277ba79a4155ee88d7eaffcdfb",
       "https://github.com/alphagov/govuk-aws/commit/6cfda6ada5137b232ff442ae9f2aedc8520ee1b4",
@@ -185,6 +215,7 @@
     "context": "",
     "solution": "",
     "example": "",
+    "references": [],
     "occurrences": [
       "https://github.com/stealthHat/k8s-terraform/commit/681a3f8b4942be495b3f2528fb9ee40d7a4eb08a",
       "https://github.com/thomastodon/jabujabu/commit/02210a3d3ba4a770c29623825b7f54f3ff33f3c7",
@@ -246,6 +277,7 @@
     "context": "",
     "solution": "",
     "example": "",
+    "references": [],
     "occurrences": [
       "https://github.com/thomastodon/jabujabu/commit/02210a3d3ba4a770c29623825b7f54f3ff33f3c7",
       "https://github.com/guilhermerenew/infra-cost/commit/ba858d94e29d03e3e81533df8cd8bc85b9f176f1",
@@ -273,6 +305,7 @@
     "context": "DynamoDB tables might use provisioned billing mode, have high (>1) read/write capacity, or use global secondary indices. These features carry additional cost and are not always required, especially for infrequently accessed tables.",
     "solution": "Switching to pay-per-request billing mode, reducing provisioned read/write capacity, and removing global secondary indices are ways to cost-optimize DynamoDB tables.",
     "example": "",
+    "references": [],
     "occurrences": [
       "https://github.com/deptno/terraform-aws-modules/commit/49f447bdbb3cf23499e8194e78f852ea1e256d3a",
       "https://github.com/ONSdigital/eq-terraform-dynamodb/commit/40eb651a50d0dfd5cf047ef62c8a6259c1c66e02",
@@ -308,6 +341,16 @@
     "context": "",
     "solution": "",
     "example": "",
+    "references": [
+      {
+        "title": "AWS Route53 pricing",
+        "url": "https://aws.amazon.com/route53/pricing/"
+      },
+      {
+        "title": "Resource: aws_route53_health_check (Terraform)",
+        "url": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_health_check"
+      }
+    ],
     "occurrences": [
       "https://github.com/tdooner/flynn/commit/a9ea9d09727825f9a047e70d94caf73c99e6b2a8",
       "https://github.com/elliotpryde/personal-infrastructure/commit/772c5ad20818738b09d01cd70ca3de80cbf66dcb",
