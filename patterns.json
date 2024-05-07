@@ -86,7 +86,7 @@
     ]
   },
   {
-    "name": "AWS S3 lifecycle rules",
+    "name": "S3 lifecycle rules",
     "patternType": "pattern",
     "description": "Define lifecycle rules for AWS S3 buckets to move objects to cheaper storage or drop them entirely.",
     "context": "By default, objects stored in AWS Simple Storage Service (S3) are retained, and therefore billed, indefinitely. Objects also have a storage class, which can be used to balance access performance and cost depending on the use case.",
