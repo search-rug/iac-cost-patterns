@@ -2,7 +2,7 @@
   {
     "name": "Budget",
     "patternType": "pattern",
-    "description": "",
+    "description": "Use budgets to receive alerts about charged and forecasted costs.",
     "context": "",
     "solution": "Major cloud providers support the creation of budgets, which allow users to define alerts about charged and forecasted costs. Having one or more budgets can help monitor and manage the cost of cloud deployments.",
     "example": "",
@@ -39,7 +39,7 @@
   {
     "name": "Spot instances",
     "patternType": "pattern",
-    "description": "",
+    "description": "Use spot instances to run interruptible workloads for significant cost savings compared to regular instances.",
     "context": "",
     "solution": "Major cloud providers offer excess compute capacity in the form of spot instances. These provide discounts over on-demand compute instances, with the caveat that instances can be preempted or deleted at any time when compute capacity needs to be reclaimed. If a user's workloads can handle interruptions, spot instances can offer an economical alternative to regular instances.",
     "example": "Use spot instances to run batch jobs: if some of the instances are preempted, the job is slowed down, but it does not completely stop.",
@@ -61,7 +61,7 @@
   {
     "name": "AWS S3 lifecycle rules",
     "patternType": "pattern",
-    "description": "",
+    "description": "Define lifecycle rules for AWS S3 buckets to move objects to cheaper storage or drop them entirely.",
     "context": "By default, objects stored in AWS Simple Storage Service (S3) are retained, and therefore billed, indefinitely. Objects also have a storage class, which can be used to balance access performance and cost depending on the use case.",
     "solution": "By configuring lifecycle rules, objects can be transitioned to cheaper storage classes or deleted after a certain amount of time.",
     "example": "",
@@ -77,7 +77,7 @@
   {
     "name": "Expensive instance",
     "patternType": "anti-pattern",
-    "description": "",
+    "description": "Compute instances are often overprovisioned even when a cheaper instance would suffice.",
     "context": "",
     "solution": "",
     "example": "",
@@ -137,7 +137,7 @@
   {
     "name": "Old generation",
     "patternType": "anti-pattern",
-    "description": "",
+    "description": "On AWS, using newer instance generations and volume types gives similar performance for lower cost.",
     "context": "",
     "solution": "",
     "example": "",
@@ -181,7 +181,7 @@
   {
     "name": "Expensive network resource",
     "patternType": "anti-pattern",
-    "description": "",
+    "description": "Network resources like NAT gateways, elastic IP addresses and subnets tend to be expensive while not being strictly needed.",
     "context": "",
     "solution": "",
     "example": "",
@@ -242,7 +242,7 @@
   {
     "name": "Overprovisioned resources",
     "patternType": "anti-pattern",
-    "description": "",
+    "description": "Resources like RAM, storage and CPU utilization are often overprovisioned even when lower values are acceptable.",
     "context": "",
     "solution": "",
     "example": "",
@@ -269,7 +269,7 @@
   {
     "name": "Expensive DynamoDB",
     "patternType": "anti-pattern",
-    "description": "",
+    "description": "AWS DynamoDB tables often use features that carry cost but are not required, especially for rinfrequently accessed tables.",
     "context": "DynamoDB tables might use provisioned billing mode, have high (>1) read/write capacity, or use global secondary indices. These features carry additional cost and are not always required, especially for infrequently accessed tables.",
     "solution": "Switching to pay-per-request billing mode, reducing provisioned read/write capacity, and removing global secondary indices are ways to cost-optimize DynamoDB tables.",
     "example": "",
@@ -304,7 +304,7 @@
   {
     "name": "Expensive Route53 health check",
     "patternType": "anti-pattern",
-    "description": "",
+    "description": "AWS Route53 health checks are expensive and might not be needed.",
     "context": "",
     "solution": "",
     "example": "",
