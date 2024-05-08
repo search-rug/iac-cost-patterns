@@ -5,7 +5,7 @@
     "description": "Use budgets to receive alerts about charged and forecasted costs and control spending.",
     "context": "",
     "solution": "Major cloud providers support the creation of budgets, which allow users to define alerts about charged and forecasted costs and control spending. Having one or more budgets can help monitor and manage the cost of cloud deployments.",
-    "example": "",
+    "example": "Define a budget for a cost limit of 1200 USD for EC2, and generate an email notification if the forecasted monthly cost exceeds this amount.",
     "references": [
       {
         "title": "Cloud Cost And Usage Budgets - AWS Budgets - AWS",
