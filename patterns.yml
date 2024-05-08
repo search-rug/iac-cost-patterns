@@ -11,7 +11,7 @@
   example: |
     Define a budget for a cost limit of 1200 USD for EC2, and generate an
     email notification if the forecasted monthly cost exceeds this amount:
-    ```
+    ```terraform
     resource "aws_budgets_budget" "ec2" {
       name              = "budget-ec2-monthly"
       budget_type       = "COST"
