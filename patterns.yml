@@ -135,9 +135,39 @@
 - name: S3 lifecycle rules
   patternType: pattern
   description: Define lifecycle rules for AWS S3 buckets to move objects to cheaper storage or drop them entirely.
-  context: By default, objects stored in AWS Simple Storage Service (S3) are retained, and therefore billed, indefinitely. Objects also have a storage class, which can be used to balance access performance and cost depending on the use case.
-  solution: By configuring lifecycle rules, objects can be transitioned to cheaper storage classes or deleted after a certain amount of time.
-  example: ""
+  context: |
+    By default, objects stored in AWS Simple Storage Service (S3) are retained,
+    and therefore billed, indefinitely. Objects also have a storage class,
+    which can be used to balance access performance and cost depending on the use case.
+  solution: |
+    By configuring lifecycle rules, objects can be transitioned to
+    cheaper storage classes or deleted after a certain amount of time.
+  example: |
+    Transition objects under the "log/" prefix to the Glacier storage class, and expire after 90 days:
+    ```terraform
+    resource "aws_s3_bucket_lifecycle_configuration" "bucket-config" {
+      bucket = aws_s3_bucket.bucket.id
+
+      rule {
+        id = "log"
+
+        expiration {
+          days = 90
+        }
+
+        filter {
+          prefix = "log/"
+        }
+
+        status = "Enabled"
+
+        transition {
+          days          = 60
+          storage_class = "GLACIER"
+        }
+      }
+    }
+    ```
   references:
     - title: 'Resource: aws_s3_bucket_lifecycle_configuration'
       url: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_lifecycle_configuration
