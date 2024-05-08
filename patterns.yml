@@ -1,9 +1,42 @@
 - name: Budget
   patternType: pattern
   description: Use budgets to receive alerts about charged and forecasted costs and control spending.
-  context: ""
-  solution: Major cloud providers support the creation of budgets, which allow users to define alerts about charged and forecasted costs and control spending. Having one or more budgets can help monitor and manage the cost of cloud deployments.
-  example: Define a budget for a cost limit of 1200 USD for EC2, and generate an email notification if the forecasted monthly cost exceeds this amount.
+  context: |
+    Part of managing cloud cost is knowing where this cost is coming from.
+    Cloud providers offer solutions to monitor costs, which can be enabled using IaC.
+  solution: |
+    Major cloud providers support the creation of budgets, which allow users to define alerts
+    about charged and forecasted costs and control spending. Having one or more budgets can
+    help monitor and manage the cost of cloud deployments.
+  example: |
+    Define a budget for a cost limit of 1200 USD for EC2, and generate an
+    email notification if the forecasted monthly cost exceeds this amount:
+    ```
+    resource "aws_budgets_budget" "ec2" {
+      name              = "budget-ec2-monthly"
+      budget_type       = "COST"
+      limit_amount      = "1200"
+      limit_unit        = "USD"
+      time_period_end   = "2087-06-15_00:00"
+      time_period_start = "2017-07-01_00:00"
+      time_unit         = "MONTHLY"
+
+      cost_filter {
+        name = "Service"
+        values = [
+          "Amazon Elastic Compute Cloud - Compute",
+        ]
+      }
+
+      notification {
+        comparison_operator        = "GREATER_THAN"
+        threshold                  = 100
+        threshold_type             = "PERCENTAGE"
+        notification_type          = "FORECASTED"
+        subscriber_email_addresses = ["test@example.com"]
+      }
+    }
+    ```
   references:
     - title: Cloud Cost And Usage Budgets - AWS Budgets - AWS
       url: https://aws.amazon.com/aws-cost-management/aws-budgets/
@@ -71,7 +104,9 @@
   context: By default, objects stored in AWS Simple Storage Service (S3) are retained, and therefore billed, indefinitely. Objects also have a storage class, which can be used to balance access performance and cost depending on the use case.
   solution: By configuring lifecycle rules, objects can be transitioned to cheaper storage classes or deleted after a certain amount of time.
   example: ""
-  references: []
+  references:
+    - title: 'Resource: aws_s3_bucket_lifecycle_configuration'
+      url: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_lifecycle_configuration
   occurrences:
     - https://github.com/alphagov/govuk-aws/commit/f844cd8e254b161bebef04101f8ce177bcd0840c
     - https://github.com/alphagov/govuk-terraform-provisioning/commit/ac105ab0a5ae38fbf69167e072f8970a4a61c3e8
