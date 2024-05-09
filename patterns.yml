@@ -367,8 +367,32 @@
   description: AWS DynamoDB tables often use features that carry cost but are not required, especially for rinfrequently accessed tables.
   context: DynamoDB tables might use provisioned billing mode, have high (>1) read/write capacity, or use global secondary indices. These features carry additional cost and are not always required, especially for infrequently accessed tables.
   solution: Switching to pay-per-request billing mode, reducing provisioned read/write capacity, and removing global secondary indices are ways to cost-optimize DynamoDB tables.
-  example: ""
-  references: []
+  example: |
+    ```terraform
+    resource "aws_dynamodb_table" "example_table" {
+      name         = "HighScores"
+      billing_mode = "PAY_PER_REQUEST"
+
+      attribute {
+        name = "UserID"
+        type = "S"
+      }
+
+      attribute {
+        name = "Score"
+        type = "N"
+      }
+    }
+    ```
+  references:
+    - title: 'Resource: aws_dynamodb_table (Terraform)'
+      url: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/dynamodb_table
+    - title: DynamoDB throughput capacity - Amazon DynamoDB
+      url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/capacity-mode.html
+    - title: Using Global Secondary Indexes in DynamoDB - Amazon DynamoDB
+      url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/provisioned-capacity-mode.html
+    - title: Provisioned capacity mode - Amazon DynamoDB
+      url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GSI.html
   occurrences:
     - https://github.com/deptno/terraform-aws-modules/commit/49f447bdbb3cf23499e8194e78f852ea1e256d3a
     - https://github.com/ONSdigital/eq-terraform-dynamodb/commit/40eb651a50d0dfd5cf047ef62c8a6259c1c66e02
