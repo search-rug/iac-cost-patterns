@@ -364,9 +364,16 @@
     - https://github.com/ministryofjustice/cloud-platform-terraform-monitoring/commit/87401ba23af26d379d8132cc09fd7cd212773ba1
 - name: Expensive DynamoDB
   patternType: anti-pattern
-  description: AWS DynamoDB tables often use features that carry cost but are not required, especially for rinfrequently accessed tables.
-  context: DynamoDB tables might use provisioned billing mode, have high (>1) read/write capacity, or use global secondary indices. These features carry additional cost and are not always required, especially for infrequently accessed tables.
-  solution: Switching to pay-per-request billing mode, reducing provisioned read/write capacity, and removing global secondary indices are ways to cost-optimize DynamoDB tables.
+  description: |
+    AWS DynamoDB tables often use features that carry cost but are not required,
+    especially for infrequently accessed tables.
+  context: |
+    DynamoDB tables might use provisioned billing mode, have high (>1) read/write capacity,
+    or use global secondary indices. These features carry additional cost and are not always
+    required, especially for infrequently accessed tables.
+  solution: |
+    Switching to pay-per-request billing mode, reducing provisioned read/write capacity,
+    and removing global secondary indices are ways to cost-optimize DynamoDB tables.
   example: |
     ```terraform
     resource "aws_dynamodb_table" "example_table" {
