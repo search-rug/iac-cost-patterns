@@ -419,14 +419,29 @@
     - https://github.com/dgorbov/terraform-s3-backend-setup/commit/81f82740760a357a86b3a77f9ed400624edcb218
     - https://github.com/sbogacz/terraform-aws-state-backend/commit/174486319f3b956807d56e5433880f9978884f93
     - https://github.com/giuseppeborgese/terraform-locking-s3-state/commit/6b4e59e8b844417dc5c247bdef1b0adb8e2e7028
-- name: Expensive Route53 health check
+- name: Expensive Route 53 health check
   patternType: anti-pattern
-  description: AWS Route53 health checks are expensive and might not be needed.
-  context: ""
-  solution: ""
-  example: ""
+  description: AWS Route 53 health checks cost money and might not be needed.
+  context: |
+    As part of its Route 53 service, AWS offers health checks that allow
+    users to monitor the status of their endpoints. However, there is a
+    flat fee per health check which may add up quickly.
+  solution: Removing Route53 health checks for noncritical endpoints is an effective way to save cost.
+  example: |
+    Remove a Route 53 health check for a private Plex instance to save costs:
+    ```diff
+    @@ -1,6 +0,0 @@
+    -resource "aws_route53_health_check" "example" {
+    -  fqdn = "plex.example.com"
+    -  port = 443
+    -  request_interval = "30"
+    -  failure_threshold = "5"
+    -}
+    ```
   references:
-    - title: AWS Route53 pricing
+    - title: How Amazon Route 53 checks the health of your resources - Amazon Route 53
+      url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-health-checks.html
+    - title: Amazon Route 53 pricing - Amazon Web Services
       url: https://aws.amazon.com/route53/pricing/
     - title: 'Resource: aws_route53_health_check (Terraform)'
       url: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_health_check
