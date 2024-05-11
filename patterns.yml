@@ -81,7 +81,10 @@
 - name: Spot instances
   patternType: pattern
   description: Use spot instances to run interruptible workloads for significant cost savings compared to regular instances.
-  context: ""
+  context: |
+    Continuously running compute instances are also continuously billed.
+    Certain types of workloads which can handle interruption, e.g. batch jobs,
+    data analysis and optional tasks, do not require on-demand, provisioned instances.
   solution: |
     Major cloud providers offer excess compute capacity in the form of spot instances.
     These provide discounts over on-demand compute instances, with the caveat that instances
