@@ -143,7 +143,7 @@
     By configuring lifecycle rules, objects can be transitioned to
     cheaper storage classes or deleted after a certain amount of time.
   example: |
-    Transition objects under the "log/" prefix to the Glacier storage class, and expire after 90 days:
+    Transition objects under the "log/" prefix to the Glacier storage class after 60 days, and expire after 90 days:
     ```terraform
     resource "aws_s3_bucket_lifecycle_configuration" "bucket-config" {
       bucket = aws_s3_bucket.bucket.id
