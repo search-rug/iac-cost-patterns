@@ -375,6 +375,7 @@
     Switching to pay-per-request billing mode, reducing provisioned read/write capacity,
     and removing global secondary indices are ways to cost-optimize DynamoDB tables.
   example: |
+    Set billing mode to pay-per-request:
     ```terraform
     resource "aws_dynamodb_table" "example_table" {
       name         = "HighScores"
