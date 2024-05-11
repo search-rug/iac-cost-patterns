@@ -340,9 +340,23 @@
 - name: Overprovisioned resources
   patternType: anti-pattern
   description: Resources like RAM, storage and CPU utilization are often overprovisioned even when lower values are acceptable.
-  context: ""
-  solution: ""
-  example: ""
+  context: |
+    In a similar way to overprovisioned instances, it is difficult to estimate
+    required limits for resources such as root storage upfront, leading developers
+    to overprovision them, in turn raising costs.
+  solution: Evaluate the resource requirements and lower the relevant values.
+  example: |
+    Shrink the root storage size of an instance to reduce storage costs:
+    ```diff
+    @@ -2,6 +2,6 @@ resource "aws_instance" "example" {
+       # ...
+       
+       root_block_device {
+    -    volume_size = 20 # GB
+    +    volume_size = 15 # GB
+       }
+     }
+    ```
   references: []
   occurrences:
     - https://github.com/thomastodon/jabujabu/commit/02210a3d3ba4a770c29623825b7f54f3ff33f3c7
