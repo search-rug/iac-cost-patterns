@@ -274,10 +274,40 @@
 - name: Old generation
   patternType: anti-pattern
   description: On AWS, using newer instance generations and volume types gives similar performance for lower cost.
-  context: ""
-  solution: ""
-  example: ""
-  references: []
+  context: |
+    Cloud providers occasionally update their offerings to support, for example,
+    newer CPU generations. These newer generations are often more efficient, making
+    them a more economical option compared to older generations. While other cloud
+    providers tend to retire older products or even supersede entire families with
+    other ones, AWS keeps offering older generations, even when newer versions are cheaper.
+  solution: |
+    Upgrade resources to newer generations to attain comparable or better performance
+    for a lower price. The most commonly replaced resources include, but are not limited
+    to, t2 general-purpose compute instances and gp2 storage volumes.
+  example: |
+    Switch from gp2 to gp3 storage, providing comparable performance but lower cost:
+    ```diff
+    @@ -1,7 +1,7 @@
+     resource "aws_instance" "example" {
+       # ...
+       root_block_device {
+    -    volume_type = "gp2"
+    +    volume_type = "gp3"
+         # ...
+       }
+     }
+    ```
+  references:
+    - title: Amazon EBS volume types
+      url: https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html
+    - title: Migrate your Amazon EBS volumes from gp2 to gp3 and save up to 20% on costs
+      url: https://aws.amazon.com/blogs/storage/migrate-your-amazon-ebs-volumes-from-gp2-to-gp3-and-save-up-to-20-on-costs/
+    - title: Compute - EC2 Instance Types - AWS
+      url: https://aws.amazon.com/ec2/instance-types/
+    - title: Amazon EC2 T2 Instances - Amazon Web Services (AWS)
+      url: https://aws.amazon.com/ec2/instance-types/t2/
+    - title: Amazon EC2 T3 Instances - Amazon Web Services (AWS)
+      url: https://aws.amazon.com/ec2/instance-types/t3/
   occurrences:
     - https://github.com/gudlyf/TerraformOpenVPN/commit/be1245d8634025277ba79a4155ee88d7eaffcdfb
     - https://github.com/alphagov/govuk-aws/commit/6cfda6ada5137b232ff442ae9f2aedc8520ee1b4
