@@ -184,10 +184,42 @@
 - name: Expensive instance
   patternType: anti-pattern
   description: Compute instances are often overprovisioned even when a cheaper instance would suffice.
-  context: ""
-  solution: ""
-  example: ""
-  references: []
+  context: |
+    A recurring pattern in cloud deployments is that developers initially
+    choose compute instances which are overprovisioned, because it is
+    difficult to know the requirements upfront. This leads to situations
+    where developers deploy, for example on AWS, '2xlarge' instances, when
+    in fact 'large' or even 'medium' would suffice.
+  solution: |
+    Critically evaluate required performance levels and special functionality
+    (e.g. memory-optimized versus general-purpose instances), and scale down
+    the provisioned instance types where appropriate.
+  example: |
+    Downgrade to a cheaper general-purpose instance in the same family to save costs:
+    ```diff
+    @@ -1,5 +1,5 @@
+     resource "google_compute_instance" "example" {
+       name         = "example"
+    -  machine_type = "n1-standard-1"
+    +  machine_type = "g1-small"
+       # ...
+     }
+    ```
+  references:
+    - title: 'Resource: aws_instance (Terraform)'
+      url: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
+    - title: 'Resource: google_compute_instance (Terraform)'
+      url: https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_instance
+    - title: 'Resource: azurerm_linux_virtual_machine (Terraform)'
+      url: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_virtual_machine
+    - title: 'Resource: azurerm_windows_virtual_machine (Terraform)'
+      url: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/windows_virtual_machine
+    - title: Compute - EC2 Instance Types - AWS
+      url: https://aws.amazon.com/ec2/instance-types/
+    - title: Machine families resource and comparison guide | Compute Engine Documentation | Google Cloud
+      url: https://cloud.google.com/compute/docs/machine-resource
+    - title: Virtual Machine series | Microsoft Azure
+      url: https://azure.microsoft.com/en-us/pricing/details/virtual-machines/series/
   occurrences:
     - https://github.com/beaulabs/terraform_aws_ec2_instance/commit/d6df68da5ae58fb5c650c6be15d9d8e676a129db
     - https://github.com/gudlyf/TerraformOpenVPN/commit/4bc861c153b65a2d7c0d5f3fac30ab72b0fc6942
