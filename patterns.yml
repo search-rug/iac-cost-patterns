@@ -116,11 +116,11 @@
       url: https://azure.microsoft.com/en-us/products/virtual-machines/spot/
     - title: 'Resource: aws_spot_instance_request (Terraform)'
       url: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/spot_instance_request
-    - title: 'Resource: aws_spot_instance_request (Terraform)'
+    - title: 'Resource: aws_spot_fleet_request (Terraform)'
       url: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/spot_fleet_request
-    - title: 'Resource: google_compute_instance (Terraform)'
+    - title: 'Resource: google_compute_instance (Terraform) - Provisioning model'
       url: https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_instance#provisioning_model
-    - title: 'Resource: azurerm_linux_virtual_machine (Terraform)'
+    - title: 'Resource: azurerm_linux_virtual_machine (Terraform) - Priority'
       url: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_virtual_machine#priority
   occurrences:
     - https://github.com/openinfrastructure/terraform-google-gitlab-runner/commit/8429375df72b04cc6fedc1ebb5f2c2e4ba18b9f2
