@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anti-pattern: AWS - Expensive DynamoDB - IaC Cost Patterns</title>
+    <link rel="stylesheet" href="https://search-rug.gitlab.io/iac-cost-patterns/style.css?h=96c32b42161b5198cc11">
+</head>
+<body>
+    <header>
+        <div class="content-wrapper">
+            <h1><a href="https:&#x2F;&#x2F;search-rug.gitlab.io&#x2F;iac-cost-patterns&#x2F;">IaC Cost Patterns</a></h1>
+            <p>A collection of patterns and antipatterns for managing cost in IaC files.</p>
+            <ul>
+                <li><a href="https://github.com/search-rug/iac-cost-patterns/blob/main/patterns.yml">Dataset <span class="label">YAML</span></a></li>
+                <li><a href="https://github.com/search-rug/iac-cost-patterns">Repository</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="content-wrapper">
+            
+<p class="nav"><a href="https:&#x2F;&#x2F;search-rug.gitlab.io&#x2F;iac-cost-patterns&#x2F;">&leftarrow; Back to all patterns</a></p>
+<h1 id="anti-pattern-aws-expensive-dynamodb">Anti-pattern: AWS - Expensive DynamoDB</h1>
+<p>AWS DynamoDB tables often use features that carry cost but are not required,
+especially for infrequently accessed tables.</p>
+<h2 id="context">Context</h2>
+<p>DynamoDB tables might use provisioned billing mode, have high (&gt;1) read/write capacity,
+or use global secondary indices. These features carry additional cost and are not always
+required, especially for infrequently accessed tables.</p>
+<h2 id="solution">Solution</h2>
+<p>Switching to pay-per-request billing mode, reducing provisioned read/write capacity,
+and removing global secondary indices are ways to cost-optimize DynamoDB tables.</p>
+<h2 id="example">Example</h2>
+<p>Set billing mode to pay-per-request:</p>
+<pre data-lang="terraform" style="background-color:#2b303b;color:#c0c5ce;" class="language-terraform "><code class="language-terraform" data-lang="terraform"><span style="color:#b48ead;">resource </span><span>&quot;</span><span style="color:#a3be8c;">aws_dynamodb_table</span><span>&quot; &quot;</span><span style="color:#a3be8c;">example_table</span><span>&quot; {
+</span><span>  </span><span style="color:#bf616a;">name         </span><span>= &quot;</span><span style="color:#a3be8c;">HighScores</span><span>&quot;
+</span><span>  </span><span style="color:#bf616a;">billing_mode </span><span>= &quot;</span><span style="color:#a3be8c;">PAY_PER_REQUEST</span><span>&quot;
+</span><span>
+</span><span>  attribute {
+</span><span>    </span><span style="color:#bf616a;">name </span><span>= &quot;</span><span style="color:#a3be8c;">UserID</span><span>&quot;
+</span><span>    </span><span style="color:#bf616a;">type </span><span>= &quot;</span><span style="color:#a3be8c;">S</span><span>&quot;
+</span><span>  }
+</span><span>
+</span><span>  attribute {
+</span><span>    </span><span style="color:#bf616a;">name </span><span>= &quot;</span><span style="color:#a3be8c;">Score</span><span>&quot;
+</span><span>    </span><span style="color:#bf616a;">type </span><span>= &quot;</span><span style="color:#a3be8c;">N</span><span>&quot;
+</span><span>  }
+</span><span>}
+</span></code></pre>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/dynamodb_table">Resource: aws_dynamodb_table (Terraform)</a></li>
+<li><a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/capacity-mode.html">DynamoDB throughput capacity - Amazon DynamoDB</a></li>
+<li><a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/provisioned-capacity-mode.html">Using Global Secondary Indexes in DynamoDB - Amazon DynamoDB</a></li>
+<li><a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GSI.html">Provisioned capacity mode - Amazon DynamoDB</a></li>
+</ul>
+<h2 id="occurrences">Occurrences</h2>
+<ul>
+<li><a href="https://github.com/deptno/terraform-aws-modules/commit/49f447bdbb3cf23499e8194e78f852ea1e256d3a">https://github.com/deptno/terraform-aws-modules/commit/49f447bdbb3cf23499e8194e78f852ea1e256d3a</a></li>
+<li><a href="https://github.com/ONSdigital/eq-terraform-dynamodb/commit/40eb651a50d0dfd5cf047ef62c8a6259c1c66e02">https://github.com/ONSdigital/eq-terraform-dynamodb/commit/40eb651a50d0dfd5cf047ef62c8a6259c1c66e02</a></li>
+<li><a href="https://github.com/olliefr/aws-terraform-cloud1/commit/bf753832a519b0649f8d58d93aa643afe3f94fc7">https://github.com/olliefr/aws-terraform-cloud1/commit/bf753832a519b0649f8d58d93aa643afe3f94fc7</a></li>
+<li><a href="https://github.com/garylb2/terraform-example-patterns/commit/6de6d83d930bd9459e1cf8c311fa7b45c3f90987">https://github.com/garylb2/terraform-example-patterns/commit/6de6d83d930bd9459e1cf8c311fa7b45c3f90987</a></li>
+<li><a href="https://github.com/Arkoprabho/TerraformTutorial/commit/ba317d7e402f014589e230fad8c7384016211ba2">https://github.com/Arkoprabho/TerraformTutorial/commit/ba317d7e402f014589e230fad8c7384016211ba2</a></li>
+<li><a href="https://github.com/jkstenzel95/jks.gameservers/commit/411ab992ba07e698cb08b56eb4cfc9d6e001d43f">https://github.com/jkstenzel95/jks.gameservers/commit/411ab992ba07e698cb08b56eb4cfc9d6e001d43f</a></li>
+<li><a href="https://github.com/techservicesillinois/aws-enterprise-vpc/commit/0d21bea79e1936e2bdaee58bd6e328dd08e59b30">https://github.com/techservicesillinois/aws-enterprise-vpc/commit/0d21bea79e1936e2bdaee58bd6e328dd08e59b30</a></li>
+<li><a href="https://github.com/austin1237/gifbot/commit/c11dabf1ea02c0e044c62448986bb3f9abdf3967">https://github.com/austin1237/gifbot/commit/c11dabf1ea02c0e044c62448986bb3f9abdf3967</a></li>
+<li><a href="https://github.com/servers-tf/infrastructure/commit/cc9e50a3864511f9fb9f871293e6a6e7e2719d2c">https://github.com/servers-tf/infrastructure/commit/cc9e50a3864511f9fb9f871293e6a6e7e2719d2c</a></li>
+<li><a href="https://github.com/jsoconno/aws-terraform-remote-state-infrastructure/commit/fed8be2748bc2286a6f9888d282d66763ba612ed">https://github.com/jsoconno/aws-terraform-remote-state-infrastructure/commit/fed8be2748bc2286a6f9888d282d66763ba612ed</a></li>
+<li><a href="https://github.com/ONSdigital/eq-terraform/commit/6eaf697bf9f111214a6d74ee3094e5784a57d1bb">https://github.com/ONSdigital/eq-terraform/commit/6eaf697bf9f111214a6d74ee3094e5784a57d1bb</a></li>
+<li><a href="https://github.com/nikkiwritescode/flask-app-terraform-deployment/commit/af47bb6201f1dcc8264e60da429e4ff8d126e56c">https://github.com/nikkiwritescode/flask-app-terraform-deployment/commit/af47bb6201f1dcc8264e60da429e4ff8d126e56c</a></li>
+<li><a href="https://github.com/kperson/terraform-modules/commit/53bd2d84776f9ed7ae287fc59ed42f87bd7bbc4b">https://github.com/kperson/terraform-modules/commit/53bd2d84776f9ed7ae287fc59ed42f87bd7bbc4b</a></li>
+<li><a href="https://github.com/kody-abe/terraform/commit/169c7768b0b1584945362c035a2b227d2f579466">https://github.com/kody-abe/terraform/commit/169c7768b0b1584945362c035a2b227d2f579466</a></li>
+<li><a href="https://github.com/jenkins-x/terraform-aws-eks-jx/commit/cce6b14692fccd30c027851607a9526151d4c3d2">https://github.com/jenkins-x/terraform-aws-eks-jx/commit/cce6b14692fccd30c027851607a9526151d4c3d2</a></li>
+<li><a href="https://github.com/telia-oss/terraform-aws-terraform-init/commit/e8c7b2eb22d08ddd1a1bb375cb6efa4165c9098f">https://github.com/telia-oss/terraform-aws-terraform-init/commit/e8c7b2eb22d08ddd1a1bb375cb6efa4165c9098f</a></li>
+<li><a href="https://github.com/trajano/terraform-s3-backend/commit/f4b61c7bedae856439f01499de1ec9050b4c40fc">https://github.com/trajano/terraform-s3-backend/commit/f4b61c7bedae856439f01499de1ec9050b4c40fc</a></li>
+<li><a href="https://github.com/poldi2015/chat-app/commit/cb45bf17da799afaa789206e3fcd39d9403e0567">https://github.com/poldi2015/chat-app/commit/cb45bf17da799afaa789206e3fcd39d9403e0567</a></li>
+<li><a href="https://github.com/tesera/terraform-modules/commit/3cd4d7b55ac2003153fd0670151ab395ae182431">https://github.com/tesera/terraform-modules/commit/3cd4d7b55ac2003153fd0670151ab395ae182431</a></li>
+<li><a href="https://github.com/MichaelDeCorte/TerraForm/commit/3799ee8b9677d02254eb6d6f50f3732df4c8374e">https://github.com/MichaelDeCorte/TerraForm/commit/3799ee8b9677d02254eb6d6f50f3732df4c8374e</a></li>
+<li><a href="https://github.com/TalkingFox/SignalWs/commit/935d9d683608b4d8a97ef6ccc2c8ab7c14eec0d0">https://github.com/TalkingFox/SignalWs/commit/935d9d683608b4d8a97ef6ccc2c8ab7c14eec0d0</a></li>
+<li><a href="https://github.com/codequest-eu/terraform-modules/commit/ffe23d4c2cd78035bef0dfb261701e7ed8dd588d">https://github.com/codequest-eu/terraform-modules/commit/ffe23d4c2cd78035bef0dfb261701e7ed8dd588d</a></li>
+<li><a href="https://github.com/dgorbov/terraform-s3-backend-setup/commit/81f82740760a357a86b3a77f9ed400624edcb218">https://github.com/dgorbov/terraform-s3-backend-setup/commit/81f82740760a357a86b3a77f9ed400624edcb218</a></li>
+<li><a href="https://github.com/sbogacz/terraform-aws-state-backend/commit/174486319f3b956807d56e5433880f9978884f93">https://github.com/sbogacz/terraform-aws-state-backend/commit/174486319f3b956807d56e5433880f9978884f93</a></li>
+<li><a href="https://github.com/giuseppeborgese/terraform-locking-s3-state/commit/6b4e59e8b844417dc5c247bdef1b0adb8e2e7028">https://github.com/giuseppeborgese/terraform-locking-s3-state/commit/6b4e59e8b844417dc5c247bdef1b0adb8e2e7028</a></li>
+</ul>
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="content-wrapper">
+            <p>
+                &copy; 2024
+                <a href="https://koen.bolhu.is">Koen Bolhuis</a>,
+                <a href="https://feitosa-daniel.github.io">Daniel Feitosa</a>,
+                <a href="https://vandriko.github.io">Vasilios Andrikopoulos</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

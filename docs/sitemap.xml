@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://search-rug.gitlab.io/iac-cost-patterns/</loc>
+    </url>
+    <url>
+        <loc>https://search-rug.gitlab.io/iac-cost-patterns/aws-expensive-dynamodb/</loc>
+    </url>
+    <url>
+        <loc>https://search-rug.gitlab.io/iac-cost-patterns/budget/</loc>
+    </url>
+    <url>
+        <loc>https://search-rug.gitlab.io/iac-cost-patterns/expensive-instance/</loc>
+    </url>
+    <url>
+        <loc>https://search-rug.gitlab.io/iac-cost-patterns/expensive-monitoring/</loc>
+    </url>
+    <url>
+        <loc>https://search-rug.gitlab.io/iac-cost-patterns/expensive-network-resource/</loc>
+    </url>
+    <url>
+        <loc>https://search-rug.gitlab.io/iac-cost-patterns/expensive-storage-type/</loc>
+    </url>
+    <url>
+        <loc>https://search-rug.gitlab.io/iac-cost-patterns/object-storage-lifecycle-rules/</loc>
+    </url>
+    <url>
+        <loc>https://search-rug.gitlab.io/iac-cost-patterns/old-generation/</loc>
+    </url>
+    <url>
+        <loc>https://search-rug.gitlab.io/iac-cost-patterns/overprovisioned-resources/</loc>
+    </url>
+    <url>
+        <loc>https://search-rug.gitlab.io/iac-cost-patterns/spot-instances/</loc>
+    </url>
+</urlset>
