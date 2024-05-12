@@ -346,10 +346,36 @@
 - name: Expensive network resource
   patternType: anti-pattern
   description: Network resources like NAT gateways, elastic IP addresses and subnets tend to be expensive while not being strictly needed.
-  context: ""
-  solution: ""
-  example: ""
-  references: []
+  context: |
+    Due to their interdependence, the cost of certain types of networking resources
+    often adds up. For example, a developer may create multiple subnets, each having
+    its own NAT gateway, each of which in turn is assigned an IPv4 address. In other
+    cases, network resources are used which are not strictly required, e.g. load balancers.
+  solution: |
+    It is often possible to forego the use of the expensive resources entirely.
+    Solutions include subnets sharing a single NAT gateway, reducing the number of
+    subnets or removing the use of load balancers.
+  example: |
+    Remove resources that are not strictly required, or reduce the number of networking resources.
+    For example, the commonly used module terraform-aws-modules/vpc has an option to use a single
+    NAT gateway instead of creating one per subnet:
+    ```terraform
+    module "vpc" {
+      source = "terraform-aws-modules/vpc"
+
+      # ...
+
+      enable_nat_gateway = true
+      single_nat_gateway = true
+
+      # ...
+    }
+    ```
+  references:
+    - title: AWS VPC Terraform module
+      url: https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest
+    - title: Logically Isolated Virtual Network - Amazon VPC Pricing - Amazon Web Services
+      url: https://aws.amazon.com/vpc/pricing/
   occurrences:
     - https://github.com/stealthHat/k8s-terraform/commit/681a3f8b4942be495b3f2528fb9ee40d7a4eb08a
     - https://github.com/thomastodon/jabujabu/commit/02210a3d3ba4a770c29623825b7f54f3ff33f3c7
