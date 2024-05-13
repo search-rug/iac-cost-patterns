@@ -2,8 +2,7 @@
   patternType: pattern
   description: Use budgets to receive alerts about charged and forecasted costs and control spending.
   context: |
-    Part of managing cloud cost is knowing where this cost is coming from.
-    Cloud providers offer solutions to monitor costs, which can be enabled using IaC.
+    The lack of explicit cost monitoring can often lead to unforeseen and undesirable costs.
   solution: |
     Major cloud providers support the creation of budgets, which allow users to define alerts
     about charged and forecasted costs and control spending. Having one or more budgets can
