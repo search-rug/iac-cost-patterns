@@ -535,14 +535,13 @@
     - https://github.com/dgorbov/terraform-s3-backend-setup/commit/81f82740760a357a86b3a77f9ed400624edcb218
     - https://github.com/sbogacz/terraform-aws-state-backend/commit/174486319f3b956807d56e5433880f9978884f93
     - https://github.com/giuseppeborgese/terraform-locking-s3-state/commit/6b4e59e8b844417dc5c247bdef1b0adb8e2e7028
-- name: Expensive Route 53 health check
+- name: Expensive DNS metric monitoring
   patternType: anti-pattern
-  description: AWS Route 53 health checks cost money and might not be needed.
+  description: DNS monitoring solutions are expensive and might not be needed.
   context: |
-    As part of its Route 53 service, AWS offers health checks that allow
-    users to monitor the status of their endpoints. However, there is a
-    flat fee per health check which may add up quickly.
-  solution: Removing Route53 health checks for noncritical endpoints is an effective way to save cost.
+    Cloud providers offer ways to monitor the health of DNS and application endpoints.
+    However, there is a flat fee per health check, which may add up quickly.
+  solution: Removing health checks for noncritical endpoints is an effective way to save cost.
   example: |
     Remove a Route 53 health check for a private Plex instance to save costs:
     ```diff
@@ -555,12 +554,22 @@
     -}
     ```
   references:
+    - title: 'Resource: aws_route53_health_check (Terraform)'
+      url: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_health_check
+    - title: 'Resource: google_monitoring_alert_policy (Terraform)'
+      url: https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/monitoring_alert_policy
+    - title: 'Resource: google_monitoring_uptime_check_config (Terraform)'
+      url: https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/monitoring_uptime_check_config
+    - title: 'Resource: azurerm_monitor_metric_alert (Terraform)'
+      url: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/monitor_metric_alert
     - title: How Amazon Route 53 checks the health of your resources - Amazon Route 53
       url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-health-checks.html
     - title: Amazon Route 53 pricing - Amazon Web Services
       url: https://aws.amazon.com/route53/pricing/
-    - title: 'Resource: aws_route53_health_check (Terraform)'
-      url: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_health_check
+    - title: Google Cloud Observability pricing
+      url: https://cloud.google.com/stackdriver/pricing#monitoring-pricing-summary
+    - title: Azure DNS metrics and alerts
+      url: https://learn.microsoft.com/en-us/azure/dns/dns-alerts-metrics
   occurrences:
     - https://github.com/tdooner/flynn/commit/a9ea9d09727825f9a047e70d94caf73c99e6b2a8
     - https://github.com/elliotpryde/personal-infrastructure/commit/772c5ad20818738b09d01cd70ca3de80cbf66dcb
