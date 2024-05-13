@@ -134,15 +134,15 @@
     - https://github.com/JaredStufftGD/grok-airflow/commit/7ac9544b0c651fd8193eb063079514d0aa41e290
     - https://github.com/kaz/kiritan.com/commit/1cd96c7f71e56629ffa07c38e12c4da19fcfc5f7
     - https://github.com/openinfrastructure/terraform-google-multinic/commit/7a9c468b88d2edee19007cff6529a20a38eeb363
-- name: S3 lifecycle rules
+- name: Object storage lifecycle rules
   patternType: pattern
-  description: Define lifecycle rules for AWS S3 buckets to move objects to cheaper storage or drop them entirely.
+  description: Define lifecycle rules for object storage to move objects to cheaper storage or drop them entirely.
   context: |
-    By default, objects stored in AWS Simple Storage Service (S3) are retained,
-    and therefore billed, indefinitely. Objects also have a storage class,
+    By default, objects stored in cloud object storage are retained,
+    and therefore billed, indefinitely. Objects also have a storage class or access tier,
     which can be used to balance access performance and cost depending on the use case.
   solution: |
-    By configuring lifecycle rules, objects can be transitioned to
+    By configuring lifecycle rules or policies, objects can be transitioned to
     cheaper storage classes or deleted after a certain amount of time.
   example: |
     Transition objects under the "log/" prefix to the Glacier storage class after 60 days, and expire after 90 days:
@@ -173,6 +173,10 @@
   references:
     - title: 'Resource: aws_s3_bucket_lifecycle_configuration'
       url: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_lifecycle_configuration
+    - title: 'Resource: google_storage_bucket (Terraform) - Life cycle settings'
+      url: https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/storage_bucket#example-usage---life-cycle-settings-for-storage-bucket-objects
+    - title: 'Resource: azurerm_storage_management_policy (Terraform)'
+      url: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_management_policy
   occurrences:
     - https://github.com/alphagov/govuk-aws/commit/f844cd8e254b161bebef04101f8ce177bcd0840c
     - https://github.com/alphagov/govuk-terraform-provisioning/commit/ac105ab0a5ae38fbf69167e072f8970a4a61c3e8
