@@ -276,17 +276,15 @@
     - https://github.com/robertdebock/git-terraform-demo/commit/686374095321975d851932a77b139d627f50c7d5
 - name: Old generation
   patternType: anti-pattern
-  description: On AWS, using newer instance generations and volume types gives similar performance for lower cost.
+  description: Using newer resource generations gives similar performance for lower cost.
   context: |
     Cloud providers occasionally update their offerings to support, for example,
     newer CPU generations. These newer generations are often more efficient, making
-    them a more economical option compared to older generations. While other cloud
-    providers tend to retire older products or even supersede entire families with
-    other ones, AWS keeps offering older generations, even when newer versions are cheaper.
+    them a more economical option compared to older generations.
   solution: |
     Upgrade resources to newer generations to attain comparable or better performance
     for a lower price. The most commonly replaced resources include, but are not limited
-    to, t2 general-purpose compute instances and gp2 storage volumes.
+    to, AWS's t2 general-purpose compute instances and gp2 storage volumes.
   example: |
     Switch from gp2 to gp3 storage, providing comparable performance but lower cost:
     ```diff
