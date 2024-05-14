@@ -426,6 +426,10 @@
       url: https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest
     - title: Logically Isolated Virtual Network - Amazon VPC Pricing - Amazon Web Services
       url: https://aws.amazon.com/vpc/pricing/
+    - title: Pricing | Cloud NAT | Google Cloud
+      url: https://cloud.google.com/nat/pricing
+    - title: All networking pricing | Virtual Private Cloud | Google Cloud
+      url: https://cloud.google.com/vpc/network-pricing#lb
   occurrences:
     - https://github.com/stealthHat/k8s-terraform/commit/681a3f8b4942be495b3f2528fb9ee40d7a4eb08a
     - https://github.com/thomastodon/jabujabu/commit/02210a3d3ba4a770c29623825b7f54f3ff33f3c7
@@ -604,8 +608,8 @@
   references:
     - title: 'Resource: aws_route53_health_check (Terraform)'
       url: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_health_check
-    - title: How Amazon Route 53 checks the health of your resources - Amazon Route 53
-      url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-health-checks.html
+    - title: CloudWatch billing and cost - Amazon CloudWatch
+      url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_billing.html
     - title: Amazon Route 53 pricing - Amazon Web Services
       url: https://aws.amazon.com/route53/pricing/
     - title: Google Cloud Observability pricing
