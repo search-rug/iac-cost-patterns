@@ -11,13 +11,11 @@
     Define a budget for a cost limit of 1200 USD for EC2, and generate an
     email notification if the forecasted monthly cost exceeds this amount:
     ```terraform
-    resource "aws_budgets_budget" "ec2" {
-      name              = "budget-ec2-monthly"
+    resource "aws_budgets_budget" "example" {
+      name              = "example"
       budget_type       = "COST"
       limit_amount      = "1200"
       limit_unit        = "USD"
-      time_period_end   = "2087-06-15_00:00"
-      time_period_start = "2017-07-01_00:00"
       time_unit         = "MONTHLY"
 
       cost_filter {
@@ -97,12 +95,12 @@
     worker at a price of 0.03 USD:
     ```terraform
     resource "aws_spot_instance_request" "cheap_worker" {
-      ami           = "ami-1234"
+      # ...
       spot_price    = "0.03"
       instance_type = "c4.xlarge"
 
       tags = {
-        Name = "CheapWorker"
+        Name = "Worker"
       }
     }
     ```
@@ -147,7 +145,7 @@
   example: |
     Transition objects under the "log/" prefix to the Glacier storage class after 60 days, and expire after 90 days:
     ```terraform
-    resource "aws_s3_bucket_lifecycle_configuration" "bucket-config" {
+    resource "aws_s3_bucket_lifecycle_configuration" "example" {
       bucket = aws_s3_bucket.bucket.id
 
       rule {
