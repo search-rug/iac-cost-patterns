@@ -468,7 +468,7 @@
     - https://github.com/roysjosh/terraform-unifi/commit/da9e2869456610a0228cb14f850c6eccddbb15e0
     - https://github.com/phillhocking/aws-ubuntu-irssi/commit/1532e0c298ec4f8d7d749a884f7c46f2a2cf53d3
     - https://github.com/ministryofjustice/cloud-platform-terraform-monitoring/commit/87401ba23af26d379d8132cc09fd7cd212773ba1
-- name: Expensive DynamoDB
+- name: AWS - Expensive DynamoDB
   patternType: anti-pattern
   description: |
     AWS DynamoDB tables often use features that carry cost but are not required,
