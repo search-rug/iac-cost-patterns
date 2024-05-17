@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: https://search-rug.gitlab.io/iac-cost-patterns/sitemap.xml
+Sitemap: https://search-rug.github.io/iac-cost-patterns/sitemap.xml
