@@ -1,5 +1,5 @@
-$purple: rgb(124, 0, 182);
-$purplegray: rgb(179, 136, 199);
+$primary: #cb2026;
+$secondary: #cf8184;
 
 html, body {
     margin: 0;
@@ -31,7 +31,7 @@ pre {
 }
 
 header {
-    background-color: $purple;
+    background-color: $primary;
     color: white;
 
     a {
@@ -45,7 +45,7 @@ footer {
     color: black;
 
     a {
-        color: $purple;
+        color: $primary;
         text-decoration: none;
     }
 
@@ -61,7 +61,7 @@ footer {
 }
 
 .pattern {
-    border: 1px solid $purplegray;
+    border: 1px solid $secondary;
     border-radius: 5px;
 
     a, a:hover {
@@ -72,7 +72,7 @@ footer {
         border-radius: 5px;
 
         &:hover {
-            background-color: lighten($purplegray, 25%);
+            background-color: lighten($secondary, 25%);
         }
     }
 
@@ -87,7 +87,7 @@ footer {
         }
 
         .pattern-count {
-            color: $purplegray;
+            color: $secondary;
         }
     }
 }
@@ -101,9 +101,9 @@ ul li {
 }
 
 a {
-    color: $purple;
+    color: $primary;
 }
 
 a:hover {
-    color: $purplegray;
+    color: $secondary;
 }
