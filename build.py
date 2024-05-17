@@ -1,6 +1,6 @@
 import yaml
 
-with open('../patterns.yml', 'r') as f:
+with open('patterns.yml', 'r') as f:
     patterns = yaml.safe_load(f)
 
 for i, p in enumerate(patterns):
