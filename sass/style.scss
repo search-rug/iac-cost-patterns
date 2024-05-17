@@ -1,0 +1,109 @@
+$purple: rgb(124, 0, 182);
+$purplegray: rgb(179, 136, 199);
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 150%;
+}
+
+pre {
+    padding: 1rem;
+    overflow: auto;
+}
+
+.label {
+    padding: 3px 6px;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: white;
+    border-radius: 4px;
+    font-size: 80%;
+}
+
+.content-wrapper {
+    margin-inline: auto;
+    padding: 3em 1em;
+    max-width: 120ch;
+}
+
+header {
+    background-color: $purple;
+    color: white;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+footer {
+    background-color: lightgray;
+    color: black;
+
+    a {
+        color: $purple;
+        text-decoration: none;
+    }
+
+    .content-wrapper {
+        padding-block: 1em;
+    }
+}
+
+#patterns {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.pattern {
+    border: 1px solid $purplegray;
+    border-radius: 5px;
+
+    a, a:hover {
+        display: block;
+        color: black;
+        text-decoration: none;
+        padding: 1em;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: lighten($purplegray, 25%);
+        }
+    }
+
+    .pattern-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        h2, p {
+            margin: 0;
+        }
+
+        .pattern-count {
+            color: $purplegray;
+        }
+    }
+}
+
+.nav {
+    padding-bottom: 1em;
+}
+
+ul li {
+    margin-block: 0.25em;
+}
+
+a {
+    color: $purple;
+}
+
+a:hover {
+    color: $purplegray;
+}

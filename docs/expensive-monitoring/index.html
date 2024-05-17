@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anti-pattern: Expensive monitoring - IaC Cost Patterns</title>
+    <link rel="stylesheet" href="https://search-rug.gitlab.io/iac-cost-patterns/style.css?h=96c32b42161b5198cc11">
+</head>
+<body>
+    <header>
+        <div class="content-wrapper">
+            <h1><a href="https:&#x2F;&#x2F;search-rug.gitlab.io&#x2F;iac-cost-patterns&#x2F;">IaC Cost Patterns</a></h1>
+            <p>A collection of patterns and antipatterns for managing cost in IaC files.</p>
+            <ul>
+                <li><a href="https://github.com/search-rug/iac-cost-patterns/blob/main/patterns.yml">Dataset <span class="label">YAML</span></a></li>
+                <li><a href="https://github.com/search-rug/iac-cost-patterns">Repository</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="content-wrapper">
+            
+<p class="nav"><a href="https:&#x2F;&#x2F;search-rug.gitlab.io&#x2F;iac-cost-patterns&#x2F;">&leftarrow; Back to all patterns</a></p>
+<h1 id="anti-pattern-expensive-monitoring">Anti-pattern: Expensive monitoring</h1>
+<p>Monitoring solutions are expensive and might not be needed.</p>
+<h2 id="context">Context</h2>
+<p>Cloud providers offer ways to monitor deployed infrastructure and
+collect metrics and logs. These solutions add cost for e.g. health checks
+and log storage, and the benefits may not outweigh this cost.</p>
+<h2 id="solution">Solution</h2>
+<p>Removing monitoring or logs for noncritical infrastructure is an effective way to save cost.</p>
+<h2 id="example">Example</h2>
+<p>Remove a Route 53 health check for a private Plex instance to save costs:</p>
+<pre data-lang="diff" style="background-color:#2b303b;color:#c0c5ce;" class="language-diff "><code class="language-diff" data-lang="diff"><span>@@ -1,6 +0,0 @@
+</span><span style="color:#bf616a;">-resource &quot;aws_route53_health_check&quot; &quot;example&quot; {
+</span><span style="color:#bf616a;">-  fqdn = &quot;plex.example.com&quot;
+</span><span style="color:#bf616a;">-  port = 443
+</span><span style="color:#bf616a;">-  request_interval = &quot;30&quot;
+</span><span style="color:#bf616a;">-  failure_threshold = &quot;5&quot;
+</span><span style="color:#bf616a;">-}
+</span></code></pre>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_health_check">Resource: aws_route53_health_check (Terraform)</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_billing.html">CloudWatch billing and cost - Amazon CloudWatch</a></li>
+<li><a href="https://aws.amazon.com/route53/pricing/">Amazon Route 53 pricing - Amazon Web Services</a></li>
+<li><a href="https://cloud.google.com/stackdriver/pricing#monitoring-pricing-summary">Google Cloud Observability pricing</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/best-practices-cost">Cost Optimization in Azure Monitor</a></li>
+</ul>
+<h2 id="occurrences">Occurrences</h2>
+<ul>
+<li><a href="https://github.com/Eximchain/terraform-aws-quorum-cluster/commit/6a56f400f7de3f4d5cef646d92e3f848608031c1">https://github.com/Eximchain/terraform-aws-quorum-cluster/commit/6a56f400f7de3f4d5cef646d92e3f848608031c1</a></li>
+<li><a href="https://github.com/Accurate0/infrastructure/commit/06889e08148d258f329118d43734f8c8dcff994e">https://github.com/Accurate0/infrastructure/commit/06889e08148d258f329118d43734f8c8dcff994e</a></li>
+<li><a href="https://github.com/cloudspout/Gefjun/commit/665692a86bb65ddfa6c001f296c76c17288e2944">https://github.com/cloudspout/Gefjun/commit/665692a86bb65ddfa6c001f296c76c17288e2944</a></li>
+<li><a href="https://github.com/terraform-google-modules/terraform-example-foundation/commit/8391f1bd4322fec04fda7509b537c5f66cddbbd9">https://github.com/terraform-google-modules/terraform-example-foundation/commit/8391f1bd4322fec04fda7509b537c5f66cddbbd9</a></li>
+<li><a href="https://github.com/tdooner/flynn/commit/a9ea9d09727825f9a047e70d94caf73c99e6b2a8">https://github.com/tdooner/flynn/commit/a9ea9d09727825f9a047e70d94caf73c99e6b2a8</a></li>
+<li><a href="https://github.com/elliotpryde/personal-infrastructure/commit/772c5ad20818738b09d01cd70ca3de80cbf66dcb">https://github.com/elliotpryde/personal-infrastructure/commit/772c5ad20818738b09d01cd70ca3de80cbf66dcb</a></li>
+<li><a href="https://github.com/elliotpryde/personal-infrastructure/commit/7c4205cd130c5463d7f39aa6f281e198c143d0d9">https://github.com/elliotpryde/personal-infrastructure/commit/7c4205cd130c5463d7f39aa6f281e198c143d0d9</a></li>
+<li><a href="https://github.com/alghanmi/terraform-modules/commit/570d3d8440ed399ed8b30bffe1fd7a2adc197771">https://github.com/alghanmi/terraform-modules/commit/570d3d8440ed399ed8b30bffe1fd7a2adc197771</a></li>
+<li><a href="https://github.com/thoughtbot/flightdeck/commit/c784bc0a3f747b66ab7cd01f23bbbdbad3bfe705">https://github.com/thoughtbot/flightdeck/commit/c784bc0a3f747b66ab7cd01f23bbbdbad3bfe705</a></li>
+<li><a href="https://github.com/chapas/tf-az-kubernetes/commit/bcc6e190b8f8a12b590089fb755c4f552f179ad0">https://github.com/chapas/tf-az-kubernetes/commit/bcc6e190b8f8a12b590089fb755c4f552f179ad0</a></li>
+</ul>
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="content-wrapper">
+            <p>
+                &copy; 2024
+                <a href="https://koen.bolhu.is">Koen Bolhuis</a>,
+                <a href="https://feitosa-daniel.github.io">Daniel Feitosa</a>,
+                <a href="https://vandriko.github.io">Vasilios Andrikopoulos</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{% extends "index.html" %}
+
+{% block content %}
+<p class="nav"><a href="{{ config.base_url }}">&leftarrow; Back to all patterns</a></p>
+{{ page.content | markdown(inline=true) | safe }}
+{% endblock content %}

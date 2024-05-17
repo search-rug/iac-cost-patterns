@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anti-pattern: Overprovisioned resources - IaC Cost Patterns</title>
+    <link rel="stylesheet" href="https://search-rug.gitlab.io/iac-cost-patterns/style.css?h=96c32b42161b5198cc11">
+</head>
+<body>
+    <header>
+        <div class="content-wrapper">
+            <h1><a href="https:&#x2F;&#x2F;search-rug.gitlab.io&#x2F;iac-cost-patterns&#x2F;">IaC Cost Patterns</a></h1>
+            <p>A collection of patterns and antipatterns for managing cost in IaC files.</p>
+            <ul>
+                <li><a href="https://github.com/search-rug/iac-cost-patterns/blob/main/patterns.yml">Dataset <span class="label">YAML</span></a></li>
+                <li><a href="https://github.com/search-rug/iac-cost-patterns">Repository</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="content-wrapper">
+            
+<p class="nav"><a href="https:&#x2F;&#x2F;search-rug.gitlab.io&#x2F;iac-cost-patterns&#x2F;">&leftarrow; Back to all patterns</a></p>
+<h1 id="anti-pattern-overprovisioned-resources">Anti-pattern: Overprovisioned resources</h1>
+<p>Resources like RAM, storage and CPU utilization are often overprovisioned even when lower values are acceptable.</p>
+<h2 id="context">Context</h2>
+<p>In a similar way to overprovisioned instances, it is difficult to estimate
+required limits for resources such as root storage upfront, leading developers
+to overprovision them, in turn raising costs.</p>
+<h2 id="solution">Solution</h2>
+<p>Evaluate the resource requirements and lower the relevant values.</p>
+<h2 id="example">Example</h2>
+<p>Shrink the root storage size of an instance to reduce storage costs:</p>
+<pre data-lang="diff" style="background-color:#2b303b;color:#c0c5ce;" class="language-diff "><code class="language-diff" data-lang="diff"><span>@@ -2,6 +2,6 @@ </span><span style="color:#8fa1b3;">resource &quot;aws_instance&quot; &quot;example&quot; {
+</span><span>   # ...
+</span><span>   
+</span><span>   root_block_device {
+</span><span style="color:#bf616a;">-    volume_size = 20 # GB
+</span><span style="color:#a3be8c;">+    volume_size = 15 # GB
+</span><span>   }
+</span><span> }
+</span></code></pre>
+<h2 id="references">References</h2>
+<h2 id="occurrences">Occurrences</h2>
+<ul>
+<li><a href="https://github.com/thomastodon/jabujabu/commit/02210a3d3ba4a770c29623825b7f54f3ff33f3c7">https://github.com/thomastodon/jabujabu/commit/02210a3d3ba4a770c29623825b7f54f3ff33f3c7</a></li>
+<li><a href="https://github.com/guilhermerenew/infra-cost/commit/ba858d94e29d03e3e81533df8cd8bc85b9f176f1">https://github.com/guilhermerenew/infra-cost/commit/ba858d94e29d03e3e81533df8cd8bc85b9f176f1</a></li>
+<li><a href="https://github.com/chaspy/terraform-alibaba-isucon8/commit/53588dad5dd4c13903a6c582f74e1afe2671d33e">https://github.com/chaspy/terraform-alibaba-isucon8/commit/53588dad5dd4c13903a6c582f74e1afe2671d33e</a></li>
+<li><a href="https://github.com/dwp/dataworks-aws-data-egress/commit/14f065e5161fee14c286c34df7db9f5516ef9bb6">https://github.com/dwp/dataworks-aws-data-egress/commit/14f065e5161fee14c286c34df7db9f5516ef9bb6</a></li>
+<li><a href="https://github.com/akaron/kubeadm_aws/commit/2e2092ec94b27a4c3f0b9f4ee4d46a1983a72518">https://github.com/akaron/kubeadm_aws/commit/2e2092ec94b27a4c3f0b9f4ee4d46a1983a72518</a></li>
+<li><a href="https://github.com/robertdebock/terraform-azurerm-container-group/commit/c0d6578f1ebbdcc9cab091017259e4d596bfe8c9">https://github.com/robertdebock/terraform-azurerm-container-group/commit/c0d6578f1ebbdcc9cab091017259e4d596bfe8c9</a></li>
+<li><a href="https://github.com/fdns/terraform-k8s/commit/f106917bb7b2d8d4428022bb119585bf9f35769c">https://github.com/fdns/terraform-k8s/commit/f106917bb7b2d8d4428022bb119585bf9f35769c</a></li>
+<li><a href="https://github.com/jackofallops/terraform-aws-mysql-cluster/commit/7b2a446b0915a3ad26093f8234f7493ff152138a">https://github.com/jackofallops/terraform-aws-mysql-cluster/commit/7b2a446b0915a3ad26093f8234f7493ff152138a</a></li>
+<li><a href="https://github.com/alphagov/govwifi-terraform/commit/38d0a67cf70d46c26675ce60a7a647eef0f11e52">https://github.com/alphagov/govwifi-terraform/commit/38d0a67cf70d46c26675ce60a7a647eef0f11e52</a></li>
+<li><a href="https://github.com/pangeo-data/terraform-deploy/commit/f8163bd52bea3774e2f160cff0523c602e65d933">https://github.com/pangeo-data/terraform-deploy/commit/f8163bd52bea3774e2f160cff0523c602e65d933</a></li>
+<li><a href="https://github.com/eduardobaitello/terraform-eks/commit/c11fca6440a5000648f690e6282778fb4ec73309">https://github.com/eduardobaitello/terraform-eks/commit/c11fca6440a5000648f690e6282778fb4ec73309</a></li>
+<li><a href="https://github.com/jshcmpbll/Cloud-Mac-KVM/commit/361885d22c0304cb44683f9b005f82ca5e269841">https://github.com/jshcmpbll/Cloud-Mac-KVM/commit/361885d22c0304cb44683f9b005f82ca5e269841</a></li>
+<li><a href="https://github.com/kaz/kiritan.com/commit/1cd96c7f71e56629ffa07c38e12c4da19fcfc5f7">https://github.com/kaz/kiritan.com/commit/1cd96c7f71e56629ffa07c38e12c4da19fcfc5f7</a></li>
+<li><a href="https://github.com/dylanmtaylor/dylanmtaylor-terraform-aws/commit/44016d6a8e496b69308a81e88af8c9ef8b710ab3">https://github.com/dylanmtaylor/dylanmtaylor-terraform-aws/commit/44016d6a8e496b69308a81e88af8c9ef8b710ab3</a></li>
+<li><a href="https://github.com/roysjosh/terraform-unifi/commit/da9e2869456610a0228cb14f850c6eccddbb15e0">https://github.com/roysjosh/terraform-unifi/commit/da9e2869456610a0228cb14f850c6eccddbb15e0</a></li>
+<li><a href="https://github.com/phillhocking/aws-ubuntu-irssi/commit/1532e0c298ec4f8d7d749a884f7c46f2a2cf53d3">https://github.com/phillhocking/aws-ubuntu-irssi/commit/1532e0c298ec4f8d7d749a884f7c46f2a2cf53d3</a></li>
+<li><a href="https://github.com/ministryofjustice/cloud-platform-terraform-monitoring/commit/87401ba23af26d379d8132cc09fd7cd212773ba1">https://github.com/ministryofjustice/cloud-platform-terraform-monitoring/commit/87401ba23af26d379d8132cc09fd7cd212773ba1</a></li>
+</ul>
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="content-wrapper">
+            <p>
+                &copy; 2024
+                <a href="https://koen.bolhu.is">Koen Bolhuis</a>,
+                <a href="https://feitosa-daniel.github.io">Daniel Feitosa</a>,
+                <a href="https://vandriko.github.io">Vasilios Andrikopoulos</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

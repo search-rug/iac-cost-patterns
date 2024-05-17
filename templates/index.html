@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}IaC Cost Patterns</title>
+    <link rel="stylesheet" href="{{ get_url(path='style.css', cachebust=true) }}">
+</head>
+<body>
+    <header>
+        <div class="content-wrapper">
+            <h1><a href="{{ config.base_url }}">IaC Cost Patterns</a></h1>
+            <p>A collection of patterns and antipatterns for managing cost in IaC files.</p>
+            <ul>
+                <li><a href="https://github.com/search-rug/iac-cost-patterns/blob/main/patterns.yml">Dataset <span class="label">YAML</span></a></li>
+                <li><a href="https://github.com/search-rug/iac-cost-patterns">Repository</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="content-wrapper">
+            {% block content %}
+            <div id="patterns">
+                {% for p in section.pages %}
+                <div class="pattern">
+                    <a href="{{ p.permalink }}">
+                        <div class="pattern-header">
+                            <h2>{{ p.title }}</h2>
+                            <span class="pattern-count">{{ p.extra.count }} occurrences</span>
+                        </div>
+                        <p>{{ p.extra.description }}</p>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+            {% endblock content %}
+        </div>
+    </main>
+    <footer>
+        <div class="content-wrapper">
+            <p>
+                &copy; 2024
+                <a href="https://koen.bolhu.is">Koen Bolhuis</a>,
+                <a href="https://feitosa-daniel.github.io">Daniel Feitosa</a>,
+                <a href="https://vandriko.github.io">Vasilios Andrikopoulos</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
