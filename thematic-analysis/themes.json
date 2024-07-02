@@ -1,5 +1,82 @@
 [
     {
+        "pattern": "Old generation",
+        "occurrences": [
+            "https://github.com/gudlyf/TerraformOpenVPN/commit/be1245d8634025277ba79a4155ee88d7eaffcdfb",
+            "https://github.com/alphagov/govuk-aws/commit/6cfda6ada5137b232ff442ae9f2aedc8520ee1b4",
+            "https://github.com/alphagov/govuk-aws/commit/aeb3bfbe393cdfc02e62b812843ed75cf5f245e4",
+            "https://github.com/alphagov/govuk-aws/commit/5fa5da9756f12559b490217dd5b173db48e7f2a9",
+            "https://github.com/alphagov/govuk-aws/commit/19d187e4a29147cbcf1cfae456cfcbfa8ad52b45",
+            "https://github.com/alphagov/govuk-aws/commit/806b1a2a47f2f4e580e524b2cf8cc5928749d972",
+            "https://github.com/alphagov/govuk-aws/commit/8d7d2ebe0dbe9ebf8009572d1d710c4700cf245e",
+            "https://github.com/greenbrian/musical-spork/commit/24c07bfd5c31438fff6374e9ba3d577e6402d777",
+            "https://github.com/dotancohen81/Rancher/commit/90944271b4e8bd46e3d42ac64bc4964a33a8fdc3",
+            "https://github.com/cisagov/cyhy_amis/commit/7b8d9247a679295e0e1791b13d6c437c473e44b8",
+            "https://github.com/yardbirdsax/elasticsearch-the-hard-way/commit/521bae59a4002a616eac44c1681ca5066bbd00c8",
+            "https://github.com/GBergeret/tf-vpc-module/commit/34d80ece7d0ef598414baffceb074c6580dd819b",
+            "https://github.com/cisagov/vulnerable-instances/commit/f70410061b8c6b9249895571e05dfb7a142efb18",
+            "https://github.com/dwp/dataworks-aws-data-egress/commit/14f065e5161fee14c286c34df7db9f5516ef9bb6",
+            "https://github.com/circleci/enterprise-setup/commit/26cc5295c2bb9d8756e450712e0f5f75af440c4a",
+            "https://github.com/bh1m2rn/gitlab-environment-toolkit/commit/b9750f0bb88bc22256085b6bc8f060055e90a8c4",
+            "https://github.com/travis-ci/terraform-config/commit/4f641b162fa877aef842481631906d5bfe874781",
+            "https://github.com/byu-oit/terraform-aws-rds/commit/86a0795540edb426c3226775d73fcd4ce807d36a",
+            "https://github.com/poseidon/terraform-azure-kubernetes/commit/633eb938742a43be09612b944c29aaaf70dac119",
+            "https://github.com/poseidon/terraform-aws-kubernetes/commit/e09126b45746f1c967d1990fa04ce781a0478c6d",
+            "https://github.com/deadlysyn/terraform-keycloak-aws/commit/1c982ac4120ae3ed5a88c38f2a4d568ad9a83d22",
+            "https://github.com/ONSdigital/eq-terraform/commit/79845fe095cd87287346f40d2adce9b28a32ef35",
+            "https://github.com/kinvolk-archives/lokomotive-kubernetes/commit/f2f4deb8bb44988eeb0b64b919e51fb556aef4fb",
+            "https://github.com/smarman85/a_new_hope/commit/de97a6b8033c866c3b711468207aa4890049daaa",
+            "https://github.com/kmishra9/PL2-AWS-Setup/commit/0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a",
+            "https://github.com/cisagov/cool-sharedservices-nessus/commit/5403a8978053a1299b0afe8d7fc59e914fc5e354",
+            "https://github.com/guillaumekh/wg-terraform-template/commit/effee9cbc473af5d07cfc3aacece50aa6e59753a",
+            "https://github.com/ninthnails/terraform-aws-camellia/commit/0019704e14723aaf326840ab36c594c3f514a2d4",
+            "https://github.com/openaustralia/infrastructure/commit/63ee190c0ae1832bb72681e1e4b1b14a9367b4bb",
+            "https://github.com/robertdebock/terraform-aws-vault/commit/e3b6520960a88aacbf03339dc1368f680a8bee9a",
+            "https://github.com/cisagov/cool-assessment-terraform/commit/3138943ab4d15cc256d322e1128862ef11383c73",
+            "https://github.com/pelias/terraform-elasticsearch/commit/21c1827f4507eae217d43d99ad8cb1bbb1337e21",
+            "https://github.com/lowflying/OVPN---TF/commit/be1245d8634025277ba79a4155ee88d7eaffcdfb",
+            "https://github.com/figurate/bedrock/commit/bffc023eeff075ef281b1fd261897f4c7216b354"
+        ],
+        "codes": [
+            "new_gen"
+        ],
+        "technology": [
+            "Terraform"
+        ]
+    },
+    {
+        "pattern": "Expensive monitoring",
+        "occurrences": [
+            "https://github.com/Eximchain/terraform-aws-quorum-cluster/commit/6a56f400f7de3f4d5cef646d92e3f848608031c1",
+            "https://github.com/Accurate0/infrastructure/commit/06889e08148d258f329118d43734f8c8dcff994e",
+            "https://github.com/cloudspout/Gefjun/commit/665692a86bb65ddfa6c001f296c76c17288e2944",
+            "https://github.com/cloudspout/Gefjun/commit/665692a86bb65ddfa6c001f296c76c17288e2944",
+            "https://github.com/terraform-google-modules/terraform-example-foundation/commit/8391f1bd4322fec04fda7509b537c5f66cddbbd9",
+            "https://github.com/tdooner/flynn/commit/a9ea9d09727825f9a047e70d94caf73c99e6b2a8",
+            "https://github.com/elliotpryde/personal-infrastructure/commit/772c5ad20818738b09d01cd70ca3de80cbf66dcb",
+            "https://github.com/elliotpryde/personal-infrastructure/commit/7c4205cd130c5463d7f39aa6f281e198c143d0d9",
+            "https://github.com/alghanmi/terraform-modules/commit/570d3d8440ed399ed8b30bffe1fd7a2adc197771",
+            "https://github.com/thoughtbot/flightdeck/commit/c784bc0a3f747b66ab7cd01f23bbbdbad3bfe705",
+            "https://github.com/thoughtbot/flightdeck/commit/c784bc0a3f747b66ab7cd01f23bbbdbad3bfe705",
+            "https://github.com/chapas/tf-az-kubernetes/commit/bcc6e190b8f8a12b590089fb755c4f552f179ad0"
+        ],
+        "codes": [
+            "remove_log_analytics",
+            "remove_fluentbit_annotations",
+            "remove_fluentbit_labels",
+            "remove_cloudwatch_logs",
+            "remove_cloudwatch_metrics",
+            "reduce_cloudwatch_retention",
+            "remove_audit_logs",
+            "remove_container_insights",
+            "remove_status_check",
+            "remove_cloudfront_logs"
+        ],
+        "technology": [
+            "Terraform"
+        ]
+    },
+    {
         "pattern": "Overprovisioned resources",
         "occurrences": [
             "https://github.com/thomastodon/jabujabu/commit/02210a3d3ba4a770c29623825b7f54f3ff33f3c7",
@@ -24,234 +101,14 @@
             "https://github.com/ministryofjustice/cloud-platform-terraform-monitoring/commit/87401ba23af26d379d8132cc09fd7cd212773ba1"
         ],
         "codes": [
-            "less_cpu_cores",
+            "lambda_less_memory",
             "less_memory",
-            "smaller_disk",
+            "less_cpu_cores",
             "less_cpu",
-            "lambda_less_memory"
-        ]
-    },
-    {
-        "pattern": "Expensive monitoring",
-        "occurrences": [
-            "https://github.com/Eximchain/terraform-aws-quorum-cluster/commit/6a56f400f7de3f4d5cef646d92e3f848608031c1",
-            "https://github.com/Accurate0/infrastructure/commit/06889e08148d258f329118d43734f8c8dcff994e",
-            "https://github.com/cloudspout/Gefjun/commit/665692a86bb65ddfa6c001f296c76c17288e2944",
-            "https://github.com/cloudspout/Gefjun/commit/665692a86bb65ddfa6c001f296c76c17288e2944",
-            "https://github.com/terraform-google-modules/terraform-example-foundation/commit/8391f1bd4322fec04fda7509b537c5f66cddbbd9",
-            "https://github.com/tdooner/flynn/commit/a9ea9d09727825f9a047e70d94caf73c99e6b2a8",
-            "https://github.com/elliotpryde/personal-infrastructure/commit/772c5ad20818738b09d01cd70ca3de80cbf66dcb",
-            "https://github.com/elliotpryde/personal-infrastructure/commit/7c4205cd130c5463d7f39aa6f281e198c143d0d9",
-            "https://github.com/alghanmi/terraform-modules/commit/570d3d8440ed399ed8b30bffe1fd7a2adc197771",
-            "https://github.com/thoughtbot/flightdeck/commit/c784bc0a3f747b66ab7cd01f23bbbdbad3bfe705",
-            "https://github.com/thoughtbot/flightdeck/commit/c784bc0a3f747b66ab7cd01f23bbbdbad3bfe705",
-            "https://github.com/chapas/tf-az-kubernetes/commit/bcc6e190b8f8a12b590089fb755c4f552f179ad0"
+            "smaller_disk"
         ],
-        "codes": [
-            "remove_fluentbit_annotations",
-            "remove_fluentbit_labels",
-            "remove_audit_logs",
-            "remove_container_insights",
-            "reduce_cloudwatch_retention",
-            "remove_status_check",
-            "remove_cloudwatch_logs",
-            "remove_cloudwatch_metrics",
-            "remove_log_analytics",
-            "remove_cloudfront_logs"
-        ]
-    },
-    {
-        "pattern": "Spot instances",
-        "occurrences": [
-            "https://github.com/openinfrastructure/terraform-google-gitlab-runner/commit/8429375df72b04cc6fedc1ebb5f2c2e4ba18b9f2",
-            "https://github.com/kathputli/terraform-aws/commit/321b1aee88f7d15dafe46aede2b86ced70061025",
-            "https://github.com/naciriii/terraform-ec2-gitlab-runner/commit/f8af6bc22bd3d827566e7e65deb63c13cdaf6031",
-            "https://github.com/Hapag-Lloyd/terraform-aws-bastion-host-ssm/commit/516075e2987bdd1063f22768d451c1c1eb647175",
-            "https://github.com/ToruMakabe/aks-anti-dry-iac/commit/4ba7a9dc3085ab701c85737a4f36dd57fcd7596f",
-            "https://github.com/paperphyte/terraform-drone/commit/79f4b7c2cf3ad2d1a6d2646eaf27a08fd2611d07",
-            "https://github.com/filhodanuvem/from-dev-to-ops/commit/998be8119321e8812884075b078a1d5fb36cfa69",
-            "https://github.com/stephaneclavel/terraform/commit/74b4ba406b9ea761d27298165d0e0de45c9d8491",
-            "https://github.com/tale-toul/SingleNodeOpenshiftOnLibvirt/commit/638430604158044fcf123adaf8dfdcc91b1a873e",
-            "https://github.com/JaredStufftGD/grok-airflow/commit/7ac9544b0c651fd8193eb063079514d0aa41e290",
-            "https://github.com/kaz/kiritan.com/commit/1cd96c7f71e56629ffa07c38e12c4da19fcfc5f7",
-            "https://github.com/openinfrastructure/terraform-google-multinic/commit/7a9c468b88d2edee19007cff6529a20a38eeb363"
-        ],
-        "codes": [
-            "use_spot_instance",
-            "add_preemptible",
-            "use_spot_fleet",
-            "use_fargate_spot_capacity_provider"
-        ]
-    },
-    {
-        "pattern": "Object storage lifecycle rules",
-        "occurrences": [
-            "https://github.com/alphagov/govuk-aws/commit/f844cd8e254b161bebef04101f8ce177bcd0840c",
-            "https://github.com/alphagov/govuk-terraform-provisioning/commit/ac105ab0a5ae38fbf69167e072f8970a4a61c3e8",
-            "https://github.com/ExpediaGroup/apiary-data-lake/commit/47e62f2fc73a96611606cd619c084d1ded9d844d",
-            "https://github.com/SamTowne/BasketballDrillBot/commit/4ec6d54e4d36ab02b0a7daf042e727717371eaec",
-            "https://github.com/utilitywarehouse/tf_telecom/commit/17007456991c1a8faa26b1f4ac993883f577d124",
-            "https://github.com/trajano/terraform-s3-backend/commit/cb9f00a2f6f23b44f7db08863ef5fb0b9ea0bc0c"
-        ],
-        "codes": [
-            "add_lifecycle_rule"
-        ]
-    },
-    {
-        "pattern": "Expensive instance",
-        "occurrences": [
-            "https://github.com/beaulabs/terraform_aws_ec2_instance/commit/d6df68da5ae58fb5c650c6be15d9d8e676a129db",
-            "https://github.com/gudlyf/TerraformOpenVPN/commit/4bc861c153b65a2d7c0d5f3fac30ab72b0fc6942",
-            "https://github.com/IncredibleHolg/infra-aws-code/commit/70904707a36ff8e5167e695de3529d8318911ba4",
-            "https://github.com/ministryofjustice/cloud-platform-infrastructure/commit/e5dd13d33c1e927f932971d067d8f70e9041b5f3",
-            "https://github.com/cisagov/cyhy_amis/commit/4e67a501bb3f5187a3e9af523921ac62b8a88469",
-            "https://github.com/Kalmalyzer/UE-Jenkins-BuildSystem/commit/636097557e403eb1d6b6211b09e30c47e7f39466",
-            "https://github.com/dshmelev/aws_kube_tc/commit/853298ac74250964aa2d2ea921daa5905528b3a9",
-            "https://github.com/aaaaasam/azure/commit/c7bc0ce6f3fcaffcbbe7753f1a9d8437809bc167",
-            "https://github.com/rbabyuk/terra/commit/beae899804779adf914c08f290c5d71b542c9ed1",
-            "https://github.com/Leonard-Ta/Sample-Security-service-Terraform/commit/c16481a84d5823b65ce96bd811a265222385b43b",
-            "https://github.com/jjffggpp/jjffggpp/commit/93ee12adde6ac773c76b590fe89c24df372f326b",
-            "https://github.com/EngineerBetter/kf-infra/commit/fa5f7fb35b0b44020fb81dd5c4e3b9ceaca1f967",
-            "https://github.com/KoutaroNohira/hashicat/commit/81dc1d3f98034672d5f62f440f2cc3abc58ce2a2",
-            "https://github.com/wallnerryan/terraform-scaleio/commit/605e74facfa2ff519ba5cda6e57474666901bd8c",
-            "https://github.com/UrbanOS-Examples/common/commit/206394bcc75866953f64cbf3bd6214e4e6f96e91",
-            "https://github.com/cookpad/terraform-aws-eks/commit/59c40286757e1fa5cb5391421c5380e5ad506387",
-            "https://github.com/ayltai/hknews-infrastructure/commit/68171be117d3997b84253258f41fad6daedbc76a",
-            "https://github.com/joelchrist/terraform/commit/bbf18d695bd7597977ea7a97d5434ca7f1a37d57",
-            "https://github.com/jg210/aws-experiments/commit/5ff37f12a421fdd902d8eb1e6d7491ee181fd179",
-            "https://github.com/scott45/vof-deployment-scripts/commit/c6b2c1bee4c1e53e87fd3d94fc8c07cf64342d7b",
-            "https://github.com/fdns/terraform-k8s/commit/f106917bb7b2d8d4428022bb119585bf9f35769c",
-            "https://github.com/ministryofjustice/hmpps-env-configs/commit/670c006bad288d0360c3811aa63b3c323753c385",
-            "https://github.com/ministryofjustice/hmpps-env-configs/commit/954dda617d47007a8a1ff5780d3174e900e95be1",
-            "https://github.com/Linaro/qa-reports.linaro.org/commit/76c8d1ee35046912b6da4f1cc23e8b1dcc12abe9",
-            "https://github.com/KieniL/terraform_setups/commit/37f66bc43f57b1b7a5a897c58cefe09900afd7ef",
-            "https://github.com/digio/terraform-google-gitlab-runner/commit/07f8279fe65a35c0e595f3171f3d75791e49a9ae",
-            "https://github.com/jharley/azure-basic-demo/commit/7cd3d202d8723c565704f23c143cae3b1e1d6d2b",
-            "https://github.com/pangeo-data/terraform-deploy/commit/f8163bd52bea3774e2f160cff0523c602e65d933",
-            "https://github.com/pangeo-data/terraform-deploy/commit/7244eed07a1008675f45cc4349bf68141bb29edc",
-            "https://github.com/aeternity/terraform-aws-devnet/commit/f4113a8f7e52991dfb75f63688aeba77bac76b01",
-            "https://github.com/schubergphilis/terraform-aws-mcaf-matillion/commit/3b0e2fe42d660664c49d54ae8706de004a9b4176",
-            "https://github.com/binbashar/le-tf-infra-aws/commit/0208ae3bc238f029b1faf6bdc3552dbe6147657b",
-            "https://github.com/fpco/terraform-aws-foundation/commit/cfe92035f1b281cddfcf62664ec6b96e85e0ac32",
-            "https://github.com/Civil-Service-Human-Resources/lpg-terraform-paas/commit/59477d3dc237e72252bde005b783213b7e8ed961",
-            "https://github.com/ibm-cloud-architecture/iks_vpc_lab/commit/629819ce0c440760be155874cb42ab497f0304bd",
-            "https://github.com/goodpen/gke-v.1.0/commit/45053a0862bf97f0525862c411fa4da5d59ac397",
-            "https://github.com/rshurts/gke-cd-with-spinnaker/commit/3bc712aba0c797053b5cdc113e3e46afb6cff8a5",
-            "https://github.com/kaz/kiritan.com/commit/1cd96c7f71e56629ffa07c38e12c4da19fcfc5f7",
-            "https://github.com/midl-dev/tezos-auxiliary-cluster/commit/9cbfebaab11cb3466b160d18ef2eb46c0b875d55",
-            "https://github.com/NLnetLabs/rpki-deploy/commit/8bd6e745475f635d6f6b6929a545afa2e1d9dd57",
-            "https://github.com/TimonB/tf-azure-example/commit/ce89df3cebc6487146391afe9517661053229f77",
-            "https://github.com/00inboxtest/terraform-google-vault/commit/1d0b5db7f310dc6a47af3130a97e5373d9cdaddf",
-            "https://github.com/Amberoat/didactic-octo-eureka/commit/494706fc421a0ddda47f7d543b7e7a296c378c26",
-            "https://github.com/robertdebock/terraform-aws-vault/commit/757edca9d6fb2231ebdcf03ec611183c59eaf39b",
-            "https://github.com/covid-videoplattform/covid-videoplattform/commit/83d8b928ecb3f271a058bb30eaa1e05ce10e0434",
-            "https://github.com/alphagov/govuk-infrastructure/commit/a51a3bfcd73fd55ecd43aa36ce3f266f0cefc2dc",
-            "https://github.com/pelias/terraform-elasticsearch/commit/8454c8ee25e821abde10b73a2fec691269e41822",
-            "https://github.com/ironpeakservices/infrastructure/commit/2ca24fa9114b5b4389768d5ab93c1e6d99bb287c",
-            "https://github.com/robertdebock/git-terraform-demo/commit/5638b1a044215292a5e3fa405b6a0567c6b35436",
-            "https://github.com/robertdebock/git-terraform-demo/commit/686374095321975d851932a77b139d627f50c7d5"
-        ],
-        "codes": [
-            "cheaper_instance"
-        ]
-    },
-    {
-        "pattern": "AWS - Expensive DynamoDB",
-        "occurrences": [
-            "https://github.com/deptno/terraform-aws-modules/commit/49f447bdbb3cf23499e8194e78f852ea1e256d3a",
-            "https://github.com/ONSdigital/eq-terraform-dynamodb/commit/40eb651a50d0dfd5cf047ef62c8a6259c1c66e02",
-            "https://github.com/olliefr/aws-terraform-cloud1/commit/bf753832a519b0649f8d58d93aa643afe3f94fc7",
-            "https://github.com/garylb2/terraform-example-patterns/commit/6de6d83d930bd9459e1cf8c311fa7b45c3f90987",
-            "https://github.com/Arkoprabho/TerraformTutorial/commit/ba317d7e402f014589e230fad8c7384016211ba2",
-            "https://github.com/jkstenzel95/jks.gameservers/commit/411ab992ba07e698cb08b56eb4cfc9d6e001d43f",
-            "https://github.com/techservicesillinois/aws-enterprise-vpc/commit/0d21bea79e1936e2bdaee58bd6e328dd08e59b30",
-            "https://github.com/austin1237/gifbot/commit/c11dabf1ea02c0e044c62448986bb3f9abdf3967",
-            "https://github.com/servers-tf/infrastructure/commit/cc9e50a3864511f9fb9f871293e6a6e7e2719d2c",
-            "https://github.com/jsoconno/aws-terraform-remote-state-infrastructure/commit/fed8be2748bc2286a6f9888d282d66763ba612ed",
-            "https://github.com/ONSdigital/eq-terraform/commit/6eaf697bf9f111214a6d74ee3094e5784a57d1bb",
-            "https://github.com/nikkiwritescode/flask-app-terraform-deployment/commit/af47bb6201f1dcc8264e60da429e4ff8d126e56c",
-            "https://github.com/kperson/terraform-modules/commit/53bd2d84776f9ed7ae287fc59ed42f87bd7bbc4b",
-            "https://github.com/kody-abe/terraform/commit/169c7768b0b1584945362c035a2b227d2f579466",
-            "https://github.com/jenkins-x/terraform-aws-eks-jx/commit/cce6b14692fccd30c027851607a9526151d4c3d2",
-            "https://github.com/telia-oss/terraform-aws-terraform-init/commit/e8c7b2eb22d08ddd1a1bb375cb6efa4165c9098f",
-            "https://github.com/trajano/terraform-s3-backend/commit/f4b61c7bedae856439f01499de1ec9050b4c40fc",
-            "https://github.com/poldi2015/chat-app/commit/cb45bf17da799afaa789206e3fcd39d9403e0567",
-            "https://github.com/poldi2015/chat-app/commit/cb45bf17da799afaa789206e3fcd39d9403e0567",
-            "https://github.com/tesera/terraform-modules/commit/3cd4d7b55ac2003153fd0670151ab395ae182431",
-            "https://github.com/MichaelDeCorte/TerraForm/commit/3799ee8b9677d02254eb6d6f50f3732df4c8374e",
-            "https://github.com/TalkingFox/SignalWs/commit/935d9d683608b4d8a97ef6ccc2c8ab7c14eec0d0",
-            "https://github.com/codequest-eu/terraform-modules/commit/ffe23d4c2cd78035bef0dfb261701e7ed8dd588d",
-            "https://github.com/dgorbov/terraform-s3-backend-setup/commit/81f82740760a357a86b3a77f9ed400624edcb218",
-            "https://github.com/sbogacz/terraform-aws-state-backend/commit/174486319f3b956807d56e5433880f9978884f93",
-            "https://github.com/giuseppeborgese/terraform-locking-s3-state/commit/6b4e59e8b844417dc5c247bdef1b0adb8e2e7028"
-        ],
-        "codes": [
-            "dynamo_reduce_rw_capacity",
-            "dynamo_on_demand",
-            "remove_dynamo_global_secondary_indices"
-        ]
-    },
-    {
-        "pattern": "Budget",
-        "occurrences": [
-            "https://github.com/AJarombek/global-aws-infrastructure/commit/4a89f4b8235961275fa0e6aaf20848f2b8b7e733",
-            "https://github.com/MartinFeineis/terraform/commit/359ba426393c78b78695797f9bdd6a08c0455720",
-            "https://github.com/stuartellis/stuartellis-org-tf-modules/commit/39a9cabac6765c75591ba258fef0d10ba7ae0f9e",
-            "https://github.com/forgotpw/forgotpw-infrastructure/commit/f4363ad27d366385f2388d073ce8af796e035406",
-            "https://github.com/Katesagay/terraform-repo/commit/9aacfbe12e3e7c1e726b9a3d834211aae01f419c",
-            "https://github.com/darogina/terragrunt-aws-modules/commit/9c84d03bde131e7f349dcd493ba5b7e55bf8ae2c",
-            "https://github.com/chetanbothra/Terraform_AWS_Billing_Alert/commit/43b0d3b4cef0d3f57d4f5d4f1c7aeb9bfc3e362a",
-            "https://github.com/ntk1000/aws-terraform-template/commit/d016b96d89370b8039817fabdfa055576cf6b4cc",
-            "https://github.com/StratusGrid/terraform-aws-single-account-starter/commit/c291c0954c89e1bfbdb76d4c8990baf9db986343",
-            "https://github.com/nsbno/terraform-aws-cost-alarm/commit/7e135499d33f0a5c51602a506fefe258cac072c6",
-            "https://github.com/64kramsystem/ultimate_aws_certified_cloud_practitioner_course_terraform_configuration/commit/2f36b8a5f2f818138da72d218c1f3c9666ed54aa",
-            "https://github.com/kelledge/idkfa/commit/25cda0b77ff329a89551cc6f14fe8c62820fd424",
-            "https://github.com/oke-py/aws-tf/commit/ec2982c8742cc7bc294f8a3cc07ae9ba5ffcaced",
-            "https://github.com/cob16/aws_static_website/commit/0d4fbd0a7b296a5c9377a835dff89d1499716082",
-            "https://github.com/mintak21/terraform-old/commit/c10b476d869282ed6cf55def47445b9c703788fe",
-            "https://github.com/alphagov/govwifi-terraform/commit/348b52a2ae5d6d242c8802644f9e3a5e6460de1d",
-            "https://github.com/eladidan/speedyhead.xyz-terraform/commit/71f034f3e13e9118a2a954e1fc3c0d35153184f0",
-            "https://github.com/coremaker/terraform-google-nucleus/commit/11234f631f7370dd80ee5fbc5dd7bdbc12dcbf49",
-            "https://github.com/robgmills/jumpbox/commit/028bbe114d099b0388be9a46adcab80d9383a518",
-            "https://github.com/AdrianNeatu/blog-terraform/commit/3ba302c69eb2a491a5b23e94084b4ddd24a4a703",
-            "https://github.com/richardhughes/infra-modules/commit/48015a86eda461d99b580b69db5922acbe5bd28e",
-            "https://github.com/patheard/terraform-cantrill-aws-associate/commit/bc7484cd34698f2724e5d9f241fd9f53d953e3a3",
-            "https://github.com/alghanmi/terraform-modules/commit/f4e8069ff11b7ca7a15ce25843b26d00fb399ade",
-            "https://github.com/cds-snc/cloud-based-sensor/commit/10bb572d477197bd3874532bfd364de1cb496d05",
-            "https://github.com/rmaheshvarma/terraform/commit/c866a7dd2575dd2a3f4af83f5f081a5004d0e478",
-            "https://github.com/akerl/aws-account/commit/91967d4089ad9580ceae62f7845581935c892455",
-            "https://github.com/singaporewaketools/iaac/commit/197502b1ac4bab77b9ab017b755c4d75ddaa218b"
-        ],
-        "codes": [
-            "add_billing_alarm",
-            "replace_billing_alarm_budget",
-            "add_budget"
-        ]
-    },
-    {
-        "pattern": "Expensive storage type",
-        "occurrences": [
-            "https://github.com/thomastodon/jabujabu/commit/02210a3d3ba4a770c29623825b7f54f3ff33f3c7",
-            "https://github.com/giantswarm/giantnetes-terraform/commit/53ed24b573947c73ea9f0f4f8b477c44b7de2d54",
-            "https://github.com/Kalmalyzer/UE-Jenkins-BuildSystem/commit/ee8942b2c5d59546dd3b3be5f2cb88500d0fe1be",
-            "https://github.com/Leonard-Ta/Sample-Security-service-Terraform/commit/c16481a84d5823b65ce96bd811a265222385b43b",
-            "https://github.com/falldamagestudio/UE4-GHA-BuildSystem/commit/e58083adbf91e7daa8ddb5db6c3b2e5c8c0a906c",
-            "https://github.com/bculberson/btc2snowflake/commit/9f8227bf53ebc2b1bb0b99d0697f9f66eed7ab6d",
-            "https://github.com/ministryofjustice/hmpps-env-configs/commit/0328838420ac0d3754cf772a7d2f5bb1612193ed",
-            "https://github.com/travis-infrastructure/terraform-stuff/commit/1e208af4c83d093c900f4cccedbca6183142a07f",
-            "https://github.com/sdcote/cloudsql/commit/dfe44fcf8f5a477e1fbc354f1b1d87af28895c0f",
-            "https://github.com/wellcomecollection/archivematica-infrastructure/commit/ce576be106257496e20d946d6eab5f8783dada92",
-            "https://github.com/jshcmpbll/Cloud-Mac-KVM/commit/361885d22c0304cb44683f9b005f82ca5e269841",
-            "https://github.com/TimonB/tf-azure-example/commit/b49579fbecbe8002932fdfb86146f83efd60bfcf",
-            "https://github.com/phillhocking/aws-ubuntu-irssi/commit/1532e0c298ec4f8d7d749a884f7c46f2a2cf53d3",
-            "https://github.com/bhfsystem/fogg/commit/81e606a72e7c2e06c2f6d9c204086157aa82eac3",
-            "https://github.com/bhfsystem/fogg/commit/7cc487f270d553f819fea0cf96e872c374979305",
-            "https://github.com/cisagov/freeipa-server-tf-module/commit/99fd319a72d25441acf36fd2c167a875e9028935",
-            "https://github.com/ministryofjustice/cloud-platform-terraform-monitoring/commit/87401ba23af26d379d8132cc09fd7cd212773ba1"
-        ],
-        "codes": [
-            "cheaper_disk_type",
-            "cheaper_volume"
+        "technology": [
+            "Terraform"
         ]
     },
     {
@@ -333,68 +190,241 @@
             "https://github.com/naftulikay/titan/commit/a0ea4fd84a409fe4ee853effa9f309a005b0efc1"
         ],
         "codes": [
-            "remove_loadbalancer",
-            "remove_transit_gateway",
-            "reduce_vpc_endpoint_subnets",
-            "remove_waf",
-            "remove_firewall",
-            "use_alb",
-            "associate_public_ip",
-            "reduce_nat_gateways",
-            "use_ec2_as_nat_gateway",
-            "remove_nat_gateway",
-            "reduce_nlb",
-            "remove_vpn",
-            "remove_nat",
             "remove_alb",
             "remove_route_table",
-            "remove_route",
-            "reduce_subnets",
-            "remove_eip",
             "reduce_eip",
-            "remove_private_subnet"
+            "reduce_vpc_endpoint_subnets",
+            "remove_private_subnet",
+            "reduce_subnets",
+            "reduce_nlb",
+            "remove_eip",
+            "remove_nat_gateway",
+            "remove_nat",
+            "associate_public_ip",
+            "remove_route",
+            "remove_transit_gateway",
+            "use_alb",
+            "remove_vpn",
+            "remove_firewall",
+            "use_ec2_as_nat_gateway",
+            "reduce_nat_gateways",
+            "remove_loadbalancer",
+            "remove_waf"
+        ],
+        "technology": [
+            "Terraform"
         ]
     },
     {
-        "pattern": "Old generation",
+        "pattern": "Expensive instance",
         "occurrences": [
-            "https://github.com/gudlyf/TerraformOpenVPN/commit/be1245d8634025277ba79a4155ee88d7eaffcdfb",
-            "https://github.com/alphagov/govuk-aws/commit/6cfda6ada5137b232ff442ae9f2aedc8520ee1b4",
-            "https://github.com/alphagov/govuk-aws/commit/aeb3bfbe393cdfc02e62b812843ed75cf5f245e4",
-            "https://github.com/alphagov/govuk-aws/commit/5fa5da9756f12559b490217dd5b173db48e7f2a9",
-            "https://github.com/alphagov/govuk-aws/commit/19d187e4a29147cbcf1cfae456cfcbfa8ad52b45",
-            "https://github.com/alphagov/govuk-aws/commit/806b1a2a47f2f4e580e524b2cf8cc5928749d972",
-            "https://github.com/alphagov/govuk-aws/commit/8d7d2ebe0dbe9ebf8009572d1d710c4700cf245e",
-            "https://github.com/greenbrian/musical-spork/commit/24c07bfd5c31438fff6374e9ba3d577e6402d777",
-            "https://github.com/dotancohen81/Rancher/commit/90944271b4e8bd46e3d42ac64bc4964a33a8fdc3",
-            "https://github.com/cisagov/cyhy_amis/commit/7b8d9247a679295e0e1791b13d6c437c473e44b8",
-            "https://github.com/yardbirdsax/elasticsearch-the-hard-way/commit/521bae59a4002a616eac44c1681ca5066bbd00c8",
-            "https://github.com/GBergeret/tf-vpc-module/commit/34d80ece7d0ef598414baffceb074c6580dd819b",
-            "https://github.com/cisagov/vulnerable-instances/commit/f70410061b8c6b9249895571e05dfb7a142efb18",
-            "https://github.com/dwp/dataworks-aws-data-egress/commit/14f065e5161fee14c286c34df7db9f5516ef9bb6",
-            "https://github.com/circleci/enterprise-setup/commit/26cc5295c2bb9d8756e450712e0f5f75af440c4a",
-            "https://github.com/bh1m2rn/gitlab-environment-toolkit/commit/b9750f0bb88bc22256085b6bc8f060055e90a8c4",
-            "https://github.com/travis-ci/terraform-config/commit/4f641b162fa877aef842481631906d5bfe874781",
-            "https://github.com/byu-oit/terraform-aws-rds/commit/86a0795540edb426c3226775d73fcd4ce807d36a",
-            "https://github.com/poseidon/terraform-azure-kubernetes/commit/633eb938742a43be09612b944c29aaaf70dac119",
-            "https://github.com/poseidon/terraform-aws-kubernetes/commit/e09126b45746f1c967d1990fa04ce781a0478c6d",
-            "https://github.com/deadlysyn/terraform-keycloak-aws/commit/1c982ac4120ae3ed5a88c38f2a4d568ad9a83d22",
-            "https://github.com/ONSdigital/eq-terraform/commit/79845fe095cd87287346f40d2adce9b28a32ef35",
-            "https://github.com/kinvolk-archives/lokomotive-kubernetes/commit/f2f4deb8bb44988eeb0b64b919e51fb556aef4fb",
-            "https://github.com/smarman85/a_new_hope/commit/de97a6b8033c866c3b711468207aa4890049daaa",
-            "https://github.com/kmishra9/PL2-AWS-Setup/commit/0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a",
-            "https://github.com/cisagov/cool-sharedservices-nessus/commit/5403a8978053a1299b0afe8d7fc59e914fc5e354",
-            "https://github.com/guillaumekh/wg-terraform-template/commit/effee9cbc473af5d07cfc3aacece50aa6e59753a",
-            "https://github.com/ninthnails/terraform-aws-camellia/commit/0019704e14723aaf326840ab36c594c3f514a2d4",
-            "https://github.com/openaustralia/infrastructure/commit/63ee190c0ae1832bb72681e1e4b1b14a9367b4bb",
-            "https://github.com/robertdebock/terraform-aws-vault/commit/e3b6520960a88aacbf03339dc1368f680a8bee9a",
-            "https://github.com/cisagov/cool-assessment-terraform/commit/3138943ab4d15cc256d322e1128862ef11383c73",
-            "https://github.com/pelias/terraform-elasticsearch/commit/21c1827f4507eae217d43d99ad8cb1bbb1337e21",
-            "https://github.com/lowflying/OVPN---TF/commit/be1245d8634025277ba79a4155ee88d7eaffcdfb",
-            "https://github.com/figurate/bedrock/commit/bffc023eeff075ef281b1fd261897f4c7216b354"
+            "https://github.com/beaulabs/terraform_aws_ec2_instance/commit/d6df68da5ae58fb5c650c6be15d9d8e676a129db",
+            "https://github.com/gudlyf/TerraformOpenVPN/commit/4bc861c153b65a2d7c0d5f3fac30ab72b0fc6942",
+            "https://github.com/IncredibleHolg/infra-aws-code/commit/70904707a36ff8e5167e695de3529d8318911ba4",
+            "https://github.com/ministryofjustice/cloud-platform-infrastructure/commit/e5dd13d33c1e927f932971d067d8f70e9041b5f3",
+            "https://github.com/cisagov/cyhy_amis/commit/4e67a501bb3f5187a3e9af523921ac62b8a88469",
+            "https://github.com/Kalmalyzer/UE-Jenkins-BuildSystem/commit/636097557e403eb1d6b6211b09e30c47e7f39466",
+            "https://github.com/dshmelev/aws_kube_tc/commit/853298ac74250964aa2d2ea921daa5905528b3a9",
+            "https://github.com/aaaaasam/azure/commit/c7bc0ce6f3fcaffcbbe7753f1a9d8437809bc167",
+            "https://github.com/rbabyuk/terra/commit/beae899804779adf914c08f290c5d71b542c9ed1",
+            "https://github.com/Leonard-Ta/Sample-Security-service-Terraform/commit/c16481a84d5823b65ce96bd811a265222385b43b",
+            "https://github.com/jjffggpp/jjffggpp/commit/93ee12adde6ac773c76b590fe89c24df372f326b",
+            "https://github.com/EngineerBetter/kf-infra/commit/fa5f7fb35b0b44020fb81dd5c4e3b9ceaca1f967",
+            "https://github.com/KoutaroNohira/hashicat/commit/81dc1d3f98034672d5f62f440f2cc3abc58ce2a2",
+            "https://github.com/wallnerryan/terraform-scaleio/commit/605e74facfa2ff519ba5cda6e57474666901bd8c",
+            "https://github.com/UrbanOS-Examples/common/commit/206394bcc75866953f64cbf3bd6214e4e6f96e91",
+            "https://github.com/cookpad/terraform-aws-eks/commit/59c40286757e1fa5cb5391421c5380e5ad506387",
+            "https://github.com/ayltai/hknews-infrastructure/commit/68171be117d3997b84253258f41fad6daedbc76a",
+            "https://github.com/joelchrist/terraform/commit/bbf18d695bd7597977ea7a97d5434ca7f1a37d57",
+            "https://github.com/jg210/aws-experiments/commit/5ff37f12a421fdd902d8eb1e6d7491ee181fd179",
+            "https://github.com/scott45/vof-deployment-scripts/commit/c6b2c1bee4c1e53e87fd3d94fc8c07cf64342d7b",
+            "https://github.com/fdns/terraform-k8s/commit/f106917bb7b2d8d4428022bb119585bf9f35769c",
+            "https://github.com/ministryofjustice/hmpps-env-configs/commit/670c006bad288d0360c3811aa63b3c323753c385",
+            "https://github.com/ministryofjustice/hmpps-env-configs/commit/954dda617d47007a8a1ff5780d3174e900e95be1",
+            "https://github.com/Linaro/qa-reports.linaro.org/commit/76c8d1ee35046912b6da4f1cc23e8b1dcc12abe9",
+            "https://github.com/KieniL/terraform_setups/commit/37f66bc43f57b1b7a5a897c58cefe09900afd7ef",
+            "https://github.com/digio/terraform-google-gitlab-runner/commit/07f8279fe65a35c0e595f3171f3d75791e49a9ae",
+            "https://github.com/jharley/azure-basic-demo/commit/7cd3d202d8723c565704f23c143cae3b1e1d6d2b",
+            "https://github.com/pangeo-data/terraform-deploy/commit/f8163bd52bea3774e2f160cff0523c602e65d933",
+            "https://github.com/pangeo-data/terraform-deploy/commit/7244eed07a1008675f45cc4349bf68141bb29edc",
+            "https://github.com/aeternity/terraform-aws-devnet/commit/f4113a8f7e52991dfb75f63688aeba77bac76b01",
+            "https://github.com/schubergphilis/terraform-aws-mcaf-matillion/commit/3b0e2fe42d660664c49d54ae8706de004a9b4176",
+            "https://github.com/binbashar/le-tf-infra-aws/commit/0208ae3bc238f029b1faf6bdc3552dbe6147657b",
+            "https://github.com/fpco/terraform-aws-foundation/commit/cfe92035f1b281cddfcf62664ec6b96e85e0ac32",
+            "https://github.com/Civil-Service-Human-Resources/lpg-terraform-paas/commit/59477d3dc237e72252bde005b783213b7e8ed961",
+            "https://github.com/ibm-cloud-architecture/iks_vpc_lab/commit/629819ce0c440760be155874cb42ab497f0304bd",
+            "https://github.com/goodpen/gke-v.1.0/commit/45053a0862bf97f0525862c411fa4da5d59ac397",
+            "https://github.com/rshurts/gke-cd-with-spinnaker/commit/3bc712aba0c797053b5cdc113e3e46afb6cff8a5",
+            "https://github.com/kaz/kiritan.com/commit/1cd96c7f71e56629ffa07c38e12c4da19fcfc5f7",
+            "https://github.com/midl-dev/tezos-auxiliary-cluster/commit/9cbfebaab11cb3466b160d18ef2eb46c0b875d55",
+            "https://github.com/NLnetLabs/rpki-deploy/commit/8bd6e745475f635d6f6b6929a545afa2e1d9dd57",
+            "https://github.com/TimonB/tf-azure-example/commit/ce89df3cebc6487146391afe9517661053229f77",
+            "https://github.com/00inboxtest/terraform-google-vault/commit/1d0b5db7f310dc6a47af3130a97e5373d9cdaddf",
+            "https://github.com/Amberoat/didactic-octo-eureka/commit/494706fc421a0ddda47f7d543b7e7a296c378c26",
+            "https://github.com/robertdebock/terraform-aws-vault/commit/757edca9d6fb2231ebdcf03ec611183c59eaf39b",
+            "https://github.com/covid-videoplattform/covid-videoplattform/commit/83d8b928ecb3f271a058bb30eaa1e05ce10e0434",
+            "https://github.com/alphagov/govuk-infrastructure/commit/a51a3bfcd73fd55ecd43aa36ce3f266f0cefc2dc",
+            "https://github.com/pelias/terraform-elasticsearch/commit/8454c8ee25e821abde10b73a2fec691269e41822",
+            "https://github.com/ironpeakservices/infrastructure/commit/2ca24fa9114b5b4389768d5ab93c1e6d99bb287c",
+            "https://github.com/robertdebock/git-terraform-demo/commit/5638b1a044215292a5e3fa405b6a0567c6b35436",
+            "https://github.com/robertdebock/git-terraform-demo/commit/686374095321975d851932a77b139d627f50c7d5"
         ],
         "codes": [
-            "new_gen"
+            "cheaper_instance"
+        ],
+        "technology": [
+            "Terraform"
+        ]
+    },
+    {
+        "pattern": "AWS - Expensive DynamoDB",
+        "occurrences": [
+            "https://github.com/deptno/terraform-aws-modules/commit/49f447bdbb3cf23499e8194e78f852ea1e256d3a",
+            "https://github.com/ONSdigital/eq-terraform-dynamodb/commit/40eb651a50d0dfd5cf047ef62c8a6259c1c66e02",
+            "https://github.com/olliefr/aws-terraform-cloud1/commit/bf753832a519b0649f8d58d93aa643afe3f94fc7",
+            "https://github.com/garylb2/terraform-example-patterns/commit/6de6d83d930bd9459e1cf8c311fa7b45c3f90987",
+            "https://github.com/Arkoprabho/TerraformTutorial/commit/ba317d7e402f014589e230fad8c7384016211ba2",
+            "https://github.com/jkstenzel95/jks.gameservers/commit/411ab992ba07e698cb08b56eb4cfc9d6e001d43f",
+            "https://github.com/techservicesillinois/aws-enterprise-vpc/commit/0d21bea79e1936e2bdaee58bd6e328dd08e59b30",
+            "https://github.com/austin1237/gifbot/commit/c11dabf1ea02c0e044c62448986bb3f9abdf3967",
+            "https://github.com/servers-tf/infrastructure/commit/cc9e50a3864511f9fb9f871293e6a6e7e2719d2c",
+            "https://github.com/jsoconno/aws-terraform-remote-state-infrastructure/commit/fed8be2748bc2286a6f9888d282d66763ba612ed",
+            "https://github.com/ONSdigital/eq-terraform/commit/6eaf697bf9f111214a6d74ee3094e5784a57d1bb",
+            "https://github.com/nikkiwritescode/flask-app-terraform-deployment/commit/af47bb6201f1dcc8264e60da429e4ff8d126e56c",
+            "https://github.com/kperson/terraform-modules/commit/53bd2d84776f9ed7ae287fc59ed42f87bd7bbc4b",
+            "https://github.com/kody-abe/terraform/commit/169c7768b0b1584945362c035a2b227d2f579466",
+            "https://github.com/jenkins-x/terraform-aws-eks-jx/commit/cce6b14692fccd30c027851607a9526151d4c3d2",
+            "https://github.com/telia-oss/terraform-aws-terraform-init/commit/e8c7b2eb22d08ddd1a1bb375cb6efa4165c9098f",
+            "https://github.com/trajano/terraform-s3-backend/commit/f4b61c7bedae856439f01499de1ec9050b4c40fc",
+            "https://github.com/poldi2015/chat-app/commit/cb45bf17da799afaa789206e3fcd39d9403e0567",
+            "https://github.com/poldi2015/chat-app/commit/cb45bf17da799afaa789206e3fcd39d9403e0567",
+            "https://github.com/tesera/terraform-modules/commit/3cd4d7b55ac2003153fd0670151ab395ae182431",
+            "https://github.com/MichaelDeCorte/TerraForm/commit/3799ee8b9677d02254eb6d6f50f3732df4c8374e",
+            "https://github.com/TalkingFox/SignalWs/commit/935d9d683608b4d8a97ef6ccc2c8ab7c14eec0d0",
+            "https://github.com/codequest-eu/terraform-modules/commit/ffe23d4c2cd78035bef0dfb261701e7ed8dd588d",
+            "https://github.com/dgorbov/terraform-s3-backend-setup/commit/81f82740760a357a86b3a77f9ed400624edcb218",
+            "https://github.com/sbogacz/terraform-aws-state-backend/commit/174486319f3b956807d56e5433880f9978884f93",
+            "https://github.com/giuseppeborgese/terraform-locking-s3-state/commit/6b4e59e8b844417dc5c247bdef1b0adb8e2e7028"
+        ],
+        "codes": [
+            "remove_dynamo_global_secondary_indices",
+            "dynamo_reduce_rw_capacity",
+            "dynamo_on_demand"
+        ],
+        "technology": [
+            "Terraform"
+        ]
+    },
+    {
+        "pattern": "Expensive storage type",
+        "occurrences": [
+            "https://github.com/thomastodon/jabujabu/commit/02210a3d3ba4a770c29623825b7f54f3ff33f3c7",
+            "https://github.com/giantswarm/giantnetes-terraform/commit/53ed24b573947c73ea9f0f4f8b477c44b7de2d54",
+            "https://github.com/Kalmalyzer/UE-Jenkins-BuildSystem/commit/ee8942b2c5d59546dd3b3be5f2cb88500d0fe1be",
+            "https://github.com/Leonard-Ta/Sample-Security-service-Terraform/commit/c16481a84d5823b65ce96bd811a265222385b43b",
+            "https://github.com/falldamagestudio/UE4-GHA-BuildSystem/commit/e58083adbf91e7daa8ddb5db6c3b2e5c8c0a906c",
+            "https://github.com/bculberson/btc2snowflake/commit/9f8227bf53ebc2b1bb0b99d0697f9f66eed7ab6d",
+            "https://github.com/ministryofjustice/hmpps-env-configs/commit/0328838420ac0d3754cf772a7d2f5bb1612193ed",
+            "https://github.com/travis-infrastructure/terraform-stuff/commit/1e208af4c83d093c900f4cccedbca6183142a07f",
+            "https://github.com/sdcote/cloudsql/commit/dfe44fcf8f5a477e1fbc354f1b1d87af28895c0f",
+            "https://github.com/wellcomecollection/archivematica-infrastructure/commit/ce576be106257496e20d946d6eab5f8783dada92",
+            "https://github.com/jshcmpbll/Cloud-Mac-KVM/commit/361885d22c0304cb44683f9b005f82ca5e269841",
+            "https://github.com/TimonB/tf-azure-example/commit/b49579fbecbe8002932fdfb86146f83efd60bfcf",
+            "https://github.com/phillhocking/aws-ubuntu-irssi/commit/1532e0c298ec4f8d7d749a884f7c46f2a2cf53d3",
+            "https://github.com/bhfsystem/fogg/commit/81e606a72e7c2e06c2f6d9c204086157aa82eac3",
+            "https://github.com/bhfsystem/fogg/commit/7cc487f270d553f819fea0cf96e872c374979305",
+            "https://github.com/cisagov/freeipa-server-tf-module/commit/99fd319a72d25441acf36fd2c167a875e9028935",
+            "https://github.com/ministryofjustice/cloud-platform-terraform-monitoring/commit/87401ba23af26d379d8132cc09fd7cd212773ba1"
+        ],
+        "codes": [
+            "cheaper_disk_type",
+            "cheaper_volume"
+        ],
+        "technology": [
+            "Terraform"
+        ]
+    },
+    {
+        "pattern": "Object storage lifecycle rules",
+        "occurrences": [
+            "https://github.com/alphagov/govuk-aws/commit/f844cd8e254b161bebef04101f8ce177bcd0840c",
+            "https://github.com/alphagov/govuk-terraform-provisioning/commit/ac105ab0a5ae38fbf69167e072f8970a4a61c3e8",
+            "https://github.com/ExpediaGroup/apiary-data-lake/commit/47e62f2fc73a96611606cd619c084d1ded9d844d",
+            "https://github.com/SamTowne/BasketballDrillBot/commit/4ec6d54e4d36ab02b0a7daf042e727717371eaec",
+            "https://github.com/utilitywarehouse/tf_telecom/commit/17007456991c1a8faa26b1f4ac993883f577d124",
+            "https://github.com/trajano/terraform-s3-backend/commit/cb9f00a2f6f23b44f7db08863ef5fb0b9ea0bc0c"
+        ],
+        "codes": [
+            "add_lifecycle_rule"
+        ],
+        "technology": [
+            "Terraform"
+        ]
+    },
+    {
+        "pattern": "Budget",
+        "occurrences": [
+            "https://github.com/AJarombek/global-aws-infrastructure/commit/4a89f4b8235961275fa0e6aaf20848f2b8b7e733",
+            "https://github.com/MartinFeineis/terraform/commit/359ba426393c78b78695797f9bdd6a08c0455720",
+            "https://github.com/stuartellis/stuartellis-org-tf-modules/commit/39a9cabac6765c75591ba258fef0d10ba7ae0f9e",
+            "https://github.com/forgotpw/forgotpw-infrastructure/commit/f4363ad27d366385f2388d073ce8af796e035406",
+            "https://github.com/Katesagay/terraform-repo/commit/9aacfbe12e3e7c1e726b9a3d834211aae01f419c",
+            "https://github.com/darogina/terragrunt-aws-modules/commit/9c84d03bde131e7f349dcd493ba5b7e55bf8ae2c",
+            "https://github.com/chetanbothra/Terraform_AWS_Billing_Alert/commit/43b0d3b4cef0d3f57d4f5d4f1c7aeb9bfc3e362a",
+            "https://github.com/ntk1000/aws-terraform-template/commit/d016b96d89370b8039817fabdfa055576cf6b4cc",
+            "https://github.com/StratusGrid/terraform-aws-single-account-starter/commit/c291c0954c89e1bfbdb76d4c8990baf9db986343",
+            "https://github.com/nsbno/terraform-aws-cost-alarm/commit/7e135499d33f0a5c51602a506fefe258cac072c6",
+            "https://github.com/64kramsystem/ultimate_aws_certified_cloud_practitioner_course_terraform_configuration/commit/2f36b8a5f2f818138da72d218c1f3c9666ed54aa",
+            "https://github.com/kelledge/idkfa/commit/25cda0b77ff329a89551cc6f14fe8c62820fd424",
+            "https://github.com/oke-py/aws-tf/commit/ec2982c8742cc7bc294f8a3cc07ae9ba5ffcaced",
+            "https://github.com/cob16/aws_static_website/commit/0d4fbd0a7b296a5c9377a835dff89d1499716082",
+            "https://github.com/mintak21/terraform-old/commit/c10b476d869282ed6cf55def47445b9c703788fe",
+            "https://github.com/alphagov/govwifi-terraform/commit/348b52a2ae5d6d242c8802644f9e3a5e6460de1d",
+            "https://github.com/eladidan/speedyhead.xyz-terraform/commit/71f034f3e13e9118a2a954e1fc3c0d35153184f0",
+            "https://github.com/coremaker/terraform-google-nucleus/commit/11234f631f7370dd80ee5fbc5dd7bdbc12dcbf49",
+            "https://github.com/robgmills/jumpbox/commit/028bbe114d099b0388be9a46adcab80d9383a518",
+            "https://github.com/AdrianNeatu/blog-terraform/commit/3ba302c69eb2a491a5b23e94084b4ddd24a4a703",
+            "https://github.com/richardhughes/infra-modules/commit/48015a86eda461d99b580b69db5922acbe5bd28e",
+            "https://github.com/patheard/terraform-cantrill-aws-associate/commit/bc7484cd34698f2724e5d9f241fd9f53d953e3a3",
+            "https://github.com/alghanmi/terraform-modules/commit/f4e8069ff11b7ca7a15ce25843b26d00fb399ade",
+            "https://github.com/cds-snc/cloud-based-sensor/commit/10bb572d477197bd3874532bfd364de1cb496d05",
+            "https://github.com/rmaheshvarma/terraform/commit/c866a7dd2575dd2a3f4af83f5f081a5004d0e478",
+            "https://github.com/akerl/aws-account/commit/91967d4089ad9580ceae62f7845581935c892455",
+            "https://github.com/singaporewaketools/iaac/commit/197502b1ac4bab77b9ab017b755c4d75ddaa218b"
+        ],
+        "codes": [
+            "replace_billing_alarm_budget",
+            "add_budget",
+            "add_billing_alarm"
+        ],
+        "technology": [
+            "Terraform"
+        ]
+    },
+    {
+        "pattern": "Spot instances",
+        "occurrences": [
+            "https://github.com/openinfrastructure/terraform-google-gitlab-runner/commit/8429375df72b04cc6fedc1ebb5f2c2e4ba18b9f2",
+            "https://github.com/kathputli/terraform-aws/commit/321b1aee88f7d15dafe46aede2b86ced70061025",
+            "https://github.com/naciriii/terraform-ec2-gitlab-runner/commit/f8af6bc22bd3d827566e7e65deb63c13cdaf6031",
+            "https://github.com/Hapag-Lloyd/terraform-aws-bastion-host-ssm/commit/516075e2987bdd1063f22768d451c1c1eb647175",
+            "https://github.com/ToruMakabe/aks-anti-dry-iac/commit/4ba7a9dc3085ab701c85737a4f36dd57fcd7596f",
+            "https://github.com/paperphyte/terraform-drone/commit/79f4b7c2cf3ad2d1a6d2646eaf27a08fd2611d07",
+            "https://github.com/filhodanuvem/from-dev-to-ops/commit/998be8119321e8812884075b078a1d5fb36cfa69",
+            "https://github.com/stephaneclavel/terraform/commit/74b4ba406b9ea761d27298165d0e0de45c9d8491",
+            "https://github.com/tale-toul/SingleNodeOpenshiftOnLibvirt/commit/638430604158044fcf123adaf8dfdcc91b1a873e",
+            "https://github.com/JaredStufftGD/grok-airflow/commit/7ac9544b0c651fd8193eb063079514d0aa41e290",
+            "https://github.com/kaz/kiritan.com/commit/1cd96c7f71e56629ffa07c38e12c4da19fcfc5f7",
+            "https://github.com/openinfrastructure/terraform-google-multinic/commit/7a9c468b88d2edee19007cff6529a20a38eeb363"
+        ],
+        "codes": [
+            "use_spot_fleet",
+            "use_fargate_spot_capacity_provider",
+            "add_preemptible",
+            "use_spot_instance"
+        ],
+        "technology": [
+            "Terraform"
         ]
     }
 ]
