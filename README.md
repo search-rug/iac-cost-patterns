@@ -2,7 +2,7 @@
 
 This is a collection of patterns and antipatterns that support managing cost in Infrastructure as Code artifacts of cloud software deployments. It is intended to be a living catalog, open to community contributions.
 
-[`patterns.yml`](./blob/main/patterns.yml) is the pattern dataset, including references and occurrences in commits.
+[`patterns.yml`](./blob/main/thematic-analysis/patterns.yml) is the pattern dataset, including references and occurrences in commits.
 
 ## Context
 

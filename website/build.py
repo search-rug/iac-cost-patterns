@@ -1,6 +1,6 @@
 import yaml
 
-with open('../patterns.yml', 'r') as f:
+with open('../thematic-analysis/patterns.yml', 'r') as f:
     patterns = yaml.safe_load(f)
 
 TECHNOLOGIES = {
