@@ -1,0 +1,27 @@
+name: Build and deploy GH Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_and_deploy:
+    name: Build and deploy website
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v3.0.0
+      - name: Setup Python 3
+        uses: actions/setup-python@v2
+      - name: Install PyYAML
+        run: pip install PyYAML
+      - name: Generate content pages
+        run: |
+          cd website
+          python build.py
+      - name: Deploy to gh-pages branch
+        uses: shalzz/zola-deploy-action@v0.19.1
+        env:
+          BUILD_DIR: ./website
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
