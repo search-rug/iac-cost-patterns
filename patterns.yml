@@ -272,6 +272,12 @@
     - https://github.com/ironpeakservices/infrastructure/commit/2ca24fa9114b5b4389768d5ab93c1e6d99bb287c
     - https://github.com/robertdebock/git-terraform-demo/commit/5638b1a044215292a5e3fa405b6a0567c6b35436
     - https://github.com/robertdebock/git-terraform-demo/commit/686374095321975d851932a77b139d627f50c7d5
+    - https://github.com/jenkins-infra/aws/commit/586fde061356513609fe4f2014a11ddcec849c35
+    - https://github.com/poseidon/terraform-azure-kubernetes/commit/4989bf2d4a5eed7f1fcb01f63db5624afa113232
+    - https://github.com/poseidon/typhoon/commit/8d2c8b8db692b27b89d18e47a40cf7b49562694e
+    - https://github.com/poseidon/typhoon/commit/b68f8bb2a9f0825af76a563051c32100386024db
+    - https://github.com/tlc-pack/ci-terraform/commit/af285dd17beb9c35ea6339b3b9f43d6b166b5411
+    - https://github.com/binbashar/le-tf-infra-aws/commit/10cf13515c722708cfacb8f22ca9b05abca67505
 - name: Old generation
   patternType: anti-pattern
   description: Using newer resource generations gives similar performance for lower cost.
@@ -342,6 +348,11 @@
     - https://github.com/pelias/terraform-elasticsearch/commit/21c1827f4507eae217d43d99ad8cb1bbb1337e21
     - https://github.com/lowflying/OVPN---TF/commit/be1245d8634025277ba79a4155ee88d7eaffcdfb
     - https://github.com/figurate/bedrock/commit/bffc023eeff075ef281b1fd261897f4c7216b354
+    - https://github.com/alphagov/govuk-aws/commit/ffa75257747f225577616e6cf517eee965221041
+    - https://github.com/jg210/aws-experiments/commit/b09b668e5c3a11366551168541480b69e94c8c3a
+    - https://github.com/ministryofjustice/cloud-platform-environments/commit/ce502048eb3cd95e708f4575efefaf8dc60d7722
+    - https://github.com/ministryofjustice/cloud-platform-environments/commit/b6cea25115ac93a788cdedc2fe2f94d2c7ff6658
+    - https://github.com/ministryofjustice/cloud-platform-environments/commit/aa07f2d9772cc376589bec2cbb42f9ba849927db
 - name: Expensive storage type
   patternType: anti-pattern
   description: More expensive storage types are often used even when cheaper storage types would be sufficient.
@@ -391,6 +402,7 @@
     - https://github.com/bhfsystem/fogg/commit/7cc487f270d553f819fea0cf96e872c374979305
     - https://github.com/cisagov/freeipa-server-tf-module/commit/99fd319a72d25441acf36fd2c167a875e9028935
     - https://github.com/ministryofjustice/cloud-platform-terraform-monitoring/commit/87401ba23af26d379d8132cc09fd7cd212773ba1
+    - https://github.com/ministryofjustice/hmpps-env-configs/commit/7c1ba780a59f6a8682870318e70bf800a2d183a2
 - name: Expensive network resource
   patternType: anti-pattern
   description: Network resources like NAT gateways, elastic IP addresses and subnets tend to be expensive while not being strictly needed.
@@ -480,6 +492,9 @@
     - https://github.com/jeffawang/infrastructure/commit/9f610811aea8c523332e9dccad9bb0800b70691e
     - https://github.com/stephengrier/my-infra/commit/e5742d6f4f93dd432c9d8d0a31493d43c45aaff1
     - https://github.com/naftulikay/titan/commit/a0ea4fd84a409fe4ee853effa9f309a005b0efc1
+    - https://github.com/alphagov/govuk-aws/commit/9b54cd6e875843c3ecade45ce37e863357b6e0e9
+    - https://github.com/binbashar/le-tf-infra-aws/commit/8b1c39cf7e64610b4c17f5b2697a782f0ec99f7e
+    - https://github.com/robertdebock/terraform-aws-vault/commit/4ddd02182a1f210bb9f614fbba5ef11b4fcbe827
 - name: Overprovisioned resources
   patternType: anti-pattern
   description: Resources like RAM, storage and CPU utilization are often overprovisioned even when lower values are acceptable.
@@ -584,6 +599,8 @@
     - https://github.com/dgorbov/terraform-s3-backend-setup/commit/81f82740760a357a86b3a77f9ed400624edcb218
     - https://github.com/sbogacz/terraform-aws-state-backend/commit/174486319f3b956807d56e5433880f9978884f93
     - https://github.com/giuseppeborgese/terraform-locking-s3-state/commit/6b4e59e8b844417dc5c247bdef1b0adb8e2e7028
+    - https://github.com/Accurate0/infrastructure/commit/eef88fd3e61cf4b5e04682824e76df5348b60de5
+    - https://github.com/ministryofjustice/cloud-platform-environments/commit/0c1b4028575aeaabf7543c7357c4e26d610677c3
 - name: Expensive monitoring
   patternType: anti-pattern
   description: Monitoring solutions are expensive and might not be needed.
@@ -625,3 +642,10 @@
     - https://github.com/alghanmi/terraform-modules/commit/570d3d8440ed399ed8b30bffe1fd7a2adc197771
     - https://github.com/thoughtbot/flightdeck/commit/c784bc0a3f747b66ab7cd01f23bbbdbad3bfe705
     - https://github.com/chapas/tf-az-kubernetes/commit/bcc6e190b8f8a12b590089fb755c4f552f179ad0
+    - https://github.com/Accurate0/infrastructure/commit/bd63efe7cf8fd2d9ae3a1497c342f97a7d22a7f5
+    - https://github.com/rust-lang/simpleinfra/commit/05370cc8f9852987e20cf5c659e5249dd1f2181c
+    - https://github.com/binbashar/le-tf-infra-aws/commit/8b1c39cf7e64610b4c17f5b2697a782f0ec99f7e
+    - https://github.com/dfds/infrastructure-modules/commit/1c9c92d966c342d42ac5c915a7c01f6a98a38122
+    - https://github.com/matihost/monorepo/commit/6995c99e0561c29b6e8d0ff84d3b2504d1772fe8
+    - https://github.com/alphagov/govuk-infrastructure/commit/3386d7637c06f84cc3cc252f96d43e511cea428e
+    - https://github.com/alphagov/govuk-infrastructure/commit/6017d0be84adac6b90b46f3d0bc2376a7e9b8e85
