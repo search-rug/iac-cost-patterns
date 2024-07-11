@@ -186,7 +186,7 @@
       - https://github.com/utilitywarehouse/tf_telecom/commit/17007456991c1a8faa26b1f4ac993883f577d124
       - https://github.com/trajano/terraform-s3-backend/commit/cb9f00a2f6f23b44f7db08863ef5fb0b9ea0bc0c
 - name: Expensive instance
-  patternType: anti-pattern
+  patternType: antipattern
   description: Compute instances are often overprovisioned even when a cheaper instance would suffice.
   context: |
     A recurring pattern in cloud deployments is that developers initially
@@ -283,7 +283,7 @@
       - https://github.com/tlc-pack/ci-terraform/commit/af285dd17beb9c35ea6339b3b9f43d6b166b5411
       - https://github.com/binbashar/le-tf-infra-aws/commit/10cf13515c722708cfacb8f22ca9b05abca67505
 - name: Old generation
-  patternType: anti-pattern
+  patternType: antipattern
   description: Using newer resource generations gives similar performance for lower cost.
   context: |
     Cloud providers occasionally update their offerings to support, for example,
@@ -359,7 +359,7 @@
       - https://github.com/ministryofjustice/cloud-platform-environments/commit/b6cea25115ac93a788cdedc2fe2f94d2c7ff6658
       - https://github.com/ministryofjustice/cloud-platform-environments/commit/aa07f2d9772cc376589bec2cbb42f9ba849927db
 - name: Expensive storage type
-  patternType: anti-pattern
+  patternType: antipattern
   description: More expensive storage types are often used even when cheaper storage types would be sufficient.
   context: |
     Developers are able to choose between different storage types (HDD vs SSD, durability guarantees)
@@ -410,7 +410,7 @@
       - https://github.com/ministryofjustice/cloud-platform-terraform-monitoring/commit/87401ba23af26d379d8132cc09fd7cd212773ba1
       - https://github.com/ministryofjustice/hmpps-env-configs/commit/7c1ba780a59f6a8682870318e70bf800a2d183a2
 - name: Expensive network resource
-  patternType: anti-pattern
+  patternType: antipattern
   description: Network resources like NAT gateways, elastic IP addresses and subnets tend to be expensive while not being strictly needed.
   context: |
     Due to their interdependence, the cost of certain types of networking resources
@@ -503,7 +503,7 @@
       - https://github.com/binbashar/le-tf-infra-aws/commit/8b1c39cf7e64610b4c17f5b2697a782f0ec99f7e
       - https://github.com/robertdebock/terraform-aws-vault/commit/4ddd02182a1f210bb9f614fbba5ef11b4fcbe827
 - name: Overprovisioned resources
-  patternType: anti-pattern
+  patternType: antipattern
   description: Resources like RAM, storage and CPU utilization are often overprovisioned even when lower values are acceptable.
   context: |
     In a similar way to overprovisioned instances, it is difficult to estimate
@@ -543,7 +543,7 @@
       - https://github.com/phillhocking/aws-ubuntu-irssi/commit/1532e0c298ec4f8d7d749a884f7c46f2a2cf53d3
       - https://github.com/ministryofjustice/cloud-platform-terraform-monitoring/commit/87401ba23af26d379d8132cc09fd7cd212773ba1
 - name: AWS - Expensive DynamoDB
-  patternType: anti-pattern
+  patternType: antipattern
   description: |
     AWS DynamoDB tables often use features that carry cost but are not required,
     especially for infrequently accessed tables.
@@ -611,7 +611,7 @@
       - https://github.com/Accurate0/infrastructure/commit/eef88fd3e61cf4b5e04682824e76df5348b60de5
       - https://github.com/ministryofjustice/cloud-platform-environments/commit/0c1b4028575aeaabf7543c7357c4e26d610677c3
 - name: Expensive monitoring
-  patternType: anti-pattern
+  patternType: antipattern
   description: Monitoring solutions are expensive and might not be needed.
   context: |
     Cloud providers offer ways to monitor deployed infrastructure and
