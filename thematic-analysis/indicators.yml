@@ -2,873 +2,1091 @@
   technologies:
     - terraform
   codes:
+    - aws
     - add_budget
 - url: https://github.com/MartinFeineis/terraform/commit/359ba426393c78b78695797f9bdd6a08c0455720
   technologies:
     - terraform
   codes:
+    - aws
     - add_billing_alarm
 - url: https://github.com/stuartellis/stuartellis-org-tf-modules/commit/39a9cabac6765c75591ba258fef0d10ba7ae0f9e
   technologies:
     - terraform
   codes:
+    - aws
     - add_billing_alarm
 - url: https://github.com/forgotpw/forgotpw-infrastructure/commit/f4363ad27d366385f2388d073ce8af796e035406
   technologies:
     - terraform
   codes:
+    - aws
     - add_billing_alarm
 - url: https://github.com/Katesagay/terraform-repo/commit/9aacfbe12e3e7c1e726b9a3d834211aae01f419c
   technologies:
     - terraform
   codes:
+    - aws
     - add_billing_alarm
 - url: https://github.com/darogina/terragrunt-aws-modules/commit/9c84d03bde131e7f349dcd493ba5b7e55bf8ae2c
   technologies:
     - terraform
   codes:
+    - aws
     - replace_billing_alarm_budget
 - url: https://github.com/chetanbothra/Terraform_AWS_Billing_Alert/commit/43b0d3b4cef0d3f57d4f5d4f1c7aeb9bfc3e362a
   technologies:
     - terraform
   codes:
+    - aws
     - add_budget
 - url: https://github.com/ntk1000/aws-terraform-template/commit/d016b96d89370b8039817fabdfa055576cf6b4cc
   technologies:
     - terraform
   codes:
+    - aws
     - add_billing_alarm
 - url: https://github.com/StratusGrid/terraform-aws-single-account-starter/commit/c291c0954c89e1bfbdb76d4c8990baf9db986343
   technologies:
     - terraform
   codes:
+    - aws
     - add_billing_alarm
 - url: https://github.com/nsbno/terraform-aws-cost-alarm/commit/7e135499d33f0a5c51602a506fefe258cac072c6
   technologies:
     - terraform
   codes:
+    - aws
     - add_budget
 - url: https://github.com/64kramsystem/ultimate_aws_certified_cloud_practitioner_course_terraform_configuration/commit/2f36b8a5f2f818138da72d218c1f3c9666ed54aa
   technologies:
     - terraform
   codes:
+    - aws
     - add_billing_alarm
 - url: https://github.com/kelledge/idkfa/commit/25cda0b77ff329a89551cc6f14fe8c62820fd424
   technologies:
     - terraform
   codes:
+    - aws
     - add_billing_alarm
 - url: https://github.com/oke-py/aws-tf/commit/ec2982c8742cc7bc294f8a3cc07ae9ba5ffcaced
   technologies:
     - terraform
   codes:
+    - aws
     - add_budget
 - url: https://github.com/cob16/aws_static_website/commit/0d4fbd0a7b296a5c9377a835dff89d1499716082
   technologies:
     - terraform
   codes:
+    - aws
     - add_billing_alarm
 - url: https://github.com/mintak21/terraform-old/commit/c10b476d869282ed6cf55def47445b9c703788fe
   technologies:
     - terraform
   codes:
+    - aws
     - add_billing_alarm
 - url: https://github.com/alphagov/govwifi-terraform/commit/348b52a2ae5d6d242c8802644f9e3a5e6460de1d
   technologies:
     - terraform
   codes:
+    - aws
     - add_billing_alarm
 - url: https://github.com/eladidan/speedyhead.xyz-terraform/commit/71f034f3e13e9118a2a954e1fc3c0d35153184f0
   technologies:
     - terraform
   codes:
+    - gcp
     - add_budget
 - url: https://github.com/coremaker/terraform-google-nucleus/commit/11234f631f7370dd80ee5fbc5dd7bdbc12dcbf49
   technologies:
     - terraform
   codes:
+    - gcp
     - add_budget
 - url: https://github.com/robgmills/jumpbox/commit/028bbe114d099b0388be9a46adcab80d9383a518
   technologies:
     - terraform
   codes:
+    - aws
     - add_budget
 - url: https://github.com/AdrianNeatu/blog-terraform/commit/3ba302c69eb2a491a5b23e94084b4ddd24a4a703
   technologies:
     - terraform
   codes:
+    - aws
     - add_billing_alarm
 - url: https://github.com/richardhughes/infra-modules/commit/48015a86eda461d99b580b69db5922acbe5bd28e
   technologies:
     - terraform
   codes:
+    - aws
     - add_budget
 - url: https://github.com/patheard/terraform-cantrill-aws-associate/commit/bc7484cd34698f2724e5d9f241fd9f53d953e3a3
   technologies:
     - terraform
   codes:
+    - aws
     - add_billing_alarm
 - url: https://github.com/alghanmi/terraform-modules/commit/f4e8069ff11b7ca7a15ce25843b26d00fb399ade
   technologies:
     - terraform
   codes:
+    - aws
     - add_billing_alarm
 - url: https://github.com/cds-snc/cloud-based-sensor/commit/10bb572d477197bd3874532bfd364de1cb496d05
   technologies:
     - terraform
   codes:
+    - aws
     - add_billing_alarm
 - url: https://github.com/rmaheshvarma/terraform/commit/c866a7dd2575dd2a3f4af83f5f081a5004d0e478
   technologies:
     - terraform
   codes:
+    - aws
     - add_budget
 - url: https://github.com/akerl/aws-account/commit/91967d4089ad9580ceae62f7845581935c892455
   technologies:
     - terraform
   codes:
+    - aws
     - add_billing_alarm
 - url: https://github.com/singaporewaketools/iaac/commit/197502b1ac4bab77b9ab017b755c4d75ddaa218b
   technologies:
     - terraform
   codes:
+    - aws
     - add_billing_alarm
 - url: https://github.com/openinfrastructure/terraform-google-gitlab-runner/commit/8429375df72b04cc6fedc1ebb5f2c2e4ba18b9f2
   technologies:
     - terraform
   codes:
+    - gcp
     - add_preemptible
 - url: https://github.com/kathputli/terraform-aws/commit/321b1aee88f7d15dafe46aede2b86ced70061025
   technologies:
     - terraform
   codes:
+    - aws
     - use_spot_fleet
 - url: https://github.com/naciriii/terraform-ec2-gitlab-runner/commit/f8af6bc22bd3d827566e7e65deb63c13cdaf6031
   technologies:
     - terraform
   codes:
+    - aws
     - use_spot_instance
 - url: https://github.com/Hapag-Lloyd/terraform-aws-bastion-host-ssm/commit/516075e2987bdd1063f22768d451c1c1eb647175
   technologies:
     - terraform
   codes:
+    - aws
     - use_spot_instance
 - url: https://github.com/ToruMakabe/aks-anti-dry-iac/commit/4ba7a9dc3085ab701c85737a4f36dd57fcd7596f
   technologies:
     - terraform
   codes:
+    - azure
     - use_spot_instance
 - url: https://github.com/paperphyte/terraform-drone/commit/79f4b7c2cf3ad2d1a6d2646eaf27a08fd2611d07
   technologies:
     - terraform
   codes:
+    - aws
     - use_spot_fleet
 - url: https://github.com/filhodanuvem/from-dev-to-ops/commit/998be8119321e8812884075b078a1d5fb36cfa69
   technologies:
     - terraform
   codes:
+    - aws
     - use_spot_instance
 - url: https://github.com/stephaneclavel/terraform/commit/74b4ba406b9ea761d27298165d0e0de45c9d8491
   technologies:
     - terraform
   codes:
+    - azure
     - use_spot_instance
 - url: https://github.com/tale-toul/SingleNodeOpenshiftOnLibvirt/commit/638430604158044fcf123adaf8dfdcc91b1a873e
   technologies:
     - terraform
   codes:
+    - aws
     - use_spot_instance
 - url: https://github.com/JaredStufftGD/grok-airflow/commit/7ac9544b0c651fd8193eb063079514d0aa41e290
   technologies:
     - terraform
   codes:
+    - aws
     - use_fargate_spot_capacity_provider
 - url: https://github.com/kaz/kiritan.com/commit/1cd96c7f71e56629ffa07c38e12c4da19fcfc5f7
   technologies:
     - terraform
   codes:
+    - gcp
+    - cheaper_instance
+    - smaller_disk
     - add_preemptible
 - url: https://github.com/openinfrastructure/terraform-google-multinic/commit/7a9c468b88d2edee19007cff6529a20a38eeb363
   technologies:
     - terraform
   codes:
+    - gcp
     - add_preemptible
 - url: https://github.com/alphagov/govuk-aws/commit/f844cd8e254b161bebef04101f8ce177bcd0840c
   technologies:
     - terraform
   codes:
+    - aws
     - add_lifecycle_rule
 - url: https://github.com/alphagov/govuk-terraform-provisioning/commit/ac105ab0a5ae38fbf69167e072f8970a4a61c3e8
   technologies:
     - terraform
   codes:
+    - aws
     - add_lifecycle_rule
 - url: https://github.com/ExpediaGroup/apiary-data-lake/commit/47e62f2fc73a96611606cd619c084d1ded9d844d
   technologies:
     - terraform
   codes:
+    - aws
     - add_lifecycle_rule
 - url: https://github.com/SamTowne/BasketballDrillBot/commit/4ec6d54e4d36ab02b0a7daf042e727717371eaec
   technologies:
     - terraform
   codes:
+    - aws
     - add_lifecycle_rule
 - url: https://github.com/utilitywarehouse/tf_telecom/commit/17007456991c1a8faa26b1f4ac993883f577d124
   technologies:
     - terraform
   codes:
+    - aws
     - add_lifecycle_rule
 - url: https://github.com/trajano/terraform-s3-backend/commit/cb9f00a2f6f23b44f7db08863ef5fb0b9ea0bc0c
   technologies:
     - terraform
   codes:
+    - aws
     - add_lifecycle_rule
 - url: https://github.com/beaulabs/terraform_aws_ec2_instance/commit/d6df68da5ae58fb5c650c6be15d9d8e676a129db
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_instance
 - url: https://github.com/gudlyf/TerraformOpenVPN/commit/4bc861c153b65a2d7c0d5f3fac30ab72b0fc6942
   technologies:
     - terraform
   codes:
+    - azure
     - cheaper_instance
 - url: https://github.com/IncredibleHolg/infra-aws-code/commit/70904707a36ff8e5167e695de3529d8318911ba4
   technologies:
     - terraform
   codes:
+    - aws
+    - reduce_efs_ia_transition
     - cheaper_instance
 - url: https://github.com/ministryofjustice/cloud-platform-infrastructure/commit/e5dd13d33c1e927f932971d067d8f70e9041b5f3
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_instance
 - url: https://github.com/cisagov/cyhy_amis/commit/4e67a501bb3f5187a3e9af523921ac62b8a88469
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_instance
 - url: https://github.com/Kalmalyzer/UE-Jenkins-BuildSystem/commit/636097557e403eb1d6b6211b09e30c47e7f39466
   technologies:
     - terraform
   codes:
+    - gcp
     - cheaper_instance
 - url: https://github.com/dshmelev/aws_kube_tc/commit/853298ac74250964aa2d2ea921daa5905528b3a9
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_instance
 - url: https://github.com/aaaaasam/azure/commit/c7bc0ce6f3fcaffcbbe7753f1a9d8437809bc167
   technologies:
     - terraform
   codes:
+    - azure
     - cheaper_instance
 - url: https://github.com/rbabyuk/terra/commit/beae899804779adf914c08f290c5d71b542c9ed1
   technologies:
     - terraform
   codes:
+    - gcp
     - cheaper_instance
 - url: https://github.com/Leonard-Ta/Sample-Security-service-Terraform/commit/c16481a84d5823b65ce96bd811a265222385b43b
   technologies:
     - terraform
   codes:
+    - azure
     - cheaper_instance
+    - cheaper_disk_type
 - url: https://github.com/jjffggpp/jjffggpp/commit/93ee12adde6ac773c76b590fe89c24df372f326b
   technologies:
     - terraform
   codes:
+    - azure
     - cheaper_instance
 - url: https://github.com/EngineerBetter/kf-infra/commit/fa5f7fb35b0b44020fb81dd5c4e3b9ceaca1f967
   technologies:
     - terraform
   codes:
+    - gcp
     - cheaper_instance
 - url: https://github.com/KoutaroNohira/hashicat/commit/81dc1d3f98034672d5f62f440f2cc3abc58ce2a2
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_instance
 - url: https://github.com/wallnerryan/terraform-scaleio/commit/605e74facfa2ff519ba5cda6e57474666901bd8c
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_instance
 - url: https://github.com/UrbanOS-Examples/common/commit/206394bcc75866953f64cbf3bd6214e4e6f96e91
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_instance
 - url: https://github.com/cookpad/terraform-aws-eks/commit/59c40286757e1fa5cb5391421c5380e5ad506387
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_instance
 - url: https://github.com/ayltai/hknews-infrastructure/commit/68171be117d3997b84253258f41fad6daedbc76a
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_instance
 - url: https://github.com/joelchrist/terraform/commit/bbf18d695bd7597977ea7a97d5434ca7f1a37d57
   technologies:
     - terraform
   codes:
+    - gcp
     - cheaper_instance
 - url: https://github.com/jg210/aws-experiments/commit/5ff37f12a421fdd902d8eb1e6d7491ee181fd179
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_instance
 - url: https://github.com/scott45/vof-deployment-scripts/commit/c6b2c1bee4c1e53e87fd3d94fc8c07cf64342d7b
   technologies:
     - terraform
   codes:
+    - gcp
     - cheaper_instance
 - url: https://github.com/fdns/terraform-k8s/commit/f106917bb7b2d8d4428022bb119585bf9f35769c
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_instance
+    - smaller_disk
+    - reduce_spot_fleet_price
 - url: https://github.com/ministryofjustice/hmpps-env-configs/commit/670c006bad288d0360c3811aa63b3c323753c385
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_instance
 - url: https://github.com/ministryofjustice/hmpps-env-configs/commit/954dda617d47007a8a1ff5780d3174e900e95be1
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_instance
 - url: https://github.com/Linaro/qa-reports.linaro.org/commit/76c8d1ee35046912b6da4f1cc23e8b1dcc12abe9
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_instance
 - url: https://github.com/KieniL/terraform_setups/commit/37f66bc43f57b1b7a5a897c58cefe09900afd7ef
   technologies:
     - terraform
   codes:
+    - azure
     - cheaper_instance
 - url: https://github.com/digio/terraform-google-gitlab-runner/commit/07f8279fe65a35c0e595f3171f3d75791e49a9ae
   technologies:
     - terraform
   codes:
+    - gcp
     - cheaper_instance
 - url: https://github.com/jharley/azure-basic-demo/commit/7cd3d202d8723c565704f23c143cae3b1e1d6d2b
   technologies:
     - terraform
   codes:
+    - azure
     - cheaper_instance
 - url: https://github.com/pangeo-data/terraform-deploy/commit/f8163bd52bea3774e2f160cff0523c602e65d933
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_instance
+    - less_memory
+    - less_cpu
 - url: https://github.com/pangeo-data/terraform-deploy/commit/7244eed07a1008675f45cc4349bf68141bb29edc
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_instance
 - url: https://github.com/aeternity/terraform-aws-devnet/commit/f4113a8f7e52991dfb75f63688aeba77bac76b01
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_instance
 - url: https://github.com/schubergphilis/terraform-aws-mcaf-matillion/commit/3b0e2fe42d660664c49d54ae8706de004a9b4176
   technologies:
     - terraform
   codes:
+    - aws
+    - remove_rds_instance
+    - remove_alb
     - cheaper_instance
 - url: https://github.com/binbashar/le-tf-infra-aws/commit/0208ae3bc238f029b1faf6bdc3552dbe6147657b
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_instance
 - url: https://github.com/fpco/terraform-aws-foundation/commit/cfe92035f1b281cddfcf62664ec6b96e85e0ac32
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_instance
 - url: https://github.com/Civil-Service-Human-Resources/lpg-terraform-paas/commit/59477d3dc237e72252bde005b783213b7e8ed961
   technologies:
     - terraform
   codes:
+    - azure
     - cheaper_instance
 - url: https://github.com/ibm-cloud-architecture/iks_vpc_lab/commit/629819ce0c440760be155874cb42ab497f0304bd
   technologies:
     - terraform
   codes:
+    - ibm
     - cheaper_instance
 - url: https://github.com/goodpen/gke-v.1.0/commit/45053a0862bf97f0525862c411fa4da5d59ac397
   technologies:
     - terraform
   codes:
+    - gcp
     - cheaper_instance
 - url: https://github.com/rshurts/gke-cd-with-spinnaker/commit/3bc712aba0c797053b5cdc113e3e46afb6cff8a5
   technologies:
     - terraform
   codes:
-    - cheaper_instance
-- url: https://github.com/kaz/kiritan.com/commit/1cd96c7f71e56629ffa07c38e12c4da19fcfc5f7
-  technologies:
-    - terraform
-  codes:
+    - gcp
     - cheaper_instance
 - url: https://github.com/midl-dev/tezos-auxiliary-cluster/commit/9cbfebaab11cb3466b160d18ef2eb46c0b875d55
   technologies:
     - terraform
   codes:
+    - gcp
     - cheaper_instance
 - url: https://github.com/NLnetLabs/rpki-deploy/commit/8bd6e745475f635d6f6b6929a545afa2e1d9dd57
   technologies:
     - terraform
   codes:
+    - digitalocean
     - cheaper_instance
 - url: https://github.com/TimonB/tf-azure-example/commit/ce89df3cebc6487146391afe9517661053229f77
   technologies:
     - terraform
   codes:
+    - azure
     - cheaper_instance
 - url: https://github.com/00inboxtest/terraform-google-vault/commit/1d0b5db7f310dc6a47af3130a97e5373d9cdaddf
   technologies:
     - terraform
   codes:
+    - gcp
     - cheaper_instance
 - url: https://github.com/Amberoat/didactic-octo-eureka/commit/494706fc421a0ddda47f7d543b7e7a296c378c26
   technologies:
     - terraform
   codes:
+    - azure
     - cheaper_instance
 - url: https://github.com/robertdebock/terraform-aws-vault/commit/757edca9d6fb2231ebdcf03ec611183c59eaf39b
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_instance
 - url: https://github.com/covid-videoplattform/covid-videoplattform/commit/83d8b928ecb3f271a058bb30eaa1e05ce10e0434
   technologies:
     - terraform
   codes:
+    - gcp
     - cheaper_instance
 - url: https://github.com/alphagov/govuk-infrastructure/commit/a51a3bfcd73fd55ecd43aa36ce3f266f0cefc2dc
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_instance
 - url: https://github.com/pelias/terraform-elasticsearch/commit/8454c8ee25e821abde10b73a2fec691269e41822
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_instance
+    - reduce_instance_count
 - url: https://github.com/ironpeakservices/infrastructure/commit/2ca24fa9114b5b4389768d5ab93c1e6d99bb287c
   technologies:
     - terraform
   codes:
+    - scaleway
     - cheaper_instance
 - url: https://github.com/robertdebock/git-terraform-demo/commit/5638b1a044215292a5e3fa405b6a0567c6b35436
   technologies:
     - terraform
   codes:
+    - digitalocean
     - cheaper_instance
 - url: https://github.com/robertdebock/git-terraform-demo/commit/686374095321975d851932a77b139d627f50c7d5
   technologies:
     - terraform
   codes:
+    - digitalocean
     - cheaper_instance
 - url: https://github.com/jenkins-infra/aws/commit/586fde061356513609fe4f2014a11ddcec849c35
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_instance
 - url: https://github.com/poseidon/terraform-azure-kubernetes/commit/4989bf2d4a5eed7f1fcb01f63db5624afa113232
   technologies:
     - terraform
   codes:
+    - azure
     - cheaper_instance
 - url: https://github.com/poseidon/typhoon/commit/8d2c8b8db692b27b89d18e47a40cf7b49562694e
   technologies:
     - terraform
   codes:
+    - azure
     - cheaper_instance
 - url: https://github.com/poseidon/typhoon/commit/b68f8bb2a9f0825af76a563051c32100386024db
   technologies:
     - terraform
   codes:
+    - azure
     - cheaper_instance
 - url: https://github.com/tlc-pack/ci-terraform/commit/af285dd17beb9c35ea6339b3b9f43d6b166b5411
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_instance
 - url: https://github.com/binbashar/le-tf-infra-aws/commit/10cf13515c722708cfacb8f22ca9b05abca67505
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_instance
 - url: https://github.com/gudlyf/TerraformOpenVPN/commit/be1245d8634025277ba79a4155ee88d7eaffcdfb
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_instance
     - new_gen
 - url: https://github.com/alphagov/govuk-aws/commit/6cfda6ada5137b232ff442ae9f2aedc8520ee1b4
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_instance
     - new_gen
 - url: https://github.com/alphagov/govuk-aws/commit/aeb3bfbe393cdfc02e62b812843ed75cf5f245e4
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_instance
     - new_gen
 - url: https://github.com/alphagov/govuk-aws/commit/5fa5da9756f12559b490217dd5b173db48e7f2a9
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_instance
     - new_gen
 - url: https://github.com/alphagov/govuk-aws/commit/19d187e4a29147cbcf1cfae456cfcbfa8ad52b45
   technologies:
     - terraform
   codes:
+    - aws
     - new_gen
 - url: https://github.com/alphagov/govuk-aws/commit/806b1a2a47f2f4e580e524b2cf8cc5928749d972
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_volume
     - new_gen
 - url: https://github.com/alphagov/govuk-aws/commit/8d7d2ebe0dbe9ebf8009572d1d710c4700cf245e
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_volume
     - new_gen
 - url: https://github.com/greenbrian/musical-spork/commit/24c07bfd5c31438fff6374e9ba3d577e6402d777
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_os
+    - cheaper_instance
     - new_gen
 - url: https://github.com/dotancohen81/Rancher/commit/90944271b4e8bd46e3d42ac64bc4964a33a8fdc3
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_instance
     - new_gen
 - url: https://github.com/cisagov/cyhy_amis/commit/7b8d9247a679295e0e1791b13d6c437c473e44b8
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_volume
     - new_gen
 - url: https://github.com/yardbirdsax/elasticsearch-the-hard-way/commit/521bae59a4002a616eac44c1681ca5066bbd00c8
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_instance
     - new_gen
 - url: https://github.com/GBergeret/tf-vpc-module/commit/34d80ece7d0ef598414baffceb074c6580dd819b
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_instance
     - new_gen
 - url: https://github.com/cisagov/vulnerable-instances/commit/f70410061b8c6b9249895571e05dfb7a142efb18
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_volume
     - new_gen
 - url: https://github.com/dwp/dataworks-aws-data-egress/commit/14f065e5161fee14c286c34df7db9f5516ef9bb6
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_volume
     - new_gen
+    - smaller_disk
 - url: https://github.com/circleci/enterprise-setup/commit/26cc5295c2bb9d8756e450712e0f5f75af440c4a
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_instance
     - new_gen
 - url: https://github.com/bh1m2rn/gitlab-environment-toolkit/commit/b9750f0bb88bc22256085b6bc8f060055e90a8c4
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_volume
     - new_gen
 - url: https://github.com/travis-ci/terraform-config/commit/4f641b162fa877aef842481631906d5bfe874781
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_instance
     - new_gen
 - url: https://github.com/byu-oit/terraform-aws-rds/commit/86a0795540edb426c3226775d73fcd4ce807d36a
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_instance
     - new_gen
 - url: https://github.com/poseidon/terraform-azure-kubernetes/commit/633eb938742a43be09612b944c29aaaf70dac119
   technologies:
     - terraform
   codes:
+    - azure
+    - cheaper_instance
     - new_gen
 - url: https://github.com/poseidon/terraform-aws-kubernetes/commit/e09126b45746f1c967d1990fa04ce781a0478c6d
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_instance
     - new_gen
 - url: https://github.com/deadlysyn/terraform-keycloak-aws/commit/1c982ac4120ae3ed5a88c38f2a4d568ad9a83d22
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_instance
     - new_gen
 - url: https://github.com/ONSdigital/eq-terraform/commit/79845fe095cd87287346f40d2adce9b28a32ef35
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_instance
     - new_gen
 - url: https://github.com/kinvolk-archives/lokomotive-kubernetes/commit/f2f4deb8bb44988eeb0b64b919e51fb556aef4fb
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_instance
     - new_gen
 - url: https://github.com/smarman85/a_new_hope/commit/de97a6b8033c866c3b711468207aa4890049daaa
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_instance
     - new_gen
 - url: https://github.com/kmishra9/PL2-AWS-Setup/commit/0d7b5b0f6f92ff6cfde1f17ad96d1b1459a0957a
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_instance
     - new_gen
 - url: https://github.com/cisagov/cool-sharedservices-nessus/commit/5403a8978053a1299b0afe8d7fc59e914fc5e354
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_volume
     - new_gen
 - url: https://github.com/guillaumekh/wg-terraform-template/commit/effee9cbc473af5d07cfc3aacece50aa6e59753a
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_instance
     - new_gen
 - url: https://github.com/ninthnails/terraform-aws-camellia/commit/0019704e14723aaf326840ab36c594c3f514a2d4
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_instance
     - new_gen
 - url: https://github.com/openaustralia/infrastructure/commit/63ee190c0ae1832bb72681e1e4b1b14a9367b4bb
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_volume
     - new_gen
 - url: https://github.com/robertdebock/terraform-aws-vault/commit/e3b6520960a88aacbf03339dc1368f680a8bee9a
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_instance
     - new_gen
 - url: https://github.com/cisagov/cool-assessment-terraform/commit/3138943ab4d15cc256d322e1128862ef11383c73
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_volume
     - new_gen
 - url: https://github.com/pelias/terraform-elasticsearch/commit/21c1827f4507eae217d43d99ad8cb1bbb1337e21
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_instance
     - new_gen
 - url: https://github.com/lowflying/OVPN---TF/commit/be1245d8634025277ba79a4155ee88d7eaffcdfb
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_instance
     - new_gen
 - url: https://github.com/figurate/bedrock/commit/bffc023eeff075ef281b1fd261897f4c7216b354
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_instance
     - new_gen
 - url: https://github.com/alphagov/govuk-aws/commit/ffa75257747f225577616e6cf517eee965221041
   technologies:
     - terraform
   codes:
+    - aws
     - new_gen
+    - cheaper_volume
 - url: https://github.com/jg210/aws-experiments/commit/b09b668e5c3a11366551168541480b69e94c8c3a
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_instance
     - new_gen
 - url: https://github.com/ministryofjustice/cloud-platform-environments/commit/ce502048eb3cd95e708f4575efefaf8dc60d7722
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_instance
     - new_gen
 - url: https://github.com/ministryofjustice/cloud-platform-environments/commit/b6cea25115ac93a788cdedc2fe2f94d2c7ff6658
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_instance
     - new_gen
 - url: https://github.com/ministryofjustice/cloud-platform-environments/commit/aa07f2d9772cc376589bec2cbb42f9ba849927db
   technologies:
     - terraform
   codes:
+    - aws
+    - cheaper_instance
     - new_gen
 - url: https://github.com/thomastodon/jabujabu/commit/02210a3d3ba4a770c29623825b7f54f3ff33f3c7
   technologies:
     - terraform
   codes:
+    - gcp
+    - smaller_disk
     - cheaper_disk_type
+    - remove_loadbalancer
 - url: https://github.com/giantswarm/giantnetes-terraform/commit/53ed24b573947c73ea9f0f4f8b477c44b7de2d54
   technologies:
     - terraform
   codes:
+    - azure
+    - reduce_node_count
     - cheaper_disk_type
 - url: https://github.com/Kalmalyzer/UE-Jenkins-BuildSystem/commit/ee8942b2c5d59546dd3b3be5f2cb88500d0fe1be
   technologies:
     - terraform
   codes:
-    - cheaper_disk_type
-- url: https://github.com/Leonard-Ta/Sample-Security-service-Terraform/commit/c16481a84d5823b65ce96bd811a265222385b43b
-  technologies:
-    - terraform
-  codes:
+    - gcp
     - cheaper_disk_type
 - url: https://github.com/falldamagestudio/UE4-GHA-BuildSystem/commit/e58083adbf91e7daa8ddb5db6c3b2e5c8c0a906c
   technologies:
     - terraform
   codes:
+    - gcp
     - cheaper_disk_type
 - url: https://github.com/bculberson/btc2snowflake/commit/9f8227bf53ebc2b1bb0b99d0697f9f66eed7ab6d
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_volume
 - url: https://github.com/ministryofjustice/hmpps-env-configs/commit/0328838420ac0d3754cf772a7d2f5bb1612193ed
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_volume
+    - remove_iops
 - url: https://github.com/travis-infrastructure/terraform-stuff/commit/1e208af4c83d093c900f4cccedbca6183142a07f
   technologies:
     - terraform
   codes:
+    - gcp
     - cheaper_disk_type
 - url: https://github.com/sdcote/cloudsql/commit/dfe44fcf8f5a477e1fbc354f1b1d87af28895c0f
   technologies:
     - terraform
   codes:
+    - gcp
     - cheaper_disk_type
 - url: https://github.com/wellcomecollection/archivematica-infrastructure/commit/ce576be106257496e20d946d6eab5f8783dada92
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_volume
+    - explicit_value
 - url: https://github.com/jshcmpbll/Cloud-Mac-KVM/commit/361885d22c0304cb44683f9b005f82ca5e269841
   technologies:
     - terraform
   codes:
+    - gcp
     - cheaper_disk_type
+    - smaller_disk
+    - smaller_image
 - url: https://github.com/TimonB/tf-azure-example/commit/b49579fbecbe8002932fdfb86146f83efd60bfcf
   technologies:
     - terraform
   codes:
+    - azure
     - cheaper_disk_type
 - url: https://github.com/phillhocking/aws-ubuntu-irssi/commit/1532e0c298ec4f8d7d749a884f7c46f2a2cf53d3
   technologies:
     - terraform
   codes:
+    - aws
+    - explicit_value
+    - less_cpu_cores
     - cheaper_disk_type
 - url: https://github.com/bhfsystem/fogg/commit/81e606a72e7c2e06c2f6d9c204086157aa82eac3
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_volume
 - url: https://github.com/bhfsystem/fogg/commit/7cc487f270d553f819fea0cf96e872c374979305
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_volume
 - url: https://github.com/cisagov/freeipa-server-tf-module/commit/99fd319a72d25441acf36fd2c167a875e9028935
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_volume
+    - explicit_value
 - url: https://github.com/ministryofjustice/cloud-platform-terraform-monitoring/commit/87401ba23af26d379d8132cc09fd7cd212773ba1
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_volume
+    - smaller_disk
 - url: https://github.com/ministryofjustice/hmpps-env-configs/commit/7c1ba780a59f6a8682870318e70bf800a2d183a2
   technologies:
     - terraform
   codes:
+    - aws
     - cheaper_volume
 - url: https://github.com/stealthHat/k8s-terraform/commit/681a3f8b4942be495b3f2528fb9ee40d7a4eb08a
   technologies:
     - terraform
   codes:
+    - aws
     - remove_nat_gateway
-- url: https://github.com/thomastodon/jabujabu/commit/02210a3d3ba4a770c29623825b7f54f3ff33f3c7
-  technologies:
-    - terraform
-  codes:
-    - remove_loadbalancer
 - url: https://github.com/structurefall/jamulus-builder/commit/7190744187e0aed2df8ce84f2a944294d6d4fc5b
   technologies:
     - terraform
   codes:
+    - aws
     - reduce_subnets
     - remove_nat
 - url: https://github.com/joshuaspence/infrastructure/commit/d8e1979ea7954076f64ab4d3337b95f14a06fc31
   technologies:
     - terraform
   codes:
+    - aws
     - reduce_nat_gateways
 - url: https://github.com/joshuaspence/infrastructure/commit/b9b9465314e3b5ada78340d06b90703136cdf3dc
   technologies:
     - terraform
   codes:
+    - aws
     - remove_nat_gateway
 - url: https://github.com/dexterchan/Terraform_Webserver/commit/af5af0b8e6a59a9c5879fde7eaaa86d694c2bfa2
   technologies:
     - terraform
   codes:
+    - aws
     - reduce_vpc_endpoint_subnets
 - url: https://github.com/austin1237/clip-stitcher/commit/4eed76f9bfd4f93181660178ea689d98cd6d66d5
   technologies:
     - terraform
   codes:
+    - aws
     - remove_private_subnet
     - remove_nat
 - url: https://github.com/IoT-Data-Marketplace/mp-infrastructure/commit/5afcf39a85fc972eb9bb3486e5dc8aeeba77d3ee
   technologies:
     - terraform
   codes:
+    - aws
     - remove_vpn
 - url: https://github.com/InvictrixRom/website-infrastructure/commit/09e400452c1bde25fe393dd56c2fd608b84a18ac
   technologies:
     - terraform
   codes:
+    - aws
     - remove_private_subnet
     - reduce_subnets
     - remove_route_table
     - remove_alb
+    - reduce_instance_count
 - url: https://github.com/InvictrixRom/website-infrastructure/commit/44d66328ea4467d05d7fb8092631aff5afbd8b26
   technologies:
     - terraform
   codes:
+    - aws
     - remove_private_subnet
     - remove_nat
 - url: https://github.com/pvandervelde/infrastructure.azure.core.network.hub/commit/0ecf0a154918bd9bdc0f53557bc1f80920da6b14
   technologies:
     - terraform
   codes:
+    - azure
     - remove_firewall
 - url: https://github.com/Midas-Protocol/webtwo-infra/commit/25ed0319bf8099f0cc79eceba9104c73d9507e0d
   technologies:
     - terraform
   codes:
+    - aws
     - remove_nat_gateway
     - remove_eip
 - url: https://github.com/GBergeret/tf-vpc-module/commit/5e63c8390cb1001daf4ad74bb2926cc060c0de08
   technologies:
     - terraform
   codes:
+    - aws
     - use_ec2_as_nat_gateway
 - url: https://github.com/GBergeret/micro-service-as-code/commit/46f76d50b8569f450ce909e04f3c5fa81b97737a
   technologies:
     - terraform
   codes:
+    - aws
     - use_alb
 - url: https://github.com/ecsworkshop2018/expertalk-2018-ecs-workshop/commit/034908d914982eacea51b0ac61f2781069387412
   technologies:
     - terraform
   codes:
+    - aws
     - remove_eip
     - remove_nat_gateway
     - remove_route_table
@@ -877,114 +1095,131 @@
   technologies:
     - terraform
   codes:
+    - gcp
     - remove_nat
 - url: https://github.com/robertlupinek/rh-ex407/commit/0c679d7adfa5bf38d5c7846958f3508fc036b3e9
   technologies:
     - terraform
   codes:
+    - aws
     - associate_public_ip
 - url: https://github.com/skehlet/aws-batch-processing/commit/decdbce98d33cf2599aee554779ef5d8b5361d8f
   technologies:
     - terraform
   codes:
+    - aws
     - remove_nat_gateway
     - use_ec2_as_nat_gateway
 - url: https://github.com/poseidon/terraform-aws-kubernetes/commit/ef0372d2684ef920c6e54cf8b9f80d87db90e636
   technologies:
     - terraform
   codes:
+    - aws
     - reduce_nlb
 - url: https://github.com/paperphyte/terraform-drone/commit/f62bfebb54530c9466cfdb21336794f24bcd63a7
   technologies:
     - terraform
   codes:
+    - aws
     - remove_loadbalancer
 - url: https://github.com/nisunisu/AWS_Blue_Green_Deployment/commit/d0741cddb32ed7970904693e3a697603fa21bbbb
   technologies:
     - terraform
   codes:
+    - aws
     - remove_eip
 - url: https://github.com/ryanlg/ryhino-public/commit/e51b9583b2df3154b5c82da361d411d65ed23bab
   technologies:
     - terraform
   codes:
+    - aws
     - remove_private_subnet
 - url: https://github.com/masterpointio/terraform-aws-nuke-bomber/commit/33fbb76715ce6e35565b5f83f7ece0f9df37d282
   technologies:
     - terraform
   codes:
+    - aws
     - remove_nat_gateway
 - url: https://github.com/kinvolk-archives/lokomotive-kubernetes/commit/0c4d59db87b67d7c7a0a0f54677961a01ed8fbe4
   technologies:
     - terraform
   codes:
+    - gcp
+    - use_global_loadbalancing
     - remove_loadbalancer
 - url: https://github.com/alhardy-net/terraform-core-aws-alhardynet-networking/commit/30be6aa1969e37d512153b558540fe714b635c4c
   technologies:
     - terraform
   codes:
+    - aws
     - remove_nat_gateway
 - url: https://github.com/alhardy-net/terraform-core-aws-alhardynet-networking/commit/f7b96f0b28008f8aed881cc211a5f3fdb3ae67ac
   technologies:
     - terraform
   codes:
+    - aws
     - remove_nat_gateway
 - url: https://github.com/alhardy-net/terraform-core-aws-alhardynet-networking/commit/b26b9e5d1b13602a4c192d9697a12df7770906b2
   technologies:
     - terraform
   codes:
+    - aws
     - remove_nat_gateway
 - url: https://github.com/imma/fogg-env/commit/7de45302cfa8a7dca88ab61b3021091cc480b495
   technologies:
     - terraform
   codes:
+    - aws
     - remove_eip
     - remove_nat
-- url: https://github.com/schubergphilis/terraform-aws-mcaf-matillion/commit/3b0e2fe42d660664c49d54ae8706de004a9b4176
-  technologies:
-    - terraform
-  codes:
-    - remove_alb
 - url: https://github.com/binbashar/le-tf-infra-aws/commit/a873443bd618ac9c14d12210ed4d12a11cc1f733
   technologies:
     - terraform
   codes:
+    - aws
     - remove_nat_gateway
 - url: https://github.com/binbashar/le-tf-infra-aws/commit/19c37f7e4e65d14e760f1ff8cf60cfd1e98c1a8b
   technologies:
     - terraform
   codes:
+    - aws
     - remove_nat_gateway
 - url: https://github.com/binbashar/le-tf-infra-aws/commit/bbfbd2484ace2819ffceac9155b995ab870ee3a3
   technologies:
     - terraform
   codes:
+    - aws
     - remove_nat_gateway
 - url: https://github.com/mads-hartmann/cloud.mads-hartmann.com/commit/667f5715c19534bfe5b01ad692979447412fd033
   technologies:
     - terraform
   codes:
+    - aws
     - remove_waf
 - url: https://github.com/opszero/terraform-aws-kubespot/commit/decc9706133af9978ada6cf58a1a63343468e8a0
   technologies:
     - terraform
   codes:
+    - aws
     - remove_eip
 - url: https://github.com/stSoftwareAU/sts-network/commit/bf59a4c995822ccfdeee64781345c12ebefa967f
   technologies:
     - terraform
   codes:
+    - aws
     - reduce_eip
     - reduce_nat_gateways
 - url: https://github.com/lean-delivery/terraform-module-aws-core/commit/25bbff736936b64a6120ef9608498830ecec33c0
   technologies:
     - terraform
   codes:
+    - aws
     - use_ec2_as_nat_gateway
 - url: https://github.com/CheesecakeLabs/django-drf-boilerplate/commit/e4003aa3c51b789e2a2b5828768a7d0f34659209
   technologies:
     - terraform
   codes:
+    - aws
     - remove_private_subnet
     - remove_nat_gateway
     - remove_nat
@@ -992,17 +1227,20 @@
   technologies:
     - terraform
   codes:
+    - aws
     - remove_nat_gateway
 - url: https://github.com/simplygenius/atmos-recipes/commit/d27b48345a3827b8a10cb5388e42bd5cbea484bb
   technologies:
     - terraform
   codes:
+    - aws
     - reduce_nat_gateways
     - reduce_eip
 - url: https://github.com/hellupline/terraform-eks-cluster/commit/2bd01358b3a30d1680074f9bbd120da3a1456450
   technologies:
     - terraform
   codes:
+    - aws
     - remove_nat_gateway
     - remove_eip
     - remove_private_subnet
@@ -1010,385 +1248,408 @@
   technologies:
     - terraform
   codes:
+    - aws
     - reduce_nat_gateways
 - url: https://github.com/schubergphilis/terraform-aws-mcaf-vpc/commit/6ca41e5ad697201a1d225e5d15134e547ee6ced3
   technologies:
     - terraform
   codes:
+    - aws
     - remove_eip
     - remove_nat_gateway
 - url: https://github.com/davidcallen/parkrunpointsleague/commit/21627e4057b3446b511e4369ca366e297cfc87eb
   technologies:
     - terraform
   codes:
+    - aws
     - remove_transit_gateway
 - url: https://github.com/HarsheshShah08/HS-Terraform/commit/e0d0f044c54ebf491c122664d03e0cfe5d2b0823
   technologies:
     - terraform
   codes:
+    - aws
     - remove_nat_gateway
     - remove_private_subnet
 - url: https://github.com/nagpach/terraform-example-aws-vpc/commit/35d26fd046185ae079e09fa6435c41ae685e679e
   technologies:
     - terraform
   codes:
+    - aws
     - remove_nat
     - remove_nat_gateway
 - url: https://github.com/appbricks/cloud-inceptor/commit/782a0a3c30cf83bcaeacc942789ccc903576fe8a
   technologies:
     - terraform
   codes:
+    - aws
     - remove_eip
 - url: https://github.com/firehawkvfx/firehawk-prototype-deprecated/commit/894fb1d80c7a3953b7a51d7acd5e9b942faced8f
   technologies:
     - terraform
   codes:
+    - aws
     - remove_nat_gateway
 - url: https://github.com/Xin00163/terraform/commit/f69ce3812180a20bbda69ff1432a1cd36342bc3b
   technologies:
     - terraform
   codes:
+    - aws
     - remove_alb
 - url: https://github.com/jeffawang/infrastructure/commit/9f610811aea8c523332e9dccad9bb0800b70691e
   technologies:
     - terraform
   codes:
+    - aws
     - remove_nat_gateway
 - url: https://github.com/stephengrier/my-infra/commit/e5742d6f4f93dd432c9d8d0a31493d43c45aaff1
   technologies:
     - terraform
   codes:
+    - aws
     - remove_nat_gateway
     - use_ec2_as_nat_gateway
 - url: https://github.com/naftulikay/titan/commit/a0ea4fd84a409fe4ee853effa9f309a005b0efc1
   technologies:
     - terraform
   codes:
+    - aws
     - remove_nat_gateway
     - remove_nat
 - url: https://github.com/alphagov/govuk-aws/commit/9b54cd6e875843c3ecade45ce37e863357b6e0e9
   technologies:
     - terraform
   codes:
+    - aws
     - remove_vpn
 - url: https://github.com/binbashar/le-tf-infra-aws/commit/8b1c39cf7e64610b4c17f5b2697a782f0ec99f7e
   technologies:
     - terraform
   codes:
+    - aws
     - remove_nat_gateway
+    - remove_cloudwatch_dashboard
 - url: https://github.com/robertdebock/terraform-aws-vault/commit/4ddd02182a1f210bb9f614fbba5ef11b4fcbe827
   technologies:
     - terraform
   codes:
+    - aws
     - add_vpc
     - add_nat_gateway
     - add_eip
     - add_route
-- url: https://github.com/thomastodon/jabujabu/commit/02210a3d3ba4a770c29623825b7f54f3ff33f3c7
-  technologies:
-    - terraform
-  codes:
-    - smaller_disk
 - url: https://github.com/guilhermerenew/infra-cost/commit/ba858d94e29d03e3e81533df8cd8bc85b9f176f1
   technologies:
     - terraform
   codes:
+    - aws
     - lambda_less_memory
 - url: https://github.com/chaspy/terraform-alibaba-isucon8/commit/53588dad5dd4c13903a6c582f74e1afe2671d33e
   technologies:
     - terraform
   codes:
+    - alicloud
     - less_cpu_cores
     - less_memory
-- url: https://github.com/dwp/dataworks-aws-data-egress/commit/14f065e5161fee14c286c34df7db9f5516ef9bb6
-  technologies:
-    - terraform
-  codes:
-    - smaller_disk
 - url: https://github.com/akaron/kubeadm_aws/commit/2e2092ec94b27a4c3f0b9f4ee4d46a1983a72518
   technologies:
     - terraform
   codes:
+    - aws
     - smaller_disk
+    - reduce_instance_count
 - url: https://github.com/robertdebock/terraform-azurerm-container-group/commit/c0d6578f1ebbdcc9cab091017259e4d596bfe8c9
   technologies:
     - terraform
   codes:
+    - azure
     - less_cpu
     - less_memory
-- url: https://github.com/fdns/terraform-k8s/commit/f106917bb7b2d8d4428022bb119585bf9f35769c
-  technologies:
-    - terraform
-  codes:
-    - smaller_disk
 - url: https://github.com/jackofallops/terraform-aws-mysql-cluster/commit/7b2a446b0915a3ad26093f8234f7493ff152138a
   technologies:
     - terraform
   codes:
+    - aws
     - smaller_disk
+    - reduce_iops
 - url: https://github.com/alphagov/govwifi-terraform/commit/38d0a67cf70d46c26675ce60a7a647eef0f11e52
   technologies:
     - terraform
   codes:
+    - aws
     - less_memory
-- url: https://github.com/pangeo-data/terraform-deploy/commit/f8163bd52bea3774e2f160cff0523c602e65d933
-  technologies:
-    - terraform
-  codes:
-    - less_memory
-    - less_cpu
 - url: https://github.com/eduardobaitello/terraform-eks/commit/c11fca6440a5000648f690e6282778fb4ec73309
   technologies:
     - terraform
   codes:
+    - aws
     - smaller_disk
-- url: https://github.com/jshcmpbll/Cloud-Mac-KVM/commit/361885d22c0304cb44683f9b005f82ca5e269841
-  technologies:
-    - terraform
-  codes:
-    - smaller_disk
-- url: https://github.com/kaz/kiritan.com/commit/1cd96c7f71e56629ffa07c38e12c4da19fcfc5f7
-  technologies:
-    - terraform
-  codes:
-    - smaller_disk
+    - explicit_value
 - url: https://github.com/dylanmtaylor/dylanmtaylor-terraform-aws/commit/44016d6a8e496b69308a81e88af8c9ef8b710ab3
   technologies:
     - terraform
   codes:
+    - aws
     - smaller_disk
 - url: https://github.com/roysjosh/terraform-unifi/commit/da9e2869456610a0228cb14f850c6eccddbb15e0
   technologies:
     - terraform
   codes:
-    - smaller_disk
-- url: https://github.com/phillhocking/aws-ubuntu-irssi/commit/1532e0c298ec4f8d7d749a884f7c46f2a2cf53d3
-  technologies:
-    - terraform
-  codes:
-    - less_cpu_cores
-- url: https://github.com/ministryofjustice/cloud-platform-terraform-monitoring/commit/87401ba23af26d379d8132cc09fd7cd212773ba1
-  technologies:
-    - terraform
-  codes:
+    - aws
     - smaller_disk
 - url: https://github.com/wellcomecollection/buildkite-infrastructure/commit/50957e0478fd4c4d945ac593822436f6a7ec8111
   technologies:
     - terraform
   codes:
+    - aws
     - increase_volume_size
 - url: https://github.com/deptno/terraform-aws-modules/commit/49f447bdbb3cf23499e8194e78f852ea1e256d3a
   technologies:
     - terraform
   codes:
+    - aws
     - dynamo_on_demand
 - url: https://github.com/ONSdigital/eq-terraform-dynamodb/commit/40eb651a50d0dfd5cf047ef62c8a6259c1c66e02
   technologies:
     - terraform
   codes:
+    - aws
     - dynamo_on_demand
 - url: https://github.com/olliefr/aws-terraform-cloud1/commit/bf753832a519b0649f8d58d93aa643afe3f94fc7
   technologies:
     - terraform
   codes:
+    - aws
     - dynamo_on_demand
 - url: https://github.com/garylb2/terraform-example-patterns/commit/6de6d83d930bd9459e1cf8c311fa7b45c3f90987
   technologies:
     - terraform
   codes:
+    - aws
     - remove_dynamo_global_secondary_indices
 - url: https://github.com/Arkoprabho/TerraformTutorial/commit/ba317d7e402f014589e230fad8c7384016211ba2
   technologies:
     - terraform
   codes:
+    - aws
     - dynamo_on_demand
 - url: https://github.com/jkstenzel95/jks.gameservers/commit/411ab992ba07e698cb08b56eb4cfc9d6e001d43f
   technologies:
     - terraform
   codes:
+    - aws
     - dynamo_on_demand
 - url: https://github.com/techservicesillinois/aws-enterprise-vpc/commit/0d21bea79e1936e2bdaee58bd6e328dd08e59b30
   technologies:
     - terraform
   codes:
+    - aws
     - dynamo_on_demand
 - url: https://github.com/austin1237/gifbot/commit/c11dabf1ea02c0e044c62448986bb3f9abdf3967
   technologies:
     - terraform
   codes:
+    - aws
     - dynamo_reduce_rw_capacity
 - url: https://github.com/servers-tf/infrastructure/commit/cc9e50a3864511f9fb9f871293e6a6e7e2719d2c
   technologies:
     - terraform
   codes:
+    - aws
     - dynamo_reduce_rw_capacity
 - url: https://github.com/jsoconno/aws-terraform-remote-state-infrastructure/commit/fed8be2748bc2286a6f9888d282d66763ba612ed
   technologies:
     - terraform
   codes:
+    - aws
     - dynamo_on_demand
 - url: https://github.com/ONSdigital/eq-terraform/commit/6eaf697bf9f111214a6d74ee3094e5784a57d1bb
   technologies:
     - terraform
   codes:
+    - aws
     - dynamo_on_demand
 - url: https://github.com/nikkiwritescode/flask-app-terraform-deployment/commit/af47bb6201f1dcc8264e60da429e4ff8d126e56c
   technologies:
     - terraform
   codes:
+    - aws
     - dynamo_on_demand
 - url: https://github.com/kperson/terraform-modules/commit/53bd2d84776f9ed7ae287fc59ed42f87bd7bbc4b
   technologies:
     - terraform
   codes:
+    - aws
     - dynamo_on_demand
 - url: https://github.com/kody-abe/terraform/commit/169c7768b0b1584945362c035a2b227d2f579466
   technologies:
     - terraform
   codes:
+    - aws
     - dynamo_on_demand
 - url: https://github.com/jenkins-x/terraform-aws-eks-jx/commit/cce6b14692fccd30c027851607a9526151d4c3d2
   technologies:
     - terraform
   codes:
+    - aws
     - dynamo_on_demand
 - url: https://github.com/telia-oss/terraform-aws-terraform-init/commit/e8c7b2eb22d08ddd1a1bb375cb6efa4165c9098f
   technologies:
     - terraform
   codes:
+    - aws
     - dynamo_on_demand
 - url: https://github.com/trajano/terraform-s3-backend/commit/f4b61c7bedae856439f01499de1ec9050b4c40fc
   technologies:
     - terraform
   codes:
+    - aws
     - dynamo_on_demand
 - url: https://github.com/poldi2015/chat-app/commit/cb45bf17da799afaa789206e3fcd39d9403e0567
   technologies:
     - terraform
   codes:
+    - aws
     - dynamo_on_demand
     - dynamo_reduce_rw_capacity
 - url: https://github.com/tesera/terraform-modules/commit/3cd4d7b55ac2003153fd0670151ab395ae182431
   technologies:
     - terraform
   codes:
+    - aws
     - dynamo_on_demand
 - url: https://github.com/MichaelDeCorte/TerraForm/commit/3799ee8b9677d02254eb6d6f50f3732df4c8374e
   technologies:
     - terraform
   codes:
+    - aws
     - dynamo_on_demand
 - url: https://github.com/TalkingFox/SignalWs/commit/935d9d683608b4d8a97ef6ccc2c8ab7c14eec0d0
   technologies:
     - terraform
   codes:
+    - aws
     - dynamo_reduce_rw_capacity
 - url: https://github.com/codequest-eu/terraform-modules/commit/ffe23d4c2cd78035bef0dfb261701e7ed8dd588d
   technologies:
     - terraform
   codes:
+    - aws
     - dynamo_reduce_rw_capacity
 - url: https://github.com/dgorbov/terraform-s3-backend-setup/commit/81f82740760a357a86b3a77f9ed400624edcb218
   technologies:
     - terraform
   codes:
+    - aws
     - dynamo_on_demand
 - url: https://github.com/sbogacz/terraform-aws-state-backend/commit/174486319f3b956807d56e5433880f9978884f93
   technologies:
     - terraform
   codes:
+    - aws
     - dynamo_on_demand
 - url: https://github.com/giuseppeborgese/terraform-locking-s3-state/commit/6b4e59e8b844417dc5c247bdef1b0adb8e2e7028
   technologies:
     - terraform
   codes:
+    - aws
     - dynamo_on_demand
 - url: https://github.com/Accurate0/infrastructure/commit/eef88fd3e61cf4b5e04682824e76df5348b60de5
   technologies:
     - terraform
   codes:
+    - aws
     - dynamo_on_demand
 - url: https://github.com/ministryofjustice/cloud-platform-environments/commit/0c1b4028575aeaabf7543c7357c4e26d610677c3
   technologies:
     - terraform
   codes:
+    - aws
     - dynamo_on_demand
 - url: https://github.com/Eximchain/terraform-aws-quorum-cluster/commit/6a56f400f7de3f4d5cef646d92e3f848608031c1
   technologies:
     - terraform
   codes:
+    - aws
     - remove_cloudwatch_metrics
 - url: https://github.com/Accurate0/infrastructure/commit/06889e08148d258f329118d43734f8c8dcff994e
   technologies:
     - terraform
   codes:
+    - aws
     - remove_cloudwatch_logs
 - url: https://github.com/cloudspout/Gefjun/commit/665692a86bb65ddfa6c001f296c76c17288e2944
   technologies:
     - terraform
   codes:
+    - aws
     - remove_container_insights
     - reduce_cloudwatch_retention
 - url: https://github.com/terraform-google-modules/terraform-example-foundation/commit/8391f1bd4322fec04fda7509b537c5f66cddbbd9
   technologies:
     - terraform
   codes:
+    - gcp
     - remove_audit_logs
 - url: https://github.com/tdooner/flynn/commit/a9ea9d09727825f9a047e70d94caf73c99e6b2a8
   technologies:
     - terraform
   codes:
+    - aws
     - remove_status_check
 - url: https://github.com/elliotpryde/personal-infrastructure/commit/772c5ad20818738b09d01cd70ca3de80cbf66dcb
   technologies:
     - terraform
   codes:
+    - aws
     - remove_status_check
 - url: https://github.com/elliotpryde/personal-infrastructure/commit/7c4205cd130c5463d7f39aa6f281e198c143d0d9
   technologies:
     - terraform
   codes:
+    - aws
     - remove_status_check
 - url: https://github.com/alghanmi/terraform-modules/commit/570d3d8440ed399ed8b30bffe1fd7a2adc197771
   technologies:
     - terraform
   codes:
+    - aws
     - remove_cloudfront_logs
 - url: https://github.com/thoughtbot/flightdeck/commit/c784bc0a3f747b66ab7cd01f23bbbdbad3bfe705
   technologies:
     - terraform
   codes:
+    - aws
     - remove_fluentbit_annotations
     - remove_fluentbit_labels
 - url: https://github.com/chapas/tf-az-kubernetes/commit/bcc6e190b8f8a12b590089fb755c4f552f179ad0
   technologies:
     - terraform
   codes:
+    - azure
     - remove_log_analytics
 - url: https://github.com/Accurate0/infrastructure/commit/bd63efe7cf8fd2d9ae3a1497c342f97a7d22a7f5
   technologies:
     - terraform
   codes:
+    - aws
     - remove_container_insights
 - url: https://github.com/rust-lang/simpleinfra/commit/05370cc8f9852987e20cf5c659e5249dd1f2181c
   technologies:
     - terraform
   codes:
+    - fastly
     - fastly_compute_compress_s3_logs
-- url: https://github.com/binbashar/le-tf-infra-aws/commit/8b1c39cf7e64610b4c17f5b2697a782f0ec99f7e
-  technologies:
-    - terraform
-  codes:
-    - remove_cloudwatch_dashboard
 - url: https://github.com/dfds/infrastructure-modules/commit/1c9c92d966c342d42ac5c915a7c01f6a98a38122
   technologies:
     - terraform
   codes:
+    - aws
     - remove_eks_cloudwatch_agent
 - url: https://github.com/matihost/monorepo/commit/6995c99e0561c29b6e8d0ff84d3b2504d1772fe8
   technologies:
     - terraform
   codes:
+    - gcp
     - remove_prometheus_kube_api_scraping
 - url: https://github.com/alphagov/govuk-infrastructure/commit/3386d7637c06f84cc3cc252f96d43e511cea428e
   technologies:
@@ -1400,3 +1661,1853 @@
     - terraform
   codes:
     - remove_prometheus_kube_api_scraping
+- url: https://github.com/tkhoa2711/terraform-digitalocean/commit/a86d89369aaf5a20c1e4d8415a8a771aa7de7d10
+  technologies:
+    - terraform
+  codes:
+    - digitalocean
+    - no_cost_change
+- url: https://github.com/stealthHat/k8s-terraform/commit/4193db798227c6538c61d55a906ed9ac997563f7
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - cheaper_area
+- url: https://github.com/JamesWoolfenden/terraform-aws-codebuild-container/commit/4a00ffcbf9576d7e5febdbdf94a31d4735fc8035
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/dannysievers/gcp-project/commit/88303c62ab59b1e7a538289112cf19354a8ed05f
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - no_cost_change
+- url: https://github.com/tooxie/terraform-workshop/commit/002bcce28e46728714fa1e0d20bec6f2559caba2
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/aws-observability/aws-otel-test-framework/commit/c928fe0a05d1e9b8f1ecb1a7dacffecc2800e038
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/ken-matsui/poac-infrastructure/commit/02c710b8259f493c475021fc9eac23b871305ae6
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - cheaper_rds_cluster
+- url: https://github.com/chad-russell-git/terraform-oci-cis-landing-zone/commit/6a696dfa2dd5716a65b10fc3277cd9e994b8b30a
+  technologies:
+    - terraform
+  codes:
+    - oracle
+    - no_cost_change
+- url: https://github.com/chad-russell-git/terraform-oci-cis-landing-zone/commit/7247909ecd98c2d511316392f22cb3877f05250b
+  technologies:
+    - terraform
+  codes:
+    - oracle
+    - no_cost_change
+- url: https://github.com/ministryofjustice/modernisation-platform/commit/bc346a5604045d29b4b427c926f3e70d69440698
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/UriKatsirPrivate/gcp-landing-zone/commit/0160ab1f89489abec4120ef4102bf5964b0af2fe
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - no_cost_change
+- url: https://github.com/AJarombek/global-aws-infrastructure/commit/61e07012be3f140daf18d33b3be19c80147f12f2
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/cloudchacho/terraform-google-hedwig-subscription/commit/ab8808de2e078c572e9d88fdc57ff91b8e4acc36
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - remove_dataflow
+- url: https://github.com/ohoareau/terraform-modules/commit/d066b8dfa3b03df200afa9a521126a83884cdfb3
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/alphagov/govuk-aws/commit/6488091456429ed61264b9cad841eeb6bf871e32
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - use_full_glacier_time
+- url: https://github.com/alphagov/govuk-aws/commit/2ee1ff690416016dfed50dab6f516559f2270bf9
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/alphagov/govuk-aws/commit/5d30d7d7ca658bed21677b1aa56c72a0e0cd737b
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/alphagov/govuk-aws/commit/fbd513a3c74bf20ecdb67a4243d30356e8b86a01
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/alphagov/govuk-aws/commit/74fe1ac392549eb3aad67d239310b92cc9f0dd10
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/alphagov/govuk-aws/commit/e91c7912b25beb51199ccfff2414668bcc69186e
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/alphagov/govuk-aws/commit/ef79a5aec29133d4c479652863c61f943fbdb42b
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/alphagov/govuk-aws/commit/6283dd7b80fd26ff09d242555a6e56c2eb75471b
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/alphagov/govuk-aws/commit/b4094f63c5d4a216ed7ade1a51ea3653222cf222
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/joshuaspence/infrastructure/commit/0cea1cf84859055ff5107fc8d8514475e7036bee
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - remove_eks
+- url: https://github.com/DoSomething/infrastructure/commit/a2dbfe25699f574b5ad4540063e4208ea8b04b4e
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - remove_iops
+- url: https://github.com/hashicorp/terraform-azurerm-terraform-enterprise/commit/b2fe861f1949f5f9f5bad0b4ca4ee6b6cb65485f
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - cheaper_redis_cache
+- url: https://github.com/fahdr/asz-dbz/commit/f5b50d8dfbec87dba0b824369021dc6b22058840
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - reduce_az
+- url: https://github.com/kmalkin/tf-aws-pi-hole/commit/066049972b995fb019bf29be7f0f307064a2f00e
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - remove_iam
+- url: https://github.com/poseidon/terraform-google-kubernetes/commit/189d96ce0f96c107ebf62dbaf73734e6fd20883a
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - use_global_loadbalancing
+- url: https://github.com/public-transport/infrastructure/commit/64bfc57cef180a90c4dfe91801e7e1a4c66c3151
+  technologies:
+    - terraform
+  codes:
+    - ovh
+    - no_cost_change
+- url: https://github.com/mdcurran/terraform-infrastructure/commit/d7f24bafaa9f80e9d3e834dc34b8fbe950a6c437
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - remove_gcp
+- url: https://github.com/ministryofjustice/cloud-platform-infrastructure/commit/fdd3a7dcb787a6a24e34b93a6aa124c94e93cb0e
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/ministryofjustice/cloud-platform-terraform-elasticache-cluster/commit/ddcc1a8abc1d29e8e32ed3c2e92ed9755dd17014
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/InvictrixRom/website-infrastructure/commit/d51caa0c810f6d5ad6f0846a317ec2432835aad7
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/tjpotenza/kubernetes-modules/commit/d750e25615e7e37914119cb257fbd9c7fad3a52a
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/Harmelodic/automation-infrastructure/commit/8b563a7d3c7d90ddd2359500d9781547347cc56a
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - remove_gcp
+- url: https://github.com/gstimac/terralab/commit/7696353632379532ab7006f9eda39fbf14e25532
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - cheaper_aks_loadbalancer
+- url: https://github.com/JamesWoolfenden/terraform-aws-codepipeline/commit/cf842d48df037476a754b221f7b4115bb4f5ddf1
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/sworisbreathing/splunk-refactor-poc/commit/5be96c3735b14c16dbe87f4c544f5ab1c75ab93a
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - auto_stop_1h
+- url: https://github.com/geraldwuhoo/homelab-iac/commit/3228ee1c5bfdf89e57e898659b086364122d58c1
+  technologies:
+    - terraform
+  codes:
+    - no_cost_change
+- url: https://github.com/firehawkvfx/firehawk-main/commit/aef45215a4fe18d7fd03b7556fa3070815c57a22
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/bretmullinix/terraform-for-beginners/commit/3a3e9f6d19da0730f2b077b0c160a467102f5666
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - cheaper_image
+- url: https://github.com/JamesWoolfenden/terraform-azurerm-sql/commit/4fe0be131b0f6b5f073391227b9fe54372506b42
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - no_cost_change
+- url: https://github.com/Midas-Protocol/webtwo-infra/commit/2809f4e2d78ff33b48e9c1742b58a256ebce986d
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/ImminentDomain/immdom-terraform/commit/a49aaeed1776f0991256221e61ebc868ae5b60cb
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/Cinegy/terraform-cinegy-modules/commit/09636724e63599b1f589065c92074575471ac234
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - reduce_az
+- url: https://github.com/SUSE/caps-automation/commit/5675965b57d05932ae8b806bad2cd219d15fe516
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - use_single_instance_aurora
+- url: https://github.com/akshay3030/dockerized-jenkins-master/commit/4356e9ebf89921898e9459f85f1173d44f3a3a6f
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/00inboxtest/cloud-foundation-fabric/commit/3a8a040ff3efcec38c423d5249625ed2d87ab261
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - no_cost_change
+- url: https://github.com/laurijssen/tform_azure/commit/6f802267c2d43803eebbdb383da9e3815c1c68bd
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - cheaper_area
+- url: https://github.com/AwakeningSV/live-infrastructure/commit/43bba3db97631d8730160950395fde42793adbc2
+  technologies:
+    - terraform
+  codes:
+    - digitalocean
+    - azure
+    - cheaper_provider
+- url: https://github.com/alphagov/govuk-terraform-provisioning/commit/ed67711a54ca65473c9c7b788161d680914ef1c7
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/JamesWoolfenden/terraform-aws-glue-crawler/commit/484b85587d32f2f2a6d54ffe16d5c759841961f8
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/Hapag-Lloyd/terraform-aws-bastion-host-ssm/commit/840ed0938bea8867caba921446b8a77a2f1c9e7d
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/nmaupu/auto-gcp/commit/ef1df1044df317c78987f7f8398b4e45f5a3ee0a
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - reduce_az
+- url: https://github.com/jenkins-infra/aws/commit/4a9e2c05092acca34f0608394638776c75496a99
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/ministryofjustice/hmpps-delius-core-terraform/commit/6e25b2cfb1cb80fd45ab6627a04e52735bb2fb5e
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - add_placement_strategy
+- url: https://github.com/wellcomecollection/goobi-infrastructure/commit/271bf02f91bfe5e8fc7ea9f94bfe56fd49a8d8e0
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - add_s3_vpc_endpoint
+- url: https://github.com/jjffggpp/jjffggpp/commit/0e69a9978eae9e3432de8f16c2ca1b38033c23a7
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - azure
+    - gcp
+    - no_cost_change
+- url: https://github.com/jjffggpp/jjffggpp/commit/948727c5b1e87b970a7a9dee4cd67bb84d19abf8
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - azure
+    - gcp
+    - no_cost_change
+- url: https://github.com/lwilliams1990/deepfence-threatmapper-lab/commit/cbd8ce761041eac3afbdfbf74e001895895682f2
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/adeelbarki/aws-with-terraform-and-ansible/commit/742f35a1fdf66b24ddb1f6a514b2af5a1f2b4282
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - explicit_value
+- url: https://github.com/EOjeah/route53-ps/commit/1c619d5df3f2e7f49dd9a3a47150aa41b0de497f
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/amezousan/serverless-blog-in-aws/commit/c130862a29878f0e483551bc115d2ca5bdc4bf5c
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - reduce_cloudfront_cache_allowed_methods
+- url: https://github.com/alphagov/prometheus-aws-configuration-beta/commit/0edcb1dbd7337eab4155be2f2a7683a77cc3cc6d
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/hmcts/cnp-module-api-mgmt/commit/038d43dc5f17870bc6681e1d8699e0a0951a859e
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - no_cost_change
+- url: https://github.com/UCDenver-ccp/Translator-TM-Provider-Infrastructure-Modules/commit/ddc29467494ee63c323d0eb6493de6e8440c113e
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - reduce_node_pools
+- url: https://github.com/emyasa/hashicorp-consul-setup/commit/0c38902905b96c598715a08d5c3880ad01ce5fea
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/linuxlsr/azureLearning/commit/163a9de084161e21cb62c19033b4bff7d3a5e649
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - no_cost_change
+- url: https://github.com/linuxlsr/azureLearning/commit/e2a2ef243deb0374ccfe3f37e0d1395d4338969c
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - no_cost_change
+- url: https://github.com/dankline/waapdemo/commit/087f2caeff6ecaa2a18ecc2f20b7313a70d2d191
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - cheaper_service_plan
+- url: https://github.com/wellcomecollection/loris-infrastructure/commit/77c58fa499829785825e45aa90e1bb6c7058c5a2
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/sastels/learn-AWS-terraform/commit/0816f145a8b709df6af66a7dad229a4ff31619ba
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/schramm-famm/bespin/commit/cff3747c70722eba940317dec58dc9c22b3b4939
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/zoitech/terraform-aws-account/commit/2eb42357d986ad2c3d8693907df99895cee25c63
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - add_iam_policy
+- url: https://github.com/cbChgit/testrepo/commit/803640f6e77857520f69700ccc27c772ee7564e4
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - no_cost_change
+- url: https://github.com/travis-ci/terraform-config/commit/0e2fc3ca535ca4a1fe3097b336fb145e6c73cde6
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - nat_host_custom_machine_type
+- url: https://github.com/bhavikkumar/terraform-master/commit/8a71bbe9588b78351fe231a4341d07a5e2101ebb
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/robinbryce/iona/commit/e89519dc59655ddbd3ecf56a4d680d7d01128152
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - no_cost_change
+- url: https://github.com/cloudposse/terraform-aws-alb/commit/c3c8dd8bebf14f91518253cadadc6d8a88b5ea09
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/PaloAltoNetworks/terraform-azurerm-vmseries-modules/commit/c50fd3b3f25f87a6326684ad44d507d187e24874
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - no_cost_change
+- url: https://github.com/PaloAltoNetworks/terraform-azurerm-vmseries-modules/commit/d9b4b9dcb95b96bdfb09f9631acd91ab34aa7dcf
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - no_cost_change
+- url: https://github.com/PaloAltoNetworks/terraform-azurerm-vmseries-modules/commit/72e7126b0baf6e039f70c12262d11e7ea7562189
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - no_cost_change
+- url: https://github.com/vx-labs/infra/commit/302b243d09b58375efbff31c9e2dfc60c3d7bb7b
+  technologies:
+    - terraform
+  codes:
+    - scaleway
+    - no_cost_change
+- url: https://github.com/kitchen/personal-terraform/commit/b0660183c95f4b938dbf33c5607381b8e4e2bd68
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - add_shared_vpc_host_project
+- url: https://github.com/kitchen/personal-terraform/commit/e3d337caa558830f8e337d24edaab577ee9d43a2
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/kitchen/personal-terraform/commit/bc22c89eabce912e3bb5ced85348d37df351b06d
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - no_cost_change
+- url: https://github.com/glenngillen/terraform-demo-cost-estimation-azure/commit/f29cf1138d21a2eba8aaccec3185e461cb8675bd
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/glenngillen/terraform-demo-cost-estimation-azure/commit/dfc9a7ea4a62b6e6c14e09b2f08c7fb5c63ca711
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/acmucsd/tech-stack/commit/e78aad174927ca59a43a622d7e82f664e3005790
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/alstard/terraform/commit/17463f89d0801c30bbca8ad5f0c4ef7f6f15e49f
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - cheaper_os
+- url: https://github.com/Terraform-Projects/lead-terraform-Dashboard/commit/71a0250ad3aeed1da2b11734ac22c21831f3595d
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/Crown-Commercial-Service/digitalmarketplace-aws/commit/9928d58017829d85789bdf45f467b6d32c6354b2
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/vuvuzella/jt-aws-serverless-app/commit/53d023dc22daa7b4181b8ea51ce72c6b857aa553
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - remove_codebuild
+- url: https://github.com/cds-snc/terraform-modules/commit/75fc899c58848b290a31ff92bab92c27b3f6bf53
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - add_delete_marker_replication
+- url: https://github.com/rribeiro1/terraform-aws-budget-alarms/commit/cd81824b92fb7205071ca00359ce4bd86412af10
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/willfarrell/terraform-logs-module/commit/545b0bb763a4dbaab6b262c4b9642767e2434d07
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - remove_transfer_acceleration
+- url: https://github.com/JamesWoolfenden/terraform-aws-workspaces/commit/e4558e322cd6af610c43a840a59af8dad41f307f
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/ndebuhr/cloud-native-workstation/commit/301244e00d9f359f964242849462704f80e8db13
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - no_cost_change
+- url: https://github.com/keithnoguchi/do-in-action/commit/2291a1ac7e47009d058a1a448760cd5559e5946e
+  technologies:
+    - terraform
+  codes:
+    - digitalocean
+    - no_cost_change
+- url: https://github.com/JamesWoolfenden/terraform-azurerm-mysql/commit/ab28ba331929475431fe695036d0863d329cdac2
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - no_cost_change
+- url: https://github.com/ae-lexs/terraform_modules/commit/84628710c900b2d1db058aa0e339134f24e6d20c
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/ae-lexs/terraform_modules/commit/8cd62acc20ce3418eaf4cdd9d8b472091101cdbd
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/reschouw-homelab/terraform-homelab/commit/e19dd7497737376a07e62042ed9fb3e8ad9739a9
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/mozilla-platform-ops/devservices-aws/commit/ebb4040f6ad47d3e41c5ddf2cdceac3b3a8abead
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/poseidon/terraform-aws-kubernetes/commit/12f8972a912d97427fe0ef1b84becdc8a2993022
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/eutambem/eutambem-serverless/commit/43182470f02a463a4b9ee5ed3ec899f5d7de9653
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - reduce_rds_capacity
+- url: https://github.com/openfun/jitsi-meet-torture-rocket/commit/349c94aeffffb4eef513107d281d59ef6dd33962
+  technologies:
+    - terraform
+  codes:
+    - scaleway
+    - no_cost_change
+- url: https://github.com/HumanCellAtlas/dcp-monitoring/commit/4fd89da7e37ce7f22d920e3584761f702383a8ba
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/NDPH-ARTS/mts-trial-deployment-config/commit/0cb5e776b8695da57892560c89010a8abd817afc
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - use_mssql_serverless
+- url: https://github.com/picatz/terraform-google-nomad/commit/3c48151cd75447f7fbd3e6ce14c491cd28e2442c
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - no_cost_change
+- url: https://github.com/sivaganesan23/EKS-Terraform/commit/c82a19d98673c1aeeb1fa26afb983acbfbea272f
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/andreishappy/clouduru-infra/commit/991915ce492e074d8df658aa54c902b52f9c4cc5
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/andyfangdz/aws-crawler/commit/7f2ffcc3cbb8538f82cb14377edb08b49105baf7
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - no_cost_change
+- url: https://github.com/mudathirlawal/azure-terraform-packer-iac/commit/587d3a91c12aae8f0dd4b34a46d03f919ea385c6
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - no_cost_change
+- url: https://github.com/bishoybassem/aws-jenkins/commit/3f27fe4cb4b75bffb7c1cf754f3f22a61cad9bfd
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - use_same_az_public_private_subnet
+- url: https://github.com/wushin/ttrpg-tools/commit/9604c14a781530129e47e7a7684a90db86a7f7a0
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/JamesWoolfenden/terraform-aws-lex-lambda/commit/a39ed520b0048d54886d16c10c988ca905f64c58
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/digitalronin/digitalocean-build-machine/commit/edbb68b29f7e055a50c16f62a71ee7be8c019407
+  technologies:
+    - terraform
+  codes:
+    - digitalocean
+    - no_cost_change
+- url: https://github.com/wellcomecollection/platform-infrastructure/commit/cc8cb3ab5e257109ea9f6c19f4d034b1ac7ca4ca
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/combinator-ml/terraform-google-kubernetes/commit/703ef359dbe7d4d2f2bbf9c0bbd31f5b4bc30e68
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - no_cost_change
+- url: https://github.com/combinator-ml/terraform-google-kubernetes/commit/27deaade65fd58e978b0a604c6c3fcd6683306bb
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - no_cost_change
+- url: https://github.com/rajesh-nitc/gcp-foundation/commit/fc054a7183757d1e51e371e7329c5cf848cc6dd8
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - no_cost_change
+- url: https://github.com/rajesh-nitc/gcp-foundation/commit/eaf81b5f5ca1dbdd8951d4179a631818139566a5
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - remove_dns_zones
+- url: https://github.com/rajesh-nitc/gcp-foundation/commit/0db462f5528100ece08d85366fc777cd59fad473
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - remove_dns_zones
+- url: https://github.com/datarootsio/terraform-module-azure-datalake/commit/4907fd7598d0083705494182d985c6b3b58db2c0
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - cheaper_area
+- url: https://github.com/ministryofjustice/hmpps-env-configs/commit/28e80387490ac5303782b4762f1d42cac394464c
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/nephosolutions/terraform-google-gcp-project/commit/908c3fd85a60090cdd06f6f4b46893ceeeaf99fb
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - no_cost_change
+- url: https://github.com/JamesWoolfenden/terraform-aws-config/commit/9df6f6e72cd4fa33003fa5498c796bd129c99d0f
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/tlc-pack/ci-terraform/commit/b93d225cc274dba55027a4a3db2475e78c77018f
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/tlc-pack/ci-terraform/commit/aae09ea0dc9f394bd83e640ae003ba336a28a2b5
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/tlc-pack/ci-terraform/commit/9a51a8ae697b9f9df1c05c8276a871b614be2da9
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/ONSdigital/eq-terraform/commit/a252266af60f5ab828ad9b81b17bb7b16a2fc52f
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/Wieschie/personal-infra/commit/bfa7b3ae90f1d64d957700976080f9b1921dba30
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - remove_ssm_endpoint
+- url: https://github.com/Linaro/qa-reports.linaro.org/commit/77116ea84b2e8d088c644723e787ad5d6d9677fd
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/dvdhrm/imagebuilder-terraform/commit/9e3285b91b2a95271c3b4d0c8777f5363bfdfd40
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - remove_external_vpc_endpoint
+- url: https://github.com/armand1m/terraform-gke-drone/commit/e5dd322eadc9e0a00fd3a603d5a9e9e07a812df6
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - reduce_node_count
+- url: https://github.com/reifnir/iac/commit/baced6c85a92e5c39d6270397ab5471262748bf6
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - no_cost_change
+- url: https://github.com/javier-lopez/terraforms/commit/afed4b83a174335ec2b371061c81bc92938ecda3
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/tomnz/rocketchat-tf/commit/5298263d68548372c064b9d9c76977325a7373c8
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - no_cost_change
+- url: https://github.com/ministryofjustice/cloud-platform-environments/commit/d7afb9018e20ef85f1fbee2300dbf5c5cdf3cb0e
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/ministryofjustice/cloud-platform-environments/commit/5199e517f5e08b8bed3f96334b102814b3e99200
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/ministryofjustice/cloud-platform-environments/commit/cca186a0f7165b361f372c87524011e91b28f41a
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/CPWu/terraform_three_instances/commit/faaecdc2e201a146f76f4a94f51e9fd5c5a428f3
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - no_cost_change
+- url: https://github.com/alphagov/govwifi-terraform/commit/d75eace6e505fe5645647593ab8a9bb018db64c2
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/juliandunn/terraform-chefserver/commit/3971011e4253cb5b98fdf77a558f5ef8f34d2653
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - cheaper_os
+- url: https://github.com/NedimRenesalis/demblock-pipeline/commit/9edee1a04f6056f367ce5ef678775c1203d6a778
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - cheaper_area
+- url: https://github.com/fluent-labs/infrastructure/commit/c166c9356246b540be28f56c7240e69e45f5b973
+  technologies:
+    - terraform
+  codes:
+    - digitalocean
+    - no_cost_change
+- url: https://github.com/rjmco/rjmco-github-tests/commit/ea9c4efeb857958f5a31b75d22555c34e1181937
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - cheaper_container_registry
+- url: https://github.com/Kakaranish/eszop-infra/commit/cd97b1881cb0d1c145b8b6236a3702a970c671c2
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - no_cost_change
+- url: https://github.com/maxjahn/terraform-oci-azure-connect/commit/fa109033da045468d612fe8eae1a2f903e30e128
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - expressroute_local_tier
+- url: https://github.com/thiringai-evans/cloud_scripts/commit/5127d7a6eccc6965d1e51928d50ee01a46b38871
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/pumbaasdad/aws-account/commit/42c288d84b5f7853c36dcc55d181b8e16d3304a5
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/wellcomecollection/archivematica-infrastructure/commit/4b495fef39e68590aea98af324340adafadfb334
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - reduce_instance_count
+- url: https://github.com/binbashar/le-tf-infra-aws/commit/2afa0c4652393014778f9b2fefcf975d6ca22ae2
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/binbashar/le-tf-infra-aws/commit/c00d24a1626e7d88a33431e4b403651acf158e05
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/binbashar/le-tf-infra-aws/commit/0662f7e1bfc70e21d8229e142b98b6c303addbc3
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/binbashar/le-tf-infra-aws/commit/89fd3ebb3ba1ccc9a9019ad250b93a336d4bc03e
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/PaloAltoNetworks/terraform-aws-vmseries-modules/commit/1af5d07714182455cafd972556b507409f9559ae
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/renovate-tests/hackstack-local/commit/5e8b6f6b88db49a0508ea670d71070c92cfdbaca
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/Ecklebe/IaC-Templates/commit/aeab4d039020c0d63209d7f800f9c34fae4060e6
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - no_cost_change
+- url: https://github.com/JamesWoolfenden/terraform-azurerm-mariadb/commit/2b30952f26e8a8e66fe8b6eddf9c4657e0d074d4
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - no_cost_change
+- url: https://github.com/aiidalab/aiidalab-k8s/commit/65e44242c0b5f27d64ff714e5a8eed71ca02ab26
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - cheaper_area
+- url: https://github.com/tale-toul/Harbor/commit/804ab045e330d3b669282e55c5bcc4660ebffea8
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - ebs_delete_on_termination
+- url: https://github.com/alphagov/paas-alpha-tsuru-terraform/commit/6085ce34a95fbc4a8d651a3f6a0405811952af93
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/KiaraGrouwstra/sentia-data-engineering-assignment/commit/7e5c997c23683a707aa384b6a07801210b1839b8
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - add_resource_group_cost_management_export
+- url: https://github.com/AdrianNeatu/blog-terraform/commit/12cf2cb526ed6b2d12106894ca735cf81ba432ff
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/CodeForPoznan/Infrastructure/commit/2709680d633653ca9bd68a023981a75427daaa7a
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/mhemeryck/iac/commit/9ec3047d95969e8d2b729e6545672c3084ea846d
+  technologies:
+    - terraform
+  codes:
+    - digitalocean
+    - hcloud
+    - cheaper_provider
+- url: https://github.com/opszero/terraform-aws-kubespot/commit/ac39d3b9140e90bfd4b9eaa01200385bf10cc15d
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/devops-ci-cd/weather_cache_infrastructure/commit/3378831be84bb1825c847a001c3c240318d991dc
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - reduce_mssql_min_capacity
+- url: https://github.com/devops-ci-cd/weather_cache_infrastructure/commit/28b9313a2bb11c357deeaa256950fb0acf220bc4
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - reduce_mssql_min_capacity
+- url: https://github.com/donkeysharp/the-dummy-tfaws/commit/5ea19806f7fcba7727e8111fc5ff4946b9ba72c8
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/Quansight/qhub/commit/265d6c5b8a1e01032402d4b2c94d12d5365e5e6e
+  technologies:
+    - terraform
+  codes:
+    - digitalocean
+    - no_cost_change
+- url: https://github.com/davidski/tf-public_subnet/commit/ad841964564c461513643bb13531dc07111efc7d
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - cheaper_area
+- url: https://github.com/RavenProject/seed-node-fallback-domain-config/commit/5ba235b0c935de75c2cb2f57686bc246816a7f74
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - no_cost_change
+- url: https://github.com/Pavel-Hrabec/Azure-Terraform-Budget/commit/4759aa86a84ee099d6ce3f3987520a5b6cd1ffd3
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - add_consumption_budget_resource_group
+- url: https://github.com/relaycorp/cloud-gateway/commit/759b1d641a430bf189354e9a4866e72fe56c22dc
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - no_cost_change
+- url: https://github.com/Azure/devops-governance/commit/4894def3589d532789cc8af0c0b197727e0fb3f4
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - remove_container_registry
+- url: https://github.com/thatscotdatasci/terraform-lambda/commit/6e85cf4f7e7f76c159c2e30952a775d6facaf638
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - use_default_kms_key
+- url: https://github.com/imma/fogg-tf/commit/6089a019df4c39231e596af627ebd910877d11d0
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/dmcgowandmc/minifoundations/commit/832682e0b54ede90b021b4ed575dcc9e761135ce
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/dmcgowandmc/minifoundations/commit/941e316bcd70779e868311253f663f8acd5ef155
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - remove_ssm_endpoint
+- url: https://github.com/alphagov/verify-infrastructure/commit/d34dcd505074546f77367786f5362891050c3440
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/alphagov/verify-infrastructure/commit/70a31f9b9a167e5025bb4099cc584044c47e699b
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/poseidon/terraform-digitalocean-kubernetes/commit/bacda9d75b329997eb849183cf36ff8f97a9ee83
+  technologies:
+    - terraform
+  codes:
+    - digitalocean
+    - no_cost_change
+- url: https://github.com/cloudtruth-demo/ops/commit/3945c8e2bd7a2b7e73169aceae9dc1817ec8292c
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/itzik-bd/parking-status/commit/5f9f8fb118a42d7b18ec082be41665ed2b9eb992
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - remove_sqs
+    - lambda_max_concurrency
+- url: https://github.com/ministryofjustice/modernisation-platform-environments/commit/ec5ec7bac99558a4e95e95788f846eb618edb861
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/ckilpatrick20/github-actions/commit/1ab89439a42782f55a2ad591530118dbabd9a447
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/jsnider-mtu/tfw-eks/commit/daaceda701c88a0ad7162425f57bd9cabf6d8d9c
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/mdimarino/iac/commit/0cfeda4f4f737523e9e09858c25526db10de70c4
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/Antmounds/fastly-demo/commit/a433a5d5788a358e7437cb15097d68bd1220eda7
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/JamesWoolfenden/terraform-azurerm-windowsscaleset/commit/d5ac10f438b093d600047b0c9790e71bbbaa0ab2
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - no_cost_change
+- url: https://github.com/chqaversion/s3-bucket-versioning/commit/e9dcc211445f9e315d894e61cd147cf5acf151d9
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - use_bucket_key
+- url: https://github.com/stuartsan/lighthouse-lambda-parallel/commit/4214c1c19120650c6888d1c1a8d107755d6c6c2e
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - no_cost_change
+- url: https://github.com/openinfrastructure/terraform-google-multinic/commit/620750695d8f83d79451948d2a43bf920b48c062
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - no_cost_change
+- url: https://github.com/cjbischoff/tf-terraform-management/commit/e357e4e6879f9f6fb09cf28a40684d30d0e63400
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/ssfsx17/fantasy-manager/commit/bded5e3007349a6c47c509336ee9306d234902d6
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/kabisa/terraform-datadog-costs/commit/adaf03ac0d5a324880e9e6aa10d54b9de6b4e635
+  technologies:
+    - terraform
+  codes:
+    - no_cost_change
+- url: https://github.com/mattermost/mattermost-cloud-database-factory/commit/3794d676f4375842364a080e78750b41d9af22d5
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/jonbamber/terraform_state_bucket/commit/8c7ca9bbb2c89d622129ace7b10b655851615982
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - use_default_kms_key
+- url: https://github.com/RootPrivileges/terragrunt-aws-modules/commit/1ee78d8228a83a42a8e099d0821ce6f32ee92dad
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - remove_glacier_transition
+- url: https://github.com/nhsconnect/prm-mhs-infra/commit/f6c64d1b6ed367803a833da293e84d61573a7fd8
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/wellcomecollection/buildkite-infrastructure/commit/300ed87cba6912103723b03d62c9b0bf93df36ea
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/ywarezk/academeez-iac/commit/3a96bab387bf898fd71023961e0cd957488e357b
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/ywarezk/academeez-iac/commit/f1383adda80c8d0960fa8153c2a82f03ce81e874
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - no_cost_change
+- url: https://github.com/taldanzig/nginx-multistream/commit/94e101feda4af9eef9980dc024c9d1a95afe3e6f
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/JamesWoolfenden/terraform-gcp-instance/commit/e88177b8ea5d4ef9f53f70ade27232de7a360800
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - no_cost_change
+- url: https://github.com/ninthnails/terraform-aws-camellia/commit/9438dcebde79c0726d69ae6a15c99b9c5c0f461c
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/maddevsio/aws-eks-base/commit/c528b5e97d9d1b57087bd60644a885dd9b4a2294
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - add_s3_vpc_endpoint
+- url: https://github.com/andybaran/GCP-IOT-BigDataInfra/commit/cacd8afbc18273e42e4027b36b3a5e9c37c04405
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - remove_dataflow_job
+- url: https://github.com/rackspace-infrastructure-automation/aws-terraform-ec2_autorecovery/commit/137c1c3085bb95b74e2d5a695c3343ca25830fd3
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/lacework/terraform-gcp-audit-log/commit/324c8a499794f6a789d583c4c460af9475171215
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - no_cost_change
+- url: https://github.com/hazelops/terraform-aws-ecs-datadog-agent/commit/a10df203e8892e1a868bd88d798589719a582ba6
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - cheaper_container_registry
+- url: https://github.com/trivbuit/Scalr-Demo/commit/773446c8f3192a447b8956f71b1ac90e7a9b8afa
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - reduce_instance_count
+- url: https://github.com/cds-snc/cloud-based-sensor/commit/ccd141993815d0b1f444d12bbd2bdcdd9548e20e
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - reduce_s3_expiration
+- url: https://github.com/cds-snc/cloud-based-sensor/commit/ad9ba03731ec0520164bb23a90968f2100dca517
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/sa-proj/proj-azure/commit/baa5b2d85892a85403c5dac807c891bb1b7b6dc7
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - use_mssql_vm_payg
+- url: https://github.com/emeloibmco/Schematics-Classic-Infrastructure-BareMetal/commit/2d2b279e98ba4b58b7931fbf7f7869d5d38ac305
+  technologies:
+    - terraform
+  codes:
+    - ibm
+    - no_cost_change
+- url: https://github.com/e91e63/terraform-tekton-pipelines/commit/432683fcf7921a699f1557e89818b3bef5dba61a
+  technologies:
+    - terraform
+  codes:
+    - no_cost_change
+- url: https://github.com/weiztech/gcloud-python-cost-control/commit/43b3c46b84b984800a6a013a93555b7bedf5c81a
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - no_cost_change
+- url: https://github.com/mtheoryx/graph-ql-cloud-demo/commit/83f393acfdc39810b29f898ff2d8a3f247571aa6
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/JamesWoolfenden/terraform-aws-cognito/commit/e8004aa1293b04a63fe33895e81ed2b9e6d3af94
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/boffbowsh/dc-terraform-provisioning/commit/7e1b0531992b592980c232994b7248801073fcd0
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/dharapvj/workflow-testing/commit/24fa52712f844e2b459329e28af96bc369024d25
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - reduce_instance_count
+- url: https://github.com/ausmartway/gcp-playground/commit/4676fee3828f732d296feb81be51f9602610f537
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - remove_node_pool_autoscaling
+- url: https://github.com/ken5scal/secure-brigade-terraform/commit/f751747d53b467f72498c50deef79828c2b378be
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/marceloboeira/certifications/commit/da24f25924b6584137d7315e6eea61a31be86406
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/marceloboeira/certifications/commit/985612e94b1ba7d6a881c6b2fe074449f47dd45d
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/marceloboeira/certifications/commit/48f4dbd21e8912511bf5b7441a2a9e207f025d8e
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/ministryofjustice/network-access-control-infrastructure/commit/95c70a0a304c55adacc3ba0605dd2b9aa2730f6f
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - add_ecr_lifecycle_policy
+- url: https://github.com/sawyers/ec2-dev-env/commit/f0bbb7e656d0f9785f1cc7cead6b420e1862f4df
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/Young-ook/terraform-aws-sagemaker/commit/df4c2102d59c5cae88c9ed30489b2d00bc75aafd
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/alphagov/govuk-infrastructure/commit/8475fbe51281a76757f7046c6c591056db182286
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/alphagov/govuk-infrastructure/commit/1e588a004172338404c487e679df5d503f0cab48
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/alphagov/govuk-infrastructure/commit/ee2b2286a02d49c7e9992d0a39ce950583e16bb7
+  technologies:
+    - terraform
+  codes:
+    - no_cost_change
+- url: https://github.com/companieshouse/ceu-terraform/commit/8733c7f4d1b395d6a8e236d0106cfae56d4ded06
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - remove_sns_alarm
+- url: https://github.com/gedejong/infra/commit/df7d6a56fb9c390574c45500fbae61dbba0044d8
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - remove_guard_duty
+- url: https://github.com/v3nd3774/AWSEMRInferencePipelinePOC/commit/75771876ca81699edfb4bb1afa202d6426abae1e
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/cloud-geek/AWS-Cloud-Architect-master/commit/a662717d80209735e93b6b8e537f21b53c06b469
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/AndreasSko/infrastructure/commit/e7c56ae03560224a4d40370ce812f05662cee20b
+  technologies:
+    - terraform
+  codes:
+    - hcloud
+    - no_cost_change
+- url: https://github.com/cliffano/feedpaper/commit/d13218e98814d7ac3bc65fc862c0119123f44d68
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - reduce_dynamo_tables
+- url: https://github.com/akerl/aws-account/commit/9fcff4b82a2ad4d0ed24656243da51f767f2968a
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - increase_billing_alarm_period
+- url: https://github.com/zbmowrey/cloud-admin/commit/738d187f603e5a52e6c6338abcd6096e22e819a0
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/poseidon/typhoon/commit/85252dec6ed7f0b24517089150ec89bf32b45fb2
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - cheaper_os
+- url: https://github.com/rremer/terraform-minecraft/commit/bac050d515cd6991e17cd1a34197d84982f5931d
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - gcp
+    - cheaper_provider
+- url: https://github.com/miiingle/infrastructure/commit/3210c2185c0a554fa8b5aed45e7daa2c861954ce
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - cheaper_codebuild_compute
+    - cheaper_os
+- url: https://github.com/scirner22/provenance-infra/commit/599aa2776677bcf05ebf5f6377a2eb82f5d2220c
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - reduce_instance_count
+- url: https://github.com/bortolo/Three-tier-app-infrastructure/commit/316179eeaaba01499ac86fa7027f004708daf9ee
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - add_iam_policy
+- url: https://github.com/tomoconnor/cheap-ass-vpn/commit/659dd8a34701684f7c574ce35bc37ad9f70d56e1
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/EtchUK/Etch.OrchardCore.SiteBoilerplate/commit/cc3460b79e8811df25a34a10c34c2a0ad2b6280f
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - explicit_value
+    - use_standard_sql_db_edition
+    - cheaper_service_objective
+- url: https://github.com/JacobTLeBlanc/PortfolioTF/commit/68c7bfb39a40f2783cfdae9ab5206c6747b8e7f3
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/grahamgilbert/terraform-repo/commit/08ff1d9788127d4fb9aa6616e22ed0b4ed406106
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - no_cost_change
+- url: https://github.com/sasidharkollimarla/terraform/commit/87d2fc1f203860095dc632c536d1820176941419
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/maxjahn/terraform-oci-azure-adb/commit/e2295fe41d430f42795605b6356e69b393625999
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - expressroute_local_tier
+- url: https://github.com/tresvitae/tf_eks_simpleweb/commit/200e62726a588acf05f58a1087d71eb1b98f4e0a
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/smerck/blog/commit/3e543412b6680057ffb10b0fbba777ccb3205882
+  technologies:
+    - terraform
+  codes:
+    - digitalocean
+    - no_cost_change
+- url: https://github.com/AnalysisByDesign/abd-cloud/commit/50c96dd99f04083d8a2f0d432ad2b0b3c291d3b9
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/bjacobel/terraform/commit/27738267ad6467f453f998419eca4b870b824faa
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - explicit_value
+    - use_standard_credit_specification
+- url: https://github.com/singaporewaketools/iaac/commit/cebf7f883b1325a4db1c0e7b3cd0d6684a7c41b0
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/nationalarchives/tdr-grafana/commit/213ea410b9a2146cc804213dedeacdff4f07a74a
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/ministryofjustice/modernisation-platform/commit/a2f96249b44f2500d030284936d582ba80c7fff5
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/alphagov/govuk-aws/commit/c1d29a6caabcd4f041d87d76a10f2deef06685ef
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - replace_jenkins_sync_with_bucket_replication
+- url: https://github.com/public-transport/infrastructure/commit/0a5968285a08bd6d07f79fa1f5a55756622fcfa9
+  technologies:
+    - terraform
+  codes:
+    - scaleway
+    - remove_provider
+    - remove_scaleway_rdb
+- url: https://github.com/ministryofjustice/cloud-platform-infrastructure/commit/a72b2d8b8ef52f6934b01e7f8f02042cac15b5e5
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - cheaper_elasticsearch_instance
+    - reduce_instance_count
+- url: https://github.com/rust-lang/simpleinfra/commit/e464783f88a901d49bd64d8b42cabe2eea08c90c
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - replace_lambda_functions_with_cloudfront_functions
+- url: https://github.com/rust-lang/simpleinfra/commit/638991a8940fe3a68bda9bdb2ac0b2f41e619796
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - datadog
+    - remove_datadog_aws_lambda_integration
+- url: https://github.com/Hapag-Lloyd/terraform-aws-bastion-host-ssm/commit/2adef81da634947aff8010580941aaba975a37b5
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/cds-snc/terraform-modules/commit/a35919a41357a3a306da026e87375dfebb143062
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/web3-storage/ipfs-elastic-provider-infrastructure/commit/7d0d7c43ce35bd107bb107f66eb49f8f4d9fbb83
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - reduce_eks_managed_node_groups_max_size
+- url: https://github.com/terraform-google-modules/terraform-example-foundation/commit/a1d636e550d133abffe2240f795d331e9d691c3c
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - no_cost_change
+- url: https://github.com/nsbno/terraform-aws-cost-alarm/commit/be2ef8e22c98140716d46500520e04fcb132cbd1
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - add_cost_anomaly_alert
+- url: https://github.com/nsbno/terraform-aws-cost-alarm/commit/1b8cec87b9bc03a93c22a300ee87e6fca8b12052
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - replace_budget_with_cost_anomaly_alert
+- url: https://github.com/VJftw/infrastructure/commit/a10d125aaa93e0c2ce8adb22d5dcab04634c725a
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - remove_gcp_kms
+- url: https://github.com/VJftw/infrastructure/commit/5c28d23cfa0c3488d5546ffdc1783c745a1e9239
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - gcp
+    - remove_gcp_kms
+    - remove_aws_kms
+- url: https://github.com/ministryofjustice/cloud-platform-environments/commit/e7237276b72926d4a38ff099bc2f6260ef6e5675
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/ministryofjustice/cloud-platform-environments/commit/d1b215a95b022200162bbf5b74d339f2c06cf066
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - remove_redis
+- url: https://github.com/alphagov/govwifi-terraform/commit/971ea5a81ca8325e9c91ab98ed2c799598c41fad
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/fluent-labs/infrastructure/commit/cc24cbd52867dcb699dea4a66c7124cbb96f5179
+  technologies:
+    - terraform
+  codes:
+    - digitalocean
+    - no_cost_change
+- url: https://github.com/nationalarchives/tdr-terraform-environments/commit/30fe6243dd0d1f42beb56c4df72fd8c82d155faf
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - increase_lambda_timeout
+- url: https://github.com/Echo-Stream/terraform-aws-control/commit/444efbbc1864b08406dfbf50fe1e56cbb0f51ace
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/aeternity/terraform-aws-devnet/commit/6b3bc5a88895b6f6030f40a357ae316c3a979951
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/wellcomecollection/archivematica-infrastructure/commit/aa509685dc323899c9994b36ed53f33b89121b45
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/wellcomecollection/archivematica-infrastructure/commit/dd8b902b9ff336784cf3c73bd39f9061a32561ed
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - add_ecr_lifecycle_policy
+- url: https://github.com/wellcomecollection/archivematica-infrastructure/commit/7acf12dce8c0a1117ec7a3003ca36afa3af9523f
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/binbashar/le-tf-infra-aws/commit/6184fd167b796d7ef8f04aea5962c0b2774c6371
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - use_kube_resource_report
+    - use_kubecost_cost_analyzer
+- url: https://github.com/binbashar/le-tf-infra-aws/commit/d23805c6946ed012570e3ce9d3e82c427f7ed4b6
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/binbashar/le-tf-infra-aws/commit/c5a84d5ab4ebf305d6ccdcf17227623c9f7fa008
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/binbashar/le-tf-infra-aws/commit/bfef0567030f6c4443222187cafa23628b2acfe2
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - increase_budget_threshold
+- url: https://github.com/Civil-Service-Human-Resources/lpg-terraform-paas/commit/05328b001621d631332564f9685c7d8de372d8b3
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - cheaper_redis_cache
+- url: https://github.com/Civil-Service-Human-Resources/lpg-terraform-paas/commit/384db8e54c1e77155c7d8ac99b391b3b58cd122f
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - cheaper_redis_cache
+- url: https://github.com/gravicore/terraform-gravicore-modules/commit/2a9045f5caca2824fbe4035020ffaf72d724d179
+  technologies:
+    - terraform
+  codes:
+    - azure
+    - add_subscription_cost_management_view
+- url: https://github.com/dfds/infrastructure-modules/commit/e4dedd7e1d28f5fab4cd78397a625ec8e8ad2d3e
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - use_bucket_key
+- url: https://github.com/dfds/infrastructure-modules/commit/b60bee2f190d10e309a6fa14e87ada3195e65d96
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/dfds/infrastructure-modules/commit/ba37fc3e2824170a9036a2cf476550b0a5ec7a7c
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/GoogleCloudPlatform/cloud-foundation-fabric/commit/0d9fac316a242e1bb4acf67ad683908450dc8ea8
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - no_cost_change
+- url: https://github.com/GoogleCloudPlatform/cloud-foundation-fabric/commit/83d2976949295528f860e6e9ec019ef9df889569
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - no_cost_change
+- url: https://github.com/ministryofjustice/modernisation-platform-environments/commit/237dc81c475dcfe3f44c19a2259f60f2b783c389
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/cds-snc/cloud-based-sensor/commit/d1c2d8dd4ff3d69ee5d1aacbc7607d8064e854ac
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - no_cost_change
+- url: https://github.com/robertdebock/terraform-aws-vault/commit/d287ea8da288c4d188c5d8c4daa0f945b886980c
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - explicit_value
+    - add_kms_deletion_window
+- url: https://github.com/matihost/monorepo/commit/0f5e7454d1213d34b8771d9a3829baf4a606f82f
+  technologies:
+    - terraform
+  codes:
+    - gcp
+    - no_cost_change
+- url: https://github.com/ministryofjustice/cloud-platform-terraform-rds-instance/commit/0e825c32901df9df18ec219f32a2a0ea9bb3dc59
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - add_rds_auto_start_stop
+- url: https://github.com/ministryofjustice/cloud-platform-terraform-rds-instance/commit/bd2cf2621f981fe3537528f33ba975a2b9e2e320
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - add_rds_auto_start_stop
+- url: https://github.com/cloudposse/terraform-spacelift-cloud-infrastructure-automation/commit/f1ad51c1ee8b96d7a60c23dbe49ccd5a3439a3dc
+  technologies:
+    - terraform
+  codes:
+    - add_spacelift_infracost
+- url: https://github.com/stephengrier/my-infra/commit/608ccb7425096642b0fb1c48153c23ac7e7c4305
+  technologies:
+    - terraform
+  codes:
+    - aws
+    - remove_service_discovery
