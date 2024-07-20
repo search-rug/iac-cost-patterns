@@ -320,3 +320,191 @@
   description: Stop using EKS CloudWatch agents
 - name: remove_service_discovery
   description: Remove service discovery resources
+- name: add_athena_cost_report_template
+  description: Add a template for the support of Athena for cost monitoring.
+- name: add_billing_alarm_template
+  description: Add a template for the implementation of CloudWatch billing alarms.
+- name: add_cache_invalidation
+  description: Add the support for cache invalidation.
+- name: add_cheaper_instance_support
+  description: Expand the supported set of instances with a cheaper one.
+- name: add_cheaper_storage_support
+  description: Expand the supported set of storage solutions with a cheaper one.
+- name: add_cloudfront_logs_retention
+  description: Implement the retention period for the CloudFront logs.
+- name: add_cloudwatch_logs
+  description: Add cost tracking logs for CloudWatch.
+- name: add_context_tracking_template
+  description: Add a template for the implementation of context tracking.
+- name: add_cost_anomaly_detection
+  description: Add support for cost anomaly detection.
+- name: add_cost_anomaly_detection_policy
+  description: Add a policy for cost anomaly detection.
+- name: add_cost_anomaly_detection_template
+  description: Add a template for cost anomaly detection.
+- name: add_cost_category
+  description: Add an AWS cost categories.
+- name: add_cost_explorer
+  description: Add support for AWS Cost Explorer.
+- name: add_cost_explorer_lambda_template
+  description: Add a template for a lambda function that enables AWS Cost Explorer.
+- name: add_cost_explorer_policy
+  description: Add a policy for AWS Cost Explorer.
+- name: add_cost_forecasting_template
+  description: Add a template for cost forecasting.
+- name: add_cost_reduction_template
+  description: Add a template for general cost reduction operations.
+- name: add_cost_report_bucket
+  description: Implement a AWS CUR (Cost and Usage Report) bucket.
+- name: add_cost_report_bucket_template
+  description: Add a template for the implementation of AWS CUR (Cost and Usage Report) buckets.
+- name: add_cost_report_lambda
+  description: Implement a lambda function for cost reporting.
+- name: add_cost_report_lambda_template
+  description: Add a template for the implementation of cost reporting lambda functions.
+- name: add_cost_report_policy
+  description: Add a policy for cost reporting.
+- name: add_cost_report_template
+  description: Add a template for cost reporting.
+- name: add_cost_report_trigger
+  description: Add a trigger for the generation of a cost report.
+- name: add_cost_tags
+  description: Add AWS cost tags.
+- name: add_deployment_template
+  description: Add a template for deployment.
+- name: add_dynamo_billing_mode_selection
+  description: Implement a selection option for DynamoDB billing mode.
+- name: add_ec2_instance_template
+  description: Add a template for the implementation of EC2 instances.
+- name: add_ec2_subnet
+  description: Add a EC2 subnet.
+- name: add_efs_retention
+  description: Implement the retention period for the AWS EFS (Elastic File System) service.
+- name: add_eip_instance
+  description: Add an EIP (Elastic IP) instance.
+- name: add_ia_retention
+  description: Implement the retention period for AWS S3 Infrequent Access storage class.
+- name: add_incomplete_upload_retention
+  description: Implement the retention period for incomplete uploads.
+- name: add_infracost
+  description: Add support for the Infracost tool.
+- name: add_logs_retention
+  description: Implement the retention period for application logs.
+- name: add_metrics_invalidation
+  description: Add the support for metrics extraction invalidation.
+- name: add_nat
+  description: Start using NAT.
+- name: add_opensearch_domain_template
+  description: Add a template for the implementtation of an AWS OpenSearch domain.
+- name: add_payment_journal
+  description: Add the implementation for a payment journal.
+- name: add_rds_invalidation
+  description: Add the support for RDS (Relational Databse Service) usage invalidation.
+- name: add_rds_retention
+  description: Implement the retention period for AWS RDS (Relational Database Service).
+- name: add_s3_ia_transition
+  description: Add the transition from S3 regular storage to Infrequent Access.
+- name: add_s3_triggereged_cost_report_lambda
+  description: Add an S3 trigger for the activation of a cost report lambda function.
+- name: add_storage_backup_retention
+  description: Implement the retention period for the storage backup.
+- name: add_task_lifespan_template
+  description: Add a template for the definition of the task lifespan.
+- name: add_test_instance_template
+  description: Add a template for testing instances.
+- name: add_threshold
+  description: Add a threshold to a billing alarm.
+- name: add_vpc_deployment_template
+  description: Add a billing alarm threshold.
+- name: add_vpc_endpoint_template
+  description: Add a templare for the implementation of VPC endpoints.
+- name: change_spot_allocation_strategy
+  description: Change the spot instances allocation strategy.
+- name: cheaper_disk_allocation_support
+  description: Expand the supported set of idisk allocations with a cheaper one.
+- name: cheaper_resource
+  description: Use a cheaper resource.
+- name: cloudfront_cheaper_price_class
+  description: Use a cheaper price class for AWS CloudFront.
+- name: decrease_storage
+  description: Use less storage space.
+- name: disable_rds_retention
+  description: Disable the usage of AWS RDS (Relational Database Service) retention periods.
+- name: disable_s3_versioning
+  description: Disable the usage of the versioning feature of S3 resources.
+- name: disable_sse
+  description: Disable the usage of AWS SSE (Server-Side Encryption).
+- name: dynamo_increase_rw_capacity
+  description: Increase read/write capacity for DynamoDB.
+- name: dynamo_provisioned
+  description: Use PROVISIONED billing type for Dynamo.
+- name: efs_bursting_mode
+  description: Use the bursting mode provisioning for AWS EFS (Elastic File System).
+- name: enable_monitoring
+  description: Enable cost monitoring.
+- name: enable_sse
+  description: Enable the usage of AWS SSE (Server-Side Encryption).
+- name: fixed_ecs_capacity
+  description: Use a fixed AWS ECS (Elastic Container Service) capacity.
+- name: increase_queue_wait_time
+  description: Increase the waiting time of queues.
+- name: increase_storage
+  description: Use more storage space.
+- name: lambda_cheaper_cpu
+  description: Use cheaper CPU solutions for a lambda.
+- name: lambda_more_memory
+  description: Use more memory for a lambda.
+- name: more_expensive_instance
+  description: Use a more expensive compute instance.
+- name: more_expensive_volume
+  description: Use a more expensive storage volume.
+- name: more_memory
+  description: Use more memory.
+- name: old_gen
+  description: Use an older generation for resources.
+- name: reduce_aws_config_retention
+  description: Reduce the retention period of AWS configurations.
+- name: reduce_cloudwatch_logs_retention
+  description: Reduce the retention period of logs for CloudWatch.
+- name: reduce_dynamo_instances
+  description: Reduce the number of DynamoDB instances used.
+- name: remove_ebs_volume
+  description: Stop using the AWS EBS(Elastic Block Store) volume.
+- name: remove_eip_instance
+  description: Remove an EIP (Elastic IP) instance.
+- name: remove_expensive_instance_support
+  description: Remove an expensive instance from the set of supported instances.
+- name: remove_glacier_transitions
+  description: Remove transitions to Glacier.
+- name: replace_cloudwatch_with_budget
+  description: Use an AWS budget instead of a CloudWatch billing alarm.
+- name: replace_credstash_with_ssm
+  description: Use AWS SSM (System Manager) instead of Credstash.
+- name: replace_datadog_with_cloudwatch
+  description: Use a CloudWatch billing alarm instead of a DataDog billing alarm.
+- name: 'replace_glacier_with_ia '
+  description: Use Infrequent Access storage instead of Glacier.
+- name: replace_go1_with_providedal2
+  description: Use the provided_al2 runtime environment instead of the go1 runtime environment.
+- name: replace_https_with_http
+  description: Use http instead of https.
+- name: replace_io1_with_gp3
+  description: Use a GP3 volume instead of an IO1 volume.
+- name: replace_monitoring_with_cost_tags
+  description: Use cost tags instead of AWS monitoring.
+- name: replace_private_with_public
+  description: Use public instead of private.
+- name: replace_public_with_private
+  description: Use private instead of public.
+- name: replace_rest_with_http
+  description: Use http intead of rest.
+- name: replace_s3_sync_with_copy-overwrite
+  description: Use S3 copy-onwrite instead of sync.
+- name: replace_sagemaker_with_kendra
+  description: Use Kendra intead of Sagemaker.
+- name: replace_terraform_with_cloudformation
+  description: Use CloudFormation instead of Terraform.
+- name: restrict_to_amd_instances
+  description: Restrict the supported set to only include amd instances.
+- name: use_global_domain
+  description: Use a global domain.
