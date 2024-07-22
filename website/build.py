@@ -5,7 +5,7 @@ with open('../thematic-analysis/patterns.yml', 'r') as f:
 
 TECHNOLOGIES = {
     'terraform': 'Terraform',
-    'cloudformation': 'AWS CloudFormation',
+    'aws cloudformation': 'AWS CloudFormation',
 }
 
 for i, p in enumerate(patterns):
