@@ -76,7 +76,7 @@
       - https://github.com/rmaheshvarma/terraform/commit/c866a7dd2575dd2a3f4af83f5f081a5004d0e478
       - https://github.com/akerl/aws-account/commit/91967d4089ad9580ceae62f7845581935c892455
       - https://github.com/singaporewaketools/iaac/commit/197502b1ac4bab77b9ab017b755c4d75ddaa218b
-    aws cloudformation:
+    cloudformation:
       - https://github.com/aws-samples/aws-serverless-ecommerce-platform/commit/e2255a1e428a5a0159a0c66ea825b7fd54ba8bfb
       - https://github.com/guardian/members-data-api/commit/60d881e84b70080ed7a294219f2b7e64bec21673
       - https://github.com/enekofb/beyond-gdp/commit/9fd76fd7270a0ed75f252001cb48a05740f0cebf
@@ -149,7 +149,7 @@
       - https://github.com/JaredStufftGD/grok-airflow/commit/7ac9544b0c651fd8193eb063079514d0aa41e290
       - https://github.com/kaz/kiritan.com/commit/1cd96c7f71e56629ffa07c38e12c4da19fcfc5f7
       - https://github.com/openinfrastructure/terraform-google-multinic/commit/7a9c468b88d2edee19007cff6529a20a38eeb363
-    aws cloudformation:
+    cloudformation:
       - https://github.com/andymac4182/fargate-bastion/commit/de01bb150685491c3f592e83cd0912fe5a32dab9
 - name: Object storage lifecycle rules
   patternType: pattern
@@ -202,7 +202,7 @@
       - https://github.com/SamTowne/BasketballDrillBot/commit/4ec6d54e4d36ab02b0a7daf042e727717371eaec
       - https://github.com/utilitywarehouse/tf_telecom/commit/17007456991c1a8faa26b1f4ac993883f577d124
       - https://github.com/trajano/terraform-s3-backend/commit/cb9f00a2f6f23b44f7db08863ef5fb0b9ea0bc0c
-    aws cloudformation:
+    cloudformation:
       - https://github.com/Sage-Bionetworks/service-catalog-library/commit/7d5224b90cf2c47eee807f851dbf0ff14d051191
       - https://github.com/jamesoff/cloud/commit/9ac70dc914bef24c62e2b603cc03a0eaefaed391
       - https://github.com/gbourniq/django-on-aws/commit/32a058dd02229c8bf8e272f549f60c02bf2009ce
@@ -313,7 +313,7 @@
       - https://github.com/poseidon/typhoon/commit/b68f8bb2a9f0825af76a563051c32100386024db
       - https://github.com/tlc-pack/ci-terraform/commit/af285dd17beb9c35ea6339b3b9f43d6b166b5411
       - https://github.com/binbashar/le-tf-infra-aws/commit/10cf13515c722708cfacb8f22ca9b05abca67505
-    aws cloudformation:
+    cloudformation:
       - https://github.com/widdix/aws-cf-templates/commit/0156a84027bc371504a520c5ad85b332cdf0197d
       - https://github.com/rik2803/aws-account-config/commit/2f9a9e356f04fb859a443f032592926d62e2df20
       - https://github.com/ceno/Quake3Quest-servers/commit/cd977f78fdad8ac20f8e6f7d6f2bae413bfba9d7
@@ -403,7 +403,7 @@
       - https://github.com/ministryofjustice/cloud-platform-environments/commit/ce502048eb3cd95e708f4575efefaf8dc60d7722
       - https://github.com/ministryofjustice/cloud-platform-environments/commit/b6cea25115ac93a788cdedc2fe2f94d2c7ff6658
       - https://github.com/ministryofjustice/cloud-platform-environments/commit/aa07f2d9772cc376589bec2cbb42f9ba849927db
-    aws cloudformation:
+    cloudformation:
       - https://github.com/openrelayxyz/ethercattle-deployment/commit/169a5f7292d7e15be885c33b345ce87477d8d227
       - https://github.com/guardian/multimedia-launchdetector-v3/commit/f0a2dd00bade5d9ebf943be0af3f8ed3982d54d2
       - https://github.com/guardian/archivehunter/commit/c4b49a9c288973886c0d95ae93ef006842e892fe
@@ -474,7 +474,7 @@
       - https://github.com/cisagov/freeipa-server-tf-module/commit/99fd319a72d25441acf36fd2c167a875e9028935
       - https://github.com/ministryofjustice/cloud-platform-terraform-monitoring/commit/87401ba23af26d379d8132cc09fd7cd212773ba1
       - https://github.com/ministryofjustice/hmpps-env-configs/commit/7c1ba780a59f6a8682870318e70bf800a2d183a2
-    aws cloudformation:
+    cloudformation:
       - https://github.com/openrelayxyz/log-flume/commit/281f0cbcb1415cea8e13706c6c4304dfdca5c8e5
       - https://github.com/ASFHyP3/asf-stac/commit/3a19e68cda5b174a655a699b8ac74eaa7c826159
       - https://github.com/chef-boneyard/aws_native_chef_server/commit/f63839453506420064afb7350971c65be47d39a6
@@ -572,7 +572,7 @@
       - https://github.com/alphagov/govuk-aws/commit/9b54cd6e875843c3ecade45ce37e863357b6e0e9
       - https://github.com/binbashar/le-tf-infra-aws/commit/8b1c39cf7e64610b4c17f5b2697a782f0ec99f7e
       - https://github.com/robertdebock/terraform-aws-vault/commit/4ddd02182a1f210bb9f614fbba5ef11b4fcbe827
-    aws cloudformation:
+    cloudformation:
       - https://github.com/stackery/dotnet-framework-webapi/commit/6cabc6cab8331dccf87accc7176fd0d721e22ddb
       - https://github.com/Jessinra/TriveryID-Skadi/commit/d91bc4e786a86f7c088413ac1f7ba701cb7e499f
       - https://github.com/aws-samples/aws-rosettafold/commit/cb24c548c5871726ece3aa9880336b94967f40ec
@@ -623,7 +623,7 @@
       - https://github.com/roysjosh/terraform-unifi/commit/da9e2869456610a0228cb14f850c6eccddbb15e0
       - https://github.com/phillhocking/aws-ubuntu-irssi/commit/1532e0c298ec4f8d7d749a884f7c46f2a2cf53d3
       - https://github.com/ministryofjustice/cloud-platform-terraform-monitoring/commit/87401ba23af26d379d8132cc09fd7cd212773ba1
-    aws cloudformation:
+    cloudformation:
       - https://github.com/chef-boneyard/aws_native_chef_server/commit/f63839453506420064afb7350971c65be47d39a6
       - https://github.com/sjakthol/cfn-execute-change-set/commit/7aa1557a573a4d44acec840698e34f41efc29df0
       - https://github.com/aodn/aws-wps/commit/f262a8b46e328c30a2c08f9c47aba722fb0e1dae
@@ -718,7 +718,7 @@
       - https://github.com/giuseppeborgese/terraform-locking-s3-state/commit/6b4e59e8b844417dc5c247bdef1b0adb8e2e7028
       - https://github.com/Accurate0/infrastructure/commit/eef88fd3e61cf4b5e04682824e76df5348b60de5
       - https://github.com/ministryofjustice/cloud-platform-environments/commit/0c1b4028575aeaabf7543c7357c4e26d610677c3
-    aws cloudformation:
+    cloudformation:
       - https://github.com/turnerlabs/antiope/commit/40a968167182170aa0827ae182bbf72e5e0fd84e
       - https://github.com/guardian/mobile-purchases/commit/1c500f5f94de681b5ead3a6ceba208d3efcc790e
       - https://github.com/govuk-one-login/txma-infra/commit/dc9567e61048e1bd6993e546c05bcf1a3ce3c3bb
@@ -810,7 +810,7 @@
       - https://github.com/matihost/monorepo/commit/6995c99e0561c29b6e8d0ff84d3b2504d1772fe8
       - https://github.com/alphagov/govuk-infrastructure/commit/3386d7637c06f84cc3cc252f96d43e511cea428e
       - https://github.com/alphagov/govuk-infrastructure/commit/6017d0be84adac6b90b46f3d0bc2376a7e9b8e85
-    aws cloudformation:
+    cloudformation:
       - https://github.com/lumigo-io/SAR-async-lambda-metrics/commit/c61571e630b0ee5428196969c1cb08a981f36b1c
       - https://github.com/aldeka/jolly-roger/commit/2295bd9a939381d1d778b0e273700c54674f0db4
       - https://github.com/brwyatt/smartthings_logging/commit/659a001727a43497bd8eaeae16ef507887af9034
@@ -865,7 +865,7 @@
     - title: Usage of Cost and Usage reports
       url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_CUR.html
   occurrences:
-    aws cloudformation:
+    cloudformation:
       - https://github.com/zaro0508/organizations-infra/commit/f62de2443313d2f963f6101663417d16e696a0a9
       - https://github.com/karthickcse05/aws-cost-explorer/commit/2750d8c79ab56e69ce2d06e08f02390ae7ba4183
       - https://github.com/nao1215/rainbow/commit/3696053a44e2168d5fbda669b793f587ba0dc5bc
@@ -938,7 +938,7 @@
     - title: AWS Budget template
       url: https://docs.aws.amazon.com/cost-management/latest/userguide/budget-templates.html
   occurrences:
-    aws cloudformation:
+    cloudformation:
       - https://github.com/adrian83/aws-samples/commit/2aedc136fc1ed5e6b794268e5aeba6b625fcf903
       - https://github.com/awslabs/aws-well-architected-labs/commit/f82be3a26e356335ebf8feab6971f278215f335c
       - https://github.com/primeharbor/aws-account-automation/commit/18f1e36b061d631dca72b494661a21dc37594148

@@ -3513,157 +3513,157 @@
     - remove_service_discovery
 - url: https://github.com/hayemaxi/aws-toolkit-vscode/commit/648fb3f1a8c6444d1c8280dd4f960563fe41a0cb
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/DEFRA/rod-licensing/commit/5b84cfd0ee4c3d0450be8bf0760507e1655d7992
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_payment_journal
     - dynamo_on_demand
 - url: https://github.com/zaro0508/organizations-infra/commit/beb53a2eeb616963179238a6d11c06b003539e95
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_category
 - url: https://github.com/zaro0508/organizations-infra/commit/f62de2443313d2f963f6101663417d16e696a0a9
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_category
 - url: https://github.com/zaro0508/organizations-infra/commit/b9d6afbdbd5611ad0f1fd3752e3a03fd369d3d2b
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/zaro0508/organizations-infra/commit/b79e4d7068cfb903652cd757ec901aeb8cb85366
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/zaro0508/organizations-infra/commit/ec619370e7601e750d87cf893b85ec1efeab3c84
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_category
 - url: https://github.com/zaro0508/organizations-infra/commit/1a35ef50ccf357c8319a60fd1c95bd6fd412517b
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_s3_triggereged_cost_report_lambda
 - url: https://github.com/zaro0508/organizations-infra/commit/544592f6cab75e460d3146b55ad892e1e0542aca
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_report_bucket
 - url: https://github.com/govuk-one-login/onboarding-self-service-experience/commit/9678897bfb3ce80012fa9567b1b9a3853e565539
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/aldeka/jolly-roger/commit/2295bd9a939381d1d778b0e273700c54674f0db4
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - replace_datadog_with_cloudwatch
 - url: https://github.com/nao1215/rainbow/commit/3696053a44e2168d5fbda669b793f587ba0dc5bc
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_report_lambda
 - url: https://github.com/bencehornak/copilot-cli/commit/11e2a04ac294a9688f3145c21a8574dee94a0770
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cache_invalidation
 - url: https://github.com/awslabs/aws-well-architected-labs/commit/ce992527cd15740e2e534e9f9ff6e18665893b81
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/YubicoLabs/WebAuthnKit/commit/809472cea5cc831c6662be2d6075f6b5bacde276
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - reduce_rds_capacity
 - url: https://github.com/aws-samples/serverless-patterns/commit/c90edf170ac7499441fc9d898afd22ce25fe2aee
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - lambda_more_memory
 - url: https://github.com/stelligent/cfn_nag/commit/f2f5b5a7ef68602ad3d358a77ae76fa22f7c15df
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
     - dynamo_provisioned
 - url: https://github.com/widdix/aws-cf-templates/commit/03a8713f53a4a514898bd481eb6628b6b56cfff1
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - reduce_aws_config_retention
 - url: https://github.com/widdix/aws-cf-templates/commit/0156a84027bc371504a520c5ad85b332cdf0197d
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - cheaper_instance
     - new_gen
 - url: https://github.com/widdix/aws-cf-templates/commit/900f7ebe6127430968d2747c9313942e7947d1f0
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_s3_vpc_endpoint
 - url: https://github.com/FINRAOS/herd-mdl/commit/937aafaf67e678be2978d660b1359c3887a5f933
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - cheaper_instance
     - new_gen
     - old_gen
 - url: https://github.com/shinesolutions/aem-aws-stack-builder/commit/7781d14d29b7e19a8b1e2dd46f4904a3041019f4
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/buildkite/elastic-ci-stack-for-aws/commit/b4da07224dd341137f023701e792634ca0476f6b
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - change_spot_allocation_strategy
 - url: https://github.com/buildkite/elastic-ci-stack-for-aws/commit/f9738e221b496fd12f5d917c0515ad0e008dfbc1
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - new_gen
 - url: https://github.com/buildkite/elastic-ci-stack-for-aws/commit/5ceefeb51f51c6277348086fa39fda2b5f7c7553
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - replace_monitoring_with_cost_tags
 - url: https://github.com/buildkite/elastic-ci-stack-for-aws/commit/28b2704034f00fef645453e288624e9c4b4c2493
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/kennyk65/aws-teaching-demos/commit/5dfc77f0065462480ee1eec85927cee7c7d57a77
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_billing_alarm_template
 - url: https://github.com/ceno/Quake3Quest-servers/commit/cd977f78fdad8ac20f8e6f7d6f2bae413bfba9d7
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - cheaper_instance
 - url: https://github.com/burke1791/march-madness-calcutta-api/commit/7db4e6e7b67039dc44cae29d3cee1e354a6a6875
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/GerritCodeReview/aws-gerrit/commit/6d870855767ffbf684822adeb5136d0788f8a7df
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - cheaper_instance
     - cheaper_resource
@@ -3671,22 +3671,22 @@
     - less_memory
 - url: https://github.com/GerritCodeReview/aws-gerrit/commit/ce901df5012fb17ed1eb9e13efcebda5d57c75a9
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - efs_bursting_mode
 - url: https://github.com/guardian/mobile-n10n/commit/9292c2b30a75a14bb1f662e5bba20468cb3afab3
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/mludvig/aws-crypto-miner/commit/d7d285a3e2a1327739ac1848f15248517e81e173
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cheaper_instance_support
 - url: https://github.com/chef-boneyard/aws_native_chef_server/commit/f63839453506420064afb7350971c65be47d39a6
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cheaper_storage_support
     - add_storage_backup_retention
@@ -3694,394 +3694,394 @@
     - new_gen
 - url: https://github.com/sebsto/tictactoe-cdk/commit/7a6000ba1cc3da394c112c86f6d2d40a12b899ea
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/natmasslove/aws_howto/commit/bfb8fda16a8bf8a89eda0d9bc7c366853a6bc47a
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/Sage-Bionetworks-Workflows/nextflow-infra/commit/60f47bda05d664dfb6b7e6a28c4355533e887c52
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - efs_bursting_mode
 - url: https://github.com/nathanpeck/ecs-patterns-vitepress/commit/58f54cb34506995953cf59a380ad6670be93ed50
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_task_lifespan_template
     - add_vpc_deployment_template
 - url: https://github.com/code402/datasette-lambda/commit/a76a5802ae6c14d35753aa9b2b52db41530919d1
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/rik2803/aws-account-config/commit/c3a4dc55c0f13ca4dc3cc8fab8f46fd72ebb421c
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - remove_expensive_instance_support
 - url: https://github.com/rik2803/aws-account-config/commit/2f9a9e356f04fb859a443f032592926d62e2df20
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - remove_expensive_instance_support
 - url: https://github.com/aws/aws-parallelcluster-ui/commit/4a1d71623f565fd1dfe40d3231201e18ec32893c
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_iam_policy
 - url: https://github.com/aws/aws-parallelcluster-ui/commit/d02d64e3a971bb2592b0b415d2670f465837083e
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/tomwetjens/boardgamefiesta/commit/9e832bb4deb429362e75fc8f26ca820a3981814e
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - replace_rest_with_http
 - url: https://github.com/guardian/mobile-purchases/commit/1c500f5f94de681b5ead3a6ceba208d3efcc790e
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/casual-simulation/casualos/commit/5140af5e7ab7fae1665352f27dbda887df09f0a2
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/tomwwright/littleorange/commit/4bca2634fd0e7b2f90111838924d68decd71eef5
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_report_template
 - url: https://github.com/Sage-Bionetworks/aws-infra/commit/8f7dda0779385929ec93c8a1ed37f4087105e7db
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_s3_vpc_endpoint
 - url: https://github.com/Sage-Bionetworks/aws-infra/commit/73d9fd5d784eecf01a175ff33152a6ccba5f37ba
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_anomaly_detection_template
 - url: https://github.com/Sage-Bionetworks/aws-infra/commit/1db9630767b2636a9cbd8e2ad34fc93574fd8d93
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_vpc_endpoint_template
 - url: https://github.com/unity-sds/unity-ads-deployment/commit/047c2f09689885552903413632b4d67953e4b0c0
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_tags
 - url: https://github.com/unity-sds/unity-ads-deployment/commit/d1cdba60f76965d0ba35896b403a4751a3aaaa1f
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_tags
 - url: https://github.com/pagopa/pn-infra/commit/4845feae578f173eaa75ffbf03f049a7fe735552
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_reduction_template
 - url: https://github.com/aws-samples/amazon-dynamodb-labs/commit/502022af83e487d8944d04a1c1587f6b733986dc
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_opensearch_domain_template
 - url: https://github.com/primeharbor/pht-prowler-searchcluster/commit/fdf850a04a796ef4bc99a2521eec28edba258ba6
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - increase_storage
     - new_gen
 - url: https://github.com/biometrixtech/infrastructure/commit/fab4c34416dd4fec75df954c171f34d026435bb8
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/turnerlabs/antiope/commit/40a968167182170aa0827ae182bbf72e5e0fd84e
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/turnerlabs/antiope/commit/d2b306008cc3f18af8be8ba1e52ec5ec0a82128b
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/developmentseed/sat-api-pg/commit/7869c28fdd24ae10254a6431f5b93251bd0580f6
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - new_gen
 - url: https://github.com/guardian/archivehunter/commit/c4b49a9c288973886c0d95ae93ef006842e892fe
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - new_gen
 - url: https://github.com/aws-samples/accelerated-data-lake/commit/18bff2bf18a685c840db98d95bd7b7cec03e0e4b
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/danielgblanco/diaspora-aws/commit/e758a12feaaa4b56c18068c1f4426442b9840c79
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_reduction_template
 - url: https://github.com/aws-samples/route-53-application-recovery-controller/commit/918b45ca80ddd21f0de8dbdb87a39707ea5630c5
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - reduce_dynamo_instances
 - url: https://github.com/UBC-CIC/EC2Ensemble/commit/ac41affcd965cfe84b69fa05f5072ac17dc6e77c
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/openrelayxyz/ethercattle-deployment/commit/cd6df4a3ce0f1da5d5139f9508b752f1f03d68d4
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/openrelayxyz/ethercattle-deployment/commit/ca3c67b8d2ad3d06e92a197df1a8a83337306d1f
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - more_expensive_volume
 - url: https://github.com/openrelayxyz/ethercattle-deployment/commit/169a5f7292d7e15be885c33b345ce87477d8d227
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - cheaper_volume
     - new_gen
 - url: https://github.com/skepticoin/skepticoin/commit/285d1ebc6dfdbeeea3552573e84a843dfb2a0037
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - replace_s3_sync_with_copy-overwrite
 - url: https://github.com/gbourniq/django-on-aws/commit/32a058dd02229c8bf8e272f549f60c02bf2009ce
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - disable_rds_retention
 - url: https://github.com/gbourniq/django-on-aws/commit/4400bcccee4356214d332b9549efcae4e74458be
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_rds_retention
     - disable_rds_retention
 - url: https://github.com/sjakthol/aws-account-infra/commit/42c5afa645b3d93d6b565636c3f5b8b68144c8cb
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/sjakthol/aws-account-infra/commit/ab4424e4f8a34f47d8511c982b84bfce7086d59a
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_billing_alarm_template
 - url: https://github.com/m-chandler/factorio-spot-pricing/commit/7290615791393f15f636eb616e76ae7e7d2384c5
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_efs_retention
 - url: https://github.com/MrMarvin/open-wow-drealmd/commit/0b23fe7bf08d4682835ca171d228380ec81a2fb5
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - cheaper_instance
     - fixed_ecs_capacity
 - url: https://github.com/guardian/status-app/commit/018c277e53700d397b89e583b1ff8aec3f695acd
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - new_gen
 - url: https://github.com/aws-samples/serverless-observability-workshop/commit/968b197ea4c271fb4e43c75295c34665f1af3eb0
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_increase_rw_capacity
 - url: https://github.com/OlivierBP/pacloud/commit/e8ae4cc0ebfa669de295c323145e7dcd0fd366b2
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_ec2_subnet
     - use_ec2_as_nat_gateway
 - url: https://github.com/ktkiiski/broilerkit/commit/179258e1c38152d411c6da823b74e142d937f6cd
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - cloudfront_cheaper_price_class
 - url: https://github.com/guardian/multimedia-plasma-dashboard/commit/839575666178bae80c51dc7cd0c9f44a6164fc9e
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - new_gen
 - url: https://github.com/enekofb/beyond-gdp/commit/9fd76fd7270a0ed75f252001cb48a05740f0cebf
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_budget
 - url: https://github.com/NHSDigital/eps-prescription-status-update-api/commit/fe59672a63be823be78f01583ecc8fbce276d6e1
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/rsibanez89/venko/commit/305061cfabb9d6f42028c7c5bc2588b9e7dbef41
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/cumulous/backend/commit/16ccc208db10ba4ef43d32d11b9e77b4287d1748
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - use_global_domain
 - url: https://github.com/aws-samples/amazon-transcribe-live-meeting-assistant/commit/268b51672a6387913c72e07d1038dab6512f705c
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/mattBrzezinski/AWSClusterManagersDemo.jl/commit/18621ebcdad5baed3f3cae7057b20c389b073104
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/nhsx/covid-chest-imaging-database/commit/2c14675895fd4c29589d97750c8d021620e93a5a
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - more_memory
 - url: https://github.com/LeanerCloud/AutoSpotting/commit/af0fec8119acf4e4f19574dca8b25b4621f35e7e
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/aodn/aws-wps/commit/f262a8b46e328c30a2c08f9c47aba722fb0e1dae
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - cheaper_disk_allocation_support
 - url: https://github.com/aws-samples/amazon-transcribe-live-call-analytics/commit/218ce3cd2c65e5da7fdcc4fa5823acb12a309fd0
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/aws-samples/amazon-transcribe-live-call-analytics/commit/8eae42f5e80af05d2caa7b17e83c8852a12028ec
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - replace_sagemaker_with_kendra
 - url: https://github.com/aws-samples/amazon-transcribe-live-call-analytics/commit/3e90f725d46e4f0ef9d5fac52135e000e319fb55
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - lambda_less_memory
 - url: https://github.com/amazon-connect/amazon-connect-snippets/commit/a0c471f60ef82330cc7573c1fbca0ac3a62d24c9
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_context_tracking_template
 - url: https://github.com/nasa-petal/PeTaL-db/commit/15142ebe0c06722f916db9b447693190437c7136
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - cheaper_instance
     - new_gen
 - url: https://github.com/dismantl/CaseHarvester/commit/c91470e55d9905d687f39a868f5474f6f4804f39
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - associate_public_ip
     - remove_private_subnet
 - url: https://github.com/adrian83/aws-samples/commit/2aedc136fc1ed5e6b794268e5aeba6b625fcf903
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_billing_alarm_template
 - url: https://github.com/philipmw/homeontheroute-api/commit/4b108af1165d196af7634133400dc31b14b60abb
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - cheaper_volume
 - url: https://github.com/p-jackson/aws-app/commit/9ce4fe471b53818a98282865ae45585b81e8aba4
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - remove_nat
 - url: https://github.com/voyagertherapeutics/aws-genomics-workflows/commit/339e57b766ada13defb690a2593392a786776650
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - remove_expensive_instance_support
 - url: https://github.com/Saumya25mis/renzen-bot/commit/5a3fad56be57a9852df7013a347ab617388cfc77
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/h1f1x/aws-cfn-examples/commit/b157e0f038a8acb4d917f9e18d0adddd7cd4192c
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_incomplete_upload_retention
     - enable_sse
 - url: https://github.com/stackery/dotnet-framework-webapi/commit/6cabc6cab8331dccf87accc7176fd0d721e22ddb
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_vpc_endpoint_template
     - remove_nat
 - url: https://github.com/S8Vega/academic-friends-api/commit/c4747679155f119a07284f5eee455eee5dd7c1a6
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - less_cpu_cores
     - less_memory
     - new_gen
 - url: https://github.com/qld-gov-au/ckan-qld-infrastructure/commit/e0345284140cecdaccbdb0dcdaf28ac111de3c87
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_nat
 - url: https://github.com/cyberark/conjur-ecs-deploy/commit/c115dbc288157656a2fc8c729f3432a6c8ac6783
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - less_cpu_cores
 - url: https://github.com/tradle/mycloud/commit/f6ad3b2eec7c9d9b4bbda5619ed7411e73ae19e4
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/tradle/mycloud/commit/bb8552888806a766426b931d8c75f300a2688319
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/tradle/mycloud/commit/4399c5bdc6f458e642fa7105193791d0a5f2007a
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/Saneri/event-signup/commit/869bf7060c744e32326a902c88d9521ccdd5b218
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - cloudfront_cheaper_price_class
 - url: https://github.com/timmy-cde/aws-bootcamp-cruddur-2023/commit/51ee4a134ff1a1ed3f208e4d2ce66619d1b907de
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/Jessinra/TriveryID-Skadi/commit/d91bc4e786a86f7c088413ac1f7ba701cb7e499f
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - reduce_cloudwatch_logs_retention
     - reduce_subnets
@@ -4089,787 +4089,787 @@
     - replace_private_with_public
 - url: https://github.com/Jessinra/TriveryID-Skadi/commit/e4d779f7e769d23bf49cfbff44dd7d5c6053a9f3
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_nat
     - replace_public_with_private
 - url: https://github.com/Jessinra/TriveryID-Skadi/commit/d660670eee3c1ad00b82bb947ba5d764c8fe4ced
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - replace_private_with_public
 - url: https://github.com/Jessinra/TriveryID-Skadi/commit/61a1e32bbcf538d6d3aa112207525bc7b55344e9
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_ec2_subnet
     - remove_nat
     - replace_private_with_public
 - url: https://github.com/leifgehrmann/setzen/commit/0afb7ac7f1e1de426eccb036516e98ade58da6f3
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - disable_sse
 - url: https://github.com/aws-samples/aws-serverless-ecommerce-platform/commit/e2255a1e428a5a0159a0c66ea825b7fd54ba8bfb
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_billing_alarm
 - url: https://github.com/ASFHyP3/asf-stac/commit/3a19e68cda5b174a655a699b8ac74eaa7c826159
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - cheaper_instance
     - decrease_storage
     - replace_io1_with_gp3
 - url: https://github.com/ashley-evans/how-many-buzzwords/commit/265eb03ab39eca06feb21b5f1cb69eb8dcbf9f4c
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - less_memory
 - url: https://github.com/aws-samples/amazon-sagemaker-secure-mlops/commit/da9ba03eed01847eed76e3ee6e44f8edd6930e5b
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - reduce_subnets
 - url: https://github.com/andymac4182/fargate-bastion/commit/de01bb150685491c3f592e83cd0912fe5a32dab9
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - use_spot_instance
 - url: https://github.com/APTrust/preservation-services/commit/5b14b81b437bed62952979398a6b014f8458c356
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_tags
 - url: https://github.com/biometrixtech/PreProcessing/commit/a37aacc476440312c9da9b20a769600ed082e2d3
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/SedaiEngineering/sedai-onboarding/commit/545e2ecaeeb535a7a044c98f69a6c71d954ded5b
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_report_template
 - url: https://github.com/aws-samples/amazon-sagemaker-safe-deployment-pipeline/commit/b3e4f08e2174455ee39789474aa40bacee3633d3
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/guardian/mobile-save-for-later/commit/5e8c85b56c8dbe36bc6bf0522dcf947a98ebfc17
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_reduce_rw_capacity
     - dynamo_increase_rw_capacity
     - dynamo_provisioned
 - url: https://github.com/guardian/mobile-save-for-later/commit/b0afd91084a5ede68e2a53f2a7624f6cc9c27c64
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/guardian/mobile-save-for-later/commit/4ab126e31b1fa32bc3dbb3750bf6dee13de028ef
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_reduce_rw_capacity
     - dynamo_increase_rw_capacity
     - dynamo_provisioned
 - url: https://github.com/guardian/mobile-save-for-later/commit/0607c55b14336854960d81f9af27936b60fe747d
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/Financial-Times/com.ft.editorial.cms.ecs/commit/ff8be3eafd1e10ec6c80d60e6dac5bb1e6df7c69
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - new_gen
 - url: https://github.com/torproject/metrics-cloud/commit/ba1148b6b98acdebf3c861f22a19b59cde829922
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_billing_alarm
 - url: https://github.com/arturlr/minecraft-server-dashboard/commit/fc6b3fe6dfbcfd9d8c4b6e7a2a3e4c3fc47e318d
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/UTSA-ICS/galahad/commit/b40d5ff5e4c2d018a39c1a3536878eaec31df729
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - new_gen
 - url: https://github.com/UTSA-ICS/galahad/commit/91421d614b9f8b626b55a94b18bbb97a2520f9ca
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - efs_bursting_mode
 - url: https://github.com/RLOpenCatalyst/rgdeploy/commit/6f703b23d684a2c8d22ea5c7fd03b07729af3ee5
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_tags
 - url: https://github.com/RLOpenCatalyst/rgdeploy/commit/14daa90b0f32287eb693967b98dcdc6cafde798b
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_tags
     - add_ec2_instance_template
 - url: https://github.com/jolexa/s3-staticsite-multiregion/commit/db022caa823d1723a8d94160307bcf37017bf5c8
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - replace_https_with_http
 - url: https://github.com/awslabs/cid-framework/commit/a9e275cdc1bb0b38fbd2a172b6a61534c869ecd2
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_anomaly_detection
     - add_cost_anomaly_detection_template
 - url: https://github.com/wolfeidau/aws-billing-store/commit/9cac0ad2ee5ae1dc2d6dc7660ddb597109b15f95
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - replace_go1_with_providedal2
 - url: https://github.com/govuk-one-login/txma-infra/commit/dc9567e61048e1bd6993e546c05bcf1a3ce3c3bb
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/jamesoff/cloud/commit/9ac70dc914bef24c62e2b603cc03a0eaefaed391
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_s3_ia_transition
 - url: https://github.com/cyberark/pas-on-cloud/commit/abced10a2e49510831fa7ef82b520b7a1701d8c9
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - new_gen
 - url: https://github.com/alope107/collage-sam/commit/dbb61c7bd6e0c69f34837b5d2d50bdef3ceb1dfb
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - new_gen
 - url: https://github.com/Sage-Bionetworks/service-catalog-library/commit/44b30a7988a104e8a834ad1d1abc27ef8001fabc
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - restrict_to_amd_instances
 - url: https://github.com/Sage-Bionetworks/service-catalog-library/commit/7d5224b90cf2c47eee807f851dbf0ff14d051191
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_lifecycle_rule
 - url: https://github.com/aws-samples/aws-rosettafold/commit/cb24c548c5871726ece3aa9880336b94967f40ec
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - remove_eip_instance
     - remove_nat
     - remove_private_subnet
 - url: https://github.com/superwerker/superwerker/commit/21ef2d4c44d4a881c45e99ace627f1c66fa8d141
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_forecasting_template
 - url: https://github.com/BoraxTheClean/aws-account-setup/commit/a24b6134aab8e2f74fd31eec2ad964636025acc7
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - replace_cloudwatch_with_budget
 - url: https://github.com/HicResearch/TREEHOOSE/commit/d5a9110cae074b09ac641be3b76ab777068b70ff
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_threshold
 - url: https://github.com/kerryconvery/game-stream-search-public/commit/73812710b283614fdc7d4361adcb49b78e65fbad
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - use_default_kms_key
 - url: https://github.com/deathandmayhem/jolly-roger/commit/25acbdceff98fb3a2d72f324098c7ed11039d2bd
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_eip_instance
 - url: https://github.com/deathandmayhem/jolly-roger/commit/35ef261eb92e19facc2b5f9609c5f59e71b366f8
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - replace_credstash_with_ssm
 - url: https://github.com/deathandmayhem/jolly-roger/commit/9fed42ab84b2c091748bffc30b2bc29b79f39a41
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cloudwatch_logs
 - url: https://github.com/kriation/cloudformation/commit/daaea80eaa33ca0041a76ef06baee031bd4ffaf4
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_ia_retention
     - 'replace_glacier_with_ia '
 - url: https://github.com/DiscoverAI/sars-cov-2-drug-design/commit/c77490cc264815d5b2402543794c953c5ce96c1f
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/rapticore/aws-onboarding/commit/1e827326351fefdc09b28757aa49e8e98aadbee4
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/Formula-Thoughts/flatshare-extension/commit/8fa2f860b93a9819d059e9f5f989a46e22ee642d
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/wolfeidau/wolfeidau_site/commit/52de425e9eedfae9b51a29366a4b6aefcca51658
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cloudfront_logs_retention
     - add_lifecycle_rule
 - url: https://github.com/CloudEric/dnsvpn-cloudformation/commit/dc4f583344f235b146dfe5ea47b8c4c5fdd30089
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - cheaper_instance
 - url: https://github.com/aws-samples/serverless-rss-filtered-feed-gen/commit/98257ddc10439d60dd87228c0d0c0a5f6bd181ff
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/primeharbor/aws-account-automation/commit/18f1e36b061d631dca72b494661a21dc37594148
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_report_template
 - url: https://github.com/widdix/mastodon-on-aws/commit/9a399be6cb75908172cd45742fefdb8f3222e061
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - more_memory
 - url: https://github.com/atlassian/aws-infrastructure/commit/65a7a5ca335c569c3f4213889034561cf9d5db07
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - more_expensive_instance
     - new_gen
 - url: https://github.com/guardian/multimedia-launchdetector-v3/commit/f0a2dd00bade5d9ebf943be0af3f8ed3982d54d2
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - new_gen
 - url: https://github.com/guardian/members-data-api/commit/60d881e84b70080ed7a294219f2b7e64bec21673
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_billing_alarm
 - url: https://github.com/goldfinchbio/emr-hail/commit/752682a4fbe2e7025d5ec8deef19c013a12f721c
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/cagov/api.alpha.ca.gov/commit/892b3056df362da6057d55e6efc766c3e21dd236
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/btkrausen/aws/commit/84932c34ae2a4967809a76e58a67b41f89e43dde
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_billing_alarm_template
 - url: https://github.com/em-shea/vocab/commit/83904598b0023c83d5dff3cca3f242034b7b119a
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/cfn-modules/docs/commit/6ef9326fa39abe10376a41a9c28f895883e828ce
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/unity-sds/unity-on-demand-cloudformation/commit/f44a61cf6205b431887efa5b3154c446eff0b0ca
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_tags
 - url: https://github.com/cunningham-lab/neurocaas/commit/d4717c0e763233f734ccd991947c201a1438e1d8
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - enable_monitoring
 - url: https://github.com/cunningham-lab/neurocaas/commit/202fa9ce32b269b54bfa68299dfe8a4c85c3080d
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - enable_monitoring
 - url: https://github.com/smallriver0316/aws-cost-reporter/commit/b19519411912135cac47bb8b362cb7f77c0cfc2c
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/smallriver0316/aws-cost-reporter/commit/8e8091c7062181d5c222986c6aaa8cbae984bd8c
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/openrelayxyz/log-flume/commit/281f0cbcb1415cea8e13706c6c4304dfdca5c8e5
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - remove_ebs_volume
 - url: https://github.com/viralemergence/pharos-api/commit/6ca33b173c2e9d159a65cdfd740c232e30732ee1
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/karthickcse05/aws-cost-explorer/commit/2750d8c79ab56e69ce2d06e08f02390ae7ba4183
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_explorer_lambda_template
     - add_cost_report_bucket_template
 - url: https://github.com/xhiroga/til/commit/9d549cbcad7886c8861c5f69fb8f3d549e2f7664
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_billing_alarm_template
 - url: https://github.com/guardian/identity-processes/commit/eab6d8cf907841f5b7b874df75292e88e3c5af44
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/biometrixtech/Users/commit/14652ad70bf20207cb13b340aedcf66f5012dda9
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/kalleeh/aws-msb/commit/5523a2be0d94b422307878a2a66722deae3eff68
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - remove_glacier_transitions
 - url: https://github.com/pagopa/pn-radd-fsu/commit/9dd31982fe3540a4ce4b97073f1fd0b97ccff425
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/pagopa/pn-ec/commit/6d201e8153c83c8fe177914ea6ddf097c79d218a
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/devcjohn/cj.cafe/commit/d9ebc9cf460d359950d471c7662b79a8d3156fef
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - replace_terraform_with_cloudformation
 - url: https://github.com/sjakthol/cfn-execute-change-set/commit/85238260de6d17167ff8a084032ba74372d70321
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - cheaper_resource
 - url: https://github.com/sjakthol/cfn-execute-change-set/commit/7aa1557a573a4d44acec840698e34f41efc29df0
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_logs_retention
     - cheaper_resource
 - url: https://github.com/conijnio/aws-security-posture/commit/ba00cfc56fd720277cf54d7987ea58c9c8d3402e
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - less_memory
     - more_memory
 - url: https://github.com/andrestoll/aws-lambda-power-tuning/commit/c33e0b948d92f0f3e3372bd06c377514e1c317bf
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/andrestoll/aws-lambda-power-tuning/commit/aa81bd1f6924d9b3baf82659a158ab105bff4be6
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/caseconsulting/expense-app-api/commit/09532d961515f5dfdd62aca2117eb5143de5d300
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_provisioned
 - url: https://github.com/caseconsulting/expense-app-api/commit/b2cc61e36477d2b16f0585edba815dbb8d5481c5
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/aws-solutions-library-samples/guidance-for-game-production-environment-on-aws/commit/74cde1270b8fa82beec82a004a00fd93f8d57aab
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/release-engineering/exodus-lambda/commit/b34df4436dc0a016dde9398b9b1a0b2099feeaaa
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - disable_s3_versioning
 - url: https://github.com/govuk-one-login/di-account-management-backend/commit/bfe7dadd6c2bb6172b24da99a7e6dca30e1aad85
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/ShahradR/s3-logging/commit/a8a723767d8f3173b5993e61d8eef77aa3412ead
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/AtlasOfLivingAustralia/ala-tokens-portal/commit/7df62872fb0c6ed504ce6d87ea2ea76ee7e794d4
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - lambda_cheaper_cpu
 - url: https://github.com/lambci/lambci/commit/b439c25f32f82f7e318ac8acca6b1ab4796c3397
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/aws-samples/aws-serverless-workshop-innovator-island/commit/4b992a5c2701dd79274cab30031f4acd5e130107
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_reduce_rw_capacity
     - dynamo_provisioned
 - url: https://github.com/aexeagmbh/cfn-lint-rules/commit/d9c9900e765462f6eed75304add98e309e87d1f9
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_tags
 - url: https://github.com/Nonagon-Media/acg/commit/dfc8a883d178a78c5233e1d790cc5f8209f93b6b
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_billing_alarm_template
 - url: https://github.com/zaro0508/sandbox-infra/commit/189eb2e198dbc4cef0feae56ee4e3d1e342b314c
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_report_policy
 - url: https://github.com/prabhatsharma/aws-inspector-assessment/commit/a86b7a3d574a2481649526ed695d2e6876cbce0e
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/craigmayhew/aws-transcribe-on-s3-upload/commit/1955b06a16586fcb21a4b1b5dc27bea00384a842
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - less_memory
 - url: https://github.com/rotiroti/alessandrina/commit/594d4705adedd07b298d87f8d812e38b11337311
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - less_memory
 - url: https://github.com/cmiles74/cloudformation-tutorial/commit/a93bced7c612b59d34d17db56ab71e9afc81edfe
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/fesaab/saab-tools-finance/commit/9dbb3866380a12362bb3473a1224c94155cdd223
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - increase_queue_wait_time
 - url: https://github.com/kushalshrestha/aws-modules/commit/6b2bedc1d883800a2a2baac48bb3a3835f3f873c
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/brwyatt/smartthings_logging/commit/659a001727a43497bd8eaeae16ef507887af9034
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - remove_cloudwatch_logs
 - url: https://github.com/vladikk/elastic-event-store/commit/4db976b88850eb08a5a36e456312fba05bad42b6
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/Igor-Ivaniuk/codepipeline-terraform/commit/393f188924ea8b91f39bce57c42317a76b697a21
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/Igor-Ivaniuk/codepipeline-terraform/commit/ccf92afdd32085d36509002274739ae894aeda84
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_infracost
 - url: https://github.com/gnelabs/EpithyRoboTrader/commit/cd6ff50175c1cebc7f448316db46c76e1f357a57
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/efio-dk/JobPostFilter/commit/fc225b4095f17f8138c2dcdfe32b7d477e8183ca
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_deployment_template
 - url: https://github.com/neerajtiwar/aws-cost-exporter/commit/3586e5305da734b089406fb6771a00ebb3d9ffb3
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_explorer
 - url: https://github.com/george-richardson/terraform-aws-personal-org/commit/416a16000056d40056363bc728b5595181a8e8d5
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/benkulcsar/newswatch/commit/40f39873e87da7ba3af9e3e8920d97edc3961120
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/abaird986/aws-modern-application-workshop/commit/c3849e4d5d835e9be7dda67e1468f15fbcf271a5
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/adilosa/awswhatsnew/commit/757e10302bc656234034708b417166afabc91fbe
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/pagopa/pn-mandate/commit/f8b0624eff443ac5684d76dfe1059f1a99349128
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/adamjreed/dogchecker/commit/6fe5fba49531813b2c473d3805a9a17075e41fff
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_ecr_lifecycle_policy
 - url: https://github.com/troyready/onica-create-2019-serverless/commit/5d80f28767a7b42a7cad730c672272a197d1e364
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/Sage-Bionetworks-IT/lambda-finops-cost-rules/commit/0c14bc1b1d8d44d1858fea1d2c6e80c785918b79
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/aws-samples/aws-serverless-notifier-plugins/commit/935d60da5f246433742fd66496d5caa84a4c80d2
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_anomaly_detection_template
 - url: https://github.com/Aleksandr-Filichkin/aws-lambda-runtimes-performance/commit/5d5e0e6e47c460a78543c851dc5704fa54290616
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/jchrisfarris/cft-deploy/commit/0cb6532ee638c5d2962a28df85819f73d1afb6fe
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_test_instance_template
     - remove_expensive_instance_support
 - url: https://github.com/BastLeblanc/retail-demo-store/commit/e1c862637b8afdeb2832dedaef25e63253bc6780
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - new_gen
 - url: https://github.com/littermap/littermap-aws-backend/commit/aeade55a66feeee2b7306829d6c22e7000c6faa0
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_rds_invalidation
 - url: https://github.com/Nxtra/aws-billing-alarms/commit/0a15638e30d0e0a55ee76c3402a67ff91c50339e
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_billing_alarm_template
 - url: https://github.com/steffanturanjanin/receipt-manager/commit/f27a70640e8301679ecdc87bb3f2b11a3573415d
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/lumigo-io/SAR-async-lambda-metrics/commit/c61571e630b0ee5428196969c1cb08a981f36b1c
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_metrics_invalidation
 - url: https://github.com/ahamlinman/randomizer/commit/431334e19f28f2da629749345d142c23a2f54888
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/PRX/Infrastructure/commit/7f535b407cc8039f9990ffa6eccf08146cfe8b79
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - lambda_less_memory
 - url: https://github.com/PRX/Infrastructure/commit/d5a4f859294e126a3c72582d324672e8ba8b7c32
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_report_trigger
 - url: https://github.com/PRX/Infrastructure/commit/7b26938ccc5db53ab11fb7d38d385c0e4daea5ce
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/PRX/Infrastructure/commit/4567b5b1c7b4bcecc0c9c0dea654854a8244a7ed
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_dynamo_billing_mode_selection
 - url: https://github.com/PRX/Infrastructure/commit/579ba639b31f26998b6817c9558f1db2c6cfd028
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_report_lambda_template
 - url: https://github.com/PRX/Infrastructure/commit/539f2db253faa7ba07b7b850397e3f9459e3b6a8
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/PRX/Infrastructure/commit/9961cdbffd8f0750ba4acfa15b3c8f1dc13d4e85
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_report_lambda_template
 - url: https://github.com/PRX/Infrastructure/commit/d9d90ba0a708d9c37c5f0fde020a3e094f67cf59
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_report_bucket_template
 - url: https://github.com/awslabs/aws-well-architected-labs/commit/f82be3a26e356335ebf8feab6971f278215f335c
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_anomaly_detection
     - add_cost_anomaly_detection_policy
     - add_cost_anomaly_detection_template
 - url: https://github.com/Checkmarx/kics/commit/2cba29eeecb8afe156623bc7a6a9712d3fc90433
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/zalando-incubator/kubernetes-on-aws/commit/1d6fff49202c4e29dd72aaf5e7b06434adadd10e
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - more_expensive_instance
     - old_gen
 - url: https://github.com/aws/serverless-application-model/commit/9a44d233e6278bffc3c89e9f2281697223c52db6
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/christoferson/aws-cloudformation/commit/fbde48d9640dbff07552bb4f7357b44b16ad9675
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_billing_alarm_template
 - url: https://github.com/ASFHyP3/hyp3/commit/aa801f4d73de736cceb0dbdd2f1646f354ca7b05
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/felixrichardt/cloud-carbon-footprint/commit/f5f4150801b64b5baaa68ecbddccd336a3013d32
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_athena_cost_report_template
 - url: https://github.com/AlisProject/serverless-application/commit/92c828b0dc6923ee0560929e3ac460071b864a4d
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_provisioned
 - url: https://github.com/AlisProject/serverless-application/commit/8e8617e3d1054a467945b126496ab05051f656e2
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/Sage-Bionetworks-IT/organizations-infra/commit/7afa4947fb7321ea8e9d84ac162cc7c3a70075ee
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_tags
 - url: https://github.com/Sage-Bionetworks-IT/organizations-infra/commit/12a3eb189de5a21a09dbf02b46c522e5d5e76190
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_report_bucket
 - url: https://github.com/aws-cloudformation/cfn-lint/commit/201b12733558c4d7f1ee84bda84fe1a756537265
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/Percona-Lab/jenkins-pipelines/commit/323030cf76eee050c85f2ab0c46bba3888e4d392
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - cheaper_instance
     - old_gen
 - url: https://github.com/tradle/mycloud/commit/d5a76259dd694af976f3c762a3a2570a4307afb8
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/tradle/mycloud/commit/1444975b3db80f1e801ce10c0087fe3380139889
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/tradle/mycloud/commit/42d224dd6bc375e42cd8c5a9cdc2e3d9debfcd68
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/code-dot-org/code-dot-org/commit/d1a5101e9cc02d22586a11f3e8b0fff97abde3e0
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/daiyyr/the-alchemist/commit/1254c61457727e91574a8eb96dfd24e50721c6ca
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_threshold
 - url: https://github.com/Sage-Bionetworks-IT/lambda-finops-email-totals/commit/e48c06bac7277749469cfb9495082be67cd464c3
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - no_cost_change
 - url: https://github.com/gsx95/georgguessr/commit/efbf4b21260a2fea57be2edeea93db0d3c655be1
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/caseconsulting/expense-app-api/commit/e585d93e5ce516cf2dcb9b87620cd6fa7b81b68e
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/ruzickap/k8s-tf-eks-gitops/commit/639d0aecc85e4c8da9d538ccb3f28b8f3a9f2d9b
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/koekalenteri/koekalenteri/commit/232becdb8b348bb397ecdf3aeed57da85fcdf710
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - dynamo_on_demand
 - url: https://github.com/brucehoff/organizations-infra/commit/dae052c3e1ecf6a47da23af60952a30dc0d3d0b6
   technologies:
-    - aws cloudformation
+    - cloudformation
   codes:
     - add_cost_explorer_policy
 
