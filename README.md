@@ -18,17 +18,17 @@ For the AWS CloudFormation changes not observed for Terraform, we defined 98 new
 
 ## Patterns
 
-| Type        | Name                                                                                                             | Description                                                                                                                      |
-| ----------- | ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| Pattern     | [Budget](https://search-rug.github.io/iac-cost-patterns/budget/)                                                 | Use budgets to receive alerts about charged and forecasted costs and control spending.                                           |
-| Pattern     | [Spot instances](https://search-rug.github.io/iac-cost-patterns/spot-instances/)                                 | Use spot instances to run interruptible workloads for significant cost savings compared to regular instances.                    |
-| Pattern     | [Object storage lifecycle rules](https://search-rug.github.io/iac-cost-patterns/object-storage-lifecycle-rules/) | Define lifecycle rules for object storage to move objects to cheaper storage or drop them entirely.                              |
+| Type | Name | Description |
+| --- | --- | --- |
+| Pattern | [Budget](https://search-rug.github.io/iac-cost-patterns/budget/) | Use budgets to receive alerts about charged and forecasted costs and control spending. |
+| Pattern | [Spot instances](https://search-rug.github.io/iac-cost-patterns/spot-instances/) | Use spot instances to run interruptible workloads for significant cost savings compared to regular instances. |
+| Pattern | [Object storage lifecycle rules](https://search-rug.github.io/iac-cost-patterns/object-storage-lifecycle-rules/) | Define lifecycle rules for object storage to move objects to cheaper storage or drop them entirely. |
 | Pattern     | [Cost report](https://search-rug.github.io/iac-cost-patterns/cost-report/)                                       | Cost report elements can be used to obtain information on the actual spendings over a period of time.                            |
 | Pattern     | [Preventative Template](https://search-rug.github.io/iac-cost-patterns/preventative-template/)                   | Templates with predefined configurations that enforce cost-optimizing methods can proactively manage and reduce future expenses. |
-| Antipattern | [Expensive instance](https://search-rug.github.io/iac-cost-patterns/expensive-instance/)                         | Compute instances are often overprovisioned even when a cheaper instance would suffice.                                          |
-| Antipattern | [Old generation](https://search-rug.github.io/iac-cost-patterns/old-generation/)                                 | Using newer resource generations gives similar performance for lower cost.                                                       |
-| Antipattern | [Expensive storage type](https://search-rug.github.io/iac-cost-patterns/expensive-storage-type/)                 | More expensive storage types are often used even when cheaper storage types would be sufficient.                                 |
-| Antipattern | [Expensive network resource](https://search-rug.github.io/iac-cost-patterns/expensive-network-resource/)         | Network resources like NAT gateways, elastic IP addresses and subnets tend to be expensive while not being strictly needed.      |
-| Antipattern | [Overprovisioned resources](https://search-rug.github.io/iac-cost-patterns/overprovisioned-resources/)           | Resources like RAM, storage and CPU utilization are often overprovisioned even when lower values are acceptable.                 |
-| Antipattern | [AWS - Expensive DynamoDB](https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/)               | AWS DynamoDB tables often use features that carry cost but are not required,especially for infrequently accessed tables.         |
-| Antipattern | [Expensive monitoring](https://search-rug.github.io/iac-cost-patterns/expensive-monitoring/)                     | Monitoring solutions are expensive and might not be needed.                                                                      |
+| Antipattern | [Expensive instance](https://search-rug.github.io/iac-cost-patterns/expensive-instance/) | Compute instances are often overprovisioned even when a cheaper instance would suffice. |
+| Antipattern | [Old generation](https://search-rug.github.io/iac-cost-patterns/old-generation/) | Using newer resource generations gives similar performance for lower cost. |
+| Antipattern | [Expensive storage type](https://search-rug.github.io/iac-cost-patterns/expensive-storage-type/) | More expensive storage types are often used even when cheaper storage types would be sufficient. |
+| Antipattern | [Expensive network resource](https://search-rug.github.io/iac-cost-patterns/expensive-network-resource/) | Network resources like NAT gateways, elastic IP addresses and subnets tend to be expensive while not being strictly needed. |
+| Antipattern | [Overprovisioned resources](https://search-rug.github.io/iac-cost-patterns/overprovisioned-resources/) | Resources like RAM, storage and CPU utilization are often overprovisioned even when lower values are acceptable. |
+| Antipattern | [AWS - Expensive DynamoDB](https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/) | AWS DynamoDB tables often use features that carry cost but are not required,especially for infrequently accessed tables. |
+| Antipattern | [Expensive monitoring](https://search-rug.github.io/iac-cost-patterns/expensive-monitoring/) | Monitoring solutions are expensive and might not be needed. |
