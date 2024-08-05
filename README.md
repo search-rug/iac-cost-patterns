@@ -32,3 +32,9 @@ For the AWS CloudFormation changes not observed for Terraform, we defined 98 new
 | Antipattern | [Overprovisioned resources](https://search-rug.github.io/iac-cost-patterns/overprovisioned-resources/) | Resources like RAM, storage and CPU utilization are often overprovisioned even when lower values are acceptable. |
 | Antipattern | [AWS - Expensive DynamoDB](https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/) | AWS DynamoDB tables often use features that carry cost but are not required,especially for infrequently accessed tables. |
 | Antipattern | [Expensive monitoring](https://search-rug.github.io/iac-cost-patterns/expensive-monitoring/) | Monitoring solutions are expensive and might not be needed. |
+
+## Licenses
+
+The software in this repository is licensed under the [MIT License](LICENSE).
+
+The data compiled in this repository is licensed under the [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0) License.
