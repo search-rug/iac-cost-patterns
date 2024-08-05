@@ -2,21 +2,9 @@
 
 This is a collection of patterns and antipatterns that support managing cost in Infrastructure as Code artifacts of cloud software deployments. It is intended to be a living catalog, open to community contributions.
 
-[`patterns.yml`](./thematic-analysis/patterns.yml) is the pattern dataset, including references and occurrences in commits.
+The catalog is available at [search-rug.github.io/iac-cost-patterns](https://search-rug.github.io/iac-cost-patterns/) and is based on the [patterns.yml](./thematic-analysis/patterns.yml) file in this repository. The catalog includes references and occurrences in commits.
 
-## Context
-
-The original set of patterns was extracted using Thematic Analysis on 499 cost-related commits from 403 repositories. These commits were collected as part of [a prior study](https://arxiv.org/abs/2304.07531).
-
-During our analysis, we found 128 codes including one for "no related changes identified", with the remaining 127 codes indicating cost-saving or cost-increasing actions. Of the 499 commits, 342 contained at least one cost-related code, while 179 were coded "no related changes identified".
-
-After validation, 50 codes were integrated into 3 and 7 themes representing patterns and antipatterns respectively, while the remaining 67 codes were discarded due to lack of occurrences. In total, 237 out of 342 commits contain at least one occurrence of an (anti)pattern.
-
-Furthermore, we expanded the methodology previously used in the context of Terraform for a different IaC tool. We collected 262 commits that use AWS CloudFormation and discuss cost considerations in their messages. Next, we applied Thematic Analysis and first attempted to assign one or more of the predecessor 128 codes to describe the code changes in the commits. We identified the cost-related codes 104 times in 93 commits from 86 repositories, while 56 commits from 47 repositories were coded "no related changes identified".
-
-For the AWS CloudFormation changes not observed for Terraform, we defined 98 new codes corresponding to 133 commits from 109 repositories. Based on the codes, we further attempted to match each new commit with one of the ten Terraform (anti)patterns. If none were appropriate, we grouped the commits based on similarities and identified two new patterns: the Cost Report and the Preventative Template.
-
-## Patterns
+## Catalog
 
 | Type | Name | Description |
 | --- | --- | --- |
@@ -32,6 +20,29 @@ For the AWS CloudFormation changes not observed for Terraform, we defined 98 new
 | Antipattern | [Overprovisioned resources](https://search-rug.github.io/iac-cost-patterns/overprovisioned-resources/) | Resources like RAM, storage and CPU utilization are often overprovisioned even when lower values are acceptable. |
 | Antipattern | [AWS - Expensive DynamoDB](https://search-rug.github.io/iac-cost-patterns/aws-expensive-dynamodb/) | AWS DynamoDB tables often use features that carry cost but are not required,especially for infrequently accessed tables. |
 | Antipattern | [Expensive monitoring](https://search-rug.github.io/iac-cost-patterns/expensive-monitoring/) | Monitoring solutions are expensive and might not be needed. |
+
+## Complete Dataset
+
+The patterns and antipatterns were discovered through thematic analyses, as documented under [Dataset History](#dataset-history). The dataset (in its most recent version) is available in the [thematic-analysis](./thematic-analysis) directory and consists of:
+* [`patterns.yml`](./thematic-analysis/patterns.yml) - The final set of patterns and antipatterns.
+* [`codes.yml`](./thematic-analysis/codes.yml) - The complete set of codes used in the analysis.
+* [`indicators.yml`](./thematic-analysis/indicators.yml) - The codes in CSV format.
+
+## Dataset History
+
+### May 2024
+
+The first set of patterns was extracted using Thematic Analysis on 499 cost-related commits that modify [Terraform](https://www.terraform.io/) IaC files from 403 repositories. These commits were collected as part of [a prior study](https://arxiv.org/abs/2304.07531).
+
+During the analysis, 128 codes were defined. One code is used to document *"no related changes identified"*, while the remaining 127 codes indicate cost-saving or cost-increasing actions. Of the 499 commits, 342 contained at least one cost-related code, while 179 were coded *"no related changes identified"*.
+
+After validation, 50 codes were integrated into 3 and 7 themes representing patterns and antipatterns respectively, while the remaining 67 codes were discarded due to lack of occurrences. In total, 237 out of 342 commits contain at least one occurrence of an (anti)pattern.
+
+### July 2024
+
+Thematic analysis was applied to a dataset of commits involving a different IaC tool. In total, 262 commits that modify [AWS CloudFormation](https://aws.amazon.com/cloudformation/) files and discuss cost considerations in their messages were collected. First, the original 128 codes were used to describe the code changes in the commits. We identified the cost-related codes 104 times in 93 commits from 86 repositories, while 56 commits from 47 repositories were coded *"no related changes identified"*.
+
+Next, due to changes not observed for Terraform, we defined 98 new codes, assigned to 133 commits from 109 repositories. Based on the codes, we further attempted to match each new commit with one of the ten Terraform (anti)patterns. If none were appropriate, we grouped the commits based on similarities. This processes resulted in the identification of two new patterns: [Cost report](https://search-rug.github.io/iac-cost-patterns/cost-report/) and [Preventative Template](https://search-rug.github.io/iac-cost-patterns/preventative-template/).
 
 ## Licenses
 
