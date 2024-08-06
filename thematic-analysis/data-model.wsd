@@ -1,0 +1,49 @@
+@startuml Data model
+
+class CODE {
+    name: str
+    description: str
+}
+
+class PATTERN {
+    name: str
+    description: str
+    context: str
+    solution: str
+    example: str
+    references: list<url>
+    occurrences: map<TECHNOLOGY, list<INDICATOR.url>>
+}
+
+class INDICATOR {
+    url: str
+    codes: list<CODE.name>
+    technologies: list<TECHNOLOGY>
+}
+
+enum TECHNOLOGY {
+    terraform
+    cloudformation
+}
+
+INDICATOR "1" -- "1..*" CODE
+INDICATOR "3..*" -- "1..*" PATTERN
+INDICATOR "1" -- "1..*" TECHNOLOGY
+TECHNOLOGY "1" -- "1..*" PATTERN
+
+note left of CODE
+    <i>codes.yml</i>
+    list<CODE>
+end note
+
+note left of PATTERN
+    <i>patterns.yml</i>
+    list<PATTERN>
+end note
+
+note left of INDICATOR
+    <i>indicators.yml</i>
+    list<INDICATOR>
+end note
+
+@enduml

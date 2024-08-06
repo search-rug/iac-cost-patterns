@@ -28,6 +28,8 @@ The patterns and antipatterns were discovered through thematic analyses, as docu
 * [`codes.yml`](./thematic-analysis/codes.yml) - The complete set of codes used in the analysis.
 * [`indicators.yml`](./thematic-analysis/indicators.yml) - The complete set of analyzed commits.
 
+![IaC Cost Patterns](./thematic-analysis/data-model.png?raw=true)
+
 ## Dataset History
 
 ### v1.0 - May 2024
