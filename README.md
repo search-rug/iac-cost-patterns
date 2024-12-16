@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/795400974.svg)](https://doi.org/10.5281/zenodo.14501829)
+
 # IaC Cost Patterns
 
 This is a collection of patterns and antipatterns that support managing cost in Infrastructure as Code artifacts of cloud software deployments. It is intended to be a living catalog, open to community contributions.
