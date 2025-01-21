@@ -1,0 +1,137 @@
+- url: https://github.com/stelligent/cfn_nag/commit/f2f5b5a7ef68602ad3d358a77ae76fa22f7c15df
+  technologies:
+    - cloudformation
+  codes:
+    - dynamo_provisioned
+  patterns:
+    - AWS - Expensive DynamoDB
+- url: https://github.com/FINRAOS/herd-mdl/commit/937aafaf67e678be2978d660b1359c3887a5f933
+  technologies:
+    - cloudformation
+  codes:
+    - old_gen
+  patterns:
+    - Old generation
+- url: https://github.com/primeharbor/pht-prowler-searchcluster/commit/fdf850a04a796ef4bc99a2521eec28edba258ba6
+  technologies:
+    - cloudformation
+  codes:
+    - increase_storage
+  patterns:
+    - Overprovisioned resources
+- url: https://github.com/openrelayxyz/ethercattle-deployment/commit/ca3c67b8d2ad3d06e92a197df1a8a83337306d1f
+  technologies:
+    - cloudformation
+  codes:
+    - more_expensive_volume
+  patterns:
+    - Expensive storage type
+- url: https://github.com/aws-samples/serverless-observability-workshop/commit/968b197ea4c271fb4e43c75295c34665f1af3eb0
+  technologies:
+    - cloudformation
+  codes:
+    - dynamo_increase_rw_capacity
+  patterns:
+    - AWS - Expensive DynamoDB
+- url: https://github.com/nhsx/covid-chest-imaging-database/commit/2c14675895fd4c29589d97750c8d021620e93a5a
+  technologies:
+    - cloudformation
+  codes:
+    - more_memory
+  patterns:
+    - Overprovisioned resources
+- url: https://github.com/Jessinra/TriveryID-Skadi/commit/e4d779f7e769d23bf49cfbff44dd7d5c6053a9f3
+  technologies:
+    - cloudformation
+  codes:
+    - replace_public_with_private
+  patterns:
+    - Expensive network resource
+- url: https://github.com/guardian/mobile-save-for-later/commit/5e8c85b56c8dbe36bc6bf0522dcf947a98ebfc17
+  technologies:
+    - cloudformation
+  codes:
+    - dynamo_provisioned
+    - dynamo_increase_rw_capacity
+  patterns:
+    - AWS - Expensive DynamoDB
+- url: https://github.com/guardian/mobile-save-for-later/commit/4ab126e31b1fa32bc3dbb3750bf6dee13de028ef
+  technologies:
+    - cloudformation
+  codes:
+    - dynamo_provisioned
+    - dynamo_increase_rw_capacity
+  patterns:
+    - AWS - Expensive DynamoDB
+- url: https://github.com/widdix/mastodon-on-aws/commit/9a399be6cb75908172cd45742fefdb8f3222e061
+  technologies:
+    - cloudformation
+  codes:
+    - more_memory
+  patterns:
+    - Overprovisioned resources
+- url: https://github.com/atlassian/aws-infrastructure/commit/65a7a5ca335c569c3f4213889034561cf9d5db07
+  technologies:
+    - cloudformation
+  codes:
+    - more_expensive_instance
+  patterns:
+    - Expensive instance
+- url: https://github.com/kalleeh/aws-msb/commit/5523a2be0d94b422307878a2a66722deae3eff68
+  technologies:
+    - cloudformation
+  codes:
+    - remove_glacier_transitions
+  patterns:
+    - Object storage lifecycle rules
+- url: https://github.com/conijnio/aws-security-posture/commit/ba00cfc56fd720277cf54d7987ea58c9c8d3402e
+  technologies:
+    - cloudformation
+  codes:
+    - more_memory
+  patterns:
+    - Overprovisioned resources
+- url: https://github.com/caseconsulting/expense-app-api/commit/09532d961515f5dfdd62aca2117eb5143de5d300
+  technologies:
+    - cloudformation
+  codes:
+    - dynamo_provisioned
+  patterns:
+    - AWS - Expensive DynamoDB
+- url: https://github.com/aws-samples/aws-serverless-workshop-innovator-island/commit/4b992a5c2701dd79274cab30031f4acd5e130107
+  technologies:
+    - cloudformation
+  codes:
+    - dynamo_provisioned
+  patterns:
+    - AWS - Expensive DynamoDB
+- url: https://github.com/zalando-incubator/kubernetes-on-aws/commit/1d6fff49202c4e29dd72aaf5e7b06434adadd10e
+  technologies:
+    - cloudformation
+  codes:
+    - more_expensive_instance
+    - old_gen
+  patterns:
+    - Expensive instance
+    - Old generation
+- url: https://github.com/AlisProject/serverless-application/commit/92c828b0dc6923ee0560929e3ac460071b864a4d
+  technologies:
+    - cloudformation
+  codes:
+    - dynamo_provisioned
+  patterns:
+    - AWS - Expensive DynamoDB
+- url: https://github.com/Percona-Lab/jenkins-pipelines/commit/323030cf76eee050c85f2ab0c46bba3888e4d392
+  technologies:
+    - cloudformation
+  codes:
+    - old_gen
+  patterns:
+    - Old generation
+- url: https://github.com/aws-samples/serverless-patterns/commit/c90edf170ac7499441fc9d898afd22ce25fe2aee
+  technologies:
+    - cloudformation
+  codes:
+    - lambda_more_memory
+  patterns:
+    - Overprovisioned resources
