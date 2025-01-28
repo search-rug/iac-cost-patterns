@@ -508,3 +508,5 @@
   description: Restrict the supported set to only include amd instances.
 - name: use_global_domain
   description: Use a global domain.
+- name: conscious_cost_increase
+  description: The commit message and contents reflect a conscious decision to increase costs in favor of other factors.

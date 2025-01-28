@@ -3592,12 +3592,14 @@
     - cloudformation
   codes:
     - lambda_more_memory
+    - conscious_cost_increase
 - url: https://github.com/stelligent/cfn_nag/commit/f2f5b5a7ef68602ad3d358a77ae76fa22f7c15df
   technologies:
     - cloudformation
   codes:
     - dynamo_on_demand
     - dynamo_provisioned
+    - conscious_cost_increase
 - url: https://github.com/widdix/aws-cf-templates/commit/03a8713f53a4a514898bd481eb6628b6b56cfff1
   technologies:
     - cloudformation
@@ -3621,6 +3623,7 @@
     - cheaper_instance
     - new_gen
     - old_gen
+    - conscious_cost_increase
 - url: https://github.com/shinesolutions/aem-aws-stack-builder/commit/7781d14d29b7e19a8b1e2dd46f4904a3041019f4
   technologies:
     - cloudformation
@@ -3799,6 +3802,7 @@
   codes:
     - increase_storage
     - new_gen
+    - conscious_cost_increase
 - url: https://github.com/biometrixtech/infrastructure/commit/fab4c34416dd4fec75df954c171f34d026435bb8
   technologies:
     - cloudformation
@@ -3854,6 +3858,7 @@
     - cloudformation
   codes:
     - more_expensive_volume
+    - conscious_cost_increase
 - url: https://github.com/openrelayxyz/ethercattle-deployment/commit/169a5f7292d7e15be885c33b345ce87477d8d227
   technologies:
     - cloudformation
@@ -3907,6 +3912,7 @@
     - cloudformation
   codes:
     - dynamo_increase_rw_capacity
+    - conscious_cost_increase
 - url: https://github.com/OlivierBP/pacloud/commit/e8ae4cc0ebfa669de295c323145e7dcd0fd366b2
   technologies:
     - cloudformation
@@ -3958,6 +3964,7 @@
     - cloudformation
   codes:
     - more_memory
+    - conscious_cost_increase
 - url: https://github.com/LeanerCloud/AutoSpotting/commit/af0fec8119acf4e4f19574dca8b25b4621f35e7e
   technologies:
     - cloudformation
@@ -4093,6 +4100,7 @@
   codes:
     - add_nat
     - replace_public_with_private
+    - conscious_cost_increase
 - url: https://github.com/Jessinra/TriveryID-Skadi/commit/d660670eee3c1ad00b82bb947ba5d764c8fe4ced
   technologies:
     - cloudformation
@@ -4164,6 +4172,7 @@
     - dynamo_reduce_rw_capacity
     - dynamo_increase_rw_capacity
     - dynamo_provisioned
+    - conscious_cost_increase
 - url: https://github.com/guardian/mobile-save-for-later/commit/b0afd91084a5ede68e2a53f2a7624f6cc9c27c64
   technologies:
     - cloudformation
@@ -4176,6 +4185,7 @@
     - dynamo_reduce_rw_capacity
     - dynamo_increase_rw_capacity
     - dynamo_provisioned
+    - conscious_cost_increase
 - url: https://github.com/guardian/mobile-save-for-later/commit/0607c55b14336854960d81f9af27936b60fe747d
   technologies:
     - cloudformation
@@ -4352,12 +4362,14 @@
     - cloudformation
   codes:
     - more_memory
+    - conscious_cost_increase
 - url: https://github.com/atlassian/aws-infrastructure/commit/65a7a5ca335c569c3f4213889034561cf9d5db07
   technologies:
     - cloudformation
   codes:
     - more_expensive_instance
     - new_gen
+    - conscious_cost_increase
 - url: https://github.com/guardian/multimedia-launchdetector-v3/commit/f0a2dd00bade5d9ebf943be0af3f8ed3982d54d2
   technologies:
     - cloudformation
@@ -4454,6 +4466,7 @@
     - cloudformation
   codes:
     - remove_glacier_transitions
+    - conscious_cost_increase
 - url: https://github.com/pagopa/pn-radd-fsu/commit/9dd31982fe3540a4ce4b97073f1fd0b97ccff425
   technologies:
     - cloudformation
@@ -4486,6 +4499,7 @@
   codes:
     - less_memory
     - more_memory
+    - conscious_cost_increase
 - url: https://github.com/andrestoll/aws-lambda-power-tuning/commit/c33e0b948d92f0f3e3372bd06c377514e1c317bf
   technologies:
     - cloudformation
@@ -4501,6 +4515,7 @@
     - cloudformation
   codes:
     - dynamo_provisioned
+    - conscious_cost_increase
 - url: https://github.com/caseconsulting/expense-app-api/commit/b2cc61e36477d2b16f0585edba815dbb8d5481c5
   technologies:
     - cloudformation
@@ -4542,6 +4557,7 @@
   codes:
     - dynamo_reduce_rw_capacity
     - dynamo_provisioned
+    - conscious_cost_increase
 - url: https://github.com/aexeagmbh/cfn-lint-rules/commit/d9c9900e765462f6eed75304add98e309e87d1f9
   technologies:
     - cloudformation
@@ -4766,6 +4782,7 @@
   codes:
     - more_expensive_instance
     - old_gen
+    - conscious_cost_increase
 - url: https://github.com/aws/serverless-application-model/commit/9a44d233e6278bffc3c89e9f2281697223c52db6
   technologies:
     - cloudformation
@@ -4791,6 +4808,7 @@
     - cloudformation
   codes:
     - dynamo_provisioned
+    - conscious_cost_increase
 - url: https://github.com/AlisProject/serverless-application/commit/8e8617e3d1054a467945b126496ab05051f656e2
   technologies:
     - cloudformation
@@ -4817,6 +4835,7 @@
   codes:
     - cheaper_instance
     - old_gen
+    - conscious_cost_increase
 - url: https://github.com/tradle/mycloud/commit/d5a76259dd694af976f3c762a3a2570a4307afb8
   technologies:
     - cloudformation
