@@ -865,6 +865,13 @@
     - title: Usage of Cost and Usage reports
       url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_CUR.html
   occurrences:
+    terraform:
+      - https://github.com/binbashar/le-tf-infra-aws/commit/6184fd167b796d7ef8f04aea5962c0b2774c6371
+      - https://github.com/nsbno/terraform-aws-cost-alarm/commit/be2ef8e22c98140716d46500520e04fcb132cbd1
+      - https://github.com/nsbno/terraform-aws-cost-alarm/commit/1b8cec87b9bc03a93c22a300ee87e6fca8b12052
+      - https://github.com/KiaraGrouwstra/sentia-data-engineering-assignment/commit/7e5c997c23683a707aa384b6a07801210b1839b8
+      - https://github.com/cloudposse/terraform-spacelift-cloud-infrastructure-automation/commit/f1ad51c1ee8b96d7a60c23dbe49ccd5a3439a3dc
+      - https://github.com/gravicore/terraform-gravicore-modules/commit/2a9045f5caca2824fbe4035020ffaf72d724d179
     cloudformation:
       - https://github.com/zaro0508/organizations-infra/commit/f62de2443313d2f963f6101663417d16e696a0a9
       - https://github.com/karthickcse05/aws-cost-explorer/commit/2750d8c79ab56e69ce2d06e08f02390ae7ba4183
