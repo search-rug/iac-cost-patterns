@@ -56,6 +56,12 @@ Thematic analysis was applied to a dataset of commits involving a different IaC 
 
 Next, due to changes not observed for Terraform, we defined 98 new codes, assigned to 133 commits from 109 repositories. Based on the codes, we further attempted to match each new commit with one of the ten Terraform (anti)patterns. If none were appropriate, we grouped the commits based on similarities. This processes resulted in the identification of two new patterns: [Cost report](https://search-rug.github.io/iac-cost-patterns/cost-report/) and [Preventative Template](https://search-rug.github.io/iac-cost-patterns/preventative-template/).
 
+### v2.2 - November 2024
+
+Refinement of the previous thematic analysis led to the identification of 6 occurrences of the Cost Report pattern in the Terraform dataset. The occurrences are spread around 6 commits of 5 different repositories.
+
+In the refinement process, we also identified a special situation that we have labeled as a conscious cost increase. This situation is characterized by changes that directly and consciously contradict one or more of our identified patterns, trading off cost in favor of another factor (e.g., performance) as justified by the developer. We have identified 19 commits from 18 repositories with such changes. These commits are marked with the code `conscious_cost_increase` in the dataset.
+
 ## Licenses
 
 The software in this repository is licensed under the [MIT License](LICENSE).
