@@ -1337,6 +1337,7 @@
     - add_nat_gateway
     - add_eip
     - add_route
+    - conscious_cost_increase
 - url: https://github.com/guilhermerenew/infra-cost/commit/ba858d94e29d03e3e81533df8cd8bc85b9f176f1
   technologies:
     - terraform
@@ -1402,6 +1403,7 @@
   codes:
     - aws
     - increase_volume_size
+    - conscious_cost_increase
 - url: https://github.com/deptno/terraform-aws-modules/commit/49f447bdbb3cf23499e8194e78f852ea1e256d3a
   technologies:
     - terraform
@@ -3415,6 +3417,7 @@
   codes:
     - aws
     - increase_budget_threshold
+    - conscious_cost_increase
 - url: https://github.com/Civil-Service-Human-Resources/lpg-terraform-paas/commit/05328b001621d631332564f9685c7d8de372d8b3
   technologies:
     - terraform
@@ -4557,7 +4560,6 @@
   codes:
     - dynamo_reduce_rw_capacity
     - dynamo_provisioned
-    - conscious_cost_increase
 - url: https://github.com/aexeagmbh/cfn-lint-rules/commit/d9c9900e765462f6eed75304add98e309e87d1f9
   technologies:
     - cloudformation
@@ -4835,7 +4837,6 @@
   codes:
     - cheaper_instance
     - old_gen
-    - conscious_cost_increase
 - url: https://github.com/tradle/mycloud/commit/d5a76259dd694af976f3c762a3a2570a4307afb8
   technologies:
     - cloudformation

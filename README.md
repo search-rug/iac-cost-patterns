@@ -60,7 +60,7 @@ Next, due to changes not observed for Terraform, we defined 98 new codes, assign
 
 Refinement of the previous thematic analysis led to the identification of 6 occurrences of the Cost Report pattern in the Terraform dataset. The occurrences are spread around 6 commits of 5 different repositories.
 
-In the refinement process, we also identified a special situation that we have labeled as a conscious cost increase. This situation is characterized by changes that directly and consciously contradict one or more of our identified patterns, trading off cost in favor of another factor (e.g., performance) as justified by the developer. We have identified 19 commits from 18 repositories with such changes. These commits are marked with the code `conscious_cost_increase` in the dataset.
+In the refinement process, we also identified a special situation that we have labeled as a conscious cost increase. This situation is characterized by changes that directly and consciously contradict one or more of our identified patterns, trading off cost in favor of another factor (e.g., performance) as justified by the developer. We have identified 20 commits from 19 repositories with such changes. These commits are marked with the code `conscious_cost_increase` in the dataset.
 
 ## Licenses
 
