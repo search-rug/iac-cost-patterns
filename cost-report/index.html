@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pattern: Cost Report - IaC Cost Patterns</title>
+    <link rel="stylesheet" href="https://search-rug.github.io/iac-cost-patterns/style.css?h=ab047a49b1332c45175b">
+</head>
+<body>
+    <header>
+        <div class="content-wrapper">
+            <h1><a href="https:&#x2F;&#x2F;search-rug.github.io&#x2F;iac-cost-patterns&#x2F;">IaC Cost Patterns</a></h1>
+            <p>A collection of patterns and antipatterns for managing cost in IaC files.</p>
+            <ul>
+                <li><a href="https://github.com/search-rug/iac-cost-patterns/blob/main/thematic-analysis/patterns.yml">Dataset <span class="label">YAML</span></a></li>
+                <li><a href="https://github.com/search-rug/iac-cost-patterns">Repository</a></li>
+                <li><a href="https://doi.org/10.1109/SEAA64295.2024.00067"><span class="label">New!</span> Paper accepted to SEAA 2024</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="content-wrapper">
+            
+<p class="nav"><a href="https:&#x2F;&#x2F;search-rug.github.io&#x2F;iac-cost-patterns&#x2F;">&leftarrow; Back to all patterns</a></p>
+<h1 id="pattern-cost-report">Pattern: Cost Report</h1>
+<p>Cost report elements can be used to obtain information on the actual spendings over a period of time.</p>
+<h2 id="context">Context</h2>
+<p>Given the complexity and scale of cloud computing projects, cost management might be overlooked and, in turn, lead to overspending.</p>
+<h2 id="solution">Solution</h2>
+<p>Major cloud providers offer cost reporting tools such as CUR buckets and lambda rules to collect and later visualize and analyze cost and
+usage information. These tools enable cost tracking, allow programmers to gain insights into spending trends and might uncover cost-related issues</p>
+<h2 id="example">Example</h2>
+<p>Add a monthly cost and usage report:</p>
+<pre data-lang="diff" style="background-color:#2b303b;color:#c0c5ce;" class="language-diff "><code class="language-diff" data-lang="diff"><span>@@ -0,0 +1,24 @@ </span><span style="color:#8fa1b3;">resource &quot;cost_report&quot; &quot;example&quot; {
+</span><span style="color:#a3be8c;">+  AWSTemplateFormatVersion: &#39;2010-09-09&#39;
+</span><span style="color:#a3be8c;">+  Description: &#39;Monthly Cost and Usage Report&#39;
+</span><span style="color:#a3be8c;">+  Parameters:
+</span><span style="color:#a3be8c;">+    Bucket:
+</span><span style="color:#a3be8c;">+      Type: String
+</span><span style="color:#a3be8c;">+    Frequency:
+</span><span style="color:#a3be8c;">+      Type: String
+</span><span style="color:#a3be8c;">+      Default: &quot;monthly&quot;
+</span><span style="color:#a3be8c;">+      AllowedValues:
+</span><span style="color:#a3be8c;">+      - &quot;monthly&quot;
+</span><span style="color:#a3be8c;">+      - &quot;weekly&quot;
+</span><span style="color:#a3be8c;">+      - &quot;hourly&quot;
+</span><span style="color:#a3be8c;">+  Resources:
+</span><span style="color:#a3be8c;">+    MonthlyCostReport:
+</span><span style="color:#a3be8c;">+      Type: &quot;AWS::CUR::ReportDefinition&quot;
+</span><span style="color:#a3be8c;">+      Properties:
+</span><span style="color:#a3be8c;">+        ReportName: !Sub &quot;${AWS::StackName}&quot;
+</span><span style="color:#a3be8c;">+        ReportVersioning: False
+</span><span style="color:#a3be8c;">+        TimeUnit: !Ref Frequency
+</span><span style="color:#a3be8c;">+        Compression: &quot;parquet&quot;
+</span><span style="color:#a3be8c;">+        Format: &quot;parquet&quot;
+</span><span style="color:#a3be8c;">+        S3Region: !Ref primaryRegion
+</span><span style="color:#a3be8c;">+        S3Prefix: !Ref Frequency
+</span><span style="color:#a3be8c;">+        S3Bucket: !Ref Bucket
+</span><span>}
+</span></code></pre>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting/">AWS Cost and Usage reports</a></li>
+<li><a href="https://aws.amazon.com/aws-cost-management/aws-cost-explorer/">AWS Cost Explorer</a></li>
+<li><a href="https://community.aws/content/2dKeNrWeMj8E1Yh6CXITS7Hg0cU/automate-aws-cost-report-using-eventbridge-lambda-cost-explorer-api?lang=en">Automated AWS Cost Reports</a></li>
+<li><a href="https://www.cloudzero.com/blog/cost-explorer-vs-cost-and-usage-report/">Cost Explorer vs Cost and Usage Reports</a></li>
+<li><a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_CUR.html">Usage of Cost and Usage reports</a></li>
+</ul>
+<h2 id="occurrences">Occurrences</h2>
+<h3 id="terraform">Terraform</h3>
+<ul>
+<li><a href="https://github.com/binbashar/le-tf-infra-aws/commit/6184fd167b796d7ef8f04aea5962c0b2774c6371">https://github.com/binbashar/le-tf-infra-aws/commit/6184fd167b796d7ef8f04aea5962c0b2774c6371</a></li>
+<li><a href="https://github.com/nsbno/terraform-aws-cost-alarm/commit/be2ef8e22c98140716d46500520e04fcb132cbd1">https://github.com/nsbno/terraform-aws-cost-alarm/commit/be2ef8e22c98140716d46500520e04fcb132cbd1</a></li>
+<li><a href="https://github.com/nsbno/terraform-aws-cost-alarm/commit/1b8cec87b9bc03a93c22a300ee87e6fca8b12052">https://github.com/nsbno/terraform-aws-cost-alarm/commit/1b8cec87b9bc03a93c22a300ee87e6fca8b12052</a></li>
+<li><a href="https://github.com/KiaraGrouwstra/sentia-data-engineering-assignment/commit/7e5c997c23683a707aa384b6a07801210b1839b8">https://github.com/KiaraGrouwstra/sentia-data-engineering-assignment/commit/7e5c997c23683a707aa384b6a07801210b1839b8</a></li>
+<li><a href="https://github.com/cloudposse/terraform-spacelift-cloud-infrastructure-automation/commit/f1ad51c1ee8b96d7a60c23dbe49ccd5a3439a3dc">https://github.com/cloudposse/terraform-spacelift-cloud-infrastructure-automation/commit/f1ad51c1ee8b96d7a60c23dbe49ccd5a3439a3dc</a></li>
+<li><a href="https://github.com/gravicore/terraform-gravicore-modules/commit/2a9045f5caca2824fbe4035020ffaf72d724d179">https://github.com/gravicore/terraform-gravicore-modules/commit/2a9045f5caca2824fbe4035020ffaf72d724d179</a></li>
+</ul>
+<h3 id="aws-cloudformation">AWS CloudFormation</h3>
+<ul>
+<li><a href="https://github.com/zaro0508/organizations-infra/commit/f62de2443313d2f963f6101663417d16e696a0a9">https://github.com/zaro0508/organizations-infra/commit/f62de2443313d2f963f6101663417d16e696a0a9</a></li>
+<li><a href="https://github.com/karthickcse05/aws-cost-explorer/commit/2750d8c79ab56e69ce2d06e08f02390ae7ba4183">https://github.com/karthickcse05/aws-cost-explorer/commit/2750d8c79ab56e69ce2d06e08f02390ae7ba4183</a></li>
+<li><a href="https://github.com/nao1215/rainbow/commit/3696053a44e2168d5fbda669b793f587ba0dc5bc">https://github.com/nao1215/rainbow/commit/3696053a44e2168d5fbda669b793f587ba0dc5bc</a></li>
+<li><a href="https://github.com/felixrichardt/cloud-carbon-footprint/commit/f5f4150801b64b5baaa68ecbddccd336a3013d32">https://github.com/felixrichardt/cloud-carbon-footprint/commit/f5f4150801b64b5baaa68ecbddccd336a3013d32</a></li>
+<li><a href="https://github.com/unity-sds/unity-on-demand-cloudformation/commit/f44a61cf6205b431887efa5b3154c446eff0b0ca">https://github.com/unity-sds/unity-on-demand-cloudformation/commit/f44a61cf6205b431887efa5b3154c446eff0b0ca</a></li>
+<li><a href="https://github.com/deathandmayhem/jolly-roger/commit/9fed42ab84b2c091748bffc30b2bc29b79f39a41">https://github.com/deathandmayhem/jolly-roger/commit/9fed42ab84b2c091748bffc30b2bc29b79f39a41</a></li>
+<li><a href="https://github.com/aws-samples/aws-serverless-notifier-plugins/commit/935d60da5f246433742fd66496d5caa84a4c80d2">https://github.com/aws-samples/aws-serverless-notifier-plugins/commit/935d60da5f246433742fd66496d5caa84a4c80d2</a></li>
+<li><a href="https://github.com/RLOpenCatalyst/rgdeploy/commit/6f703b23d684a2c8d22ea5c7fd03b07729af3ee5">https://github.com/RLOpenCatalyst/rgdeploy/commit/6f703b23d684a2c8d22ea5c7fd03b07729af3ee5</a></li>
+<li><a href="https://github.com/aexeagmbh/cfn-lint-rules/commit/d9c9900e765462f6eed75304add98e309e87d1f9">https://github.com/aexeagmbh/cfn-lint-rules/commit/d9c9900e765462f6eed75304add98e309e87d1f9</a></li>
+<li><a href="https://github.com/zaro0508/organizations-infra/commit/ec619370e7601e750d87cf893b85ec1efeab3c84">https://github.com/zaro0508/organizations-infra/commit/ec619370e7601e750d87cf893b85ec1efeab3c84</a></li>
+<li><a href="https://github.com/PRX/Infrastructure/commit/d5a4f859294e126a3c72582d324672e8ba8b7c32">https://github.com/PRX/Infrastructure/commit/d5a4f859294e126a3c72582d324672e8ba8b7c32</a></li>
+<li><a href="https://github.com/superwerker/superwerker/commit/21ef2d4c44d4a881c45e99ace627f1c66fa8d141">https://github.com/superwerker/superwerker/commit/21ef2d4c44d4a881c45e99ace627f1c66fa8d141</a></li>
+<li><a href="https://github.com/Igor-Ivaniuk/codepipeline-terraform/commit/ccf92afdd32085d36509002274739ae894aeda84">https://github.com/Igor-Ivaniuk/codepipeline-terraform/commit/ccf92afdd32085d36509002274739ae894aeda84</a></li>
+<li><a href="https://github.com/DEFRA/rod-licensing/commit/5b84cfd0ee4c3d0450be8bf0760507e1655d7992">https://github.com/DEFRA/rod-licensing/commit/5b84cfd0ee4c3d0450be8bf0760507e1655d7992</a></li>
+<li><a href="https://github.com/cunningham-lab/neurocaas/commit/d4717c0e763233f734ccd991947c201a1438e1d8">https://github.com/cunningham-lab/neurocaas/commit/d4717c0e763233f734ccd991947c201a1438e1d8</a></li>
+<li><a href="https://github.com/PRX/Infrastructure/commit/d9d90ba0a708d9c37c5f0fde020a3e094f67cf59">https://github.com/PRX/Infrastructure/commit/d9d90ba0a708d9c37c5f0fde020a3e094f67cf59</a></li>
+<li><a href="https://github.com/unity-sds/unity-ads-deployment/commit/047c2f09689885552903413632b4d67953e4b0c0">https://github.com/unity-sds/unity-ads-deployment/commit/047c2f09689885552903413632b4d67953e4b0c0</a></li>
+<li><a href="https://github.com/RLOpenCatalyst/rgdeploy/commit/14daa90b0f32287eb693967b98dcdc6cafde798b">https://github.com/RLOpenCatalyst/rgdeploy/commit/14daa90b0f32287eb693967b98dcdc6cafde798b</a></li>
+<li><a href="https://github.com/zaro0508/organizations-infra/commit/1a35ef50ccf357c8319a60fd1c95bd6fd412517b">https://github.com/zaro0508/organizations-infra/commit/1a35ef50ccf357c8319a60fd1c95bd6fd412517b</a></li>
+<li><a href="https://github.com/APTrust/preservation-services/commit/5b14b81b437bed62952979398a6b014f8458c356">https://github.com/APTrust/preservation-services/commit/5b14b81b437bed62952979398a6b014f8458c356</a></li>
+<li><a href="https://github.com/PRX/Infrastructure/commit/579ba639b31f26998b6817c9558f1db2c6cfd028">https://github.com/PRX/Infrastructure/commit/579ba639b31f26998b6817c9558f1db2c6cfd028</a></li>
+<li><a href="https://github.com/tomwwright/littleorange/commit/4bca2634fd0e7b2f90111838924d68decd71eef5">https://github.com/tomwwright/littleorange/commit/4bca2634fd0e7b2f90111838924d68decd71eef5</a></li>
+<li><a href="https://github.com/neerajtiwar/aws-cost-exporter/commit/3586e5305da734b089406fb6771a00ebb3d9ffb3">https://github.com/neerajtiwar/aws-cost-exporter/commit/3586e5305da734b089406fb6771a00ebb3d9ffb3</a></li>
+<li><a href="https://github.com/brucehoff/organizations-infra/commit/dae052c3e1ecf6a47da23af60952a30dc0d3d0b6">https://github.com/brucehoff/organizations-infra/commit/dae052c3e1ecf6a47da23af60952a30dc0d3d0b6</a></li>
+<li><a href="https://github.com/cunningham-lab/neurocaas/commit/202fa9ce32b269b54bfa68299dfe8a4c85c3080d">https://github.com/cunningham-lab/neurocaas/commit/202fa9ce32b269b54bfa68299dfe8a4c85c3080d</a></li>
+<li><a href="https://github.com/unity-sds/unity-ads-deployment/commit/d1cdba60f76965d0ba35896b403a4751a3aaaa1f">https://github.com/unity-sds/unity-ads-deployment/commit/d1cdba60f76965d0ba35896b403a4751a3aaaa1f</a></li>
+<li><a href="https://github.com/awslabs/cid-framework/commit/a9e275cdc1bb0b38fbd2a172b6a61534c869ecd2">https://github.com/awslabs/cid-framework/commit/a9e275cdc1bb0b38fbd2a172b6a61534c869ecd2</a></li>
+<li><a href="https://github.com/zaro0508/organizations-infra/commit/544592f6cab75e460d3146b55ad892e1e0542aca">https://github.com/zaro0508/organizations-infra/commit/544592f6cab75e460d3146b55ad892e1e0542aca</a></li>
+<li><a href="https://github.com/Sage-Bionetworks-IT/organizations-infra/commit/7afa4947fb7321ea8e9d84ac162cc7c3a70075ee">https://github.com/Sage-Bionetworks-IT/organizations-infra/commit/7afa4947fb7321ea8e9d84ac162cc7c3a70075ee</a></li>
+<li><a href="https://github.com/zaro0508/organizations-infra/commit/beb53a2eeb616963179238a6d11c06b003539e95">https://github.com/zaro0508/organizations-infra/commit/beb53a2eeb616963179238a6d11c06b003539e95</a></li>
+<li><a href="https://github.com/awslabs/aws-well-architected-labs/commit/f82be3a26e356335ebf8feab6971f278215f335c">https://github.com/awslabs/aws-well-architected-labs/commit/f82be3a26e356335ebf8feab6971f278215f335c</a></li>
+<li><a href="https://github.com/primeharbor/aws-account-automation/commit/18f1e36b061d631dca72b494661a21dc37594148">https://github.com/primeharbor/aws-account-automation/commit/18f1e36b061d631dca72b494661a21dc37594148</a></li>
+<li><a href="https://github.com/aws/aws-parallelcluster-ui/commit/4a1d71623f565fd1dfe40d3231201e18ec32893c">https://github.com/aws/aws-parallelcluster-ui/commit/4a1d71623f565fd1dfe40d3231201e18ec32893c</a></li>
+<li><a href="https://github.com/zaro0508/sandbox-infra/commit/189eb2e198dbc4cef0feae56ee4e3d1e342b314c">https://github.com/zaro0508/sandbox-infra/commit/189eb2e198dbc4cef0feae56ee4e3d1e342b314c</a></li>
+<li><a href="https://github.com/SedaiEngineering/sedai-onboarding/commit/545e2ecaeeb535a7a044c98f69a6c71d954ded5b">https://github.com/SedaiEngineering/sedai-onboarding/commit/545e2ecaeeb535a7a044c98f69a6c71d954ded5b</a></li>
+<li><a href="https://github.com/PRX/Infrastructure/commit/9961cdbffd8f0750ba4acfa15b3c8f1dc13d4e85">https://github.com/PRX/Infrastructure/commit/9961cdbffd8f0750ba4acfa15b3c8f1dc13d4e85</a></li>
+<li><a href="https://github.com/Sage-Bionetworks/aws-infra/commit/73d9fd5d784eecf01a175ff33152a6ccba5f37ba">https://github.com/Sage-Bionetworks/aws-infra/commit/73d9fd5d784eecf01a175ff33152a6ccba5f37ba</a></li>
+<li><a href="https://github.com/Sage-Bionetworks-IT/organizations-infra/commit/12a3eb189de5a21a09dbf02b46c522e5d5e76190">https://github.com/Sage-Bionetworks-IT/organizations-infra/commit/12a3eb189de5a21a09dbf02b46c522e5d5e76190</a></li>
+</ul>
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="content-wrapper">
+            <p>
+                &copy; 2024-2025
+                <a href="https://koen.bolhu.is">Koen Bolhuis</a>,
+                <a href="https://feitosa-daniel.github.io">Daniel Feitosa</a>,
+                <a href="https://vandriko.github.io">Vasilios Andrikopoulos</a>,
+                <a href="https://www.linkedin.com/in/allianeamt/">Allia Neamt</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

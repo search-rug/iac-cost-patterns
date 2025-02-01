@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pattern: Budget - IaC Cost Patterns</title>
+    <link rel="stylesheet" href="https://search-rug.github.io/iac-cost-patterns/style.css?h=ab047a49b1332c45175b">
+</head>
+<body>
+    <header>
+        <div class="content-wrapper">
+            <h1><a href="https:&#x2F;&#x2F;search-rug.github.io&#x2F;iac-cost-patterns&#x2F;">IaC Cost Patterns</a></h1>
+            <p>A collection of patterns and antipatterns for managing cost in IaC files.</p>
+            <ul>
+                <li><a href="https://github.com/search-rug/iac-cost-patterns/blob/main/thematic-analysis/patterns.yml">Dataset <span class="label">YAML</span></a></li>
+                <li><a href="https://github.com/search-rug/iac-cost-patterns">Repository</a></li>
+                <li><a href="https://doi.org/10.1109/SEAA64295.2024.00067"><span class="label">New!</span> Paper accepted to SEAA 2024</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="content-wrapper">
+            
+<p class="nav"><a href="https:&#x2F;&#x2F;search-rug.github.io&#x2F;iac-cost-patterns&#x2F;">&leftarrow; Back to all patterns</a></p>
+<h1 id="pattern-budget">Pattern: Budget</h1>
+<p>Use budgets to receive alerts about charged and forecasted costs and control spending.</p>
+<h2 id="context">Context</h2>
+<p>The lack of explicit cost monitoring can often lead to unforeseen and undesirable costs.</p>
+<h2 id="solution">Solution</h2>
+<p>Major cloud providers support the creation of budgets, which allow users to define alerts
+about charged and forecasted costs and control spending. Having one or more budgets can
+help monitor and manage the cost of cloud deployments.</p>
+<h2 id="example">Example</h2>
+<p>Define a budget for a cost limit of 1200 USD for EC2, and generate an
+email notification if the forecasted monthly cost exceeds this amount:</p>
+<pre data-lang="terraform" style="background-color:#2b303b;color:#c0c5ce;" class="language-terraform "><code class="language-terraform" data-lang="terraform"><span style="color:#b48ead;">resource </span><span>&quot;</span><span style="color:#a3be8c;">aws_budgets_budget</span><span>&quot; &quot;</span><span style="color:#a3be8c;">example</span><span>&quot; {
+</span><span>  </span><span style="color:#bf616a;">name              </span><span>= &quot;</span><span style="color:#a3be8c;">example</span><span>&quot;
+</span><span>  </span><span style="color:#bf616a;">budget_type       </span><span>= &quot;</span><span style="color:#a3be8c;">COST</span><span>&quot;
+</span><span>  </span><span style="color:#bf616a;">limit_amount      </span><span>= &quot;</span><span style="color:#a3be8c;">1200</span><span>&quot;
+</span><span>  </span><span style="color:#bf616a;">limit_unit        </span><span>= &quot;</span><span style="color:#a3be8c;">USD</span><span>&quot;
+</span><span>  </span><span style="color:#bf616a;">time_unit         </span><span>= &quot;</span><span style="color:#a3be8c;">MONTHLY</span><span>&quot;
+</span><span>
+</span><span>  cost_filter {
+</span><span>    </span><span style="color:#bf616a;">name </span><span>= &quot;</span><span style="color:#a3be8c;">Service</span><span>&quot;
+</span><span>    </span><span style="color:#bf616a;">values </span><span>= [
+</span><span>      &quot;</span><span style="color:#a3be8c;">Amazon Elastic Compute Cloud - Compute</span><span>&quot;,
+</span><span>    ]
+</span><span>  }
+</span><span>
+</span><span>  notification {
+</span><span>    </span><span style="color:#bf616a;">comparison_operator        </span><span>= &quot;</span><span style="color:#a3be8c;">GREATER_THAN</span><span>&quot;
+</span><span>    </span><span style="color:#bf616a;">threshold                  </span><span>= </span><span style="color:#d08770;">100
+</span><span>    </span><span style="color:#bf616a;">threshold_type             </span><span>= &quot;</span><span style="color:#a3be8c;">PERCENTAGE</span><span>&quot;
+</span><span>    </span><span style="color:#bf616a;">notification_type          </span><span>= &quot;</span><span style="color:#a3be8c;">FORECASTED</span><span>&quot;
+</span><span>    </span><span style="color:#bf616a;">subscriber_email_addresses </span><span>= [&quot;</span><span style="color:#a3be8c;">test@example.com</span><span>&quot;]
+</span><span>  }
+</span><span>}
+</span></code></pre>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://aws.amazon.com/aws-cost-management/aws-budgets/">Cloud Cost And Usage Budgets - AWS Budgets - AWS</a></li>
+<li><a href="https://cloud.google.com/billing/docs/how-to/budgets">Create, edit, or delete budgets and budget alerts | Cloud Billing | Google Cloud</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets?tabs=psbudget">Tutorial - Create and manage budgets - Microsoft Cost Management | Microsoft Learn</a></li>
+<li><a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/budgets_budget">Resource: aws_budgets_budget (Terraform)</a></li>
+<li><a href="https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/billing_budget">Resource: google_billing_budget (Terraform)</a></li>
+<li><a href="https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/consumption_budget_resource_group">Resource: azurerm_consumption_budget_resource_group (Terraform)</a></li>
+</ul>
+<h2 id="occurrences">Occurrences</h2>
+<h3 id="terraform">Terraform</h3>
+<ul>
+<li><a href="https://github.com/AJarombek/global-aws-infrastructure/commit/4a89f4b8235961275fa0e6aaf20848f2b8b7e733">https://github.com/AJarombek/global-aws-infrastructure/commit/4a89f4b8235961275fa0e6aaf20848f2b8b7e733</a></li>
+<li><a href="https://github.com/MartinFeineis/terraform/commit/359ba426393c78b78695797f9bdd6a08c0455720">https://github.com/MartinFeineis/terraform/commit/359ba426393c78b78695797f9bdd6a08c0455720</a></li>
+<li><a href="https://github.com/stuartellis/stuartellis-org-tf-modules/commit/39a9cabac6765c75591ba258fef0d10ba7ae0f9e">https://github.com/stuartellis/stuartellis-org-tf-modules/commit/39a9cabac6765c75591ba258fef0d10ba7ae0f9e</a></li>
+<li><a href="https://github.com/forgotpw/forgotpw-infrastructure/commit/f4363ad27d366385f2388d073ce8af796e035406">https://github.com/forgotpw/forgotpw-infrastructure/commit/f4363ad27d366385f2388d073ce8af796e035406</a></li>
+<li><a href="https://github.com/Katesagay/terraform-repo/commit/9aacfbe12e3e7c1e726b9a3d834211aae01f419c">https://github.com/Katesagay/terraform-repo/commit/9aacfbe12e3e7c1e726b9a3d834211aae01f419c</a></li>
+<li><a href="https://github.com/darogina/terragrunt-aws-modules/commit/9c84d03bde131e7f349dcd493ba5b7e55bf8ae2c">https://github.com/darogina/terragrunt-aws-modules/commit/9c84d03bde131e7f349dcd493ba5b7e55bf8ae2c</a></li>
+<li><a href="https://github.com/chetanbothra/Terraform_AWS_Billing_Alert/commit/43b0d3b4cef0d3f57d4f5d4f1c7aeb9bfc3e362a">https://github.com/chetanbothra/Terraform_AWS_Billing_Alert/commit/43b0d3b4cef0d3f57d4f5d4f1c7aeb9bfc3e362a</a></li>
+<li><a href="https://github.com/ntk1000/aws-terraform-template/commit/d016b96d89370b8039817fabdfa055576cf6b4cc">https://github.com/ntk1000/aws-terraform-template/commit/d016b96d89370b8039817fabdfa055576cf6b4cc</a></li>
+<li><a href="https://github.com/StratusGrid/terraform-aws-single-account-starter/commit/c291c0954c89e1bfbdb76d4c8990baf9db986343">https://github.com/StratusGrid/terraform-aws-single-account-starter/commit/c291c0954c89e1bfbdb76d4c8990baf9db986343</a></li>
+<li><a href="https://github.com/nsbno/terraform-aws-cost-alarm/commit/7e135499d33f0a5c51602a506fefe258cac072c6">https://github.com/nsbno/terraform-aws-cost-alarm/commit/7e135499d33f0a5c51602a506fefe258cac072c6</a></li>
+<li><a href="https://github.com/64kramsystem/ultimate_aws_certified_cloud_practitioner_course_terraform_configuration/commit/2f36b8a5f2f818138da72d218c1f3c9666ed54aa">https://github.com/64kramsystem/ultimate_aws_certified_cloud_practitioner_course_terraform_configuration/commit/2f36b8a5f2f818138da72d218c1f3c9666ed54aa</a></li>
+<li><a href="https://github.com/kelledge/idkfa/commit/25cda0b77ff329a89551cc6f14fe8c62820fd424">https://github.com/kelledge/idkfa/commit/25cda0b77ff329a89551cc6f14fe8c62820fd424</a></li>
+<li><a href="https://github.com/oke-py/aws-tf/commit/ec2982c8742cc7bc294f8a3cc07ae9ba5ffcaced">https://github.com/oke-py/aws-tf/commit/ec2982c8742cc7bc294f8a3cc07ae9ba5ffcaced</a></li>
+<li><a href="https://github.com/cob16/aws_static_website/commit/0d4fbd0a7b296a5c9377a835dff89d1499716082">https://github.com/cob16/aws_static_website/commit/0d4fbd0a7b296a5c9377a835dff89d1499716082</a></li>
+<li><a href="https://github.com/mintak21/terraform-old/commit/c10b476d869282ed6cf55def47445b9c703788fe">https://github.com/mintak21/terraform-old/commit/c10b476d869282ed6cf55def47445b9c703788fe</a></li>
+<li><a href="https://github.com/alphagov/govwifi-terraform/commit/348b52a2ae5d6d242c8802644f9e3a5e6460de1d">https://github.com/alphagov/govwifi-terraform/commit/348b52a2ae5d6d242c8802644f9e3a5e6460de1d</a></li>
+<li><a href="https://github.com/eladidan/speedyhead.xyz-terraform/commit/71f034f3e13e9118a2a954e1fc3c0d35153184f0">https://github.com/eladidan/speedyhead.xyz-terraform/commit/71f034f3e13e9118a2a954e1fc3c0d35153184f0</a></li>
+<li><a href="https://github.com/coremaker/terraform-google-nucleus/commit/11234f631f7370dd80ee5fbc5dd7bdbc12dcbf49">https://github.com/coremaker/terraform-google-nucleus/commit/11234f631f7370dd80ee5fbc5dd7bdbc12dcbf49</a></li>
+<li><a href="https://github.com/robgmills/jumpbox/commit/028bbe114d099b0388be9a46adcab80d9383a518">https://github.com/robgmills/jumpbox/commit/028bbe114d099b0388be9a46adcab80d9383a518</a></li>
+<li><a href="https://github.com/AdrianNeatu/blog-terraform/commit/3ba302c69eb2a491a5b23e94084b4ddd24a4a703">https://github.com/AdrianNeatu/blog-terraform/commit/3ba302c69eb2a491a5b23e94084b4ddd24a4a703</a></li>
+<li><a href="https://github.com/richardhughes/infra-modules/commit/48015a86eda461d99b580b69db5922acbe5bd28e">https://github.com/richardhughes/infra-modules/commit/48015a86eda461d99b580b69db5922acbe5bd28e</a></li>
+<li><a href="https://github.com/patheard/terraform-cantrill-aws-associate/commit/bc7484cd34698f2724e5d9f241fd9f53d953e3a3">https://github.com/patheard/terraform-cantrill-aws-associate/commit/bc7484cd34698f2724e5d9f241fd9f53d953e3a3</a></li>
+<li><a href="https://github.com/alghanmi/terraform-modules/commit/f4e8069ff11b7ca7a15ce25843b26d00fb399ade">https://github.com/alghanmi/terraform-modules/commit/f4e8069ff11b7ca7a15ce25843b26d00fb399ade</a></li>
+<li><a href="https://github.com/cds-snc/cloud-based-sensor/commit/10bb572d477197bd3874532bfd364de1cb496d05">https://github.com/cds-snc/cloud-based-sensor/commit/10bb572d477197bd3874532bfd364de1cb496d05</a></li>
+<li><a href="https://github.com/rmaheshvarma/terraform/commit/c866a7dd2575dd2a3f4af83f5f081a5004d0e478">https://github.com/rmaheshvarma/terraform/commit/c866a7dd2575dd2a3f4af83f5f081a5004d0e478</a></li>
+<li><a href="https://github.com/akerl/aws-account/commit/91967d4089ad9580ceae62f7845581935c892455">https://github.com/akerl/aws-account/commit/91967d4089ad9580ceae62f7845581935c892455</a></li>
+<li><a href="https://github.com/singaporewaketools/iaac/commit/197502b1ac4bab77b9ab017b755c4d75ddaa218b">https://github.com/singaporewaketools/iaac/commit/197502b1ac4bab77b9ab017b755c4d75ddaa218b</a></li>
+</ul>
+<h3 id="aws-cloudformation">AWS CloudFormation</h3>
+<ul>
+<li><a href="https://github.com/aws-samples/aws-serverless-ecommerce-platform/commit/e2255a1e428a5a0159a0c66ea825b7fd54ba8bfb">https://github.com/aws-samples/aws-serverless-ecommerce-platform/commit/e2255a1e428a5a0159a0c66ea825b7fd54ba8bfb</a></li>
+<li><a href="https://github.com/guardian/members-data-api/commit/60d881e84b70080ed7a294219f2b7e64bec21673">https://github.com/guardian/members-data-api/commit/60d881e84b70080ed7a294219f2b7e64bec21673</a></li>
+<li><a href="https://github.com/enekofb/beyond-gdp/commit/9fd76fd7270a0ed75f252001cb48a05740f0cebf">https://github.com/enekofb/beyond-gdp/commit/9fd76fd7270a0ed75f252001cb48a05740f0cebf</a></li>
+<li><a href="https://github.com/Nonagon-Media/acg/commit/dfc8a883d178a78c5233e1d790cc5f8209f93b6b">https://github.com/Nonagon-Media/acg/commit/dfc8a883d178a78c5233e1d790cc5f8209f93b6b</a></li>
+<li><a href="https://github.com/daiyyr/the-alchemist/commit/1254c61457727e91574a8eb96dfd24e50721c6ca">https://github.com/daiyyr/the-alchemist/commit/1254c61457727e91574a8eb96dfd24e50721c6ca</a></li>
+<li><a href="https://github.com/xhiroga/til/commit/9d549cbcad7886c8861c5f69fb8f3d549e2f7664">https://github.com/xhiroga/til/commit/9d549cbcad7886c8861c5f69fb8f3d549e2f7664</a></li>
+<li><a href="https://github.com/christoferson/aws-cloudformation/commit/fbde48d9640dbff07552bb4f7357b44b16ad9675">https://github.com/christoferson/aws-cloudformation/commit/fbde48d9640dbff07552bb4f7357b44b16ad9675</a></li>
+<li><a href="https://github.com/btkrausen/aws/commit/84932c34ae2a4967809a76e58a67b41f89e43dde">https://github.com/btkrausen/aws/commit/84932c34ae2a4967809a76e58a67b41f89e43dde</a></li>
+<li><a href="https://github.com/Nxtra/aws-billing-alarms/commit/0a15638e30d0e0a55ee76c3402a67ff91c50339e">https://github.com/Nxtra/aws-billing-alarms/commit/0a15638e30d0e0a55ee76c3402a67ff91c50339e</a></li>
+<li><a href="https://github.com/adrian83/aws-samples/commit/2aedc136fc1ed5e6b794268e5aeba6b625fcf903">https://github.com/adrian83/aws-samples/commit/2aedc136fc1ed5e6b794268e5aeba6b625fcf903</a></li>
+<li><a href="https://github.com/sjakthol/aws-account-infra/commit/ab4424e4f8a34f47d8511c982b84bfce7086d59a">https://github.com/sjakthol/aws-account-infra/commit/ab4424e4f8a34f47d8511c982b84bfce7086d59a</a></li>
+<li><a href="https://github.com/HicResearch/TREEHOOSE/commit/d5a9110cae074b09ac641be3b76ab777068b70ff">https://github.com/HicResearch/TREEHOOSE/commit/d5a9110cae074b09ac641be3b76ab777068b70ff</a></li>
+<li><a href="https://github.com/kennyk65/aws-teaching-demos/commit/5dfc77f0065462480ee1eec85927cee7c7d57a77">https://github.com/kennyk65/aws-teaching-demos/commit/5dfc77f0065462480ee1eec85927cee7c7d57a77</a></li>
+<li><a href="https://github.com/torproject/metrics-cloud/commit/ba1148b6b98acdebf3c861f22a19b59cde829922">https://github.com/torproject/metrics-cloud/commit/ba1148b6b98acdebf3c861f22a19b59cde829922</a></li>
+</ul>
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="content-wrapper">
+            <p>
+                &copy; 2024-2025
+                <a href="https://koen.bolhu.is">Koen Bolhuis</a>,
+                <a href="https://feitosa-daniel.github.io">Daniel Feitosa</a>,
+                <a href="https://vandriko.github.io">Vasilios Andrikopoulos</a>,
+                <a href="https://www.linkedin.com/in/allianeamt/">Allia Neamt</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

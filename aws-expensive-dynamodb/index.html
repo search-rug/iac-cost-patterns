@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Antipattern: AWS - Expensive DynamoDB - IaC Cost Patterns</title>
+    <link rel="stylesheet" href="https://search-rug.github.io/iac-cost-patterns/style.css?h=ab047a49b1332c45175b">
+</head>
+<body>
+    <header>
+        <div class="content-wrapper">
+            <h1><a href="https:&#x2F;&#x2F;search-rug.github.io&#x2F;iac-cost-patterns&#x2F;">IaC Cost Patterns</a></h1>
+            <p>A collection of patterns and antipatterns for managing cost in IaC files.</p>
+            <ul>
+                <li><a href="https://github.com/search-rug/iac-cost-patterns/blob/main/thematic-analysis/patterns.yml">Dataset <span class="label">YAML</span></a></li>
+                <li><a href="https://github.com/search-rug/iac-cost-patterns">Repository</a></li>
+                <li><a href="https://doi.org/10.1109/SEAA64295.2024.00067"><span class="label">New!</span> Paper accepted to SEAA 2024</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="content-wrapper">
+            
+<p class="nav"><a href="https:&#x2F;&#x2F;search-rug.github.io&#x2F;iac-cost-patterns&#x2F;">&leftarrow; Back to all patterns</a></p>
+<h1 id="antipattern-aws-expensive-dynamodb">Antipattern: AWS - Expensive DynamoDB</h1>
+<p>AWS DynamoDB tables often use features that carry cost but are not required,
+especially for infrequently accessed tables.</p>
+<h2 id="context">Context</h2>
+<p>DynamoDB tables might use provisioned billing mode, have high (&gt;1) read/write capacity,
+or use global secondary indices. These features carry additional cost and are not always
+required, especially for infrequently accessed tables.</p>
+<h2 id="solution">Solution</h2>
+<p>Switching to pay-per-request billing mode, reducing provisioned read/write capacity,
+and removing global secondary indices are ways to cost-optimize DynamoDB tables.</p>
+<h2 id="example">Example</h2>
+<p>Set billing mode to pay-per-request:</p>
+<pre data-lang="terraform" style="background-color:#2b303b;color:#c0c5ce;" class="language-terraform "><code class="language-terraform" data-lang="terraform"><span style="color:#b48ead;">resource </span><span>&quot;</span><span style="color:#a3be8c;">aws_dynamodb_table</span><span>&quot; &quot;</span><span style="color:#a3be8c;">example_table</span><span>&quot; {
+</span><span>  </span><span style="color:#bf616a;">name         </span><span>= &quot;</span><span style="color:#a3be8c;">HighScores</span><span>&quot;
+</span><span>  </span><span style="color:#bf616a;">billing_mode </span><span>= &quot;</span><span style="color:#a3be8c;">PAY_PER_REQUEST</span><span>&quot;
+</span><span>
+</span><span>  attribute {
+</span><span>    </span><span style="color:#bf616a;">name </span><span>= &quot;</span><span style="color:#a3be8c;">UserID</span><span>&quot;
+</span><span>    </span><span style="color:#bf616a;">type </span><span>= &quot;</span><span style="color:#a3be8c;">S</span><span>&quot;
+</span><span>  }
+</span><span>
+</span><span>  attribute {
+</span><span>    </span><span style="color:#bf616a;">name </span><span>= &quot;</span><span style="color:#a3be8c;">Score</span><span>&quot;
+</span><span>    </span><span style="color:#bf616a;">type </span><span>= &quot;</span><span style="color:#a3be8c;">N</span><span>&quot;
+</span><span>  }
+</span><span>}
+</span></code></pre>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/dynamodb_table">Resource: aws_dynamodb_table (Terraform)</a></li>
+<li><a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/capacity-mode.html">DynamoDB throughput capacity - Amazon DynamoDB</a></li>
+<li><a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/provisioned-capacity-mode.html">Using Global Secondary Indexes in DynamoDB - Amazon DynamoDB</a></li>
+<li><a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GSI.html">Provisioned capacity mode - Amazon DynamoDB</a></li>
+</ul>
+<h2 id="occurrences">Occurrences</h2>
+<h3 id="terraform">Terraform</h3>
+<ul>
+<li><a href="https://github.com/deptno/terraform-aws-modules/commit/49f447bdbb3cf23499e8194e78f852ea1e256d3a">https://github.com/deptno/terraform-aws-modules/commit/49f447bdbb3cf23499e8194e78f852ea1e256d3a</a></li>
+<li><a href="https://github.com/ONSdigital/eq-terraform-dynamodb/commit/40eb651a50d0dfd5cf047ef62c8a6259c1c66e02">https://github.com/ONSdigital/eq-terraform-dynamodb/commit/40eb651a50d0dfd5cf047ef62c8a6259c1c66e02</a></li>
+<li><a href="https://github.com/olliefr/aws-terraform-cloud1/commit/bf753832a519b0649f8d58d93aa643afe3f94fc7">https://github.com/olliefr/aws-terraform-cloud1/commit/bf753832a519b0649f8d58d93aa643afe3f94fc7</a></li>
+<li><a href="https://github.com/garylb2/terraform-example-patterns/commit/6de6d83d930bd9459e1cf8c311fa7b45c3f90987">https://github.com/garylb2/terraform-example-patterns/commit/6de6d83d930bd9459e1cf8c311fa7b45c3f90987</a></li>
+<li><a href="https://github.com/Arkoprabho/TerraformTutorial/commit/ba317d7e402f014589e230fad8c7384016211ba2">https://github.com/Arkoprabho/TerraformTutorial/commit/ba317d7e402f014589e230fad8c7384016211ba2</a></li>
+<li><a href="https://github.com/jkstenzel95/jks.gameservers/commit/411ab992ba07e698cb08b56eb4cfc9d6e001d43f">https://github.com/jkstenzel95/jks.gameservers/commit/411ab992ba07e698cb08b56eb4cfc9d6e001d43f</a></li>
+<li><a href="https://github.com/techservicesillinois/aws-enterprise-vpc/commit/0d21bea79e1936e2bdaee58bd6e328dd08e59b30">https://github.com/techservicesillinois/aws-enterprise-vpc/commit/0d21bea79e1936e2bdaee58bd6e328dd08e59b30</a></li>
+<li><a href="https://github.com/austin1237/gifbot/commit/c11dabf1ea02c0e044c62448986bb3f9abdf3967">https://github.com/austin1237/gifbot/commit/c11dabf1ea02c0e044c62448986bb3f9abdf3967</a></li>
+<li><a href="https://github.com/servers-tf/infrastructure/commit/cc9e50a3864511f9fb9f871293e6a6e7e2719d2c">https://github.com/servers-tf/infrastructure/commit/cc9e50a3864511f9fb9f871293e6a6e7e2719d2c</a></li>
+<li><a href="https://github.com/jsoconno/aws-terraform-remote-state-infrastructure/commit/fed8be2748bc2286a6f9888d282d66763ba612ed">https://github.com/jsoconno/aws-terraform-remote-state-infrastructure/commit/fed8be2748bc2286a6f9888d282d66763ba612ed</a></li>
+<li><a href="https://github.com/ONSdigital/eq-terraform/commit/6eaf697bf9f111214a6d74ee3094e5784a57d1bb">https://github.com/ONSdigital/eq-terraform/commit/6eaf697bf9f111214a6d74ee3094e5784a57d1bb</a></li>
+<li><a href="https://github.com/nikkiwritescode/flask-app-terraform-deployment/commit/af47bb6201f1dcc8264e60da429e4ff8d126e56c">https://github.com/nikkiwritescode/flask-app-terraform-deployment/commit/af47bb6201f1dcc8264e60da429e4ff8d126e56c</a></li>
+<li><a href="https://github.com/kperson/terraform-modules/commit/53bd2d84776f9ed7ae287fc59ed42f87bd7bbc4b">https://github.com/kperson/terraform-modules/commit/53bd2d84776f9ed7ae287fc59ed42f87bd7bbc4b</a></li>
+<li><a href="https://github.com/kody-abe/terraform/commit/169c7768b0b1584945362c035a2b227d2f579466">https://github.com/kody-abe/terraform/commit/169c7768b0b1584945362c035a2b227d2f579466</a></li>
+<li><a href="https://github.com/jenkins-x/terraform-aws-eks-jx/commit/cce6b14692fccd30c027851607a9526151d4c3d2">https://github.com/jenkins-x/terraform-aws-eks-jx/commit/cce6b14692fccd30c027851607a9526151d4c3d2</a></li>
+<li><a href="https://github.com/telia-oss/terraform-aws-terraform-init/commit/e8c7b2eb22d08ddd1a1bb375cb6efa4165c9098f">https://github.com/telia-oss/terraform-aws-terraform-init/commit/e8c7b2eb22d08ddd1a1bb375cb6efa4165c9098f</a></li>
+<li><a href="https://github.com/trajano/terraform-s3-backend/commit/f4b61c7bedae856439f01499de1ec9050b4c40fc">https://github.com/trajano/terraform-s3-backend/commit/f4b61c7bedae856439f01499de1ec9050b4c40fc</a></li>
+<li><a href="https://github.com/poldi2015/chat-app/commit/cb45bf17da799afaa789206e3fcd39d9403e0567">https://github.com/poldi2015/chat-app/commit/cb45bf17da799afaa789206e3fcd39d9403e0567</a></li>
+<li><a href="https://github.com/tesera/terraform-modules/commit/3cd4d7b55ac2003153fd0670151ab395ae182431">https://github.com/tesera/terraform-modules/commit/3cd4d7b55ac2003153fd0670151ab395ae182431</a></li>
+<li><a href="https://github.com/MichaelDeCorte/TerraForm/commit/3799ee8b9677d02254eb6d6f50f3732df4c8374e">https://github.com/MichaelDeCorte/TerraForm/commit/3799ee8b9677d02254eb6d6f50f3732df4c8374e</a></li>
+<li><a href="https://github.com/TalkingFox/SignalWs/commit/935d9d683608b4d8a97ef6ccc2c8ab7c14eec0d0">https://github.com/TalkingFox/SignalWs/commit/935d9d683608b4d8a97ef6ccc2c8ab7c14eec0d0</a></li>
+<li><a href="https://github.com/codequest-eu/terraform-modules/commit/ffe23d4c2cd78035bef0dfb261701e7ed8dd588d">https://github.com/codequest-eu/terraform-modules/commit/ffe23d4c2cd78035bef0dfb261701e7ed8dd588d</a></li>
+<li><a href="https://github.com/dgorbov/terraform-s3-backend-setup/commit/81f82740760a357a86b3a77f9ed400624edcb218">https://github.com/dgorbov/terraform-s3-backend-setup/commit/81f82740760a357a86b3a77f9ed400624edcb218</a></li>
+<li><a href="https://github.com/sbogacz/terraform-aws-state-backend/commit/174486319f3b956807d56e5433880f9978884f93">https://github.com/sbogacz/terraform-aws-state-backend/commit/174486319f3b956807d56e5433880f9978884f93</a></li>
+<li><a href="https://github.com/giuseppeborgese/terraform-locking-s3-state/commit/6b4e59e8b844417dc5c247bdef1b0adb8e2e7028">https://github.com/giuseppeborgese/terraform-locking-s3-state/commit/6b4e59e8b844417dc5c247bdef1b0adb8e2e7028</a></li>
+<li><a href="https://github.com/Accurate0/infrastructure/commit/eef88fd3e61cf4b5e04682824e76df5348b60de5">https://github.com/Accurate0/infrastructure/commit/eef88fd3e61cf4b5e04682824e76df5348b60de5</a></li>
+<li><a href="https://github.com/ministryofjustice/cloud-platform-environments/commit/0c1b4028575aeaabf7543c7357c4e26d610677c3">https://github.com/ministryofjustice/cloud-platform-environments/commit/0c1b4028575aeaabf7543c7357c4e26d610677c3</a></li>
+</ul>
+<h3 id="aws-cloudformation">AWS CloudFormation</h3>
+<ul>
+<li><a href="https://github.com/turnerlabs/antiope/commit/40a968167182170aa0827ae182bbf72e5e0fd84e">https://github.com/turnerlabs/antiope/commit/40a968167182170aa0827ae182bbf72e5e0fd84e</a></li>
+<li><a href="https://github.com/guardian/mobile-purchases/commit/1c500f5f94de681b5ead3a6ceba208d3efcc790e">https://github.com/guardian/mobile-purchases/commit/1c500f5f94de681b5ead3a6ceba208d3efcc790e</a></li>
+<li><a href="https://github.com/govuk-one-login/txma-infra/commit/dc9567e61048e1bd6993e546c05bcf1a3ce3c3bb">https://github.com/govuk-one-login/txma-infra/commit/dc9567e61048e1bd6993e546c05bcf1a3ce3c3bb</a></li>
+<li><a href="https://github.com/vladikk/elastic-event-store/commit/4db976b88850eb08a5a36e456312fba05bad42b6">https://github.com/vladikk/elastic-event-store/commit/4db976b88850eb08a5a36e456312fba05bad42b6</a></li>
+<li><a href="https://github.com/ruzickap/k8s-tf-eks-gitops/commit/639d0aecc85e4c8da9d538ccb3f28b8f3a9f2d9b">https://github.com/ruzickap/k8s-tf-eks-gitops/commit/639d0aecc85e4c8da9d538ccb3f28b8f3a9f2d9b</a></li>
+<li><a href="https://github.com/guardian/mobile-save-for-later/commit/5e8c85b56c8dbe36bc6bf0522dcf947a98ebfc17">https://github.com/guardian/mobile-save-for-later/commit/5e8c85b56c8dbe36bc6bf0522dcf947a98ebfc17</a></li>
+<li><a href="https://github.com/pagopa/pn-radd-fsu/commit/9dd31982fe3540a4ce4b97073f1fd0b97ccff425">https://github.com/pagopa/pn-radd-fsu/commit/9dd31982fe3540a4ce4b97073f1fd0b97ccff425</a></li>
+<li><a href="https://github.com/ahamlinman/randomizer/commit/431334e19f28f2da629749345d142c23a2f54888">https://github.com/ahamlinman/randomizer/commit/431334e19f28f2da629749345d142c23a2f54888</a></li>
+<li><a href="https://github.com/aws-cloudformation/cfn-lint/commit/201b12733558c4d7f1ee84bda84fe1a756537265">https://github.com/aws-cloudformation/cfn-lint/commit/201b12733558c4d7f1ee84bda84fe1a756537265</a></li>
+<li><a href="https://github.com/Checkmarx/kics/commit/2cba29eeecb8afe156623bc7a6a9712d3fc90433">https://github.com/Checkmarx/kics/commit/2cba29eeecb8afe156623bc7a6a9712d3fc90433</a></li>
+<li><a href="https://github.com/turnerlabs/antiope/commit/d2b306008cc3f18af8be8ba1e52ec5ec0a82128b">https://github.com/turnerlabs/antiope/commit/d2b306008cc3f18af8be8ba1e52ec5ec0a82128b</a></li>
+<li><a href="https://github.com/casual-simulation/casualos/commit/5140af5e7ab7fae1665352f27dbda887df09f0a2">https://github.com/casual-simulation/casualos/commit/5140af5e7ab7fae1665352f27dbda887df09f0a2</a></li>
+<li><a href="https://github.com/koekalenteri/koekalenteri/commit/232becdb8b348bb397ecdf3aeed57da85fcdf710">https://github.com/koekalenteri/koekalenteri/commit/232becdb8b348bb397ecdf3aeed57da85fcdf710</a></li>
+<li><a href="https://github.com/stelligent/cfn_nag/commit/f2f5b5a7ef68602ad3d358a77ae76fa22f7c15df">https://github.com/stelligent/cfn_nag/commit/f2f5b5a7ef68602ad3d358a77ae76fa22f7c15df</a></li>
+<li><a href="https://github.com/guardian/mobile-save-for-later/commit/b0afd91084a5ede68e2a53f2a7624f6cc9c27c64">https://github.com/guardian/mobile-save-for-later/commit/b0afd91084a5ede68e2a53f2a7624f6cc9c27c64</a></li>
+<li><a href="https://github.com/pagopa/pn-ec/commit/6d201e8153c83c8fe177914ea6ddf097c79d218a">https://github.com/pagopa/pn-ec/commit/6d201e8153c83c8fe177914ea6ddf097c79d218a</a></li>
+<li><a href="https://github.com/burke1791/march-madness-calcutta-api/commit/7db4e6e7b67039dc44cae29d3cee1e354a6a6875">https://github.com/burke1791/march-madness-calcutta-api/commit/7db4e6e7b67039dc44cae29d3cee1e354a6a6875</a></li>
+<li><a href="https://github.com/aws-samples/accelerated-data-lake/commit/18bff2bf18a685c840db98d95bd7b7cec03e0e4b">https://github.com/aws-samples/accelerated-data-lake/commit/18bff2bf18a685c840db98d95bd7b7cec03e0e4b</a></li>
+<li><a href="https://github.com/gnelabs/EpithyRoboTrader/commit/cd6ff50175c1cebc7f448316db46c76e1f357a57">https://github.com/gnelabs/EpithyRoboTrader/commit/cd6ff50175c1cebc7f448316db46c76e1f357a57</a></li>
+<li><a href="https://github.com/shinesolutions/aem-aws-stack-builder/commit/7781d14d29b7e19a8b1e2dd46f4904a3041019f4">https://github.com/shinesolutions/aem-aws-stack-builder/commit/7781d14d29b7e19a8b1e2dd46f4904a3041019f4</a></li>
+<li><a href="https://github.com/guardian/mobile-save-for-later/commit/4ab126e31b1fa32bc3dbb3750bf6dee13de028ef">https://github.com/guardian/mobile-save-for-later/commit/4ab126e31b1fa32bc3dbb3750bf6dee13de028ef</a></li>
+<li><a href="https://github.com/caseconsulting/expense-app-api/commit/b2cc61e36477d2b16f0585edba815dbb8d5481c5">https://github.com/caseconsulting/expense-app-api/commit/b2cc61e36477d2b16f0585edba815dbb8d5481c5</a></li>
+<li><a href="https://github.com/AlisProject/serverless-application/commit/8e8617e3d1054a467945b126496ab05051f656e2">https://github.com/AlisProject/serverless-application/commit/8e8617e3d1054a467945b126496ab05051f656e2</a></li>
+<li><a href="https://github.com/DEFRA/rod-licensing/commit/5b84cfd0ee4c3d0450be8bf0760507e1655d7992">https://github.com/DEFRA/rod-licensing/commit/5b84cfd0ee4c3d0450be8bf0760507e1655d7992</a></li>
+<li><a href="https://github.com/NHSDigital/eps-prescription-status-update-api/commit/fe59672a63be823be78f01583ecc8fbce276d6e1">https://github.com/NHSDigital/eps-prescription-status-update-api/commit/fe59672a63be823be78f01583ecc8fbce276d6e1</a></li>
+<li><a href="https://github.com/aws-samples/serverless-rss-filtered-feed-gen/commit/98257ddc10439d60dd87228c0d0c0a5f6bd181ff">https://github.com/aws-samples/serverless-rss-filtered-feed-gen/commit/98257ddc10439d60dd87228c0d0c0a5f6bd181ff</a></li>
+<li><a href="https://github.com/guardian/mobile-n10n/commit/9292c2b30a75a14bb1f662e5bba20468cb3afab3">https://github.com/guardian/mobile-n10n/commit/9292c2b30a75a14bb1f662e5bba20468cb3afab3</a></li>
+<li><a href="https://github.com/gsx95/georgguessr/commit/efbf4b21260a2fea57be2edeea93db0d3c655be1">https://github.com/gsx95/georgguessr/commit/efbf4b21260a2fea57be2edeea93db0d3c655be1</a></li>
+<li><a href="https://github.com/biometrixtech/PreProcessing/commit/a37aacc476440312c9da9b20a769600ed082e2d3">https://github.com/biometrixtech/PreProcessing/commit/a37aacc476440312c9da9b20a769600ed082e2d3</a></li>
+<li><a href="https://github.com/UBC-CIC/EC2Ensemble/commit/ac41affcd965cfe84b69fa05f5072ac17dc6e77c">https://github.com/UBC-CIC/EC2Ensemble/commit/ac41affcd965cfe84b69fa05f5072ac17dc6e77c</a></li>
+<li><a href="https://github.com/pagopa/pn-mandate/commit/f8b0624eff443ac5684d76dfe1059f1a99349128">https://github.com/pagopa/pn-mandate/commit/f8b0624eff443ac5684d76dfe1059f1a99349128</a></li>
+<li><a href="https://github.com/guardian/mobile-save-for-later/commit/0607c55b14336854960d81f9af27936b60fe747d">https://github.com/guardian/mobile-save-for-later/commit/0607c55b14336854960d81f9af27936b60fe747d</a></li>
+<li><a href="https://github.com/lambci/lambci/commit/b439c25f32f82f7e318ac8acca6b1ab4796c3397">https://github.com/lambci/lambci/commit/b439c25f32f82f7e318ac8acca6b1ab4796c3397</a></li>
+<li><a href="https://github.com/viralemergence/pharos-api/commit/6ca33b173c2e9d159a65cdfd740c232e30732ee1">https://github.com/viralemergence/pharos-api/commit/6ca33b173c2e9d159a65cdfd740c232e30732ee1</a></li>
+<li><a href="https://github.com/biometrixtech/infrastructure/commit/fab4c34416dd4fec75df954c171f34d026435bb8">https://github.com/biometrixtech/infrastructure/commit/fab4c34416dd4fec75df954c171f34d026435bb8</a></li>
+<li><a href="https://github.com/caseconsulting/expense-app-api/commit/e585d93e5ce516cf2dcb9b87620cd6fa7b81b68e">https://github.com/caseconsulting/expense-app-api/commit/e585d93e5ce516cf2dcb9b87620cd6fa7b81b68e</a></li>
+<li><a href="https://github.com/govuk-one-login/onboarding-self-service-experience/commit/9678897bfb3ce80012fa9567b1b9a3853e565539">https://github.com/govuk-one-login/onboarding-self-service-experience/commit/9678897bfb3ce80012fa9567b1b9a3853e565539</a></li>
+<li><a href="https://github.com/biometrixtech/Users/commit/14652ad70bf20207cb13b340aedcf66f5012dda9">https://github.com/biometrixtech/Users/commit/14652ad70bf20207cb13b340aedcf66f5012dda9</a></li>
+<li><a href="https://github.com/ASFHyP3/hyp3/commit/aa801f4d73de736cceb0dbdd2f1646f354ca7b05">https://github.com/ASFHyP3/hyp3/commit/aa801f4d73de736cceb0dbdd2f1646f354ca7b05</a></li>
+<li><a href="https://github.com/em-shea/vocab/commit/83904598b0023c83d5dff3cca3f242034b7b119a">https://github.com/em-shea/vocab/commit/83904598b0023c83d5dff3cca3f242034b7b119a</a></li>
+<li><a href="https://github.com/troyready/onica-create-2019-serverless/commit/5d80f28767a7b42a7cad730c672272a197d1e364">https://github.com/troyready/onica-create-2019-serverless/commit/5d80f28767a7b42a7cad730c672272a197d1e364</a></li>
+<li><a href="https://github.com/aws-samples/aws-serverless-workshop-innovator-island/commit/4b992a5c2701dd79274cab30031f4acd5e130107">https://github.com/aws-samples/aws-serverless-workshop-innovator-island/commit/4b992a5c2701dd79274cab30031f4acd5e130107</a></li>
+</ul>
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="content-wrapper">
+            <p>
+                &copy; 2024-2025
+                <a href="https://koen.bolhu.is">Koen Bolhuis</a>,
+                <a href="https://feitosa-daniel.github.io">Daniel Feitosa</a>,
+                <a href="https://vandriko.github.io">Vasilios Andrikopoulos</a>,
+                <a href="https://www.linkedin.com/in/allianeamt/">Allia Neamt</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

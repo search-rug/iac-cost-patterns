@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pattern: Preventative Template - IaC Cost Patterns</title>
+    <link rel="stylesheet" href="https://search-rug.github.io/iac-cost-patterns/style.css?h=ab047a49b1332c45175b">
+</head>
+<body>
+    <header>
+        <div class="content-wrapper">
+            <h1><a href="https:&#x2F;&#x2F;search-rug.github.io&#x2F;iac-cost-patterns&#x2F;">IaC Cost Patterns</a></h1>
+            <p>A collection of patterns and antipatterns for managing cost in IaC files.</p>
+            <ul>
+                <li><a href="https://github.com/search-rug/iac-cost-patterns/blob/main/thematic-analysis/patterns.yml">Dataset <span class="label">YAML</span></a></li>
+                <li><a href="https://github.com/search-rug/iac-cost-patterns">Repository</a></li>
+                <li><a href="https://doi.org/10.1109/SEAA64295.2024.00067"><span class="label">New!</span> Paper accepted to SEAA 2024</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="content-wrapper">
+            
+<p class="nav"><a href="https:&#x2F;&#x2F;search-rug.github.io&#x2F;iac-cost-patterns&#x2F;">&leftarrow; Back to all patterns</a></p>
+<h1 id="pattern-preventative-template">Pattern: Preventative Template</h1>
+<p>Templates with predefined configurations that enforce cost-optimizing methods can proactively manage and reduce future expenses.</p>
+<h2 id="context">Context</h2>
+<p>Retroactively implementing cost-saving changes can be inefficient and expensive, especially in the context of large systems.</p>
+<h2 id="solution">Solution</h2>
+<p>Preventative templates can be designed to prioritize cost-optimizations and lead to a proactive enforcement of good practices further on.</p>
+<h2 id="example">Example</h2>
+<p>Adds a full file with a template for cost optimization that is not yet implemented within the project:</p>
+<pre data-lang="diff" style="background-color:#2b303b;color:#c0c5ce;" class="language-diff "><code class="language-diff" data-lang="diff"><span>@@ -0,0 +1,111 @@ </span><span style="color:#8fa1b3;">resource &quot;template&quot; &quot;example&quot; {
+</span><span style="color:#a3be8c;">+  AWSTemplateFormatVersion: 2010-09-09
+</span><span style="color:#a3be8c;">+  Description: Template for reducing costs on PN
+</span><span style="color:#a3be8c;">+
+</span><span style="color:#a3be8c;">+  Parameters:  
+</span><span style="color:#a3be8c;">+    StopEc2FuctionTagName:
+</span><span style="color:#a3be8c;">+      Type: String
+</span><span style="color:#a3be8c;">+      Default: &#39;tostop&#39;
+</span><span style="color:#a3be8c;">+      Description: Name of EC2 Tag that will be stopped
+</span><span style="color:#a3be8c;">+
+</span><span style="color:#a3be8c;">+    StopEc2FuctionTagValue:
+</span><span style="color:#a3be8c;">+      Type: String
+</span><span style="color:#a3be8c;">+      Default: &#39;true&#39;
+</span><span style="color:#a3be8c;">+      Description: Value of EC2 Tag that will be stopped
+</span><span style="color:#a3be8c;">+
+</span><span style="color:#a3be8c;">+    StopEc2FuctionTagNameCronExpression:
+</span><span style="color:#a3be8c;">+      Type: String
+</span><span style="color:#a3be8c;">+      Default: &#39;cron(0 22 * * ? *)&#39;
+</span><span style="color:#a3be8c;">+      Description: Cron expression when ec2 stop
+</span><span>   # ...
+</span><span>}
+</span></code></pre>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://docs.aws.amazon.com/cost-management/latest/userguide/budget-templates.html">AWS Budget template</a></li>
+</ul>
+<h2 id="occurrences">Occurrences</h2>
+<h3 id="aws-cloudformation">AWS CloudFormation</h3>
+<ul>
+<li><a href="https://github.com/adrian83/aws-samples/commit/2aedc136fc1ed5e6b794268e5aeba6b625fcf903">https://github.com/adrian83/aws-samples/commit/2aedc136fc1ed5e6b794268e5aeba6b625fcf903</a></li>
+<li><a href="https://github.com/awslabs/aws-well-architected-labs/commit/f82be3a26e356335ebf8feab6971f278215f335c">https://github.com/awslabs/aws-well-architected-labs/commit/f82be3a26e356335ebf8feab6971f278215f335c</a></li>
+<li><a href="https://github.com/primeharbor/aws-account-automation/commit/18f1e36b061d631dca72b494661a21dc37594148">https://github.com/primeharbor/aws-account-automation/commit/18f1e36b061d631dca72b494661a21dc37594148</a></li>
+<li><a href="https://github.com/sjakthol/aws-account-infra/commit/ab4424e4f8a34f47d8511c982b84bfce7086d59a">https://github.com/sjakthol/aws-account-infra/commit/ab4424e4f8a34f47d8511c982b84bfce7086d59a</a></li>
+<li><a href="https://github.com/PRX/Infrastructure/commit/9961cdbffd8f0750ba4acfa15b3c8f1dc13d4e85">https://github.com/PRX/Infrastructure/commit/9961cdbffd8f0750ba4acfa15b3c8f1dc13d4e85</a></li>
+<li><a href="https://github.com/Sage-Bionetworks/aws-infra/commit/73d9fd5d784eecf01a175ff33152a6ccba5f37ba">https://github.com/Sage-Bionetworks/aws-infra/commit/73d9fd5d784eecf01a175ff33152a6ccba5f37ba</a></li>
+<li><a href="https://github.com/kennyk65/aws-teaching-demos/commit/5dfc77f0065462480ee1eec85927cee7c7d57a77">https://github.com/kennyk65/aws-teaching-demos/commit/5dfc77f0065462480ee1eec85927cee7c7d57a77</a></li>
+<li><a href="https://github.com/karthickcse05/aws-cost-explorer/commit/2750d8c79ab56e69ce2d06e08f02390ae7ba4183">https://github.com/karthickcse05/aws-cost-explorer/commit/2750d8c79ab56e69ce2d06e08f02390ae7ba4183</a></li>
+<li><a href="https://github.com/felixrichardt/cloud-carbon-footprint/commit/f5f4150801b64b5baaa68ecbddccd336a3013d32">https://github.com/felixrichardt/cloud-carbon-footprint/commit/f5f4150801b64b5baaa68ecbddccd336a3013d32</a></li>
+<li><a href="https://github.com/aws-samples/aws-serverless-notifier-plugins/commit/935d60da5f246433742fd66496d5caa84a4c80d2">https://github.com/aws-samples/aws-serverless-notifier-plugins/commit/935d60da5f246433742fd66496d5caa84a4c80d2</a></li>
+<li><a href="https://github.com/danielgblanco/diaspora-aws/commit/e758a12feaaa4b56c18068c1f4426442b9840c79">https://github.com/danielgblanco/diaspora-aws/commit/e758a12feaaa4b56c18068c1f4426442b9840c79</a></li>
+<li><a href="https://github.com/superwerker/superwerker/commit/21ef2d4c44d4a881c45e99ace627f1c66fa8d141">https://github.com/superwerker/superwerker/commit/21ef2d4c44d4a881c45e99ace627f1c66fa8d141</a></li>
+<li><a href="https://github.com/pagopa/pn-infra/commit/4845feae578f173eaa75ffbf03f049a7fe735552">https://github.com/pagopa/pn-infra/commit/4845feae578f173eaa75ffbf03f049a7fe735552</a></li>
+<li><a href="https://github.com/PRX/Infrastructure/commit/d9d90ba0a708d9c37c5f0fde020a3e094f67cf59">https://github.com/PRX/Infrastructure/commit/d9d90ba0a708d9c37c5f0fde020a3e094f67cf59</a></li>
+<li><a href="https://github.com/Nonagon-Media/acg/commit/dfc8a883d178a78c5233e1d790cc5f8209f93b6b">https://github.com/Nonagon-Media/acg/commit/dfc8a883d178a78c5233e1d790cc5f8209f93b6b</a></li>
+<li><a href="https://github.com/xhiroga/til/commit/9d549cbcad7886c8861c5f69fb8f3d549e2f7664">https://github.com/xhiroga/til/commit/9d549cbcad7886c8861c5f69fb8f3d549e2f7664</a></li>
+<li><a href="https://github.com/christoferson/aws-cloudformation/commit/fbde48d9640dbff07552bb4f7357b44b16ad9675">https://github.com/christoferson/aws-cloudformation/commit/fbde48d9640dbff07552bb4f7357b44b16ad9675</a></li>
+<li><a href="https://github.com/btkrausen/aws/commit/84932c34ae2a4967809a76e58a67b41f89e43dde">https://github.com/btkrausen/aws/commit/84932c34ae2a4967809a76e58a67b41f89e43dde</a></li>
+<li><a href="https://github.com/PRX/Infrastructure/commit/579ba639b31f26998b6817c9558f1db2c6cfd028">https://github.com/PRX/Infrastructure/commit/579ba639b31f26998b6817c9558f1db2c6cfd028</a></li>
+<li><a href="https://github.com/tomwwright/littleorange/commit/4bca2634fd0e7b2f90111838924d68decd71eef5">https://github.com/tomwwright/littleorange/commit/4bca2634fd0e7b2f90111838924d68decd71eef5</a></li>
+<li><a href="https://github.com/nathanpeck/ecs-patterns-vitepress/commit/58f54cb34506995953cf59a380ad6670be93ed50">https://github.com/nathanpeck/ecs-patterns-vitepress/commit/58f54cb34506995953cf59a380ad6670be93ed50</a></li>
+<li><a href="https://github.com/Nxtra/aws-billing-alarms/commit/0a15638e30d0e0a55ee76c3402a67ff91c50339e">https://github.com/Nxtra/aws-billing-alarms/commit/0a15638e30d0e0a55ee76c3402a67ff91c50339e</a></li>
+<li><a href="https://github.com/awslabs/cid-framework/commit/a9e275cdc1bb0b38fbd2a172b6a61534c869ecd2">https://github.com/awslabs/cid-framework/commit/a9e275cdc1bb0b38fbd2a172b6a61534c869ecd2</a></li>
+</ul>
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="content-wrapper">
+            <p>
+                &copy; 2024-2025
+                <a href="https://koen.bolhu.is">Koen Bolhuis</a>,
+                <a href="https://feitosa-daniel.github.io">Daniel Feitosa</a>,
+                <a href="https://vandriko.github.io">Vasilios Andrikopoulos</a>,
+                <a href="https://www.linkedin.com/in/allianeamt/">Allia Neamt</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

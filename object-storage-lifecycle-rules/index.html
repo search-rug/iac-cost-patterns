@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pattern: Object storage lifecycle rules - IaC Cost Patterns</title>
+    <link rel="stylesheet" href="https://search-rug.github.io/iac-cost-patterns/style.css?h=ab047a49b1332c45175b">
+</head>
+<body>
+    <header>
+        <div class="content-wrapper">
+            <h1><a href="https:&#x2F;&#x2F;search-rug.github.io&#x2F;iac-cost-patterns&#x2F;">IaC Cost Patterns</a></h1>
+            <p>A collection of patterns and antipatterns for managing cost in IaC files.</p>
+            <ul>
+                <li><a href="https://github.com/search-rug/iac-cost-patterns/blob/main/thematic-analysis/patterns.yml">Dataset <span class="label">YAML</span></a></li>
+                <li><a href="https://github.com/search-rug/iac-cost-patterns">Repository</a></li>
+                <li><a href="https://doi.org/10.1109/SEAA64295.2024.00067"><span class="label">New!</span> Paper accepted to SEAA 2024</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="content-wrapper">
+            
+<p class="nav"><a href="https:&#x2F;&#x2F;search-rug.github.io&#x2F;iac-cost-patterns&#x2F;">&leftarrow; Back to all patterns</a></p>
+<h1 id="pattern-object-storage-lifecycle-rules">Pattern: Object storage lifecycle rules</h1>
+<p>Define lifecycle rules for object storage to move objects to cheaper storage or drop them entirely.</p>
+<h2 id="context">Context</h2>
+<p>By default, objects stored in cloud object storage are retained,
+and therefore billed, indefinitely. Objects also have a storage class or access tier,
+which can be used to balance access performance and cost depending on the use case.</p>
+<h2 id="solution">Solution</h2>
+<p>By configuring lifecycle rules or policies, objects can be transitioned to
+cheaper storage classes or deleted after a certain amount of time.</p>
+<h2 id="example">Example</h2>
+<p>Transition objects under the "log/" prefix to the Glacier storage class after 60 days, and expire after 90 days:</p>
+<pre data-lang="terraform" style="background-color:#2b303b;color:#c0c5ce;" class="language-terraform "><code class="language-terraform" data-lang="terraform"><span style="color:#b48ead;">resource </span><span>&quot;</span><span style="color:#a3be8c;">aws_s3_bucket_lifecycle_configuration</span><span>&quot; &quot;</span><span style="color:#a3be8c;">example</span><span>&quot; {
+</span><span>  </span><span style="color:#bf616a;">bucket </span><span>= aws_s3_bucket.bucket.id
+</span><span>
+</span><span>  rule {
+</span><span>    </span><span style="color:#bf616a;">id </span><span>= &quot;</span><span style="color:#a3be8c;">log</span><span>&quot;
+</span><span>
+</span><span>    expiration {
+</span><span>      </span><span style="color:#bf616a;">days </span><span>= </span><span style="color:#d08770;">90
+</span><span>    }
+</span><span>
+</span><span>    filter {
+</span><span>      </span><span style="color:#bf616a;">prefix </span><span>= &quot;</span><span style="color:#a3be8c;">log/</span><span>&quot;
+</span><span>    }
+</span><span>
+</span><span>    </span><span style="color:#bf616a;">status </span><span>= &quot;</span><span style="color:#a3be8c;">Enabled</span><span>&quot;
+</span><span>
+</span><span>    transition {
+</span><span>      </span><span style="color:#bf616a;">days          </span><span>= </span><span style="color:#d08770;">60
+</span><span>      </span><span style="color:#bf616a;">storage_class </span><span>= &quot;</span><span style="color:#a3be8c;">GLACIER</span><span>&quot;
+</span><span>    }
+</span><span>  }
+</span><span>}
+</span></code></pre>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_lifecycle_configuration">Resource: aws_s3_bucket_lifecycle_configuration</a></li>
+<li><a href="https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/storage_bucket#example-usage---life-cycle-settings-for-storage-bucket-objects">Resource: google_storage_bucket (Terraform) - Life cycle settings</a></li>
+<li><a href="https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_management_policy">Resource: azurerm_storage_management_policy (Terraform)</a></li>
+</ul>
+<h2 id="occurrences">Occurrences</h2>
+<h3 id="terraform">Terraform</h3>
+<ul>
+<li><a href="https://github.com/alphagov/govuk-aws/commit/f844cd8e254b161bebef04101f8ce177bcd0840c">https://github.com/alphagov/govuk-aws/commit/f844cd8e254b161bebef04101f8ce177bcd0840c</a></li>
+<li><a href="https://github.com/alphagov/govuk-terraform-provisioning/commit/ac105ab0a5ae38fbf69167e072f8970a4a61c3e8">https://github.com/alphagov/govuk-terraform-provisioning/commit/ac105ab0a5ae38fbf69167e072f8970a4a61c3e8</a></li>
+<li><a href="https://github.com/ExpediaGroup/apiary-data-lake/commit/47e62f2fc73a96611606cd619c084d1ded9d844d">https://github.com/ExpediaGroup/apiary-data-lake/commit/47e62f2fc73a96611606cd619c084d1ded9d844d</a></li>
+<li><a href="https://github.com/SamTowne/BasketballDrillBot/commit/4ec6d54e4d36ab02b0a7daf042e727717371eaec">https://github.com/SamTowne/BasketballDrillBot/commit/4ec6d54e4d36ab02b0a7daf042e727717371eaec</a></li>
+<li><a href="https://github.com/utilitywarehouse/tf_telecom/commit/17007456991c1a8faa26b1f4ac993883f577d124">https://github.com/utilitywarehouse/tf_telecom/commit/17007456991c1a8faa26b1f4ac993883f577d124</a></li>
+<li><a href="https://github.com/trajano/terraform-s3-backend/commit/cb9f00a2f6f23b44f7db08863ef5fb0b9ea0bc0c">https://github.com/trajano/terraform-s3-backend/commit/cb9f00a2f6f23b44f7db08863ef5fb0b9ea0bc0c</a></li>
+</ul>
+<h3 id="aws-cloudformation">AWS CloudFormation</h3>
+<ul>
+<li><a href="https://github.com/Sage-Bionetworks/service-catalog-library/commit/7d5224b90cf2c47eee807f851dbf0ff14d051191">https://github.com/Sage-Bionetworks/service-catalog-library/commit/7d5224b90cf2c47eee807f851dbf0ff14d051191</a></li>
+<li><a href="https://github.com/jamesoff/cloud/commit/9ac70dc914bef24c62e2b603cc03a0eaefaed391">https://github.com/jamesoff/cloud/commit/9ac70dc914bef24c62e2b603cc03a0eaefaed391</a></li>
+<li><a href="https://github.com/gbourniq/django-on-aws/commit/32a058dd02229c8bf8e272f549f60c02bf2009ce">https://github.com/gbourniq/django-on-aws/commit/32a058dd02229c8bf8e272f549f60c02bf2009ce</a></li>
+<li><a href="https://github.com/Jessinra/TriveryID-Skadi/commit/d91bc4e786a86f7c088413ac1f7ba701cb7e499f">https://github.com/Jessinra/TriveryID-Skadi/commit/d91bc4e786a86f7c088413ac1f7ba701cb7e499f</a></li>
+<li><a href="https://github.com/wolfeidau/wolfeidau_site/commit/52de425e9eedfae9b51a29366a4b6aefcca51658">https://github.com/wolfeidau/wolfeidau_site/commit/52de425e9eedfae9b51a29366a4b6aefcca51658</a></li>
+<li><a href="https://github.com/kriation/cloudformation/commit/daaea80eaa33ca0041a76ef06baee031bd4ffaf4">https://github.com/kriation/cloudformation/commit/daaea80eaa33ca0041a76ef06baee031bd4ffaf4</a></li>
+<li><a href="https://github.com/gbourniq/django-on-aws/commit/4400bcccee4356214d332b9549efcae4e74458be">https://github.com/gbourniq/django-on-aws/commit/4400bcccee4356214d332b9549efcae4e74458be</a></li>
+<li><a href="https://github.com/chef-boneyard/aws_native_chef_server/commit/f63839453506420064afb7350971c65be47d39a6">https://github.com/chef-boneyard/aws_native_chef_server/commit/f63839453506420064afb7350971c65be47d39a6</a></li>
+<li><a href="https://github.com/m-chandler/factorio-spot-pricing/commit/7290615791393f15f636eb616e76ae7e7d2384c5">https://github.com/m-chandler/factorio-spot-pricing/commit/7290615791393f15f636eb616e76ae7e7d2384c5</a></li>
+<li><a href="https://github.com/adamjreed/dogchecker/commit/6fe5fba49531813b2c473d3805a9a17075e41fff">https://github.com/adamjreed/dogchecker/commit/6fe5fba49531813b2c473d3805a9a17075e41fff</a></li>
+<li><a href="https://github.com/h1f1x/aws-cfn-examples/commit/b157e0f038a8acb4d917f9e18d0adddd7cd4192c">https://github.com/h1f1x/aws-cfn-examples/commit/b157e0f038a8acb4d917f9e18d0adddd7cd4192c</a></li>
+<li><a href="https://github.com/sjakthol/cfn-execute-change-set/commit/7aa1557a573a4d44acec840698e34f41efc29df0">https://github.com/sjakthol/cfn-execute-change-set/commit/7aa1557a573a4d44acec840698e34f41efc29df0</a></li>
+<li><a href="https://github.com/widdix/aws-cf-templates/commit/03a8713f53a4a514898bd481eb6628b6b56cfff1">https://github.com/widdix/aws-cf-templates/commit/03a8713f53a4a514898bd481eb6628b6b56cfff1</a></li>
+</ul>
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="content-wrapper">
+            <p>
+                &copy; 2024-2025
+                <a href="https://koen.bolhu.is">Koen Bolhuis</a>,
+                <a href="https://feitosa-daniel.github.io">Daniel Feitosa</a>,
+                <a href="https://vandriko.github.io">Vasilios Andrikopoulos</a>,
+                <a href="https://www.linkedin.com/in/allianeamt/">Allia Neamt</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

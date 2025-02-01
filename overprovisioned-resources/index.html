@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Antipattern: Overprovisioned resources - IaC Cost Patterns</title>
+    <link rel="stylesheet" href="https://search-rug.github.io/iac-cost-patterns/style.css?h=ab047a49b1332c45175b">
+</head>
+<body>
+    <header>
+        <div class="content-wrapper">
+            <h1><a href="https:&#x2F;&#x2F;search-rug.github.io&#x2F;iac-cost-patterns&#x2F;">IaC Cost Patterns</a></h1>
+            <p>A collection of patterns and antipatterns for managing cost in IaC files.</p>
+            <ul>
+                <li><a href="https://github.com/search-rug/iac-cost-patterns/blob/main/thematic-analysis/patterns.yml">Dataset <span class="label">YAML</span></a></li>
+                <li><a href="https://github.com/search-rug/iac-cost-patterns">Repository</a></li>
+                <li><a href="https://doi.org/10.1109/SEAA64295.2024.00067"><span class="label">New!</span> Paper accepted to SEAA 2024</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="content-wrapper">
+            
+<p class="nav"><a href="https:&#x2F;&#x2F;search-rug.github.io&#x2F;iac-cost-patterns&#x2F;">&leftarrow; Back to all patterns</a></p>
+<h1 id="antipattern-overprovisioned-resources">Antipattern: Overprovisioned resources</h1>
+<p>Resources like RAM, storage and CPU utilization are often overprovisioned even when lower values are acceptable.</p>
+<h2 id="context">Context</h2>
+<p>In a similar way to overprovisioned instances, it is difficult to estimate
+required limits for resources such as root storage upfront, leading developers
+to overprovision them, in turn raising costs.</p>
+<h2 id="solution">Solution</h2>
+<p>Evaluate the resource requirements and lower the relevant values.</p>
+<h2 id="example">Example</h2>
+<p>Shrink the root storage size of an instance to reduce storage costs:</p>
+<pre data-lang="diff" style="background-color:#2b303b;color:#c0c5ce;" class="language-diff "><code class="language-diff" data-lang="diff"><span>@@ -2,6 +2,6 @@ </span><span style="color:#8fa1b3;">resource &quot;aws_instance&quot; &quot;example&quot; {
+</span><span>   # ...
+</span><span>   
+</span><span>   root_block_device {
+</span><span style="color:#bf616a;">-    volume_size = 20 # GB
+</span><span style="color:#a3be8c;">+    volume_size = 15 # GB
+</span><span>   }
+</span><span> }
+</span></code></pre>
+<h2 id="references">References</h2>
+<h2 id="occurrences">Occurrences</h2>
+<h3 id="terraform">Terraform</h3>
+<ul>
+<li><a href="https://github.com/thomastodon/jabujabu/commit/02210a3d3ba4a770c29623825b7f54f3ff33f3c7">https://github.com/thomastodon/jabujabu/commit/02210a3d3ba4a770c29623825b7f54f3ff33f3c7</a></li>
+<li><a href="https://github.com/guilhermerenew/infra-cost/commit/ba858d94e29d03e3e81533df8cd8bc85b9f176f1">https://github.com/guilhermerenew/infra-cost/commit/ba858d94e29d03e3e81533df8cd8bc85b9f176f1</a></li>
+<li><a href="https://github.com/chaspy/terraform-alibaba-isucon8/commit/53588dad5dd4c13903a6c582f74e1afe2671d33e">https://github.com/chaspy/terraform-alibaba-isucon8/commit/53588dad5dd4c13903a6c582f74e1afe2671d33e</a></li>
+<li><a href="https://github.com/dwp/dataworks-aws-data-egress/commit/14f065e5161fee14c286c34df7db9f5516ef9bb6">https://github.com/dwp/dataworks-aws-data-egress/commit/14f065e5161fee14c286c34df7db9f5516ef9bb6</a></li>
+<li><a href="https://github.com/akaron/kubeadm_aws/commit/2e2092ec94b27a4c3f0b9f4ee4d46a1983a72518">https://github.com/akaron/kubeadm_aws/commit/2e2092ec94b27a4c3f0b9f4ee4d46a1983a72518</a></li>
+<li><a href="https://github.com/robertdebock/terraform-azurerm-container-group/commit/c0d6578f1ebbdcc9cab091017259e4d596bfe8c9">https://github.com/robertdebock/terraform-azurerm-container-group/commit/c0d6578f1ebbdcc9cab091017259e4d596bfe8c9</a></li>
+<li><a href="https://github.com/fdns/terraform-k8s/commit/f106917bb7b2d8d4428022bb119585bf9f35769c">https://github.com/fdns/terraform-k8s/commit/f106917bb7b2d8d4428022bb119585bf9f35769c</a></li>
+<li><a href="https://github.com/jackofallops/terraform-aws-mysql-cluster/commit/7b2a446b0915a3ad26093f8234f7493ff152138a">https://github.com/jackofallops/terraform-aws-mysql-cluster/commit/7b2a446b0915a3ad26093f8234f7493ff152138a</a></li>
+<li><a href="https://github.com/alphagov/govwifi-terraform/commit/38d0a67cf70d46c26675ce60a7a647eef0f11e52">https://github.com/alphagov/govwifi-terraform/commit/38d0a67cf70d46c26675ce60a7a647eef0f11e52</a></li>
+<li><a href="https://github.com/pangeo-data/terraform-deploy/commit/f8163bd52bea3774e2f160cff0523c602e65d933">https://github.com/pangeo-data/terraform-deploy/commit/f8163bd52bea3774e2f160cff0523c602e65d933</a></li>
+<li><a href="https://github.com/eduardobaitello/terraform-eks/commit/c11fca6440a5000648f690e6282778fb4ec73309">https://github.com/eduardobaitello/terraform-eks/commit/c11fca6440a5000648f690e6282778fb4ec73309</a></li>
+<li><a href="https://github.com/jshcmpbll/Cloud-Mac-KVM/commit/361885d22c0304cb44683f9b005f82ca5e269841">https://github.com/jshcmpbll/Cloud-Mac-KVM/commit/361885d22c0304cb44683f9b005f82ca5e269841</a></li>
+<li><a href="https://github.com/kaz/kiritan.com/commit/1cd96c7f71e56629ffa07c38e12c4da19fcfc5f7">https://github.com/kaz/kiritan.com/commit/1cd96c7f71e56629ffa07c38e12c4da19fcfc5f7</a></li>
+<li><a href="https://github.com/dylanmtaylor/dylanmtaylor-terraform-aws/commit/44016d6a8e496b69308a81e88af8c9ef8b710ab3">https://github.com/dylanmtaylor/dylanmtaylor-terraform-aws/commit/44016d6a8e496b69308a81e88af8c9ef8b710ab3</a></li>
+<li><a href="https://github.com/roysjosh/terraform-unifi/commit/da9e2869456610a0228cb14f850c6eccddbb15e0">https://github.com/roysjosh/terraform-unifi/commit/da9e2869456610a0228cb14f850c6eccddbb15e0</a></li>
+<li><a href="https://github.com/phillhocking/aws-ubuntu-irssi/commit/1532e0c298ec4f8d7d749a884f7c46f2a2cf53d3">https://github.com/phillhocking/aws-ubuntu-irssi/commit/1532e0c298ec4f8d7d749a884f7c46f2a2cf53d3</a></li>
+<li><a href="https://github.com/ministryofjustice/cloud-platform-terraform-monitoring/commit/87401ba23af26d379d8132cc09fd7cd212773ba1">https://github.com/ministryofjustice/cloud-platform-terraform-monitoring/commit/87401ba23af26d379d8132cc09fd7cd212773ba1</a></li>
+</ul>
+<h3 id="aws-cloudformation">AWS CloudFormation</h3>
+<ul>
+<li><a href="https://github.com/chef-boneyard/aws_native_chef_server/commit/f63839453506420064afb7350971c65be47d39a6">https://github.com/chef-boneyard/aws_native_chef_server/commit/f63839453506420064afb7350971c65be47d39a6</a></li>
+<li><a href="https://github.com/sjakthol/cfn-execute-change-set/commit/7aa1557a573a4d44acec840698e34f41efc29df0">https://github.com/sjakthol/cfn-execute-change-set/commit/7aa1557a573a4d44acec840698e34f41efc29df0</a></li>
+<li><a href="https://github.com/aodn/aws-wps/commit/f262a8b46e328c30a2c08f9c47aba722fb0e1dae">https://github.com/aodn/aws-wps/commit/f262a8b46e328c30a2c08f9c47aba722fb0e1dae</a></li>
+<li><a href="https://github.com/rotiroti/alessandrina/commit/594d4705adedd07b298d87f8d812e38b11337311">https://github.com/rotiroti/alessandrina/commit/594d4705adedd07b298d87f8d812e38b11337311</a></li>
+<li><a href="https://github.com/philipmw/homeontheroute-api/commit/4b108af1165d196af7634133400dc31b14b60abb">https://github.com/philipmw/homeontheroute-api/commit/4b108af1165d196af7634133400dc31b14b60abb</a></li>
+<li><a href="https://github.com/MrMarvin/open-wow-drealmd/commit/0b23fe7bf08d4682835ca171d228380ec81a2fb5">https://github.com/MrMarvin/open-wow-drealmd/commit/0b23fe7bf08d4682835ca171d228380ec81a2fb5</a></li>
+<li><a href="https://github.com/ASFHyP3/asf-stac/commit/3a19e68cda5b174a655a699b8ac74eaa7c826159">https://github.com/ASFHyP3/asf-stac/commit/3a19e68cda5b174a655a699b8ac74eaa7c826159</a></li>
+<li><a href="https://github.com/S8Vega/academic-friends-api/commit/c4747679155f119a07284f5eee455eee5dd7c1a6">https://github.com/S8Vega/academic-friends-api/commit/c4747679155f119a07284f5eee455eee5dd7c1a6</a></li>
+<li><a href="https://github.com/conijnio/aws-security-posture/commit/ba00cfc56fd720277cf54d7987ea58c9c8d3402e">https://github.com/conijnio/aws-security-posture/commit/ba00cfc56fd720277cf54d7987ea58c9c8d3402e</a></li>
+<li><a href="https://github.com/aws-samples/amazon-transcribe-live-call-analytics/commit/3e90f725d46e4f0ef9d5fac52135e000e319fb55">https://github.com/aws-samples/amazon-transcribe-live-call-analytics/commit/3e90f725d46e4f0ef9d5fac52135e000e319fb55</a></li>
+<li><a href="https://github.com/bencehornak/copilot-cli/commit/11e2a04ac294a9688f3145c21a8574dee94a0770">https://github.com/bencehornak/copilot-cli/commit/11e2a04ac294a9688f3145c21a8574dee94a0770</a></li>
+<li><a href="https://github.com/PRX/Infrastructure/commit/7f535b407cc8039f9990ffa6eccf08146cfe8b79">https://github.com/PRX/Infrastructure/commit/7f535b407cc8039f9990ffa6eccf08146cfe8b79</a></li>
+<li><a href="https://github.com/release-engineering/exodus-lambda/commit/b34df4436dc0a016dde9398b9b1a0b2099feeaaa">https://github.com/release-engineering/exodus-lambda/commit/b34df4436dc0a016dde9398b9b1a0b2099feeaaa</a></li>
+<li><a href="https://github.com/GerritCodeReview/aws-gerrit/commit/6d870855767ffbf684822adeb5136d0788f8a7df">https://github.com/GerritCodeReview/aws-gerrit/commit/6d870855767ffbf684822adeb5136d0788f8a7df</a></li>
+<li><a href="https://github.com/sjakthol/cfn-execute-change-set/commit/85238260de6d17167ff8a084032ba74372d70321">https://github.com/sjakthol/cfn-execute-change-set/commit/85238260de6d17167ff8a084032ba74372d70321</a></li>
+<li><a href="https://github.com/ktkiiski/broilerkit/commit/179258e1c38152d411c6da823b74e142d937f6cd">https://github.com/ktkiiski/broilerkit/commit/179258e1c38152d411c6da823b74e142d937f6cd</a></li>
+<li><a href="https://github.com/YubicoLabs/WebAuthnKit/commit/809472cea5cc831c6662be2d6075f6b5bacde276">https://github.com/YubicoLabs/WebAuthnKit/commit/809472cea5cc831c6662be2d6075f6b5bacde276</a></li>
+<li><a href="https://github.com/aws-samples/route-53-application-recovery-controller/commit/918b45ca80ddd21f0de8dbdb87a39707ea5630c5">https://github.com/aws-samples/route-53-application-recovery-controller/commit/918b45ca80ddd21f0de8dbdb87a39707ea5630c5</a></li>
+<li><a href="https://github.com/ashley-evans/how-many-buzzwords/commit/265eb03ab39eca06feb21b5f1cb69eb8dcbf9f4c">https://github.com/ashley-evans/how-many-buzzwords/commit/265eb03ab39eca06feb21b5f1cb69eb8dcbf9f4c</a></li>
+<li><a href="https://github.com/cyberark/conjur-ecs-deploy/commit/c115dbc288157656a2fc8c729f3432a6c8ac6783">https://github.com/cyberark/conjur-ecs-deploy/commit/c115dbc288157656a2fc8c729f3432a6c8ac6783</a></li>
+<li><a href="https://github.com/AtlasOfLivingAustralia/ala-tokens-portal/commit/7df62872fb0c6ed504ce6d87ea2ea76ee7e794d4">https://github.com/AtlasOfLivingAustralia/ala-tokens-portal/commit/7df62872fb0c6ed504ce6d87ea2ea76ee7e794d4</a></li>
+<li><a href="https://github.com/Sage-Bionetworks/service-catalog-library/commit/44b30a7988a104e8a834ad1d1abc27ef8001fabc">https://github.com/Sage-Bionetworks/service-catalog-library/commit/44b30a7988a104e8a834ad1d1abc27ef8001fabc</a></li>
+<li><a href="https://github.com/Saneri/event-signup/commit/869bf7060c744e32326a902c88d9521ccdd5b218">https://github.com/Saneri/event-signup/commit/869bf7060c744e32326a902c88d9521ccdd5b218</a></li>
+<li><a href="https://github.com/craigmayhew/aws-transcribe-on-s3-upload/commit/1955b06a16586fcb21a4b1b5dc27bea00384a842">https://github.com/craigmayhew/aws-transcribe-on-s3-upload/commit/1955b06a16586fcb21a4b1b5dc27bea00384a842</a></li>
+<li><a href="https://github.com/wolfeidau/aws-billing-store/commit/9cac0ad2ee5ae1dc2d6dc7660ddb597109b15f95">https://github.com/wolfeidau/aws-billing-store/commit/9cac0ad2ee5ae1dc2d6dc7660ddb597109b15f95</a></li>
+<li><a href="https://github.com/littermap/littermap-aws-backend/commit/aeade55a66feeee2b7306829d6c22e7000c6faa0">https://github.com/littermap/littermap-aws-backend/commit/aeade55a66feeee2b7306829d6c22e7000c6faa0</a></li>
+</ul>
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="content-wrapper">
+            <p>
+                &copy; 2024-2025
+                <a href="https://koen.bolhu.is">Koen Bolhuis</a>,
+                <a href="https://feitosa-daniel.github.io">Daniel Feitosa</a>,
+                <a href="https://vandriko.github.io">Vasilios Andrikopoulos</a>,
+                <a href="https://www.linkedin.com/in/allianeamt/">Allia Neamt</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Antipattern: Expensive storage type - IaC Cost Patterns</title>
+    <link rel="stylesheet" href="https://search-rug.github.io/iac-cost-patterns/style.css?h=ab047a49b1332c45175b">
+</head>
+<body>
+    <header>
+        <div class="content-wrapper">
+            <h1><a href="https:&#x2F;&#x2F;search-rug.github.io&#x2F;iac-cost-patterns&#x2F;">IaC Cost Patterns</a></h1>
+            <p>A collection of patterns and antipatterns for managing cost in IaC files.</p>
+            <ul>
+                <li><a href="https://github.com/search-rug/iac-cost-patterns/blob/main/thematic-analysis/patterns.yml">Dataset <span class="label">YAML</span></a></li>
+                <li><a href="https://github.com/search-rug/iac-cost-patterns">Repository</a></li>
+                <li><a href="https://doi.org/10.1109/SEAA64295.2024.00067"><span class="label">New!</span> Paper accepted to SEAA 2024</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="content-wrapper">
+            
+<p class="nav"><a href="https:&#x2F;&#x2F;search-rug.github.io&#x2F;iac-cost-patterns&#x2F;">&leftarrow; Back to all patterns</a></p>
+<h1 id="antipattern-expensive-storage-type">Antipattern: Expensive storage type</h1>
+<p>More expensive storage types are often used even when cheaper storage types would be sufficient.</p>
+<h2 id="context">Context</h2>
+<p>Developers are able to choose between different storage types (HDD vs SSD, durability guarantees)
+for e.g. instances' root disks. However, not all use cases require highly durable SSD storage,
+making cheaper storage types a viable way to save cost.</p>
+<h2 id="solution">Solution</h2>
+<p>Evaluate performance and durability guarantees for storage and switch to
+a less expensive type where relevant.</p>
+<h2 id="example">Example</h2>
+<p>Switch an OS disk from Premium LRS storage to Standard LRS:</p>
+<pre data-lang="diff" style="background-color:#2b303b;color:#c0c5ce;" class="language-diff "><code class="language-diff" data-lang="diff"><span>@@ -1,6 +1,6 @@
+</span><span> resource &quot;azurerm_linux_virtual_machine&quot; &quot;example&quot; {
+</span><span>   # ...
+</span><span>   os_disk {
+</span><span style="color:#bf616a;">-    storage_account_type = &quot;Premium_LRS&quot;
+</span><span style="color:#a3be8c;">+    storage_account_type = &quot;Standard_LRS&quot;
+</span><span>   }
+</span><span> }
+</span></code></pre>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_virtual_machine#os_disk">Resource: azurerm_linux_virtual_machine (Terraform) - os_disk</a></li>
+<li><a href="https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html">Amazon EBS volume types</a></li>
+<li><a href="https://cloud.google.com/compute/docs/disks/">Storage options | Compute Engine Documentation | Google Cloud</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/virtual-machines/disks-types">Azure managed disk types</a></li>
+</ul>
+<h2 id="occurrences">Occurrences</h2>
+<h3 id="terraform">Terraform</h3>
+<ul>
+<li><a href="https://github.com/thomastodon/jabujabu/commit/02210a3d3ba4a770c29623825b7f54f3ff33f3c7">https://github.com/thomastodon/jabujabu/commit/02210a3d3ba4a770c29623825b7f54f3ff33f3c7</a></li>
+<li><a href="https://github.com/giantswarm/giantnetes-terraform/commit/53ed24b573947c73ea9f0f4f8b477c44b7de2d54">https://github.com/giantswarm/giantnetes-terraform/commit/53ed24b573947c73ea9f0f4f8b477c44b7de2d54</a></li>
+<li><a href="https://github.com/Kalmalyzer/UE-Jenkins-BuildSystem/commit/ee8942b2c5d59546dd3b3be5f2cb88500d0fe1be">https://github.com/Kalmalyzer/UE-Jenkins-BuildSystem/commit/ee8942b2c5d59546dd3b3be5f2cb88500d0fe1be</a></li>
+<li><a href="https://github.com/Leonard-Ta/Sample-Security-service-Terraform/commit/c16481a84d5823b65ce96bd811a265222385b43b">https://github.com/Leonard-Ta/Sample-Security-service-Terraform/commit/c16481a84d5823b65ce96bd811a265222385b43b</a></li>
+<li><a href="https://github.com/falldamagestudio/UE4-GHA-BuildSystem/commit/e58083adbf91e7daa8ddb5db6c3b2e5c8c0a906c">https://github.com/falldamagestudio/UE4-GHA-BuildSystem/commit/e58083adbf91e7daa8ddb5db6c3b2e5c8c0a906c</a></li>
+<li><a href="https://github.com/bculberson/btc2snowflake/commit/9f8227bf53ebc2b1bb0b99d0697f9f66eed7ab6d">https://github.com/bculberson/btc2snowflake/commit/9f8227bf53ebc2b1bb0b99d0697f9f66eed7ab6d</a></li>
+<li><a href="https://github.com/ministryofjustice/hmpps-env-configs/commit/0328838420ac0d3754cf772a7d2f5bb1612193ed">https://github.com/ministryofjustice/hmpps-env-configs/commit/0328838420ac0d3754cf772a7d2f5bb1612193ed</a></li>
+<li><a href="https://github.com/travis-infrastructure/terraform-stuff/commit/1e208af4c83d093c900f4cccedbca6183142a07f">https://github.com/travis-infrastructure/terraform-stuff/commit/1e208af4c83d093c900f4cccedbca6183142a07f</a></li>
+<li><a href="https://github.com/sdcote/cloudsql/commit/dfe44fcf8f5a477e1fbc354f1b1d87af28895c0f">https://github.com/sdcote/cloudsql/commit/dfe44fcf8f5a477e1fbc354f1b1d87af28895c0f</a></li>
+<li><a href="https://github.com/wellcomecollection/archivematica-infrastructure/commit/ce576be106257496e20d946d6eab5f8783dada92">https://github.com/wellcomecollection/archivematica-infrastructure/commit/ce576be106257496e20d946d6eab5f8783dada92</a></li>
+<li><a href="https://github.com/jshcmpbll/Cloud-Mac-KVM/commit/361885d22c0304cb44683f9b005f82ca5e269841">https://github.com/jshcmpbll/Cloud-Mac-KVM/commit/361885d22c0304cb44683f9b005f82ca5e269841</a></li>
+<li><a href="https://github.com/TimonB/tf-azure-example/commit/b49579fbecbe8002932fdfb86146f83efd60bfcf">https://github.com/TimonB/tf-azure-example/commit/b49579fbecbe8002932fdfb86146f83efd60bfcf</a></li>
+<li><a href="https://github.com/phillhocking/aws-ubuntu-irssi/commit/1532e0c298ec4f8d7d749a884f7c46f2a2cf53d3">https://github.com/phillhocking/aws-ubuntu-irssi/commit/1532e0c298ec4f8d7d749a884f7c46f2a2cf53d3</a></li>
+<li><a href="https://github.com/bhfsystem/fogg/commit/81e606a72e7c2e06c2f6d9c204086157aa82eac3">https://github.com/bhfsystem/fogg/commit/81e606a72e7c2e06c2f6d9c204086157aa82eac3</a></li>
+<li><a href="https://github.com/bhfsystem/fogg/commit/7cc487f270d553f819fea0cf96e872c374979305">https://github.com/bhfsystem/fogg/commit/7cc487f270d553f819fea0cf96e872c374979305</a></li>
+<li><a href="https://github.com/cisagov/freeipa-server-tf-module/commit/99fd319a72d25441acf36fd2c167a875e9028935">https://github.com/cisagov/freeipa-server-tf-module/commit/99fd319a72d25441acf36fd2c167a875e9028935</a></li>
+<li><a href="https://github.com/ministryofjustice/cloud-platform-terraform-monitoring/commit/87401ba23af26d379d8132cc09fd7cd212773ba1">https://github.com/ministryofjustice/cloud-platform-terraform-monitoring/commit/87401ba23af26d379d8132cc09fd7cd212773ba1</a></li>
+<li><a href="https://github.com/ministryofjustice/hmpps-env-configs/commit/7c1ba780a59f6a8682870318e70bf800a2d183a2">https://github.com/ministryofjustice/hmpps-env-configs/commit/7c1ba780a59f6a8682870318e70bf800a2d183a2</a></li>
+</ul>
+<h3 id="aws-cloudformation">AWS CloudFormation</h3>
+<ul>
+<li><a href="https://github.com/openrelayxyz/log-flume/commit/281f0cbcb1415cea8e13706c6c4304dfdca5c8e5">https://github.com/openrelayxyz/log-flume/commit/281f0cbcb1415cea8e13706c6c4304dfdca5c8e5</a></li>
+<li><a href="https://github.com/ASFHyP3/asf-stac/commit/3a19e68cda5b174a655a699b8ac74eaa7c826159">https://github.com/ASFHyP3/asf-stac/commit/3a19e68cda5b174a655a699b8ac74eaa7c826159</a></li>
+<li><a href="https://github.com/chef-boneyard/aws_native_chef_server/commit/f63839453506420064afb7350971c65be47d39a6">https://github.com/chef-boneyard/aws_native_chef_server/commit/f63839453506420064afb7350971c65be47d39a6</a></li>
+<li><a href="https://github.com/openrelayxyz/ethercattle-deployment/commit/169a5f7292d7e15be885c33b345ce87477d8d227">https://github.com/openrelayxyz/ethercattle-deployment/commit/169a5f7292d7e15be885c33b345ce87477d8d227</a></li>
+</ul>
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="content-wrapper">
+            <p>
+                &copy; 2024-2025
+                <a href="https://koen.bolhu.is">Koen Bolhuis</a>,
+                <a href="https://feitosa-daniel.github.io">Daniel Feitosa</a>,
+                <a href="https://vandriko.github.io">Vasilios Andrikopoulos</a>,
+                <a href="https://www.linkedin.com/in/allianeamt/">Allia Neamt</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

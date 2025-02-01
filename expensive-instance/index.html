@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Antipattern: Expensive instance - IaC Cost Patterns</title>
+    <link rel="stylesheet" href="https://search-rug.github.io/iac-cost-patterns/style.css?h=ab047a49b1332c45175b">
+</head>
+<body>
+    <header>
+        <div class="content-wrapper">
+            <h1><a href="https:&#x2F;&#x2F;search-rug.github.io&#x2F;iac-cost-patterns&#x2F;">IaC Cost Patterns</a></h1>
+            <p>A collection of patterns and antipatterns for managing cost in IaC files.</p>
+            <ul>
+                <li><a href="https://github.com/search-rug/iac-cost-patterns/blob/main/thematic-analysis/patterns.yml">Dataset <span class="label">YAML</span></a></li>
+                <li><a href="https://github.com/search-rug/iac-cost-patterns">Repository</a></li>
+                <li><a href="https://doi.org/10.1109/SEAA64295.2024.00067"><span class="label">New!</span> Paper accepted to SEAA 2024</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="content-wrapper">
+            
+<p class="nav"><a href="https:&#x2F;&#x2F;search-rug.github.io&#x2F;iac-cost-patterns&#x2F;">&leftarrow; Back to all patterns</a></p>
+<h1 id="antipattern-expensive-instance">Antipattern: Expensive instance</h1>
+<p>Compute instances are often overprovisioned even when a cheaper instance would suffice.</p>
+<h2 id="context">Context</h2>
+<p>A recurring pattern in cloud deployments is that developers initially
+choose compute instances which are overprovisioned, because it is
+difficult to know the requirements upfront. This leads to situations
+where developers deploy, for example on AWS, '2xlarge' instances, when
+in fact 'large' or even 'medium' would suffice.</p>
+<h2 id="solution">Solution</h2>
+<p>Critically evaluate required performance levels and special functionality
+(e.g. memory-optimized versus general-purpose instances), and scale down
+the provisioned instance types where appropriate.</p>
+<h2 id="example">Example</h2>
+<p>Downgrade to a cheaper general-purpose instance in the same family to save costs:</p>
+<pre data-lang="diff" style="background-color:#2b303b;color:#c0c5ce;" class="language-diff "><code class="language-diff" data-lang="diff"><span>@@ -1,5 +1,5 @@
+</span><span> resource &quot;google_compute_instance&quot; &quot;example&quot; {
+</span><span>   name         = &quot;example&quot;
+</span><span style="color:#bf616a;">-  machine_type = &quot;n1-standard-1&quot;
+</span><span style="color:#a3be8c;">+  machine_type = &quot;g1-small&quot;
+</span><span>   # ...
+</span><span> }
+</span></code></pre>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance">Resource: aws_instance (Terraform)</a></li>
+<li><a href="https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_instance">Resource: google_compute_instance (Terraform)</a></li>
+<li><a href="https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_virtual_machine">Resource: azurerm_linux_virtual_machine (Terraform)</a></li>
+<li><a href="https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/windows_virtual_machine">Resource: azurerm_windows_virtual_machine (Terraform)</a></li>
+<li><a href="https://aws.amazon.com/ec2/instance-types/">Compute - EC2 Instance Types - AWS</a></li>
+<li><a href="https://cloud.google.com/compute/docs/machine-resource">Machine families resource and comparison guide | Compute Engine Documentation | Google Cloud</a></li>
+<li><a href="https://azure.microsoft.com/en-us/pricing/details/virtual-machines/series/">Virtual Machine series | Microsoft Azure</a></li>
+</ul>
+<h2 id="occurrences">Occurrences</h2>
+<h3 id="terraform">Terraform</h3>
+<ul>
+<li><a href="https://github.com/beaulabs/terraform_aws_ec2_instance/commit/d6df68da5ae58fb5c650c6be15d9d8e676a129db">https://github.com/beaulabs/terraform_aws_ec2_instance/commit/d6df68da5ae58fb5c650c6be15d9d8e676a129db</a></li>
+<li><a href="https://github.com/gudlyf/TerraformOpenVPN/commit/4bc861c153b65a2d7c0d5f3fac30ab72b0fc6942">https://github.com/gudlyf/TerraformOpenVPN/commit/4bc861c153b65a2d7c0d5f3fac30ab72b0fc6942</a></li>
+<li><a href="https://github.com/IncredibleHolg/infra-aws-code/commit/70904707a36ff8e5167e695de3529d8318911ba4">https://github.com/IncredibleHolg/infra-aws-code/commit/70904707a36ff8e5167e695de3529d8318911ba4</a></li>
+<li><a href="https://github.com/ministryofjustice/cloud-platform-infrastructure/commit/e5dd13d33c1e927f932971d067d8f70e9041b5f3">https://github.com/ministryofjustice/cloud-platform-infrastructure/commit/e5dd13d33c1e927f932971d067d8f70e9041b5f3</a></li>
+<li><a href="https://github.com/cisagov/cyhy_amis/commit/4e67a501bb3f5187a3e9af523921ac62b8a88469">https://github.com/cisagov/cyhy_amis/commit/4e67a501bb3f5187a3e9af523921ac62b8a88469</a></li>
+<li><a href="https://github.com/Kalmalyzer/UE-Jenkins-BuildSystem/commit/636097557e403eb1d6b6211b09e30c47e7f39466">https://github.com/Kalmalyzer/UE-Jenkins-BuildSystem/commit/636097557e403eb1d6b6211b09e30c47e7f39466</a></li>
+<li><a href="https://github.com/dshmelev/aws_kube_tc/commit/853298ac74250964aa2d2ea921daa5905528b3a9">https://github.com/dshmelev/aws_kube_tc/commit/853298ac74250964aa2d2ea921daa5905528b3a9</a></li>
+<li><a href="https://github.com/aaaaasam/azure/commit/c7bc0ce6f3fcaffcbbe7753f1a9d8437809bc167">https://github.com/aaaaasam/azure/commit/c7bc0ce6f3fcaffcbbe7753f1a9d8437809bc167</a></li>
+<li><a href="https://github.com/rbabyuk/terra/commit/beae899804779adf914c08f290c5d71b542c9ed1">https://github.com/rbabyuk/terra/commit/beae899804779adf914c08f290c5d71b542c9ed1</a></li>
+<li><a href="https://github.com/Leonard-Ta/Sample-Security-service-Terraform/commit/c16481a84d5823b65ce96bd811a265222385b43b">https://github.com/Leonard-Ta/Sample-Security-service-Terraform/commit/c16481a84d5823b65ce96bd811a265222385b43b</a></li>
+<li><a href="https://github.com/jjffggpp/jjffggpp/commit/93ee12adde6ac773c76b590fe89c24df372f326b">https://github.com/jjffggpp/jjffggpp/commit/93ee12adde6ac773c76b590fe89c24df372f326b</a></li>
+<li><a href="https://github.com/EngineerBetter/kf-infra/commit/fa5f7fb35b0b44020fb81dd5c4e3b9ceaca1f967">https://github.com/EngineerBetter/kf-infra/commit/fa5f7fb35b0b44020fb81dd5c4e3b9ceaca1f967</a></li>
+<li><a href="https://github.com/KoutaroNohira/hashicat/commit/81dc1d3f98034672d5f62f440f2cc3abc58ce2a2">https://github.com/KoutaroNohira/hashicat/commit/81dc1d3f98034672d5f62f440f2cc3abc58ce2a2</a></li>
+<li><a href="https://github.com/wallnerryan/terraform-scaleio/commit/605e74facfa2ff519ba5cda6e57474666901bd8c">https://github.com/wallnerryan/terraform-scaleio/commit/605e74facfa2ff519ba5cda6e57474666901bd8c</a></li>
+<li><a href="https://github.com/UrbanOS-Examples/common/commit/206394bcc75866953f64cbf3bd6214e4e6f96e91">https://github.com/UrbanOS-Examples/common/commit/206394bcc75866953f64cbf3bd6214e4e6f96e91</a></li>
+<li><a href="https://github.com/cookpad/terraform-aws-eks/commit/59c40286757e1fa5cb5391421c5380e5ad506387">https://github.com/cookpad/terraform-aws-eks/commit/59c40286757e1fa5cb5391421c5380e5ad506387</a></li>
+<li><a href="https://github.com/ayltai/hknews-infrastructure/commit/68171be117d3997b84253258f41fad6daedbc76a">https://github.com/ayltai/hknews-infrastructure/commit/68171be117d3997b84253258f41fad6daedbc76a</a></li>
+<li><a href="https://github.com/joelchrist/terraform/commit/bbf18d695bd7597977ea7a97d5434ca7f1a37d57">https://github.com/joelchrist/terraform/commit/bbf18d695bd7597977ea7a97d5434ca7f1a37d57</a></li>
+<li><a href="https://github.com/jg210/aws-experiments/commit/5ff37f12a421fdd902d8eb1e6d7491ee181fd179">https://github.com/jg210/aws-experiments/commit/5ff37f12a421fdd902d8eb1e6d7491ee181fd179</a></li>
+<li><a href="https://github.com/scott45/vof-deployment-scripts/commit/c6b2c1bee4c1e53e87fd3d94fc8c07cf64342d7b">https://github.com/scott45/vof-deployment-scripts/commit/c6b2c1bee4c1e53e87fd3d94fc8c07cf64342d7b</a></li>
+<li><a href="https://github.com/fdns/terraform-k8s/commit/f106917bb7b2d8d4428022bb119585bf9f35769c">https://github.com/fdns/terraform-k8s/commit/f106917bb7b2d8d4428022bb119585bf9f35769c</a></li>
+<li><a href="https://github.com/ministryofjustice/hmpps-env-configs/commit/670c006bad288d0360c3811aa63b3c323753c385">https://github.com/ministryofjustice/hmpps-env-configs/commit/670c006bad288d0360c3811aa63b3c323753c385</a></li>
+<li><a href="https://github.com/ministryofjustice/hmpps-env-configs/commit/954dda617d47007a8a1ff5780d3174e900e95be1">https://github.com/ministryofjustice/hmpps-env-configs/commit/954dda617d47007a8a1ff5780d3174e900e95be1</a></li>
+<li><a href="https://github.com/Linaro/qa-reports.linaro.org/commit/76c8d1ee35046912b6da4f1cc23e8b1dcc12abe9">https://github.com/Linaro/qa-reports.linaro.org/commit/76c8d1ee35046912b6da4f1cc23e8b1dcc12abe9</a></li>
+<li><a href="https://github.com/KieniL/terraform_setups/commit/37f66bc43f57b1b7a5a897c58cefe09900afd7ef">https://github.com/KieniL/terraform_setups/commit/37f66bc43f57b1b7a5a897c58cefe09900afd7ef</a></li>
+<li><a href="https://github.com/digio/terraform-google-gitlab-runner/commit/07f8279fe65a35c0e595f3171f3d75791e49a9ae">https://github.com/digio/terraform-google-gitlab-runner/commit/07f8279fe65a35c0e595f3171f3d75791e49a9ae</a></li>
+<li><a href="https://github.com/jharley/azure-basic-demo/commit/7cd3d202d8723c565704f23c143cae3b1e1d6d2b">https://github.com/jharley/azure-basic-demo/commit/7cd3d202d8723c565704f23c143cae3b1e1d6d2b</a></li>
+<li><a href="https://github.com/pangeo-data/terraform-deploy/commit/f8163bd52bea3774e2f160cff0523c602e65d933">https://github.com/pangeo-data/terraform-deploy/commit/f8163bd52bea3774e2f160cff0523c602e65d933</a></li>
+<li><a href="https://github.com/pangeo-data/terraform-deploy/commit/7244eed07a1008675f45cc4349bf68141bb29edc">https://github.com/pangeo-data/terraform-deploy/commit/7244eed07a1008675f45cc4349bf68141bb29edc</a></li>
+<li><a href="https://github.com/aeternity/terraform-aws-devnet/commit/f4113a8f7e52991dfb75f63688aeba77bac76b01">https://github.com/aeternity/terraform-aws-devnet/commit/f4113a8f7e52991dfb75f63688aeba77bac76b01</a></li>
+<li><a href="https://github.com/schubergphilis/terraform-aws-mcaf-matillion/commit/3b0e2fe42d660664c49d54ae8706de004a9b4176">https://github.com/schubergphilis/terraform-aws-mcaf-matillion/commit/3b0e2fe42d660664c49d54ae8706de004a9b4176</a></li>
+<li><a href="https://github.com/binbashar/le-tf-infra-aws/commit/0208ae3bc238f029b1faf6bdc3552dbe6147657b">https://github.com/binbashar/le-tf-infra-aws/commit/0208ae3bc238f029b1faf6bdc3552dbe6147657b</a></li>
+<li><a href="https://github.com/fpco/terraform-aws-foundation/commit/cfe92035f1b281cddfcf62664ec6b96e85e0ac32">https://github.com/fpco/terraform-aws-foundation/commit/cfe92035f1b281cddfcf62664ec6b96e85e0ac32</a></li>
+<li><a href="https://github.com/Civil-Service-Human-Resources/lpg-terraform-paas/commit/59477d3dc237e72252bde005b783213b7e8ed961">https://github.com/Civil-Service-Human-Resources/lpg-terraform-paas/commit/59477d3dc237e72252bde005b783213b7e8ed961</a></li>
+<li><a href="https://github.com/ibm-cloud-architecture/iks_vpc_lab/commit/629819ce0c440760be155874cb42ab497f0304bd">https://github.com/ibm-cloud-architecture/iks_vpc_lab/commit/629819ce0c440760be155874cb42ab497f0304bd</a></li>
+<li><a href="https://github.com/goodpen/gke-v.1.0/commit/45053a0862bf97f0525862c411fa4da5d59ac397">https://github.com/goodpen/gke-v.1.0/commit/45053a0862bf97f0525862c411fa4da5d59ac397</a></li>
+<li><a href="https://github.com/rshurts/gke-cd-with-spinnaker/commit/3bc712aba0c797053b5cdc113e3e46afb6cff8a5">https://github.com/rshurts/gke-cd-with-spinnaker/commit/3bc712aba0c797053b5cdc113e3e46afb6cff8a5</a></li>
+<li><a href="https://github.com/kaz/kiritan.com/commit/1cd96c7f71e56629ffa07c38e12c4da19fcfc5f7">https://github.com/kaz/kiritan.com/commit/1cd96c7f71e56629ffa07c38e12c4da19fcfc5f7</a></li>
+<li><a href="https://github.com/midl-dev/tezos-auxiliary-cluster/commit/9cbfebaab11cb3466b160d18ef2eb46c0b875d55">https://github.com/midl-dev/tezos-auxiliary-cluster/commit/9cbfebaab11cb3466b160d18ef2eb46c0b875d55</a></li>
+<li><a href="https://github.com/NLnetLabs/rpki-deploy/commit/8bd6e745475f635d6f6b6929a545afa2e1d9dd57">https://github.com/NLnetLabs/rpki-deploy/commit/8bd6e745475f635d6f6b6929a545afa2e1d9dd57</a></li>
+<li><a href="https://github.com/TimonB/tf-azure-example/commit/ce89df3cebc6487146391afe9517661053229f77">https://github.com/TimonB/tf-azure-example/commit/ce89df3cebc6487146391afe9517661053229f77</a></li>
+<li><a href="https://github.com/00inboxtest/terraform-google-vault/commit/1d0b5db7f310dc6a47af3130a97e5373d9cdaddf">https://github.com/00inboxtest/terraform-google-vault/commit/1d0b5db7f310dc6a47af3130a97e5373d9cdaddf</a></li>
+<li><a href="https://github.com/Amberoat/didactic-octo-eureka/commit/494706fc421a0ddda47f7d543b7e7a296c378c26">https://github.com/Amberoat/didactic-octo-eureka/commit/494706fc421a0ddda47f7d543b7e7a296c378c26</a></li>
+<li><a href="https://github.com/robertdebock/terraform-aws-vault/commit/757edca9d6fb2231ebdcf03ec611183c59eaf39b">https://github.com/robertdebock/terraform-aws-vault/commit/757edca9d6fb2231ebdcf03ec611183c59eaf39b</a></li>
+<li><a href="https://github.com/covid-videoplattform/covid-videoplattform/commit/83d8b928ecb3f271a058bb30eaa1e05ce10e0434">https://github.com/covid-videoplattform/covid-videoplattform/commit/83d8b928ecb3f271a058bb30eaa1e05ce10e0434</a></li>
+<li><a href="https://github.com/alphagov/govuk-infrastructure/commit/a51a3bfcd73fd55ecd43aa36ce3f266f0cefc2dc">https://github.com/alphagov/govuk-infrastructure/commit/a51a3bfcd73fd55ecd43aa36ce3f266f0cefc2dc</a></li>
+<li><a href="https://github.com/pelias/terraform-elasticsearch/commit/8454c8ee25e821abde10b73a2fec691269e41822">https://github.com/pelias/terraform-elasticsearch/commit/8454c8ee25e821abde10b73a2fec691269e41822</a></li>
+<li><a href="https://github.com/ironpeakservices/infrastructure/commit/2ca24fa9114b5b4389768d5ab93c1e6d99bb287c">https://github.com/ironpeakservices/infrastructure/commit/2ca24fa9114b5b4389768d5ab93c1e6d99bb287c</a></li>
+<li><a href="https://github.com/robertdebock/git-terraform-demo/commit/5638b1a044215292a5e3fa405b6a0567c6b35436">https://github.com/robertdebock/git-terraform-demo/commit/5638b1a044215292a5e3fa405b6a0567c6b35436</a></li>
+<li><a href="https://github.com/robertdebock/git-terraform-demo/commit/686374095321975d851932a77b139d627f50c7d5">https://github.com/robertdebock/git-terraform-demo/commit/686374095321975d851932a77b139d627f50c7d5</a></li>
+<li><a href="https://github.com/jenkins-infra/aws/commit/586fde061356513609fe4f2014a11ddcec849c35">https://github.com/jenkins-infra/aws/commit/586fde061356513609fe4f2014a11ddcec849c35</a></li>
+<li><a href="https://github.com/poseidon/terraform-azure-kubernetes/commit/4989bf2d4a5eed7f1fcb01f63db5624afa113232">https://github.com/poseidon/terraform-azure-kubernetes/commit/4989bf2d4a5eed7f1fcb01f63db5624afa113232</a></li>
+<li><a href="https://github.com/poseidon/typhoon/commit/8d2c8b8db692b27b89d18e47a40cf7b49562694e">https://github.com/poseidon/typhoon/commit/8d2c8b8db692b27b89d18e47a40cf7b49562694e</a></li>
+<li><a href="https://github.com/poseidon/typhoon/commit/b68f8bb2a9f0825af76a563051c32100386024db">https://github.com/poseidon/typhoon/commit/b68f8bb2a9f0825af76a563051c32100386024db</a></li>
+<li><a href="https://github.com/tlc-pack/ci-terraform/commit/af285dd17beb9c35ea6339b3b9f43d6b166b5411">https://github.com/tlc-pack/ci-terraform/commit/af285dd17beb9c35ea6339b3b9f43d6b166b5411</a></li>
+<li><a href="https://github.com/binbashar/le-tf-infra-aws/commit/10cf13515c722708cfacb8f22ca9b05abca67505">https://github.com/binbashar/le-tf-infra-aws/commit/10cf13515c722708cfacb8f22ca9b05abca67505</a></li>
+</ul>
+<h3 id="aws-cloudformation">AWS CloudFormation</h3>
+<ul>
+<li><a href="https://github.com/widdix/aws-cf-templates/commit/0156a84027bc371504a520c5ad85b332cdf0197d">https://github.com/widdix/aws-cf-templates/commit/0156a84027bc371504a520c5ad85b332cdf0197d</a></li>
+<li><a href="https://github.com/rik2803/aws-account-config/commit/2f9a9e356f04fb859a443f032592926d62e2df20">https://github.com/rik2803/aws-account-config/commit/2f9a9e356f04fb859a443f032592926d62e2df20</a></li>
+<li><a href="https://github.com/ceno/Quake3Quest-servers/commit/cd977f78fdad8ac20f8e6f7d6f2bae413bfba9d7">https://github.com/ceno/Quake3Quest-servers/commit/cd977f78fdad8ac20f8e6f7d6f2bae413bfba9d7</a></li>
+<li><a href="https://github.com/GerritCodeReview/aws-gerrit/commit/6d870855767ffbf684822adeb5136d0788f8a7df">https://github.com/GerritCodeReview/aws-gerrit/commit/6d870855767ffbf684822adeb5136d0788f8a7df</a></li>
+<li><a href="https://github.com/nasa-petal/PeTaL-db/commit/15142ebe0c06722f916db9b447693190437c7136">https://github.com/nasa-petal/PeTaL-db/commit/15142ebe0c06722f916db9b447693190437c7136</a></li>
+<li><a href="https://github.com/FINRAOS/herd-mdl/commit/937aafaf67e678be2978d660b1359c3887a5f933">https://github.com/FINRAOS/herd-mdl/commit/937aafaf67e678be2978d660b1359c3887a5f933</a></li>
+<li><a href="https://github.com/voyagertherapeutics/aws-genomics-workflows/commit/339e57b766ada13defb690a2593392a786776650">https://github.com/voyagertherapeutics/aws-genomics-workflows/commit/339e57b766ada13defb690a2593392a786776650</a></li>
+<li><a href="https://github.com/Percona-Lab/jenkins-pipelines/commit/323030cf76eee050c85f2ab0c46bba3888e4d392">https://github.com/Percona-Lab/jenkins-pipelines/commit/323030cf76eee050c85f2ab0c46bba3888e4d392</a></li>
+<li><a href="https://github.com/CloudEric/dnsvpn-cloudformation/commit/dc4f583344f235b146dfe5ea47b8c4c5fdd30089">https://github.com/CloudEric/dnsvpn-cloudformation/commit/dc4f583344f235b146dfe5ea47b8c4c5fdd30089</a></li>
+<li><a href="https://github.com/mludvig/aws-crypto-miner/commit/d7d285a3e2a1327739ac1848f15248517e81e173">https://github.com/mludvig/aws-crypto-miner/commit/d7d285a3e2a1327739ac1848f15248517e81e173</a></li>
+<li><a href="https://github.com/rik2803/aws-account-config/commit/c3a4dc55c0f13ca4dc3cc8fab8f46fd72ebb421c">https://github.com/rik2803/aws-account-config/commit/c3a4dc55c0f13ca4dc3cc8fab8f46fd72ebb421c</a></li>
+<li><a href="https://github.com/MrMarvin/open-wow-drealmd/commit/0b23fe7bf08d4682835ca171d228380ec81a2fb5">https://github.com/MrMarvin/open-wow-drealmd/commit/0b23fe7bf08d4682835ca171d228380ec81a2fb5</a></li>
+<li><a href="https://github.com/ASFHyP3/asf-stac/commit/3a19e68cda5b174a655a699b8ac74eaa7c826159">https://github.com/ASFHyP3/asf-stac/commit/3a19e68cda5b174a655a699b8ac74eaa7c826159</a></li>
+</ul>
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="content-wrapper">
+            <p>
+                &copy; 2024-2025
+                <a href="https://koen.bolhu.is">Koen Bolhuis</a>,
+                <a href="https://feitosa-daniel.github.io">Daniel Feitosa</a>,
+                <a href="https://vandriko.github.io">Vasilios Andrikopoulos</a>,
+                <a href="https://www.linkedin.com/in/allianeamt/">Allia Neamt</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

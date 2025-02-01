@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Antipattern: Expensive monitoring - IaC Cost Patterns</title>
+    <link rel="stylesheet" href="https://search-rug.github.io/iac-cost-patterns/style.css?h=ab047a49b1332c45175b">
+</head>
+<body>
+    <header>
+        <div class="content-wrapper">
+            <h1><a href="https:&#x2F;&#x2F;search-rug.github.io&#x2F;iac-cost-patterns&#x2F;">IaC Cost Patterns</a></h1>
+            <p>A collection of patterns and antipatterns for managing cost in IaC files.</p>
+            <ul>
+                <li><a href="https://github.com/search-rug/iac-cost-patterns/blob/main/thematic-analysis/patterns.yml">Dataset <span class="label">YAML</span></a></li>
+                <li><a href="https://github.com/search-rug/iac-cost-patterns">Repository</a></li>
+                <li><a href="https://doi.org/10.1109/SEAA64295.2024.00067"><span class="label">New!</span> Paper accepted to SEAA 2024</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="content-wrapper">
+            
+<p class="nav"><a href="https:&#x2F;&#x2F;search-rug.github.io&#x2F;iac-cost-patterns&#x2F;">&leftarrow; Back to all patterns</a></p>
+<h1 id="antipattern-expensive-monitoring">Antipattern: Expensive monitoring</h1>
+<p>Monitoring solutions are expensive and might not be needed.</p>
+<h2 id="context">Context</h2>
+<p>Cloud providers offer ways to monitor deployed infrastructure and
+collect metrics and logs. These solutions add cost for e.g. health checks
+and log storage, and the benefits may not outweigh this cost.</p>
+<h2 id="solution">Solution</h2>
+<p>Removing monitoring or logs for noncritical infrastructure is an effective way to save cost.</p>
+<h2 id="example">Example</h2>
+<p>Remove a Route 53 health check for a private Plex instance to save costs:</p>
+<pre data-lang="diff" style="background-color:#2b303b;color:#c0c5ce;" class="language-diff "><code class="language-diff" data-lang="diff"><span>@@ -1,6 +0,0 @@
+</span><span style="color:#bf616a;">-resource &quot;aws_route53_health_check&quot; &quot;example&quot; {
+</span><span style="color:#bf616a;">-  fqdn = &quot;plex.example.com&quot;
+</span><span style="color:#bf616a;">-  port = 443
+</span><span style="color:#bf616a;">-  request_interval = &quot;30&quot;
+</span><span style="color:#bf616a;">-  failure_threshold = &quot;5&quot;
+</span><span style="color:#bf616a;">-}
+</span></code></pre>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_health_check">Resource: aws_route53_health_check (Terraform)</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_billing.html">CloudWatch billing and cost - Amazon CloudWatch</a></li>
+<li><a href="https://aws.amazon.com/route53/pricing/">Amazon Route 53 pricing - Amazon Web Services</a></li>
+<li><a href="https://cloud.google.com/stackdriver/pricing#monitoring-pricing-summary">Google Cloud Observability pricing</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/best-practices-cost">Cost Optimization in Azure Monitor</a></li>
+</ul>
+<h2 id="occurrences">Occurrences</h2>
+<h3 id="terraform">Terraform</h3>
+<ul>
+<li><a href="https://github.com/Eximchain/terraform-aws-quorum-cluster/commit/6a56f400f7de3f4d5cef646d92e3f848608031c1">https://github.com/Eximchain/terraform-aws-quorum-cluster/commit/6a56f400f7de3f4d5cef646d92e3f848608031c1</a></li>
+<li><a href="https://github.com/Accurate0/infrastructure/commit/06889e08148d258f329118d43734f8c8dcff994e">https://github.com/Accurate0/infrastructure/commit/06889e08148d258f329118d43734f8c8dcff994e</a></li>
+<li><a href="https://github.com/cloudspout/Gefjun/commit/665692a86bb65ddfa6c001f296c76c17288e2944">https://github.com/cloudspout/Gefjun/commit/665692a86bb65ddfa6c001f296c76c17288e2944</a></li>
+<li><a href="https://github.com/terraform-google-modules/terraform-example-foundation/commit/8391f1bd4322fec04fda7509b537c5f66cddbbd9">https://github.com/terraform-google-modules/terraform-example-foundation/commit/8391f1bd4322fec04fda7509b537c5f66cddbbd9</a></li>
+<li><a href="https://github.com/tdooner/flynn/commit/a9ea9d09727825f9a047e70d94caf73c99e6b2a8">https://github.com/tdooner/flynn/commit/a9ea9d09727825f9a047e70d94caf73c99e6b2a8</a></li>
+<li><a href="https://github.com/elliotpryde/personal-infrastructure/commit/772c5ad20818738b09d01cd70ca3de80cbf66dcb">https://github.com/elliotpryde/personal-infrastructure/commit/772c5ad20818738b09d01cd70ca3de80cbf66dcb</a></li>
+<li><a href="https://github.com/elliotpryde/personal-infrastructure/commit/7c4205cd130c5463d7f39aa6f281e198c143d0d9">https://github.com/elliotpryde/personal-infrastructure/commit/7c4205cd130c5463d7f39aa6f281e198c143d0d9</a></li>
+<li><a href="https://github.com/alghanmi/terraform-modules/commit/570d3d8440ed399ed8b30bffe1fd7a2adc197771">https://github.com/alghanmi/terraform-modules/commit/570d3d8440ed399ed8b30bffe1fd7a2adc197771</a></li>
+<li><a href="https://github.com/thoughtbot/flightdeck/commit/c784bc0a3f747b66ab7cd01f23bbbdbad3bfe705">https://github.com/thoughtbot/flightdeck/commit/c784bc0a3f747b66ab7cd01f23bbbdbad3bfe705</a></li>
+<li><a href="https://github.com/chapas/tf-az-kubernetes/commit/bcc6e190b8f8a12b590089fb755c4f552f179ad0">https://github.com/chapas/tf-az-kubernetes/commit/bcc6e190b8f8a12b590089fb755c4f552f179ad0</a></li>
+<li><a href="https://github.com/Accurate0/infrastructure/commit/bd63efe7cf8fd2d9ae3a1497c342f97a7d22a7f5">https://github.com/Accurate0/infrastructure/commit/bd63efe7cf8fd2d9ae3a1497c342f97a7d22a7f5</a></li>
+<li><a href="https://github.com/rust-lang/simpleinfra/commit/05370cc8f9852987e20cf5c659e5249dd1f2181c">https://github.com/rust-lang/simpleinfra/commit/05370cc8f9852987e20cf5c659e5249dd1f2181c</a></li>
+<li><a href="https://github.com/binbashar/le-tf-infra-aws/commit/8b1c39cf7e64610b4c17f5b2697a782f0ec99f7e">https://github.com/binbashar/le-tf-infra-aws/commit/8b1c39cf7e64610b4c17f5b2697a782f0ec99f7e</a></li>
+<li><a href="https://github.com/dfds/infrastructure-modules/commit/1c9c92d966c342d42ac5c915a7c01f6a98a38122">https://github.com/dfds/infrastructure-modules/commit/1c9c92d966c342d42ac5c915a7c01f6a98a38122</a></li>
+<li><a href="https://github.com/matihost/monorepo/commit/6995c99e0561c29b6e8d0ff84d3b2504d1772fe8">https://github.com/matihost/monorepo/commit/6995c99e0561c29b6e8d0ff84d3b2504d1772fe8</a></li>
+<li><a href="https://github.com/alphagov/govuk-infrastructure/commit/3386d7637c06f84cc3cc252f96d43e511cea428e">https://github.com/alphagov/govuk-infrastructure/commit/3386d7637c06f84cc3cc252f96d43e511cea428e</a></li>
+<li><a href="https://github.com/alphagov/govuk-infrastructure/commit/6017d0be84adac6b90b46f3d0bc2376a7e9b8e85">https://github.com/alphagov/govuk-infrastructure/commit/6017d0be84adac6b90b46f3d0bc2376a7e9b8e85</a></li>
+</ul>
+<h3 id="aws-cloudformation">AWS CloudFormation</h3>
+<ul>
+<li><a href="https://github.com/lumigo-io/SAR-async-lambda-metrics/commit/c61571e630b0ee5428196969c1cb08a981f36b1c">https://github.com/lumigo-io/SAR-async-lambda-metrics/commit/c61571e630b0ee5428196969c1cb08a981f36b1c</a></li>
+<li><a href="https://github.com/aldeka/jolly-roger/commit/2295bd9a939381d1d778b0e273700c54674f0db4">https://github.com/aldeka/jolly-roger/commit/2295bd9a939381d1d778b0e273700c54674f0db4</a></li>
+<li><a href="https://github.com/brwyatt/smartthings_logging/commit/659a001727a43497bd8eaeae16ef507887af9034">https://github.com/brwyatt/smartthings_logging/commit/659a001727a43497bd8eaeae16ef507887af9034</a></li>
+<li><a href="https://github.com/BoraxTheClean/aws-account-setup/commit/a24b6134aab8e2f74fd31eec2ad964636025acc7">https://github.com/BoraxTheClean/aws-account-setup/commit/a24b6134aab8e2f74fd31eec2ad964636025acc7</a></li>
+<li><a href="https://github.com/buildkite/elastic-ci-stack-for-aws/commit/5ceefeb51f51c6277348086fa39fda2b5f7c7553">https://github.com/buildkite/elastic-ci-stack-for-aws/commit/5ceefeb51f51c6277348086fa39fda2b5f7c7553</a></li>
+</ul>
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="content-wrapper">
+            <p>
+                &copy; 2024-2025
+                <a href="https://koen.bolhu.is">Koen Bolhuis</a>,
+                <a href="https://feitosa-daniel.github.io">Daniel Feitosa</a>,
+                <a href="https://vandriko.github.io">Vasilios Andrikopoulos</a>,
+                <a href="https://www.linkedin.com/in/allianeamt/">Allia Neamt</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
